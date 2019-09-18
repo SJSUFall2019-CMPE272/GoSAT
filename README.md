@@ -1,10 +1,10 @@
 # ProjectGroup-25
 
 ### Team member
-### 1. Kunj Parikh
-### 2. Sonia Mannan
-### 3. Tej Jaikumar Chaugule
-### 4. Vasanthai Amoolya Koduri
+**1. Kunj Parikh**
+**2. Sonia Mannan**
+**3. Tej Jaikumar Chaugule**
+**4. Vasanthai Amoolya Koduri**
 
 ## SaveMo.
 
