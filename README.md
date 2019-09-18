@@ -1,10 +1,12 @@
 # ProjectGroup-25
 
-## Team Members
-### Sonia Mannan
-### Tej Jaikumar Chaugule
-### Vasanthi Amoolya Koduri
-### Kunj Parikh
+
+### Team Members
+Sonia Mannan  
+Tej Jaikumar Chaugule  
+Vasanthi Amoolya Koduri  
+Kunj Parikh  
+
 
 ## SaveMo.
 
@@ -17,7 +19,7 @@ Money management is an essential skill for everyone, yet many people are still u
     3. To produce real time review of their spending. And give a red, yellow or green flag, after the purchase, in order to          teach them about their spending.  
 
 ### Technology Stack:  
-    1. Android App and IOS app  
+    1. Android App Development  
     2. Tensorflow  
 
 
@@ -83,5 +85,5 @@ So the idea is to train a machine learning model to identify bullying scenarios 
     4. Send exact location details to the authority to send help  
 
 ### Technology Stack:  
-    1. Android App and IOS app  
+    1. Android App Development   
     2. IBM Cloud, Watson Voice Recognition API  
