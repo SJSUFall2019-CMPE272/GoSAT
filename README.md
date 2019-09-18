@@ -12,7 +12,7 @@ Description: Perform a linear analysis on urban health indexes to determine sign
 Goals:
 	1. Improve public health in cities
 	2. Insights in how to prevent disease
-
+        
 Technology stack:
 	1. Postgres: https://aws.amazon.com/rds/postgresql/
 	2. AWS Glue (data processing): https://aws.amazon.com/glue/
