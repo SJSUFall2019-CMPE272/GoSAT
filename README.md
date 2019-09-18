@@ -15,8 +15,8 @@ Money management is an essential skill for everyone, yet many people are still u
 
 ### Goals:  
     1. To make a model that can suggest based on the tracking details, different ways to save money.  
-    2. Using the receipt track the money of the user hard cash. Also to read users’ phone notification to track their digital        payments.  
-    3. To produce real time review of their spending. And give a red, yellow or green flag, after the purchase, in order to          teach them about their spending.  
+    2. Using the receipt track the money of the user hard cash. Also to read users’ phone notification to track their digital payments.  
+    3. To produce real time review of their spending. And give a red, yellow or green flag, after the purchase, in order to teach them about their spending.  
 
 ### Technology Stack:  
     1. Android App Development  
