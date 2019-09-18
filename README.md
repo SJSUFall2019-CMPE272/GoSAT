@@ -1,7 +1,7 @@
 # ProjectGroup-25
 
 
-###Urban Health Data Inventory
+### Urban Health Data Inventory
 
 https://data.world/health/big-cities-health/workspace/file?filename=Big_Cities_Health_Data_Inventory.csv
 
@@ -31,7 +31,7 @@ Mostly categorical data, will need to do extra feature processing to make sense 
 
 
 
-###CalSATScores
+### CalSATScores
 
 https://www.cde.ca.gov/ds/sp/ai/
 
@@ -53,7 +53,7 @@ Technology stack:
 
 The data format: https://www.cde.ca.gov/ds/sp/ai/reclayoutsat17.asp
 
-###Restaurant Decider
+### Restaurant Decider
 
 There are numerous sources such as Yelp that give us recommendations on where to eat, but there are still too many choices for us. Recommendation services based on user preferences and eating habits are better tailored to the user and will create a better experience.
 
