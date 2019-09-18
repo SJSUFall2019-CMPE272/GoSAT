@@ -41,7 +41,6 @@ Description: Create a web-based geovisualization displaying the SAT benchmark pe
 
 Goals:
 	1. Assist California residents in understanding the educational performance of various counties
-	
 	2. Assist policy makers in understanding which counties require educational funding
 
 Technology stack:
