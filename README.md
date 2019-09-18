@@ -87,12 +87,11 @@ Technology Stack:
 Challenges/ Things to consider: 
     
     1. Data model. 
-    
-    	a. Extracting sentiment from reviews 
-	b. Finding similar businesses from sentiment 
-	c. Scale of the data 
-	d. Aggregating the data for each reviewer 
-	e. Ensuring there are a large amount of reviews per person 
+    >a. Extracting sentiment from reviews 
+    >b. Finding similar businesses from sentiment 
+    >c. Scale of the data 
+    >d. Aggregating the data for each reviewer 
+    >e. Ensuring there are a large amount of reviews per person 
 
 
 ### Urban Health Data Inventory
