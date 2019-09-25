@@ -23,7 +23,8 @@ Money management is an essential skill for everyone, yet many people are still u
     2. Tensorflow  
 
 
-## GoSAT 
+## GoSAT - APPROVED (read below)
+SAT or ACT alone does not decide scholorship and there are limited colleges who provide SAT based scholorships. so bring more diverse data but idea is good ... you need to provide actionable insights and prescriptive analytics. 
 
 ### Description:  
 Create a web-based geovisualization displaying the SAT benchmark performance(s) of various counties in California and predict the current standing of a student. Analyse various metrics and predict the probability of getting scholarship depending on SAT scores.  
