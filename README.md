@@ -35,4 +35,6 @@ The data we have currently is limited to academic and social factors (location, 
     4. Docker to deploy models
     5. Node js for application backend
     6. React js for web application front end
-    
+
+### Architecture Diagram
+![Architecture Diagram](Docs/Architecture/ArchitectureDiagram.jpg)
