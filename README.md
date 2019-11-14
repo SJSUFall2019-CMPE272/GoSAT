@@ -36,5 +36,18 @@ The data we have currently is limited to academic and social factors (location, 
     5. Node js for application backend
     6. React js for web application front end
 
+### Design Thinking
+
+#### High school student
+
+Who: High School Student
+
+What: BE able to predict whether he/she will get admission in UCS or not.
+
+Wow: Be able to save money on application fees and could take actions to get admission in the UCs.
+
+![Persona 1 diagram](Docs/DesignThinking/persona1_sonia.jpg)
+
 ### Architecture Diagram
+
 ![Architecture Diagram](Docs/Architecture/ArchitectureDiagram.jpg)
