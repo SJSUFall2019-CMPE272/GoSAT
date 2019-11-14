@@ -46,7 +46,7 @@ What: BE able to predict whether he/she will get admission in UCS or not.
 
 Wow: Be able to save money on application fees and could take actions to get admission in the UCs.
 
-![Architecture Diagram](Docs\DesignThinking\persona1_sonia.jpg)
+![Persona 1 diagram](Docs\DesignThinking\persona1_sonia.jpg)
 
 ### Architecture Diagram
 
