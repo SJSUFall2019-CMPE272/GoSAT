@@ -5,6 +5,7 @@ def handler(event, context):
     print('Getting your predictions...')
 
     result = {
+    	'statusCode': 200,
     	'probability': random.uniform(0, 1),
     	'feature_importances': {
     		'gender': 0.14205973,
@@ -17,13 +18,7 @@ def handler(event, context):
     	}
     }
 
-    print (json.dumps(result))
-
-    return
-    {
-        'statusCode': 200,
-        'body': json.dumps(result)
-    }
+    return result
 
 if __name__ == "__main__":
     handler('', '')
