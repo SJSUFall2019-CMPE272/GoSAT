@@ -36,5 +36,59 @@ The data we have currently is limited to academic and social factors (location, 
     5. Node js for application backend
     6. React js for web application front end
 
+### Design Thinking
+
+#### High school student
+
+Who: High School Student
+
+What: BE able to predict whether he/she will get admission in UCS or not.
+
+Wow: Be able to save money on application fees and could take actions to get admission in the UCs.
+
+![Persona 1 diagram](Docs/DesignThinking/persona1_sonia.jpg)
+
 ### Architecture Diagram
+
 ![Architecture Diagram](Docs/Architecture/ArchitectureDiagram.jpg)
+
+### Predict API Endpoint
+
+Our models are deployed on AWS and can be accessed through the following endpoint:
+
+https://r8naeu32e8.execute-api.us-east-1.amazonaws.com/prod/predict
+
+A sample request for a prediction:
+
+```
+curl -X POST \
+  https://r8naeu32e8.execute-api.us-east-1.amazonaws.com/prod//predict \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "gpa": 2.0,
+    "gender": "female",
+    "transfer": "false",
+    "school": "Silver Creek",
+    "ethnicity": "Asian American",
+    "sat": 1200,
+    "act": 1200
+}'
+```
+
+and sample response:
+
+```
+{
+    "feature_importances": {
+        "school": 0.76664038,
+        "gender": 0.14205973,
+        "act": 0.11294921129,
+        "gpa": 0.06305659,
+        "transfer": 0.05810283,
+        "ethnicity": 0.0282433,
+        "sat": 0.39012123
+    },
+    "probability": 0.8088502878015096,
+    "statusCode": 200
+}
+```
