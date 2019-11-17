@@ -1,0 +1,6 @@
+machine-learning/.ipynb_checkpoints/
+secrets
+.DS_Store
+machine-learning/.DS_Store
+frontend/package-lock.json
+numpy_tester/
