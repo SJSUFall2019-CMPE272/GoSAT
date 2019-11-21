@@ -1,11 +1,9 @@
 import React from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
-import TopNav from './TopNav/TopNav';
-import Login from './Login/Login';
-import SignUp from './SignUp/SignUp';
-import Details from './Details/Details';
-import Profile from './Profile/Profile';
-import Dashboard from './Dashboard/Dashboard';
+import TopNav from './TopNav';
+import Login from './Login';
+import SignUp from './SignUp';
+import Dashboard from './Dashboard';
 
 class Main extends React.Component{
     constructor(){
@@ -19,9 +17,7 @@ class Main extends React.Component{
                     <Route path="/" component={TopNav} />
                     <Route path="/login" component={Login} />
                     <Route path="/signUp" component={SignUp} />
-                    <Route path="/profile" component={Profile}/>
-                    <Route path="/details" component={Details} />
-                    <Route path="/dashboard" component={Dashboard}/>
+                    <Route path="/dashboard" component={Dashboard} />
                 </Router>
             </div>
         )

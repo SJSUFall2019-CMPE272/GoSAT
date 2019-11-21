@@ -21,7 +21,6 @@ class Main extends React.Component{
                     <Route path="/signUp" component={SignUp} />
                     <Route path="/profile" component={Profile}/>
                     <Route path="/details" component={Details} />
-                    <Route path="/dashboard" component={Dashboard}/>
                 </Router>
             </div>
         )
