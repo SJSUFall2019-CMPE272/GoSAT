@@ -1,8 +1,12 @@
 import json
+import pickle
 import random
 
 def handler(event, context):
     print('Getting your predictions...')
+
+    model = pickle.load(open('gosat_random_forest', 'rb'))
+    print (model.predict([0, 0, 0, 0]))
 
     result = {
     	'statusCode': 200,

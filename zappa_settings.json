@@ -1,0 +1,13 @@
+{
+    "dev": {
+        "app_function": "predict.handler", 
+        "aws_region": "us-east-1", 
+        "profile_name": "default", 
+        "project_name": "projectgroup-25", 
+        "runtime": "python2.7", 
+        "s3_bucket": "gosat-deploy",
+        "manage_roles": false, // Disable Zappa client managing roles.
+        "role_name": "Lambda", // Name of your Zappa execution role. Optional, default: <project_name>-<env>-ZappaExecutionRole.
+        "role_arn": "arn:aws:iam::768784922090:role/Lambda"
+    }
+}

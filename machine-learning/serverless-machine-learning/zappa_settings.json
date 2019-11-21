@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "api.app.app", 
+        "aws_region": "us-east-1", 
+        "profile_name": "default", 
+        "project_name": "projectgroup-25", 
+        "runtime": "python2.7", 
+        "s3_bucket": "gosat-deploy"
+    }
+}
