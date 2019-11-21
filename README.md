@@ -62,16 +62,18 @@ A sample request for a prediction:
 
 ```
 curl -X POST \
-  https://r8naeu32e8.execute-api.us-east-1.amazonaws.com/prod//predict \
+  https://883haygr14.execute-api.us-east-1.amazonaws.com/dev \
   -H 'Content-Type: application/json' \
   -d '{
-    "gpa": 2.0,
-    "gender": "female",
-    "transfer": "false",
-    "school": "Silver Creek",
-    "ethnicity": "Asian American",
-    "sat": 1200,
-    "act": 1200
+    "data": {
+        "gpa": 2.0,
+        "gender": "female",
+        "transfer": "false",
+        "school": "Silver Creek",
+        "ethnicity": "Asian American",
+        "sat": 1200,
+        "act": 1200
+    }
 }'
 ```
 
