@@ -1,3 +1,7 @@
+"""
+https://medium.com/@patrickmichelberger/how-to-deploy-a-serverless-machine-learning-microservice-with-aws-lambda-aws-api-gateway-and-d5b8cbead846
+"""
+
 from flask import Flask, request, json
 import boto3
 import pickle
