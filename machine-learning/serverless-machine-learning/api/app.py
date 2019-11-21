@@ -24,7 +24,7 @@ def index():
     response = S3.get_object(Bucket=BUCKET_NAME, Key=MODEL_FILE_NAME)
 
     # Load pickle model
-    model_str = response['Body'].read()     
+    model_str = response['Body'].read()
     model = pickle.loads(model_str)     
 
     # Make prediction 

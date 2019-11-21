@@ -1,40 +1,29 @@
 import boto3
 import logging
+import pandas as pd
 import pickle
 
 from botocore.exceptions import ClientError
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
+from StringIO import StringIO
 
-"""
-To upload to S3 via CLI: aws s3 cp filename s3://bucket-name
-"""
-
-def get_object(bucket_name, object_name):
-    """Retrieve an object from an Amazon S3 bucket
-
-    :param bucket_name: string
-    :param object_name: string
-    :return: botocore.response.StreamingBody object. If error, return None.
-    """
-
-    # Retrieve the object
-    s3 = boto3.client('s3')
-    try:
-        response = s3.get_object(Bucket=bucket_name, Key=object_name)
-    except ClientError as e:
-        # AllAccessDisabled error == bucket or object not found
-        logging.error(e)
-        return None
-    # Return an open StreamingBody object
-    return response['Body']
-
+# TODO: transform categorical columns
+# TODO: write method to transform data for predictions
+# TODO: upload model to S3 bucket
 def main():
-    """Exercise get_object()"""
-
     # Assign these values before running the program
     test_bucket_name = 'gosat-sample-data'
     test_object_name = 'sample-data.csv'
+    S3 = boto3.client('s3', region_name='eu-central-1')
+
+    # Load data
+    response = S3.get_object(Bucket=test_bucket_name, Key=test_object_name)
+    data = response['Body'].read().decode('utf-8')
+    df = pd.read_csv(StringIO(data))
+
+    feature_cols = ['Ethnicity', 'Gender', 'Fall Term', 'Transfer', 'GPA', 'SAT', 'ACT']
+    features = df[feature_cols]
 
     X, y = make_classification(n_samples=1000, n_features=4, n_informative=2,
     	                       n_redundant=0, random_state=0, shuffle=False)
@@ -47,3 +36,10 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+test_bucket_name = 'gosat-sample-data'
+test_object_name = 'sample-data.csv'
+S3 = boto3.client('s3', region_name='eu-central-1')
+response = S3.get_object(Bucket=test_bucket_name, Key=test_object_name)
+data = response['Body'].read().decode('utf-8')
