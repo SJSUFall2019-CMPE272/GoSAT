@@ -5,3 +5,5 @@ machine-learning/.DS_Store
 frontend/package-lock.json
 numpy_tester/
 machine-learning/serverless-machine-learning/gosat/
+*.pyc
+machine-learning/models/

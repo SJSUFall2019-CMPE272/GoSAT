@@ -5,7 +5,10 @@ https://medium.com/@patrickmichelberger/how-to-deploy-a-serverless-machine-learn
 from flask import Flask, request, json
 import boto3
 import pickle
+import numpy as np
 import random
+
+from sklearn import preprocessing
 
 BUCKET_NAME = 'gosat-models'
 MODEL_FILE_NAME = 'gosat_random_forest'
@@ -25,7 +28,17 @@ def index():
 
     # Load pickle model
     model_str = response['Body'].read()
-    model = pickle.loads(model_str)     
+    model = pickle.loads(model_str)
+
+    enc = preprocessing.OneHotEncoder()
+    categorical_cols = ['ethnicity', 'gender', 'school', 'transfer']
+    categorical = [[value for key, value in data.items() if key in categorical_cols]]
+
+    feature_cols = ['fall term', 'gpa', 'sat', 'act']
+    intermediate = [[value for key, value in data.items() if key in feature_cols]]
+
+    categoricl_transformed = enc.fit_transform(categorical).toarray()
+    X = np.hstack((intermediate, categoricl_transformed))
 
     # Make prediction 
     # prediction = model.predict(data).tolist()
