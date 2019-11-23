@@ -6,22 +6,23 @@ import pickle
 
 from botocore.exceptions import ClientError
 from sklearn.datasets import make_classification
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor
 from sklearn import preprocessing
 from StringIO import StringIO
 
 def transform_input(df):
-    enc = preprocessing.OneHotEncoder()
-    categorical_cols = ['Ethnicity', 'Gender', 'School', 'Transfer']
-    categorical = df[categorical_cols]
+    encoder = preprocessing.OneHotEncoder(handle_unknown='ignore')
+    categorical_cols = ['Ethnicity', 'Gender', 'School', 'Transfer', 'Fall Term']
+    categorical = df[categorical_cols].values
 
     non_feature_cols = ['Unnamed: 0', 'NumStudentsAccepted',
      'TotalStudentsAcceptedInTerm', 'ProbabilityOfAcceptance']
     intermediate = df[['Fall Term', 'GPA', 'ACT', 'SAT']]
 
-    categoricl_transformed = enc.fit_transform(categorical).toarray()
+    categoricl_transformed = encoder.fit_transform(categorical).toarray()
     features = np.hstack((intermediate.values, categoricl_transformed))
-return features
+
+    return encoder, features
 
 def main():
     # Assign these values before running the program
@@ -34,15 +35,19 @@ def main():
     data = response['Body'].read().decode('utf-8')
     df = pd.read_csv(StringIO(data))
 
-    X = transform_input(df)
-    y = y = [0, 1, 0, 1, 0]
+    # transform the data for the model
+    encoder, X = transform_input(df)
+    y = df['ProbabilityOfAcceptance']
 
-    clf = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
-
+    # train model
+    clf = RandomForestRegressor(n_estimators=100, max_depth=2, random_state=0)
     clf.fit(X, y)
-    pickle.dump(clf, open('models/gosat_random_forest', 'w'))
-    S3.upload_file('models/gosat_random_forest', 'gosat-models', 'gosat_random_forest')
 
+    # upload data to AWS
+    pickle.dump(clf, open('models/gosat_random_forest', 'w'))
+    pickle.dump(encoder, open('models/gosat_random_forest_encoder', 'w'))
+    S3.upload_file('models/gosat_random_forest', 'gosat-models', 'gosat_random_forest')
+    S3.upload_file('models/gosat_random_forest_encoder', 'gosat-models', 'gosat_random_forest_encoder')
 
 if __name__ == '__main__':
     main()

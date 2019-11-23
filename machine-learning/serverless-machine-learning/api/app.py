@@ -12,6 +12,7 @@ from sklearn import preprocessing
 
 BUCKET_NAME = 'gosat-models'
 MODEL_FILE_NAME = 'gosat_random_forest'
+ENCODER_FILE_NAME = 'gosat_random_forest_encoder'
 
 app = Flask(__name__)
 S3 = boto3.client('s3', region_name='eu-central-1')
@@ -22,22 +23,28 @@ def index():
     # Parse request body for model input 
     body_dict = request.get_json(silent=True)    
     data = body_dict['data']     
-    
+
     # Load model from S3 bucket
-    response = S3.get_object(Bucket=BUCKET_NAME, Key=MODEL_FILE_NAME)
+    model_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=MODEL_FILE_NAME)
 
     # Load pickle model
-    model_str = response['Body'].read()
+    model_str = model_s3['Body'].read()
     model = pickle.loads(model_str)
 
-    enc = preprocessing.OneHotEncoder()
-    categorical_cols = ['ethnicity', 'gender', 'school', 'transfer']
+    # Load encoder from S3 bucket
+    encoder_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=ENCODER_FILE_NAME)
+
+    # Load pickle model
+    encoder_str = encoder_s3['Body'].read()
+    encoder = pickle.loads(encoder_str)
+
+    categorical_cols = ['ethnicity', 'gender', 'school', 'transfer', 'fall term']
     categorical = [[value for key, value in data.items() if key in categorical_cols]]
 
-    feature_cols = ['fall term', 'gpa', 'sat', 'act']
+    feature_cols = ['gpa', 'sat', 'act']
     intermediate = [[value for key, value in data.items() if key in feature_cols]]
 
-    categoricl_transformed = enc.fit_transform(categorical).toarray()
+    categoricl_transformed = encoder.fit_transform(categorical).toarray()
     X = np.hstack((intermediate, categoricl_transformed))
 
     # Make prediction 
