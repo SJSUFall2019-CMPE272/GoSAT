@@ -11,13 +11,15 @@ from sklearn import preprocessing
 from StringIO import StringIO
 
 def transform_input(df):
+    # lowercase all strings
+    df.applymap(lambda s: s.lower() if type(s) == str else s)
+
     encoder = preprocessing.OneHotEncoder(handle_unknown='ignore')
     categorical_cols = ['Ethnicity', 'Gender', 'School', 'Transfer', 'Fall Term']
     categorical = df[categorical_cols].values
 
-    non_feature_cols = ['Unnamed: 0', 'NumStudentsAccepted',
-     'TotalStudentsAcceptedInTerm', 'ProbabilityOfAcceptance']
-    intermediate = df[['Fall Term', 'GPA', 'ACT', 'SAT']]
+    non_categorical_cols = ['GPA', 'ACT', 'SAT']
+    intermediate = df[non_categorical_cols]
 
     categoricl_transformed = encoder.fit_transform(categorical).toarray()
     features = np.hstack((intermediate.values, categoricl_transformed))

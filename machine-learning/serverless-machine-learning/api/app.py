@@ -22,7 +22,9 @@ S3 = boto3.client('s3', region_name='eu-central-1')
 def index():    
     # Parse request body for model input 
     body_dict = request.get_json(silent=True)    
-    data = body_dict['data']     
+    data = body_dict['data']
+
+    print("Received request {0}".format(data))
 
     # Load model from S3 bucket
     model_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=MODEL_FILE_NAME)
@@ -31,6 +33,8 @@ def index():
     model_str = model_s3['Body'].read()
     model = pickle.loads(model_str)
 
+    print ("Loaded model")
+
     # Load encoder from S3 bucket
     encoder_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=ENCODER_FILE_NAME)
 
@@ -38,23 +42,30 @@ def index():
     encoder_str = encoder_s3['Body'].read()
     encoder = pickle.loads(encoder_str)
 
-    categorical_cols = ['ethnicity', 'gender', 'school', 'transfer', 'fall term']
-    categorical = [[value for key, value in data.items() if key in categorical_cols]]
+    print ("Loaded encoder")
 
-    feature_cols = ['gpa', 'sat', 'act']
-    intermediate = [[value for key, value in data.items() if key in feature_cols]]
+    categorical_values = [[
+     data['ethnicity'].encode("utf-8").lower(), 
+     data['gender'].encode("utf-8").lower(),
+     data['school'].encode("utf-8").lower(),
+     data['transfer'].encode("utf-8").lower(),
+     data['fall term']
+    ]]
 
-    categoricl_transformed = encoder.fit_transform(categorical).toarray()
-    X = np.hstack((intermediate, categoricl_transformed))
+    non_categorical_values = [[data['gpa'], data['act'], data['sat']]]
 
-    # Make prediction 
-    # prediction = model.predict(data).tolist()
-    # Respond with prediction result
-    # result = {'prediction': prediction}
+    categoricl_features = encoder.transform(categorical_values).toarray()
+
+    print ("Transformed categorical features {0}".format(categoricl_features.shape))
+    X = np.hstack((non_categorical_values, categoricl_features))
+    print ("Transformed final feature set {0}".format(X.shape))
+
+    prediction = model.predict(X)[0]
+    print ("Predicted {0}".format(prediction))
 
     result = {
         'statusCode': 200,
-        'probability': random.uniform(0, 1),
+        'probability': prediction,
         'feature_importances': {
             'gender': 0.14205973,
             'school': 0.76664038,
