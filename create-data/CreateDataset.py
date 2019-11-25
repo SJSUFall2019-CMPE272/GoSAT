@@ -12,10 +12,13 @@ import pandas as pd
 
 # import data by ethnicity
 ethnicities = pd.read_csv('../data/fr-applicants-by-ethnicity.csv')
-ethnicities = ethnicities.rename(columns={'Count': 'Status', 'Uad Uc Ethn 6 Cat': 'Ethnicity', 'Pivot Field Values': 'Count'})
-ethnicities = ethnicities[['Status', 'Fall Term', 'School', 'Ethnicity', 'Count']]
+ethnicities = ethnicities.rename(columns={'County/State/ Territory': 'County', 'Count': 'Status', 'Uad Uc Ethn 6 Cat': 'Ethnicity', 'Pivot Field Values': 'Count'})
+ethnicities = ethnicities[['Status', 'Fall Term', 'County', 'Ethnicity', 'Count']]
+# keep only admitted student data
 ethnicities = ethnicities[ethnicities['Status'] == 'Adm']
-ethnicities.drop(['Status'], axis=1, inplace=True)
+ethnicities = ethnicities[ethnicities['Fall Term'] == 2016]
+ethnicities.drop(['Status', 'Fall Term'], axis=1, inplace=True)
+ethnicities = ethnicities.groupby(['County', 'Ethnicity']).sum().reset_index()
 
 
 # In[ ]:
@@ -32,10 +35,12 @@ ethnicities.size
 
 # import data by gender
 genders = pd.read_csv('../data/fr-applicants-by-gender.csv')
-genders = genders.rename(columns={'Count': 'Status', 'Pivot Field Values': 'Count'})
-genders = genders[['Status', 'Fall Term', 'School', 'Gender', 'Count']]
+genders = genders.rename(columns={'Count': 'Status', 'Pivot Field Values': 'Count', 'County/State/ Territory': 'County'})
+genders = genders[['Status', 'Fall Term', 'County', 'Gender', 'Count']]
 genders = genders[genders['Status'] == 'Adm']
-genders.drop(['Status'], axis=1, inplace=True)
+genders = genders[genders['Fall Term'] == 2016]
+genders.drop(['Status', 'Fall Term'], axis=1, inplace=True)
+genders = genders.groupby(['County', 'Gender']).sum().reset_index()
 
 
 # In[ ]:
@@ -57,9 +62,10 @@ gpas = gpas[pd.notnull(gpas['School Name'])]
 gpas = gpas[pd.notnull(gpas['Measure Values'])]
 # only keep admitted applicant data
 gpas = gpas[gpas['Measure Names'] == 'Adm GPA']
+gpas = gpas[gpas['Fall Term'] == 2016]
 # rename columns
 gpas = gpas.rename(columns={'Measure Values': 'GPA', 'School Name': 'School'})
-gpas = gpas[['Fall Term', 'School', 'GPA', 'Campus']]
+gpas = gpas[['County', 'GPA', 'Campus']]
 
 
 # In[ ]:
@@ -74,7 +80,33 @@ gpas.head()
 
 # In[ ]:
 
-join_cols = ['School', 'Fall Term']
+sat_scores = pd.read_csv('../data/sat-report-2015-2016.csv')
+# columns to keep
+sat_scores = sat_scores[['AvgScrRead', 'AvgScrMath', 'AvgScrWrit', 'cname']]
+# rename for join
+sat_scores = sat_scores.rename(columns={'cname': 'County'})
+# drop any rows that do not have a school
+sat_scores = sat_scores[pd.notnull(sat_scores['County'])]
+# convert score cols to ints
+sat_scores['AvgScrRead'] = pd.to_numeric(sat_scores['AvgScrRead'], errors=coerce)
+sat_scores['AvgScrMath'] = pd.to_numeric(sat_scores['AvgScrMath'], errors=coerce)
+sat_scores['AvgScrWrit'] = pd.to_numeric(sat_scores['AvgScrWrit'], errors=coerce)
+# drop null cols
+sat_scores = sat_scores[pd.notnull(sat_scores['AvgScrRead'])]
+sat_scores = sat_scores[pd.notnull(sat_scores['AvgScrMath'])]
+sat_scores = sat_scores[pd.notnull(sat_scores['AvgScrWrit'])]
+sat_scores = sat_scores.groupby('County').mean().reset_index()
+sat_scores.head()
+
+
+# In[ ]:
+
+len(sat_scores)
+
+
+# In[ ]:
+
+join_cols = ['County']
 
 
 # In[ ]:
@@ -82,9 +114,9 @@ join_cols = ['School', 'Fall Term']
 # join the datasets
 result = pd.merge(ethnicities, genders, on=join_cols)
 result = pd.merge(result, gpas, on=join_cols).drop_duplicates()
+result = pd.merge(result, sat_scores, on=join_cols).drop_duplicates()
 result['NumStudentsAccepted'] = result['Count_x'] + result['Count_y']
 result.drop(['Count_x', 'Count_y'], axis=1, inplace=True)
-result = result[result['Fall Term'] == 2016]
 result.drop_duplicates(inplace=True)
 
 
@@ -105,8 +137,9 @@ result.describe()
 
 # In[ ]:
 
-counts = result[['Fall Term', 'NumStudentsAccepted', 'Campus']].groupby(['Fall Term', 'Campus']).count().reset_index()
+counts = result[['NumStudentsAccepted', 'Campus', 'County']].groupby(['Campus', 'County']).sum().reset_index()
 counts.rename(columns={'NumStudentsAccepted': 'TotalStudentsAcceptedInTerm'}, inplace=True)
+counts.drop(['County'], axis=1, inplace=True)
 
 
 # In[ ]:
@@ -117,7 +150,7 @@ counts.head()
 # In[ ]:
 
 # merge with dataset
-combined = pd.merge(result, counts, on=['Fall Term', 'Campus'])
+combined = pd.merge(result, counts, on=['Campus'])
 combined.head()
 
 
@@ -135,7 +168,7 @@ combined.describe()
 
 # caluclate the predicted column
 combined['ProbabilityOfAcceptance'] = (combined['NumStudentsAccepted'] / combined['TotalStudentsAcceptedInTerm']) * 100
-combined.drop(['NumStudentsAccepted', 'TotalStudentsAcceptedInTerm', 'Fall Term'], axis=1, inplace=True)
+combined.drop(['NumStudentsAccepted', 'TotalStudentsAcceptedInTerm'], axis=1, inplace=True)
 
 
 # In[ ]:
@@ -146,7 +179,6 @@ combined.head()
 # In[ ]:
 
 # fill these columns in later
-combined['SAT'] = 1200
 combined['ACT'] = 0.0
 
 
