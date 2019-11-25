@@ -54,7 +54,7 @@ Wow: Be able to save money on application fees and could take actions to get adm
 
 ### Application
 
-View our application here: https://gosat-application.s3.amazonaws.com/about
+View our application here: http://gosat-application.s3-website-us-east-1.amazonaws.com/
 
 ### Predict API Endpoint
 
