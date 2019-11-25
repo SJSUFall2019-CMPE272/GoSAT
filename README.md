@@ -52,6 +52,10 @@ Wow: Be able to save money on application fees and could take actions to get adm
 
 ![Architecture Diagram](Docs/Architecture/ArchitectureDiagram.jpg)
 
+### Application
+
+View our application here: https://gosat-application.s3.amazonaws.com/about
+
 ### Predict API Endpoint
 
 Our models are deployed on AWS and can be accessed through the following endpoint:
