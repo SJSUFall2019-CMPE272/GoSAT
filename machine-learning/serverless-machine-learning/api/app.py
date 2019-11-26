@@ -48,8 +48,7 @@ def index():
      data['ethnicity'].encode("utf-8").lower(), 
      data['gender'].encode("utf-8").lower(),
      data['school'].encode("utf-8").lower(),
-     data['transfer'].encode("utf-8").lower(),
-     data['fall term']
+     data['campus'].encode("utf-8").lower()
     ]]
 
     non_categorical_values = [[data['gpa'], data['act'], data['sat']]]

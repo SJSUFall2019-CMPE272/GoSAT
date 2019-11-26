@@ -72,9 +72,9 @@ curl -X POST \
     "data": {
         "gpa": 2.0,
         "gender": "female",
-        "transfer": "false",
         "school": "Silver Creek",
         "ethnicity": "Asian American",
+        "campus": "Irvine",
         "sat": 1200,
         "act": 1200
     }

@@ -1,4 +1,3 @@
-machine-learning/.ipynb_checkpoints/
 secrets
 .DS_Store
 machine-learning/.DS_Store
@@ -8,3 +7,5 @@ machine-learning/serverless-machine-learning/gosat/
 *.pyc
 machine-learning/models/
 projectgroup-25-dev-1574635667.zip
+*.ipynb_checkpoints/
+data/
