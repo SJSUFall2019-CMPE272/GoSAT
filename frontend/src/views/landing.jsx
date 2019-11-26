@@ -13,7 +13,18 @@ import {
   ListGroup,
 } from 'reactstrap';
 
-import MyNavbar from "../components/Navbars/MyNavbar"
+import MyNavbar from "../components/Navbars/MyNavbar";
+
+import LandingJumbo from "../components/LandingJumbo/LandingJumbo";
+
+
+const variablesJumbo = {
+  image : require("../assets/img/explorer.png"),
+  primaryMessage : "Get in the university you ",
+  redText: "love",
+  secondaryMessage : "Hello, we help you to achieve your dream university by learning from your data such as SATs, ACTs, etc.",
+  pricing : "Save your application money"
+}
 
 class Landing extends React.Component {
   componentDidMount(){
@@ -26,6 +37,9 @@ class Landing extends React.Component {
     return (
       <>
         <MyNavbar />
+
+        <LandingJumbo inputs = {variablesJumbo}/>
+
       </>
     )
   }
