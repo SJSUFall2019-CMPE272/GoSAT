@@ -15,6 +15,8 @@ import {
 } from "reactstrap";
 const LandingJumbo = (props) => (
 <>
+
+
   <div className = "page-header">
     <div className="content-center">
       <Row className="row-grid justify-content-around align-items-center text-left">
@@ -69,7 +71,7 @@ const LandingJumbo = (props) => (
             </div>
           </div>
         </Col>
-        <Col lg="8" md ="8" >
+        <Col  lg="8" md="8">
           <img
             alt="..."
             className="img-fluid"
@@ -79,6 +81,7 @@ const LandingJumbo = (props) => (
       </Row>
     </div>
   </div>
+
   </>
 );
 
