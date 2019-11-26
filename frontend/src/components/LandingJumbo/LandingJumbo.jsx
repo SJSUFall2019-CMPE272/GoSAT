@@ -48,7 +48,7 @@ const LandingJumbo = (props) => (
                 href="#kunjfeature1"
                 onClick={e => e.preventDefault()}
               >
-                <i className="fas fa-chart-line" />
+                <i className="fas fa-medal" />
               </Button>
               <Button
                 className="btn-icon btn-simple btn-round btn-neutral"
@@ -56,7 +56,7 @@ const LandingJumbo = (props) => (
                 href="#kunjfeature2"
                 onClick={e => e.preventDefault()}
               >
-                <i className="fas fa-medal" />
+                <i className="fas fa-chart-line" />
               </Button>
               <Button
                 className="btn-icon btn-simple btn-round btn-neutral"

@@ -16,7 +16,7 @@ import {
 import MyNavbar from "../components/Navbars/MyNavbar";
 
 import LandingJumbo from "../components/LandingJumbo/LandingJumbo";
-
+import LandingFeature from "../components/LandingFeature/LandingFeature";
 
 const variablesJumbo = {
   image : require("../assets/img/explorer.png"),
@@ -36,10 +36,11 @@ class Landing extends React.Component {
   render() {
     return (
       <>
+
         <MyNavbar />
 
         <LandingJumbo inputs = {variablesJumbo}/>
-
+        <LandingFeature />
       </>
     )
   }
