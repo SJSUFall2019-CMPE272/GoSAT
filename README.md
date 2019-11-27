@@ -72,10 +72,12 @@ curl -X POST \
     "data": {
         "gpa": 2.0,
         "gender": "female",
-        "school": "Silver Creek",
+        "county": "Alameda",
         "ethnicity": "Asian American",
         "campus": "Irvine",
-        "sat": 1200,
+        "scrRead": 482.260274,
+        "scrWrit": 493.726027,
+        "scrMath": 478.726027,
         "act": 1200
     }
 }'
