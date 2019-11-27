@@ -1,0 +1,38 @@
+University Name,Data Description,Data value,Admit Rate,Admits,Applications
+UC Merced,GPA Range,4.00 and above,97.35%,"4,037","4,147"
+UC Merced,GPA Range,3.70-3.99,93.23%,"4,739","5,083"
+UC Merced,GPA Range,3.30-3.69,75.94%,"5,923","7,800"
+UC Merced,GPA Range,3.00-3.29,40.01%,"1,961","4,901"
+UC Merced,GPA Range,Below 3.00,1.38%,40,"2,890"
+UC Merced,ACT Composite Range,31-36,93.53%,839,897
+UC Merced,ACT Composite Range,26-30,86.70%,"1,213","1,399"
+UC Merced,ACT Composite Range,21-25,84.37%,"2,073","2,457"
+UC Merced,ACT Composite Range,16-20,70.48%,"2,197","3,117"
+UC Merced,ACT Composite Range,Below 16,31.75%,261,822
+UC Merced,ACT English Language Arts Range,31-36,94.19%,405,430
+UC Merced,ACT English Language Arts Range,26-30,90.89%,"1,367","1,504"
+UC Merced,ACT English Language Arts Range,21-25,84.53%,"2,185","2,585"
+UC Merced,ACT English Language Arts Range,16-20,72.27%,"2,246","3,108"
+UC Merced,ACT English Language Arts Range,Below 16,35.75%,380,"1,063"
+UC Merced,SAT Evidence Based Reading & Writing Range,700-800,92.71%,"1,069","1,153"
+UC Merced,SAT Evidence Based Reading & Writing Range,600-690,85.82%,"4,369","5,091"
+UC Merced,SAT Evidence Based Reading & Writing Range,500-590,75.53%,"6,277","8,311"
+UC Merced,SAT Evidence Based Reading & Writing Range,400-490,47.85%,"2,398","5,011"
+UC Merced,SAT Evidence Based Reading & Writing Range,Below 400,18.26%,88,482
+UC Merced,SAT Mathematics Range,700-800,85.60%,"2,122","2,479"
+UC Merced,SAT Mathematics Range,600-690,82.53%,"3,359","4,070"
+UC Merced,SAT Mathematics Range,500-590,75.95%,"6,105","8,038"
+UC Merced,SAT Mathematics Range,400-490,52.20%,"2,420","4,636"
+UC Merced,SAT Mathematics Range,Below 400,23.64%,195,825
+UC Merced,SAT Essay Range,20-24,92.28%,610,661
+UC Merced,SAT Essay Range,15-19,82.16%,"7,512","9,143"
+UC Merced,SAT Essay Range,10-14,61.76%,"5,742","9,298"
+UC Merced,SAT Essay Range,Below 10,35.62%,337,946
+UC Merced,"“A-G” Courses Completed (7th-12th grades, by semester)",50+,70.06%,"4,942","7,054"
+UC Merced,"“A-G” Courses Completed (7th-12th grades, by semester)",40-49,68.30%,"9,938","14,551"
+UC Merced,"“A-G” Courses Completed (7th-12th grades, by semester)",30-39,52.26%,"1,054","2,017"
+UC Merced,"“A-G” Courses Completed (7th-12th grades, by semester)",Below 30,22.86%,16,70
+UC Merced,"Honors Courses Completed (7th-12th grades, by semester)",15+,88.95%,"5,371","6,038"
+UC Merced,"Honors Courses Completed (7th-12th grades, by semester)",10-14,81.25%,"5,132","6,316"
+UC Merced,"Honors Courses Completed (7th-12th grades, by semester)",5-9,61.70%,"3,659","5,930"
+UC Merced,"Honors Courses Completed (7th-12th grades, by semester)",Below 5,37.55%,"1,511","4,024"
