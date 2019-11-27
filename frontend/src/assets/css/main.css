@@ -14747,13 +14747,13 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
     .card-register .form-check label:not(.form-check-label) {
       padding-left: 38px; }
   .card-register .card-header {
-    padding: 0 0 50px;
+    padding: 0 30px 50px;
     overflow: hidden; }
     .card-register .card-header .card-title {
       position: relative;
       font-size: 5em;
       font-weight: 900;
-      color: #222a42;
+      color: #ffffff;
       text-transform: lowercase;
       margin-left: -5px;
       z-index: 1; }

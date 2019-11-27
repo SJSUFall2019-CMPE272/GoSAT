@@ -6,7 +6,10 @@ import SignUp from './SignUp/SignUp';
 import Details from './Details/Details';
 import Profile from './Profile/Profile';
 import Dashboard from './Dashboard/Dashboard';
-import Landing from '../views/landing'
+
+import Landing from '../views/landing';
+import SignUpK from '../views/signup';
+
 class Main extends React.Component{
     constructor(){
         super();
@@ -22,6 +25,8 @@ class Main extends React.Component{
                     <Route path="/details" component={Details} />
                     <Route path="/dashboard" component={Dashboard}/>
                     <Route path="/landing" component={Landing}/>
+
+                    <Route path="/ksu" component={SignUpK}/>
                 </Router>
             </div>
         )
