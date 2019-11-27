@@ -1,49 +1,55 @@
 import boto3
 import logging
+import numpy as np
+import pandas as pd
 import pickle
 
 from botocore.exceptions import ClientError
 from sklearn.datasets import make_classification
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor
+from sklearn import preprocessing
+from StringIO import StringIO
 
-"""
-To upload to S3 via CLI: aws s3 cp filename s3://bucket-name
-"""
+def transform_input(df):
+    # lowercase all strings
+    df.applymap(lambda s: s.lower() if type(s) == str else s)
 
-def get_object(bucket_name, object_name):
-    """Retrieve an object from an Amazon S3 bucket
+    encoder = preprocessing.OneHotEncoder(handle_unknown='ignore')
+    categorical_cols = ['Ethnicity', 'Gender', 'School', 'Campus']
+    categorical = df[categorical_cols].values
 
-    :param bucket_name: string
-    :param object_name: string
-    :return: botocore.response.StreamingBody object. If error, return None.
-    """
+    non_categorical_cols = ['GPA', 'ACT', 'SAT']
+    intermediate = df[non_categorical_cols]
 
-    # Retrieve the object
-    s3 = boto3.client('s3')
-    try:
-        response = s3.get_object(Bucket=bucket_name, Key=object_name)
-    except ClientError as e:
-        # AllAccessDisabled error == bucket or object not found
-        logging.error(e)
-        return None
-    # Return an open StreamingBody object
-    return response['Body']
+    categoricl_transformed = encoder.fit_transform(categorical).toarray()
+    features = np.hstack((intermediate.values, categoricl_transformed))
+
+    return encoder, features
 
 def main():
-    """Exercise get_object()"""
-
     # Assign these values before running the program
-    test_bucket_name = 'gosat-sample-data'
+    test_bucket_name = 'gosat-data'
     test_object_name = 'sample-data.csv'
+    S3 = boto3.client('s3', region_name='eu-central-1')
 
-    X, y = make_classification(n_samples=1000, n_features=4, n_informative=2,
-    	                       n_redundant=0, random_state=0, shuffle=False)
+    # Load data
+    response = S3.get_object(Bucket=test_bucket_name, Key=test_object_name)
+    data = response['Body'].read().decode('utf-8')
+    df = pd.read_csv(StringIO(data))
 
-    clf = RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
+    # transform the data for the model
+    encoder, X = transform_input(df)
+    y = df['ProbabilityOfAcceptance']
 
+    # train model
+    clf = RandomForestRegressor(n_estimators=100, max_depth=2, random_state=0)
     clf.fit(X, y)
-    pickle.dump(clf, open('models/gosat_random_forest', 'w'))
 
+    # upload data to AWS
+    pickle.dump(clf, open('models/gosat_random_forest', 'w'))
+    pickle.dump(encoder, open('models/gosat_random_forest_encoder', 'w'))
+    S3.upload_file('models/gosat_random_forest', 'gosat-models', 'gosat_random_forest')
+    S3.upload_file('models/gosat_random_forest_encoder', 'gosat-models', 'gosat_random_forest_encoder')
 
 if __name__ == '__main__':
     main()

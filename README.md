@@ -52,6 +52,10 @@ Wow: Be able to save money on application fees and could take actions to get adm
 
 ![Architecture Diagram](Docs/Architecture/ArchitectureDiagram.jpg)
 
+### Application
+
+View our application here: http://gosat-application.s3-website-us-east-1.amazonaws.com/
+
 ### Predict API Endpoint
 
 Our models are deployed on AWS and can be accessed through the following endpoint:
@@ -68,9 +72,9 @@ curl -X POST \
     "data": {
         "gpa": 2.0,
         "gender": "female",
-        "transfer": "false",
         "school": "Silver Creek",
         "ethnicity": "Asian American",
+        "campus": "Irvine",
         "sat": 1200,
         "act": 1200
     }

@@ -1,31 +1,45 @@
 import React from 'react';
 import SideNav from '../SideNav/SideNav';
+import Collapsible from 'react-collapsible';
 import { Line, Circle } from 'rc-progress';
 
 
-class Dashboard extends React.Component{
+class Dashboard extends React.Component {
 
-    constructor(){
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    render(){
+  render(){
     return <div>
-        <div class="jumbotron">
-  <h1 class="display-4">Work Harder! You are in the right direction!</h1>
-  <hr class="my-4" />
-        <h1>Your Dream University : Silver Creek</h1>
-        <p>The chances of getting into your Dream University with your current profile is  </p><h1>70%</h1>
+      <div class="jumbotron">
+        <h1 class="display-4">Work Harder! You are in the right direction!</h1>
+        <hr class="my-4" />
+        <h1>Target University : UC Irvine</h1>
+        <h3>Intended major: Animal Science</h3>
+        <h3>Progress with your current profile is: 70%</h3>
+
         <div style={{width:"250px", height:"250px"}}>
-        <Circle percent="70" strokeWidth="4" strokeColor="#03d3fc" />
+          <br></br>
+          <Circle percent="70" strokeWidth="4" strokeColor="#03d3fc" />
         </div>
-        <div>
-            Your Options:
-            
-        </div>
-</div>
+
+        <br></br>
+        <br></br>
+        <h1>Your Application Report</h1>
+        <hr class="my-4" />
+
+        <Collapsible trigger="GPA" classParentString="Report-header">
+          <hr class="my-4" />
+          <p>Your current GPA: 3.5</p>
+          <p>Similar applicants had a: 3.6</p>
+          <p>You need to average 3.8 next semester</p>
+          <p>Deadline: December 11th 2019</p>
+        </Collapsible>
+
+      </div>
     </div>
-}
+  }
 }
 
 export default Dashboard;
