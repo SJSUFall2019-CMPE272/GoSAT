@@ -28,7 +28,7 @@ const variablesJumbo = {
 }
 
 const variablesFeatureImage1 = {
-  image : require("../assets/img/glassboy.png"),
+  image : require("../assets/img/glass-boy.png"),
   title : "Graduate in your dream university",
   description : "When you follow our easy actionalble guide, you can gaurantee your entry in the college you desire.",
   high1 : "",
@@ -36,6 +36,14 @@ const variablesFeatureImage1 = {
   high3 : ""
 }
 
+const variablesFeatureImage2 = {
+  image : require("../assets/img/wizard-boy.png"),
+  title : "It is as simple as swooshing a wand!",
+  description : "Just input your latest scores, your list of desired university, and your extracirricular activity",
+  high1 : "Simple click results",
+  high2 : "Result trained with accurate data",
+  high3 : "Easy input fields"
+}
 
 
 class Landing extends React.Component {
@@ -52,7 +60,9 @@ class Landing extends React.Component {
         <MyNavbar />
 
         <LandingJumbo inputs = {variablesJumbo}/>
+        <LandingFeatureImage inputs = {variablesFeatureImage2} />
         <LandingFeatureImage inputs = {variablesFeatureImage1} />
+
         <LandingFeature />
       </>
     )
