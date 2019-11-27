@@ -47,11 +47,16 @@ def index():
     categorical_values = [[
      data['ethnicity'].encode("utf-8").lower(), 
      data['gender'].encode("utf-8").lower(),
-     data['school'].encode("utf-8").lower(),
+     data['county'].encode("utf-8").lower(),
      data['campus'].encode("utf-8").lower()
     ]]
 
-    non_categorical_values = [[data['gpa'], data['act'], data['sat']]]
+    non_categorical_values = [[
+     data['gpa'],
+     data['scrRead'],
+     data['scrMath'],
+     data['scrWrit']
+    ]]
 
     categoricl_features = encoder.transform(categorical_values).toarray()
 

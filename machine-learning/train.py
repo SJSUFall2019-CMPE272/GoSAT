@@ -15,10 +15,10 @@ def transform_input(df):
     df.applymap(lambda s: s.lower() if type(s) == str else s)
 
     encoder = preprocessing.OneHotEncoder(handle_unknown='ignore')
-    categorical_cols = ['Ethnicity', 'Gender', 'School', 'Campus']
+    categorical_cols = ['Ethnicity', 'Gender', 'County', 'Campus']
     categorical = df[categorical_cols].values
 
-    non_categorical_cols = ['GPA', 'ACT', 'SAT']
+    non_categorical_cols = ['GPA', 'ACT', 'AvgScrRead', 'AvgScrMath', 'AvgScrWrit']
     intermediate = df[non_categorical_cols]
 
     categoricl_transformed = encoder.fit_transform(categorical).toarray()
