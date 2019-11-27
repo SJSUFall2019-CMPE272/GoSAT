@@ -10284,6 +10284,8 @@ hr {
 /*.icon-lg + .icon-text {
   width: calc(100% - $icon-size-lg - 1); }
 */
+.icon-lg + .icon-text {
+  width: calc(100% - $icon-size-lg - 1); }
 
 .icon-sm {
   width: 1.875rem;
@@ -10294,6 +10296,7 @@ hr {
 /*.icon-sm + .icon-text {
   width: calc(100% - $icon-size-sm - 1); }
 */
+
 .icon-shape {
   padding: 12px;
   text-align: center;

@@ -15,7 +15,7 @@ def transform_input(df):
     df.applymap(lambda s: s.lower() if type(s) == str else s)
 
     encoder = preprocessing.OneHotEncoder(handle_unknown='ignore')
-    categorical_cols = ['Ethnicity', 'Gender', 'School', 'Transfer', 'Fall Term']
+    categorical_cols = ['Ethnicity', 'Gender', 'School', 'Campus']
     categorical = df[categorical_cols].values
 
     non_categorical_cols = ['GPA', 'ACT', 'SAT']
@@ -28,7 +28,7 @@ def transform_input(df):
 
 def main():
     # Assign these values before running the program
-    test_bucket_name = 'gosat-sample-data'
+    test_bucket_name = 'gosat-data'
     test_object_name = 'sample-data.csv'
     S3 = boto3.client('s3', region_name='eu-central-1')
 

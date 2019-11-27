@@ -57,7 +57,7 @@ class TopNav extends React.Component{
     else
       nav = <div><Button onClick={this.login}>Login</Button> <Button onClick={this.signUp}>SignUp</Button>
       </div>
-      
+
 
       return (
         <div>
