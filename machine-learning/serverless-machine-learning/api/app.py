@@ -53,6 +53,7 @@ def index():
 
     non_categorical_values = [[
      data['gpa'],
+     data['act'],
      data['scrRead'],
      data['scrMath'],
      data['scrWrit']
