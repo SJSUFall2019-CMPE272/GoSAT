@@ -34,7 +34,7 @@ class LogInK extends React.Component {
                   <img
                     alt="..."
                     className=""
-                    src={require('../assets/img/explorer.png')}
+                    src={require('../assets/img/old-master.png')}
                   />
                 </Col>
                 <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
