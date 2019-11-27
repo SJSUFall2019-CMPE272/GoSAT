@@ -30,7 +30,7 @@ const LandingFeatureImage = (props) => (
       <Col md="6">
         <div className="px-md-5">
           <hr className="line-success" />
-          <h3>{props.inputs.title}</h3>
+          <h3 className="title">{props.inputs.title}</h3>
           <p>
             {props.inputs.description}
           </p>
