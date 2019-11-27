@@ -28,13 +28,15 @@ const variablesJumbo = {
 }
 
 const variablesFeatureImage1 = {
-  image : require("../assets/img/explorer.png"),
+  image : require("../assets/img/glassboy.png"),
   title : "Graduate in your dream university",
   description : "When you follow our easy actionalble guide, you can gaurantee your entry in the college you desire.",
   high1 : "",
   high2 : "",
   high3 : ""
 }
+
+
 
 class Landing extends React.Component {
   componentDidMount(){
