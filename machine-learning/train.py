@@ -39,7 +39,7 @@ def main():
 
     # transform the data for the model
     encoder, X = transform_input(df)
-    y = df['ProbabilityOfAcceptance']
+    y = df['Probability']
 
     # train model
     clf = RandomForestRegressor(n_estimators=100, max_depth=2, random_state=0)
