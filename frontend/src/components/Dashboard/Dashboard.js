@@ -43,10 +43,62 @@ class Dashboard extends React.Component {
       </Col>
     </Row>
     <Row>
-      <Col>
-        
+      <Col lg='4'>
+        <Card>
+          <CardHeader>
+            <img className="img-fluid" src={require('../../assets/img/uc-irvine.jpg')}/>
+          </CardHeader>
+          <CardBody className="text-center">
+                <h3 className="title">UC Irvine</h3>
+                <div className="card-coin">
+                <hr className="line-success hr-center"/>
+                </div>
+                <h1>96%</h1>
+                <p>Your chance of admit</p>
+                <hr className="line-success hr-center"/>
+                <p>Improvement required</p>
+                <h1>4</h1>
+          </CardBody>
+        </Card>
+      </Col>
+      <Col lg='4'>
+        <Card>
+          <CardHeader>
+            <img className="img-fluid" src={require('../../assets/img/uc-la.jpg')}/>
+          </CardHeader>
+          <CardBody className="text-center">
+                <h3 className="title">UC Los Angeles</h3>
+                <div className="card-coin">
+                <hr className="line-success hr-center"/>
+                </div>
+                <h1>67%</h1>
+                <p>Your chance of admit</p>
+                <hr className="line-success hr-center"/>
+                <p>Improvement required</p>
+                <h1>4</h1>
+          </CardBody>
+        </Card>
+      </Col>
+      <Col lg='4'>
+        <Card>
+          <CardHeader>
+            <img className="" src={require('../../assets/img/uc-irvine.jpg')}/>
+          </CardHeader>
+          <CardBody className="text-center">
+                <h3 className="title">UC Brekeley</h3>
+                <div className="card-coin">
+                <hr className="line-success hr-center"/>
+                </div>
+                <h1>34%</h1>
+                <p>Your chance of admit</p>
+                <hr className="line-success hr-center"/>
+                <p>Improvement required</p>
+                <h1>4</h1>
+          </CardBody>
+        </Card>
       </Col>
     </Row>
+
   </Container>
 </>
   );
