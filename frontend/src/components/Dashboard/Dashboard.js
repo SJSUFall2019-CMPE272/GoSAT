@@ -2,8 +2,8 @@ import React from 'react';
 import SideNav from '../SideNav/SideNav';
 import Collapsible from 'react-collapsible';
 import { Line, Circle } from 'rc-progress';
-
-
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 import {
   Button,
   Card,
@@ -54,7 +54,15 @@ class Dashboard extends React.Component {
                 <div className="card-coin">
                 <hr className="line-success hr-center"/>
                 </div>
-                <h1>96%</h1>
+                <h1>
+                  <CountUp end={75} suffix={'%'} duration={1.5} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                  </CountUp>
+                </h1>
                 <p>Your chance of admit</p>
                 <hr className="line-success hr-center"/>
                 <p>Acceptance Rate</p>
@@ -72,7 +80,15 @@ class Dashboard extends React.Component {
                 <div className="card-coin">
                 <hr className="line-success hr-center"/>
                 </div>
-                <h1>67%</h1>
+                <h1>
+                  <CountUp end={67} suffix={'%'} duration={1.5} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                  </CountUp>
+                </h1>
                 <p>Your chance of admit</p>
                 <hr className="line-success hr-center"/>
                 <p>Acceptance Rate</p>
@@ -90,7 +106,15 @@ class Dashboard extends React.Component {
                 <div className="card-coin">
                 <hr className="line-success hr-center"/>
                 </div>
-                <h1>34%</h1>
+                <h1>
+                  <CountUp end={34} suffix={'%'} duration={1.5} redraw={true}>
+                      {({ countUpRef, start }) => (
+                          <VisibilitySensor onChange={start} delayedCall>
+                              <span ref={countUpRef} />
+                          </VisibilitySensor>
+                      )}
+                  </CountUp>
+                </h1>
                 <p>Your chance of admit</p>
                 <hr className="line-success hr-center"/>
                 <p>Acceptance Rate</p>
@@ -152,6 +176,7 @@ class Dashboard extends React.Component {
       </Col>
     </Row>
   </Container>
+
 </>
   );
   }
