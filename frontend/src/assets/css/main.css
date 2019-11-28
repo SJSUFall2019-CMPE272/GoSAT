@@ -15314,3 +15314,35 @@ td.rdtYear:hover {
   color: #1d8cf8; }
   .blockquote.blockquote-info small {
     color: #1d8cf8; }
+
+
+.header-image {
+
+  height: 75vh;
+  min-height : 75vh;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url('../../assets/img/group-study.svg');
+  /* linear-gradient(
+     rgba(0, 0, 0, 0.1),
+     rgba(0, 0, 0, 0.3)
+   ), */
+  -moz-box-shadow:    inset 0 0 100px #000000;
+   -webkit-box-shadow: inset 0 0 100px #000000;
+   box-shadow:         inset 0 0 100px #000000;
+
+}
+
+.hr-center{
+  width: 50%;
+  margin-left: 25% !important;
+}
+
+.dash-card-image{
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+}
