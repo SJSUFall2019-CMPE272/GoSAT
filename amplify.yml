@@ -7,7 +7,7 @@ frontend:
         - ls
     # IMPORTANT - Please verify your build commands
     build:
-      commands: yarn run build
+      commands:
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: frontend/build
