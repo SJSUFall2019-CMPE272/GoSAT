@@ -19,7 +19,10 @@ import {
   Table
 } from "reactstrap";
 
+import DashboardButtonCard from "../DashboardUpdateCard/DashboardButtonCard";
+
 import MyNavbar from "../Navbars/MyNavbar";
+import Footer from "../Footer/Footer";
 
 
 
@@ -41,6 +44,7 @@ class Dashboard extends React.Component {
         <h3 className="title d-none d-sm-block">
           Get in-depth details and fine tune your dream here.
         </h3>
+        <hr className="line-success hr-center"/>
       </Col>
     </Row>
     <Row>
@@ -175,9 +179,24 @@ class Dashboard extends React.Component {
         </Table>
       </Col>
     </Row>
+    <Row>
+      <Col>
+        <h1 className="title text-center">Current Scores</h1>
+        <hr className="line-success hr-center"/>
+      </Col>
+    </Row>
+    <Row>
+      <DashboardButtonCard title = "3.6" bodyText="GPA" buttonText="Update"/>
+      <DashboardButtonCard title = "1462" bodyText="SAT" buttonText="Update"/>
+      <DashboardButtonCard title = "32" bodyText="ACT" buttonText="Update"/>
+      <DashboardButtonCard title = "12" bodyText="A-G courses" buttonText="Update"/>
+      <DashboardButtonCard title = "5" bodyText="H courses" buttonText="Update"/>
+      
+    </Row>
   </Container>
-
+<Footer/>
 </>
+
   );
   }
 }
