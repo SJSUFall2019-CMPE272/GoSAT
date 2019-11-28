@@ -15,7 +15,8 @@ import {
   ListGroup,
   Container,
   Row,
-  Col
+  Col,
+  Table
 } from "reactstrap";
 
 import MyNavbar from "../Navbars/MyNavbar";
@@ -46,7 +47,7 @@ class Dashboard extends React.Component {
       <Col lg='4'>
         <Card>
           <CardHeader>
-            <img className="img-fluid" src={require('../../assets/img/uc-irvine.jpg')}/>
+            <img className="img-fluid dash-card-image" src={require('../../assets/img/uc-irvine.jpg')}/>
           </CardHeader>
           <CardBody className="text-center">
                 <h3 className="title">UC Irvine</h3>
@@ -56,15 +57,15 @@ class Dashboard extends React.Component {
                 <h1>96%</h1>
                 <p>Your chance of admit</p>
                 <hr className="line-success hr-center"/>
-                <p>Improvement required</p>
-                <h1>4</h1>
+                <p>Acceptance Rate</p>
+                <h1>75%</h1>
           </CardBody>
         </Card>
       </Col>
       <Col lg='4'>
         <Card>
           <CardHeader>
-            <img className="img-fluid" src={require('../../assets/img/uc-la.jpg')}/>
+            <img className="img-fluid dash-card-image" src={require('../../assets/img/uc-la.jpg')}/>
           </CardHeader>
           <CardBody className="text-center">
                 <h3 className="title">UC Los Angeles</h3>
@@ -74,15 +75,15 @@ class Dashboard extends React.Component {
                 <h1>67%</h1>
                 <p>Your chance of admit</p>
                 <hr className="line-success hr-center"/>
-                <p>Improvement required</p>
-                <h1>4</h1>
+                <p>Acceptance Rate</p>
+                <h1>42 %</h1>
           </CardBody>
         </Card>
       </Col>
       <Col lg='4'>
         <Card>
           <CardHeader>
-            <img className="" src={require('../../assets/img/uc-irvine.jpg')}/>
+            <img className="img-fluid dash-card-image" src={require('../../assets/img/uc-berkeley.jpg')}/>
           </CardHeader>
           <CardBody className="text-center">
                 <h3 className="title">UC Brekeley</h3>
@@ -92,13 +93,64 @@ class Dashboard extends React.Component {
                 <h1>34%</h1>
                 <p>Your chance of admit</p>
                 <hr className="line-success hr-center"/>
-                <p>Improvement required</p>
-                <h1>4</h1>
+                <p>Acceptance Rate</p>
+                <h1>12 %</h1>
           </CardBody>
         </Card>
       </Col>
     </Row>
-
+    <Row>
+      <Col>
+        <Table responsive>
+          <thead>
+            <tr>
+            <th> # </th>
+            <th> University Name </th>
+            <th> Your Chance of admit </th>
+            <th> Acceptance Rate </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>UC Merced</td>
+              <td>45 %</td>
+              <td>45 %</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>UC Santa Cruz</td>
+              <td>45 %</td>
+              <td>45 %</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </Table>
+      </Col>
+    </Row>
   </Container>
 </>
   );

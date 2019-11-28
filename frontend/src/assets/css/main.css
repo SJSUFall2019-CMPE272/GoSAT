@@ -15335,3 +15335,9 @@ td.rdtYear:hover {
   width: 50%;
   margin-left: 25% !important;
 }
+
+.dash-card-image{
+  width: 100%;
+  height: 12vw;
+  object-fit: cover;
+}
