@@ -10,12 +10,27 @@ import pandas as pd
 
 # In[ ]:
 
+def calculate_admittance_proba(df, category, year):
+    df = df[df['Fall Term'] == year].drop(['Fall Term'], axis=1)
+    
+    # divide admitted by applied to get probability
+    admitted = df[df['Status'] == 'Adm'].drop(['Status'], axis=1)
+    admitted = admitted.groupby(['County', category]).sum().reset_index()
+    applied = df[df['Status'] == 'App'].drop(['Status'], axis=1)
+    applied = applied.groupby(['County', category]).sum().reset_index()
+    
+    result = pd.merge(admitted, applied, on=['County', category])
+    result['Probability'] = result['Count_x'] / result['Count_y']
+    return result.drop(['Count_x', 'Count_y'], axis=1)
+
+
+# In[ ]:
+
 # import data by ethnicity
 ethnicities = pd.read_csv('../data/fr-applicants-by-ethnicity.csv')
-ethnicities = ethnicities.rename(columns={'Count': 'Status', 'Uad Uc Ethn 6 Cat': 'Ethnicity', 'Pivot Field Values': 'Count'})
-ethnicities = ethnicities[['Status', 'Fall Term', 'School', 'Ethnicity', 'Count']]
-ethnicities = ethnicities[ethnicities['Status'] == 'Adm']
-ethnicities.drop(['Status'], axis=1, inplace=True)
+ethnicities = ethnicities.rename(columns={'County/State/ Territory': 'County', 'Count': 'Status', 'Uad Uc Ethn 6 Cat': 'Ethnicity', 'Pivot Field Values': 'Count'})
+ethnicities = ethnicities[['Status', 'Fall Term', 'County', 'Ethnicity', 'Count']]
+ethnicities = calculate_admittance_proba(ethnicities, 'Ethnicity', 2016)
 
 
 # In[ ]:
@@ -32,10 +47,9 @@ ethnicities.size
 
 # import data by gender
 genders = pd.read_csv('../data/fr-applicants-by-gender.csv')
-genders = genders.rename(columns={'Count': 'Status', 'Pivot Field Values': 'Count'})
-genders = genders[['Status', 'Fall Term', 'School', 'Gender', 'Count']]
-genders = genders[genders['Status'] == 'Adm']
-genders.drop(['Status'], axis=1, inplace=True)
+genders = genders.rename(columns={'Count': 'Status', 'Pivot Field Values': 'Count', 'County/State/ Territory': 'County'})
+genders = genders[['Status', 'Fall Term', 'County', 'Gender', 'Count']]
+genders = calculate_admittance_proba(genders, 'Gender', 2016)
 
 
 # In[ ]:
@@ -55,18 +69,25 @@ gpas = pd.read_csv('../data/fr-applicants-by-gpa.csv')
 # filter any rows that do not have a GPA or school
 gpas = gpas[pd.notnull(gpas['School Name'])]
 gpas = gpas[pd.notnull(gpas['Measure Values'])]
-# only keep admitted applicant data
-gpas = gpas[gpas['Measure Names'] == 'Adm GPA']
 # rename columns
 gpas = gpas.rename(columns={'Measure Values': 'GPA', 'School Name': 'School'})
-gpas = gpas[['Fall Term', 'School', 'GPA', 'Campus']]
 
+gpas = gpas[gpas['Fall Term'] == 2016].drop(['Fall Term'], axis=1)
+    
+# divide admitted by applied to get probability
+admitted = gpas[gpas['Measure Names'] == 'Adm GPA'].drop(['Measure Names'], axis=1)
+admitted = admitted.groupby(['County', 'Campus']).count().reset_index()
+applied = gpas[gpas['Measure Names'] == 'App GPA'].drop(['Measure Names'], axis=1)
+applied = applied.groupby(['County', 'Campus']).count().reset_index()
 
-# In[ ]:
+result = pd.merge(admitted, applied, on=['County', 'Campus'])
+result = result[['County', 'Campus', 'Calculation1_x', 'Calculation1_y']]
+result['Probability'] = result['Calculation1_x'] / result['Calculation1_y']
+result = result.drop(['Calculation1_x', 'Calculation1_y'], axis=1)
+
+gpas = pd.merge(result, gpas, on=['Campus', 'County'])[['County', 'Campus', 'GPA', 'Probability']].drop_duplicates()
 
 len(gpas)
-
-
 # In[ ]:
 
 gpas.head()
@@ -74,7 +95,33 @@ gpas.head()
 
 # In[ ]:
 
-join_cols = ['School', 'Fall Term']
+sat_scores = pd.read_csv('../data/sat-report-2015-2016.csv')
+# columns to keep
+sat_scores = sat_scores[['AvgScrRead', 'AvgScrMath', 'AvgScrWrit', 'cname']]
+# rename for join
+sat_scores = sat_scores.rename(columns={'cname': 'County'})
+# drop any rows that do not have a school
+sat_scores = sat_scores[pd.notnull(sat_scores['County'])]
+# convert score cols to ints
+sat_scores['AvgScrRead'] = pd.to_numeric(sat_scores['AvgScrRead'], errors=coerce)
+sat_scores['AvgScrMath'] = pd.to_numeric(sat_scores['AvgScrMath'], errors=coerce)
+sat_scores['AvgScrWrit'] = pd.to_numeric(sat_scores['AvgScrWrit'], errors=coerce)
+# drop null cols
+sat_scores = sat_scores[pd.notnull(sat_scores['AvgScrRead'])]
+sat_scores = sat_scores[pd.notnull(sat_scores['AvgScrMath'])]
+sat_scores = sat_scores[pd.notnull(sat_scores['AvgScrWrit'])]
+sat_scores = sat_scores.groupby('County').mean().reset_index()
+sat_scores.head()
+
+
+# In[ ]:
+
+len(sat_scores)
+
+
+# In[ ]:
+
+join_cols = ['County']
 
 
 # In[ ]:
@@ -82,9 +129,9 @@ join_cols = ['School', 'Fall Term']
 # join the datasets
 result = pd.merge(ethnicities, genders, on=join_cols)
 result = pd.merge(result, gpas, on=join_cols).drop_duplicates()
-result['NumStudentsAccepted'] = result['Count_x'] + result['Count_y']
-result.drop(['Count_x', 'Count_y'], axis=1, inplace=True)
-result = result[result['Fall Term'] == 2016]
+result = pd.merge(result, sat_scores, on=join_cols).drop_duplicates()
+result['Probability'] = (result['Probability_x'] + result['Probability_y'] + result['Probability']) / 3
+result.drop(['Probability_x', 'Probability_y'], axis=1, inplace=True)
 result.drop_duplicates(inplace=True)
 
 
@@ -105,59 +152,59 @@ result.describe()
 
 # In[ ]:
 
-counts = result[['Fall Term', 'NumStudentsAccepted', 'Campus']].groupby(['Fall Term', 'Campus']).count().reset_index()
-counts.rename(columns={'NumStudentsAccepted': 'TotalStudentsAcceptedInTerm'}, inplace=True)
+#counts = result[['NumStudentsAccepted', 'Campus', 'County']].groupby(['Campus', 'County']).sum().reset_index()
+#counts.rename(columns={'NumStudentsAccepted': 'TotalStudentsAcceptedInTerm'}, inplace=True)
+#counts.drop(['County'], axis=1, inplace=True)
 
 
 # In[ ]:
 
-counts.head()
+#counts.head()
 
 
 # In[ ]:
 
 # merge with dataset
-combined = pd.merge(result, counts, on=['Fall Term', 'Campus'])
-combined.head()
+#combined = pd.merge(result, counts, on=['Campus'])
+#combined.head()
 
 
 # In[ ]:
 
-combined.size
+#combined.size
 
 
 # In[ ]:
 
-combined.describe()
+#combined.describe()
 
 
 # In[ ]:
 
 # caluclate the predicted column
-combined['ProbabilityOfAcceptance'] = (combined['NumStudentsAccepted'] / combined['TotalStudentsAcceptedInTerm']) * 100
-combined.drop(['NumStudentsAccepted', 'TotalStudentsAcceptedInTerm', 'Fall Term'], axis=1, inplace=True)
+#combined['ProbabilityOfAcceptance'] = (combined['NumStudentsAccepted'] / combined['TotalStudentsAcceptedInTerm']) * 100
+#combined.drop(['NumStudentsAccepted', 'TotalStudentsAcceptedInTerm'], axis=1, inplace=True)
 
 
 # In[ ]:
 
-combined.head()
+#combined.head()
 
 
 # In[ ]:
 
 # fill these columns in later
-combined['SAT'] = 1200
-combined['ACT'] = 0.0
+result['ACT'] = 0.0
 
 
 # In[ ]:
 
-combined.head().to_csv('../data/sample-data.csv')
+result.head().to_csv('../data/sample-data.csv')
 
 
 # In[ ]:
 
-combined.describe()
+result.describe()
 
 
 # In[ ]:
