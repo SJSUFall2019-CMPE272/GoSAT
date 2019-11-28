@@ -19,7 +19,8 @@ import {
   Table
 } from "reactstrap";
 
-import DashboardButtonCard from "../DashboardUpdateCard/DashboardButtonCard";
+import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
+import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
 
 import MyNavbar from "../Navbars/MyNavbar";
 import Footer from "../Footer/Footer";
@@ -48,84 +49,24 @@ class Dashboard extends React.Component {
       </Col>
     </Row>
     <Row>
-      <Col lg='4'>
-        <Card>
-          <CardHeader>
-            <img className="img-fluid dash-card-image" src={require('../../assets/img/uc-irvine.jpg')}/>
-          </CardHeader>
-          <CardBody className="text-center">
-                <h3 className="title">UC Irvine</h3>
-                <div className="card-coin">
-                <hr className="line-success hr-center"/>
-                </div>
-                <h1>
-                  <CountUp end={75} suffix={'%'} duration={1.5} redraw={true}>
-                      {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                              <span ref={countUpRef} />
-                          </VisibilitySensor>
-                      )}
-                  </CountUp>
-                </h1>
-                <p>Your chance of admit</p>
-                <hr className="line-success hr-center"/>
-                <p>Acceptance Rate</p>
-                <h1>75%</h1>
-          </CardBody>
-        </Card>
-      </Col>
-      <Col lg='4'>
-        <Card>
-          <CardHeader>
-            <img className="img-fluid dash-card-image" src={require('../../assets/img/uc-la.jpg')}/>
-          </CardHeader>
-          <CardBody className="text-center">
-                <h3 className="title">UC Los Angeles</h3>
-                <div className="card-coin">
-                <hr className="line-success hr-center"/>
-                </div>
-                <h1>
-                  <CountUp end={67} suffix={'%'} duration={1.5} redraw={true}>
-                      {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                              <span ref={countUpRef} />
-                          </VisibilitySensor>
-                      )}
-                  </CountUp>
-                </h1>
-                <p>Your chance of admit</p>
-                <hr className="line-success hr-center"/>
-                <p>Acceptance Rate</p>
-                <h1>42 %</h1>
-          </CardBody>
-        </Card>
-      </Col>
-      <Col lg='4'>
-        <Card>
-          <CardHeader>
-            <img className="img-fluid dash-card-image" src={require('../../assets/img/uc-berkeley.jpg')}/>
-          </CardHeader>
-          <CardBody className="text-center">
-                <h3 className="title">UC Brekeley</h3>
-                <div className="card-coin">
-                <hr className="line-success hr-center"/>
-                </div>
-                <h1>
-                  <CountUp end={34} suffix={'%'} duration={1.5} redraw={true}>
-                      {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                              <span ref={countUpRef} />
-                          </VisibilitySensor>
-                      )}
-                  </CountUp>
-                </h1>
-                <p>Your chance of admit</p>
-                <hr className="line-success hr-center"/>
-                <p>Acceptance Rate</p>
-                <h1>12 %</h1>
-          </CardBody>
-        </Card>
-      </Col>
+      <DashboardPictureCard
+        title={"UC Irvine"}
+        imagePath={require("../../assets/img/uc-irvine.jpg")}
+        chancePercentage={75}
+        acceptance={75}
+      />
+      <DashboardPictureCard
+        title={"UC Los Angeles"}
+        imagePath={require("../../assets/img/uc-la.jpg")}
+        chancePercentage={67}
+        acceptance={42}
+      />
+      <DashboardPictureCard
+        title={"UC Berkeley"}
+        imagePath={require("../../assets/img/uc-berkeley.jpg")}
+        chancePercentage={34}
+        acceptance={12}
+      />
     </Row>
     <Row>
       <Col>
@@ -191,7 +132,7 @@ class Dashboard extends React.Component {
       <DashboardButtonCard title = "32" bodyText="ACT" buttonText="Update"/>
       <DashboardButtonCard title = "12" bodyText="A-G courses" buttonText="Update"/>
       <DashboardButtonCard title = "5" bodyText="H courses" buttonText="Update"/>
-      
+
     </Row>
   </Container>
 <Footer/>
