@@ -3,25 +3,30 @@ const express = require('express');
 
 const app = express();
 
-const port = 3003;
+const port = 3005;
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 var cors = require('cors');
+
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb+srv://goSAT:getintouc@gosat-3y8s1.mongodb.net/test?retryWrites=true&w=majority', function(err,res){
+    if(err){
+        console.log(err);
+    }
+    else{
+        console.log("connected to db!");
+    }
+});
 
 var routes = require('./routes/index').routes;
 
 var bodyParser = require('body-parser');
 
-var passport = require('passport');
-
-require('./config/passport')(passport);
-
-const proxy = require('http-proxy-middleware');
-
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use(passport.initialize());
 
 app.use(cors({ origin: /*'http://3.134.117.20:3001'*/'http://localhost:3000', credentials: true }));
 

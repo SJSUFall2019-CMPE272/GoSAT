@@ -4,7 +4,7 @@ import {
   CardTitle, Button, FormGroup
 } from 'reactstrap';
 import { AvForm, AvField,} from 'availity-reactstrap-validation';
-
+import {baseURL} from './../../config/config'
 var md5 = require('md5');
 
 
@@ -31,9 +31,21 @@ class SignUp extends React.Component {
     data.append('password', this.state.password);
     data.append('firstName', this.state.firstName);
     data.append('lastName', this.state.lastName);
-    data.append('displayPic', this.state.displayPic);
-    data.append('phone', this.state.phone);
-    console.log("data is ",JSON.stringify(data));
+    fetch(baseURL+'/api/auth/signUp', {
+      method: 'POST',
+      body: data
+    })
+      .then((response) => {
+        return response.json();
+      }).then((jsonRes) => {
+        if (jsonRes.success == false) {
+          console.log("Couldnt signUp");
+          this.props.signUpFailureDispatch();
+        } else {
+            this.props.signUpSuccessDispatch();
+            this.props.history.push("/login");
+        }
+      })
   }
 
   handleInvalidSubmit = (event, errors, values) => {
@@ -41,19 +53,10 @@ class SignUp extends React.Component {
   }
 
   changeHandler(event) {
-    console.log(event.target.value);
     let key = event.target.name;
     let value = event.target.value;
-    console.log("key is ", key);
     this.setState({ [key]: value });
-    console.log("state is ", this.state);
   }
-
-  fileHandler = (event) => {
-    this.setState({ displayPic: event.target.files[0] });
-
-  }
-
 
   handlePasswordChange = (event) => {
     var pword = md5(event.target.value);
@@ -79,10 +82,6 @@ class SignUp extends React.Component {
             <FormGroup>
               <AvField type="password" name="password" id="password" label="Password:" onChange={this.handlePasswordChange} placeholder="password" required />
             </FormGroup>
-            <FormGroup>
-              <AvField type="phone" name="phone" id="phone" label="Phone:" onChange={this.changeHandler} placeholder="phone" required />
-            </FormGroup>
-            <AvField type='file' id='multi' name="displayPic" label="Upload display picture" onChange={this.fileHandler} accept="image/*" required />
             <Button type="submit" >Submit</Button>
           </AvForm>
         </CardBody>
