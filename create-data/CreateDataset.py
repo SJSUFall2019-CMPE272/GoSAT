@@ -215,8 +215,23 @@ S3.upload_file('../data/sample-data.csv', 'gosat-data', 'sample-data.csv')
 
 # In[ ]:
 
-for campus in combined['Campus'].unique():
-    print(campus)
+result.head()
+
+
+# In[ ]:
+
+result = result[['County', 'Ethnicity', 'Gender', 'Campus']].drop_duplicates()
+result.to_csv('../data/uc-campus-categorical-data.csv')
+
+
+# In[ ]:
+
+result[['County', 'Gender', 'Campus', 'Ethnicity']].head()
+
+
+# In[ ]:
+
+len(result)
 
 
 # In[ ]:
