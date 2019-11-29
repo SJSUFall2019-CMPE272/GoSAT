@@ -54,7 +54,14 @@ Wow: Be able to save money on application fees and could take actions to get adm
 
 ### Application
 
-View our application here: http://gosat-application.s3-website-us-east-1.amazonaws.com/
+View our application here: https://master.d12jzfklb8ijc4.amplifyapp.com/dashboard
+
+### Building the Application
+
+```
+cd frontend
+yarn run build
+```
 
 ### Predict API Endpoint
 
