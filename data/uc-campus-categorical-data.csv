@@ -1,0 +1,151 @@
+,County,Ethnicity,Gender,Campus
+0,Alameda,African American,All,Berkeley
+129,Alameda,African American,All,Davis
+285,Alameda,African American,All,Irvine
+401,Alameda,African American,All,Los Angeles
+513,Alameda,African American,All,Merced
+617,Alameda,African American,All,Riverside
+731,Alameda,African American,All,San Diego
+848,Alameda,African American,All,Santa Barbara
+966,Alameda,African American,All,Santa Cruz
+1112,Alameda,African American,All,Universitywide
+1308,Alameda,African American,Female,Berkeley
+1437,Alameda,African American,Female,Davis
+1593,Alameda,African American,Female,Irvine
+1709,Alameda,African American,Female,Los Angeles
+1821,Alameda,African American,Female,Merced
+1925,Alameda,African American,Female,Riverside
+2039,Alameda,African American,Female,San Diego
+2156,Alameda,African American,Female,Santa Barbara
+2274,Alameda,African American,Female,Santa Cruz
+2420,Alameda,African American,Female,Universitywide
+2616,Alameda,African American,Male,Berkeley
+2745,Alameda,African American,Male,Davis
+2901,Alameda,African American,Male,Irvine
+3017,Alameda,African American,Male,Los Angeles
+3129,Alameda,African American,Male,Merced
+3233,Alameda,African American,Male,Riverside
+3347,Alameda,African American,Male,San Diego
+3464,Alameda,African American,Male,Santa Barbara
+3582,Alameda,African American,Male,Santa Cruz
+3728,Alameda,African American,Male,Universitywide
+3924,Alameda,All,All,Berkeley
+4053,Alameda,All,All,Davis
+4209,Alameda,All,All,Irvine
+4325,Alameda,All,All,Los Angeles
+4437,Alameda,All,All,Merced
+4541,Alameda,All,All,Riverside
+4655,Alameda,All,All,San Diego
+4772,Alameda,All,All,Santa Barbara
+4890,Alameda,All,All,Santa Cruz
+5036,Alameda,All,All,Universitywide
+5232,Alameda,All,Female,Berkeley
+5361,Alameda,All,Female,Davis
+5517,Alameda,All,Female,Irvine
+5633,Alameda,All,Female,Los Angeles
+5745,Alameda,All,Female,Merced
+5849,Alameda,All,Female,Riverside
+5963,Alameda,All,Female,San Diego
+6080,Alameda,All,Female,Santa Barbara
+6198,Alameda,All,Female,Santa Cruz
+6344,Alameda,All,Female,Universitywide
+6540,Alameda,All,Male,Berkeley
+6669,Alameda,All,Male,Davis
+6825,Alameda,All,Male,Irvine
+6941,Alameda,All,Male,Los Angeles
+7053,Alameda,All,Male,Merced
+7157,Alameda,All,Male,Riverside
+7271,Alameda,All,Male,San Diego
+7388,Alameda,All,Male,Santa Barbara
+7506,Alameda,All,Male,Santa Cruz
+7652,Alameda,All,Male,Universitywide
+7848,Alameda,Asian,All,Berkeley
+7977,Alameda,Asian,All,Davis
+8133,Alameda,Asian,All,Irvine
+8249,Alameda,Asian,All,Los Angeles
+8361,Alameda,Asian,All,Merced
+8465,Alameda,Asian,All,Riverside
+8579,Alameda,Asian,All,San Diego
+8696,Alameda,Asian,All,Santa Barbara
+8814,Alameda,Asian,All,Santa Cruz
+8960,Alameda,Asian,All,Universitywide
+9156,Alameda,Asian,Female,Berkeley
+9285,Alameda,Asian,Female,Davis
+9441,Alameda,Asian,Female,Irvine
+9557,Alameda,Asian,Female,Los Angeles
+9669,Alameda,Asian,Female,Merced
+9773,Alameda,Asian,Female,Riverside
+9887,Alameda,Asian,Female,San Diego
+10004,Alameda,Asian,Female,Santa Barbara
+10122,Alameda,Asian,Female,Santa Cruz
+10268,Alameda,Asian,Female,Universitywide
+10464,Alameda,Asian,Male,Berkeley
+10593,Alameda,Asian,Male,Davis
+10749,Alameda,Asian,Male,Irvine
+10865,Alameda,Asian,Male,Los Angeles
+10977,Alameda,Asian,Male,Merced
+11081,Alameda,Asian,Male,Riverside
+11195,Alameda,Asian,Male,San Diego
+11312,Alameda,Asian,Male,Santa Barbara
+11430,Alameda,Asian,Male,Santa Cruz
+11576,Alameda,Asian,Male,Universitywide
+11772,Alameda,Hispanic/ Latino,All,Berkeley
+11901,Alameda,Hispanic/ Latino,All,Davis
+12057,Alameda,Hispanic/ Latino,All,Irvine
+12173,Alameda,Hispanic/ Latino,All,Los Angeles
+12285,Alameda,Hispanic/ Latino,All,Merced
+12389,Alameda,Hispanic/ Latino,All,Riverside
+12503,Alameda,Hispanic/ Latino,All,San Diego
+12620,Alameda,Hispanic/ Latino,All,Santa Barbara
+12738,Alameda,Hispanic/ Latino,All,Santa Cruz
+12884,Alameda,Hispanic/ Latino,All,Universitywide
+13080,Alameda,Hispanic/ Latino,Female,Berkeley
+13209,Alameda,Hispanic/ Latino,Female,Davis
+13365,Alameda,Hispanic/ Latino,Female,Irvine
+13481,Alameda,Hispanic/ Latino,Female,Los Angeles
+13593,Alameda,Hispanic/ Latino,Female,Merced
+13697,Alameda,Hispanic/ Latino,Female,Riverside
+13811,Alameda,Hispanic/ Latino,Female,San Diego
+13928,Alameda,Hispanic/ Latino,Female,Santa Barbara
+14046,Alameda,Hispanic/ Latino,Female,Santa Cruz
+14192,Alameda,Hispanic/ Latino,Female,Universitywide
+14388,Alameda,Hispanic/ Latino,Male,Berkeley
+14517,Alameda,Hispanic/ Latino,Male,Davis
+14673,Alameda,Hispanic/ Latino,Male,Irvine
+14789,Alameda,Hispanic/ Latino,Male,Los Angeles
+14901,Alameda,Hispanic/ Latino,Male,Merced
+15005,Alameda,Hispanic/ Latino,Male,Riverside
+15119,Alameda,Hispanic/ Latino,Male,San Diego
+15236,Alameda,Hispanic/ Latino,Male,Santa Barbara
+15354,Alameda,Hispanic/ Latino,Male,Santa Cruz
+15500,Alameda,Hispanic/ Latino,Male,Universitywide
+15696,Alameda,White,All,Berkeley
+15825,Alameda,White,All,Davis
+15981,Alameda,White,All,Irvine
+16097,Alameda,White,All,Los Angeles
+16209,Alameda,White,All,Merced
+16313,Alameda,White,All,Riverside
+16427,Alameda,White,All,San Diego
+16544,Alameda,White,All,Santa Barbara
+16662,Alameda,White,All,Santa Cruz
+16808,Alameda,White,All,Universitywide
+17004,Alameda,White,Female,Berkeley
+17133,Alameda,White,Female,Davis
+17289,Alameda,White,Female,Irvine
+17405,Alameda,White,Female,Los Angeles
+17517,Alameda,White,Female,Merced
+17621,Alameda,White,Female,Riverside
+17735,Alameda,White,Female,San Diego
+17852,Alameda,White,Female,Santa Barbara
+17970,Alameda,White,Female,Santa Cruz
+18116,Alameda,White,Female,Universitywide
+18312,Alameda,White,Male,Berkeley
+18441,Alameda,White,Male,Davis
+18597,Alameda,White,Male,Irvine
+18713,Alameda,White,Male,Los Angeles
+18825,Alameda,White,Male,Merced
+18929,Alameda,White,Male,Riverside
+19043,Alameda,White,Male,San Diego
+19160,Alameda,White,Male,Santa Barbara
+19278,Alameda,White,Male,Santa Cruz
+19424,Alameda,White,Male,Universitywide
