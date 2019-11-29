@@ -2,6 +2,29 @@ import React from 'react';
 import SideNav from '../SideNav/SideNav';
 import Collapsible from 'react-collapsible';
 import { Line, Circle } from 'rc-progress';
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  ListGroupItem,
+  ListGroup,
+  Container,
+  Row,
+  Col,
+  Table
+} from "reactstrap";
+
+import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
+import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
+
+import MyNavbar from "../Navbars/MyNavbar";
+import Footer from "../Footer/Footer";
+
 
 
 class Dashboard extends React.Component {
@@ -11,34 +34,111 @@ class Dashboard extends React.Component {
   }
 
   render(){
-    return <div>
-      <div class="jumbotron">
-        <h1 class="display-4">Work Harder! You are in the right direction!</h1>
-        <hr class="my-4" />
-        <h1>Target University : UC Irvine</h1>
-        <h3>Intended major: Animal Science</h3>
-        <h3>Progress with your current profile is: 70%</h3>
+    return (
+<>
+  <MyNavbar />
+  <div className= "header-image"/>
+  <Container>
+    <Row>
+      <Col className="text-center">
+        <h1 className="title text-danger">GoSAT Dashboard</h1>
+        <h3 className="title d-none d-sm-block">
+          Get in-depth details and fine tune your dream here.
+        </h3>
+        <hr className="line-success hr-center"/>
+      </Col>
+    </Row>
+    <Row>
+      <DashboardPictureCard
+        title={"UC Irvine"}
+        imagePath={require("../../assets/img/uc-irvine.jpg")}
+        chancePercentage={75}
+        acceptance={75}
+      />
+      <DashboardPictureCard
+        title={"UC Los Angeles"}
+        imagePath={require("../../assets/img/uc-la.jpg")}
+        chancePercentage={67}
+        acceptance={42}
+      />
+      <DashboardPictureCard
+        title={"UC Berkeley"}
+        imagePath={require("../../assets/img/uc-berkeley.jpg")}
+        chancePercentage={34}
+        acceptance={12}
+      />
+    </Row>
+    <Row>
+      <Col>
+        <Table responsive>
+          <thead>
+            <tr>
+            <th> # </th>
+            <th> University Name </th>
+            <th> Your Chance of admit </th>
+            <th> Acceptance Rate </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>UC Merced</td>
+              <td>45 %</td>
+              <td>45 %</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>UC Santa Cruz</td>
+              <td>45 %</td>
+              <td>45 %</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </Table>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <h1 className="title text-center">Current Scores</h1>
+        <hr className="line-success hr-center"/>
+      </Col>
+    </Row>
+    <Row>
+      <DashboardButtonCard title = "3.6" bodyText="GPA" buttonText="Update"/>
+      <DashboardButtonCard title = "1462" bodyText="SAT" buttonText="Update"/>
+      <DashboardButtonCard title = "32" bodyText="ACT" buttonText="Update"/>
+      <DashboardButtonCard title = "12" bodyText="A-G courses" buttonText="Update"/>
+      <DashboardButtonCard title = "5" bodyText="H courses" buttonText="Update"/>
 
-        <div style={{width:"250px", height:"250px"}}>
-          <br></br>
-          <Circle percent="70" strokeWidth="4" strokeColor="#03d3fc" />
-        </div>
+    </Row>
+  </Container>
+<Footer/>
+</>
 
-        <br></br>
-        <br></br>
-        <h1>Your Application Report</h1>
-        <hr class="my-4" />
-
-        <Collapsible trigger="GPA" classParentString="Report-header">
-          <hr class="my-4" />
-          <p>Your current GPA: 3.5</p>
-          <p>Similar applicants had a: 3.6</p>
-          <p>You need to average 3.8 next semester</p>
-          <p>Deadline: December 11th 2019</p>
-        </Collapsible>
-
-      </div>
-    </div>
+  );
   }
 }
 
