@@ -14,54 +14,80 @@ import {
   Col,
   Collapse
 } from "reactstrap";
-
+import {connect} from 'react-redux';
 import RecommendationCard from "./../RecommendationCard/RecommendationCard"
 
 
-const RecommendationsCardCarousal = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+class RecommendationsCardCarousal extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      show : false
+    }
+  }
 
-    const toggle = () => setIsOpen(!isOpen);
+  toggle = () => {
+    this.setState((state) => {return {show : !state.show}});
+  }
 
-return(
-  <>
-<br/>
-<Container>
 
-  <Row>
-<Col>
-  <Card className="card-plain">
-    <h2>{props.inputs.title}</h2>
-  <Row>
+  render(){
+    const results = this.props.results;
+    console.log(results);
+    let d1 = <><RecommendationCard uni={results[3]}/>
+    <RecommendationCard uni={results[4]} />
+    <RecommendationCard uni={results[5]} />
+    <RecommendationCard uni={results[6]} />
+    <RecommendationCard uni={results[7]}/>
+    <RecommendationCard uni={results[8]}/></>
+    return(
+      <>
+    <br/>
+    <Container>
+    
+      <Row>
+    <Col>
+      <Card className="card-plain">
+        <h2>{this.props.title}</h2>
+      <Row>
+        <RecommendationCard uni={results[0]} />
+        <RecommendationCard uni={results[1]} />
+        <RecommendationCard uni={results[2]}/>
+        {/* <Collapse isOpen={this.toggle}> */}
+        { this.state.show && 
+        d1}
+        {/* </Collapse> */}
+      </Row>
+      <Row>
+        <Col className="text-right">
+    
+        <Button className="btn-round" color="primary" size="lg" onClick={this.toggle}>
+          See More <i className="fas fa-arrow-right"/>
+        </Button>
+      </Col>
+      </Row>
+    
+    </Card>
+    </Col>
+    </Row>
+    </Container>
+    
+    </>
+    );
 
-    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1} imagePath={props.inputs.uniImg1}/>
-    <RecommendationCard uni={props.inputs.uni2} uniLoc={props.inputs.uniLoc2} imagePath={props.inputs.uniImg2}/>
-    <RecommendationCard uni={props.inputs.uni3} uniLoc={props.inputs.uniLoc3} imagePath={props.inputs.uniImg3}/>
-    <Collapse isOpen={isOpen}>
-    <RecommendationCard uni={props.inputs.uni4} uniLoc={props.inputs.uniLoc4} imagePath={props.inputs.uniImg4}/>
-    <RecommendationCard uni={props.inputs.uni5} uniLoc={props.inputs.uniLoc5} imagePath={props.inputs.uniImg5}/>
-    <RecommendationCard uni={props.inputs.uni6} uniLoc={props.inputs.uniLoc6} imagePath={props.inputs.uniImg6}/>
-    <RecommendationCard uni={props.inputs.uni7} uniLoc={props.inputs.uniLoc7} imagePath={props.inputs.uniImg7}/>
-    <RecommendationCard uni={props.inputs.uni8} uniLoc={props.inputs.uniLoc8} imagePath={props.inputs.uniImg8}/>
-    <RecommendationCard uni={props.inputs.uni9} uniLoc={props.inputs.uniLoc9} imagePath={props.inputs.uniImg9}/>
-    </Collapse>
-  </Row>
-  <Row>
-    <Col className="text-right">
+  }
+} 
 
-    <Button className="btn-round" color="primary" size="lg" onClick={toggle}>
-      See More <i className="fas fa-arrow-right"/>
-    </Button>
-  </Col>
-  </Row>
 
-</Card>
-</Col>
-</Row>
-</Container>
+const mapStateToProps = (state) => {
+  const { results} = state.app;
+  return {results};
 
-</>
-);
 }
 
-export default RecommendationsCardCarousal;
+const mapDispatchToProps = (dispatch) => {
+  return {
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(RecommendationsCardCarousal);

@@ -14,21 +14,32 @@ import {
   Col
 } from "reactstrap";
 
-const RecommendationCard = (props) => (
-<>
-  <Col sm={4}>
-    <Card>
-    <CardHeader>
-      <img className="img-fluid dash-card-image" src={props.imagePath}/>
-    </CardHeader>
-      <CardBody className="text-center">
-        <h3 className="title">{props.uni}</h3>
-        <h6>{props.uniLoc}</h6>
-      </CardBody>
-    </Card>
-  </Col>
+class RecommendationCard extends React.Component{
+  constructor(){
+    super();
+  }
 
-  </>
-);
+  render(){
+    let img = require('./../../assets/img/'+this.props.uni.img);
+
+  return (
+    <>
+      <Col sm={4}>
+        <Card>
+        <CardHeader>
+          <img className="img-fluid dash-card-image" src={img}/>
+        </CardHeader>
+          <CardBody className="text-center">
+            <h3 className="title">{this.props.uni.name}</h3>
+            <h6>{this.props.uni.place}</h6>
+          </CardBody>
+        </Card>
+      </Col>
+    
+      </>
+    );
+  }
+
+}
 
 export default RecommendationCard;

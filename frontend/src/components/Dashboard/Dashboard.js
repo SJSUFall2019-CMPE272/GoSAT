@@ -18,13 +18,14 @@ import {
   Col,
   Table
 } from "reactstrap";
-
+import {pic} from './../../assets/img/1.jpg'
 import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
 import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
 import DashboardExtraInsight from "../DashboardExtraInsight/DashboardExtraInsight";
 import {connect} from 'react-redux';
 import MyNavbar from "../Navbars/MyNavbar";
 import Footer from "../Footer/Footer";
+
 
 
 
@@ -46,6 +47,7 @@ class Dashboard extends React.Component {
                   + parseInt(profileDetails.sat.mathScore);
     let act = profileDetails && parseInt(profileDetails.act.compositeScore)
                 + parseInt(profileDetails.act.elaScore);
+    console.log(univList)
     return (
 <>
   <MyNavbar />
@@ -61,23 +63,23 @@ class Dashboard extends React.Component {
       </Col>
     </Row>
     {
-      univList && 
+      univList && univList.length!=0 &&
         <Row>
             <DashboardPictureCard
               title={univList[0].name}
-              imagePath={require("../../assets/img/uc-irvine.jpg")}
+              imagePath={univList[0].img}
               chancePercentage={univList[0].score}
               acceptance={univList[0].admitRate}
             />
               <DashboardPictureCard
                 title={univList[1].name}
-                imagePath={require("../../assets/img/uc-irvine.jpg")}
+                imagePath={univList[1].img}
                 chancePercentage={univList[1].score}
                 acceptance={univList[1].admitRate}
               />
               <DashboardPictureCard
                 title={univList[2].name}
-                imagePath={require("../../assets/img/uc-la.jpg")}
+                imagePath={univList[2].img}
                 chancePercentage={univList[2].score}
                 acceptance={univList[2].admitRate}
               />
