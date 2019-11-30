@@ -77,15 +77,15 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
     "data": {
-        "gpa": 2.0,
-        "gender": "female",
-        "county": "Alameda",
-        "ethnicity": "Asian American",
-        "campus": "Irvine",
-        "scrRead": 482.260274,
-        "scrWrit": 493.726027,
-        "scrMath": 478.726027,
-        "act": 1200
+        "gpa": 4,
+        "actE": 31,
+        "actC": 31,
+        "satW": 700,
+        "satM": 700,
+        "satE": 20,
+        "agc": 30,
+        "hc": 15,
+        
     }
 }'
 ```
@@ -94,16 +94,17 @@ and sample response:
 
 ```
 {
-    "feature_importances": {
-        "school": 0.76664038,
-        "gender": 0.14205973,
-        "act": 0.11294921129,
-        "gpa": 0.06305659,
-        "transfer": 0.05810283,
-        "ethnicity": 0.0282433,
-        "sat": 0.39012123
-    },
-    "probability": 0.8088502878015096,
-    "statusCode": 200
-}
+    "data": 
+        "{   0 : '19.74125',
+             1 : '54.31875',  
+             2 : '41.4375',  
+             3 : '20.945',  
+             4 : '82.42875000000001',  
+             5 : '71.515',  
+             6 : '41.792500000000004',  
+             7 : '47.678749999999994',  
+             8 : '63.795', 
+             99:'5.0'
+          }"
+  }
 ```
