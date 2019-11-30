@@ -75,7 +75,7 @@ routes.post('/updateProfileDetails', (req, res) => {
 routes.post('/updateResults', (req, res) => {
     var payload = {
             email: req.body.emailId,
-            profileDetails: req.body.results,
+            results: req.body.results,
         }
     userService.updateResults(payload)
     .then( results => {

@@ -26,9 +26,9 @@ const UserSchema = new Schema({
   displayPic: {
     type: String,
   },
-  dreamUniv : [ {
+  dreamUniv : {
     type : String
-  }],
+  },
   profileDetails: {
     cgpa : {
       type : Number,
@@ -74,7 +74,39 @@ const UserSchema = new Schema({
       type : Boolean
     }  
   },
-  results : []
+  results : [{
+    id : {
+      type : Number,
+    },
+    name : {
+      type : String
+    },
+    admitRate : {
+      type : Number
+    },
+    similarRanking : {
+      name : {
+        type : String
+      },
+      place : {
+        type : String
+      }
+    },
+    similarTuition : {
+      name : {
+        type : String
+      },
+      place : {
+        type : String
+      },
+      price : {
+        type : Number
+      }
+    },
+    score : {
+      type : Number
+    }
+  }]
 });
 
 var User = mongoose.model('User', UserSchema);
