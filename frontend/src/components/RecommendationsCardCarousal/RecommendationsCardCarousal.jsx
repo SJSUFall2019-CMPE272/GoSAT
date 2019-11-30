@@ -14,6 +14,8 @@ import {
   Col
 } from "reactstrap";
 
+import RecommendationCard from "../RecommendationsCard/RecommendationCard";
+
 const RecommendationsCardCarousal = (props) => (
 <>
 <br/>
@@ -24,30 +26,15 @@ const RecommendationsCardCarousal = (props) => (
   <Card className="card-plain">
     <h2>{props.inputs.title}</h2>
   <Row>
-    <Col sm={4}>
-      <Card>
-        <CardBody className="text-center">
-          <h3 className="title">{props.inputs.uni1}</h3>
-          <h6>{props.inputs.uniLoc1}</h6>
-        </CardBody>
-      </Card>
-    </Col>
-    <Col sm={4}>
-      <Card>
-        <CardBody className="text-center">
-          <h3 className="title">{props.inputs.uni2}</h3>
-          <h6>{props.inputs.uniLoc2}</h6>
-        </CardBody>
-      </Card>
-    </Col>
-    <Col sm={4}>
-      <Card>
-        <CardBody className="text-center">
-          <h3 className="title">{props.inputs.uni3}</h3>
-          <h6>{props.inputs.uniLoc3}</h6>
-        </CardBody>
-      </Card>
-    </Col>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
+    <RecommendationCard uni={props.inputs.uni2} uniLoc={props.inputs.uniLoc2}/>
+    <RecommendationCard uni={props.inputs.uni3} uniLoc={props.inputs.uniLoc3}/>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
+    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1}/>
   </Row>
   <Row>
     <Col className="text-right">

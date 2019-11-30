@@ -28,12 +28,16 @@ import Footer from "../Footer/Footer";
 const uniWithSimRanking = {
 
   title: 'Universities with similar ranking',
-  uni1: 'SJSU',
+
+  uni1: 'San Jose State University',
   uniLoc1: 'San Jose, CA',
-  uni2: 'NYU',
+  uniImg1: '',
+  uni2: 'New York University',
   uniLoc2: 'New York, NY',
-  uni3: 'UIC',
+  uniImg1: '',
+  uni3: 'University of Illinois at Chicago',
   uniLoc3: 'Chicago, IL',
+  uniImg1: '',
 }
 
 const uniWithSimTuition = {
