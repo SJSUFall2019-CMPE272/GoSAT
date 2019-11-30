@@ -1,16 +1,38 @@
 import React from 'react';
 import {
-    Card, CardBody,
-    CardTitle, Button
+    Button,
+    Card,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    CardImg,
+    CardTitle,
+    Label,
+    FormGroup,
+    Form,
+    Input,
+    InputGroupAddon,
+    InputGroupText,
+    InputGroup,
+    Container,
+    Row,
+    Col
   } from 'reactstrap';
 import { connect } from 'react-redux'
 import { AvForm, AvField } from 'availity-reactstrap-validation';
+
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+
+
+
 import GoogleLogin from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
+// import FacebookLogin from 'react-facebook-login';
+
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
 import ls from 'local-storage';
 import {onLoginFailure, onLoginSuccess} from './../../redux/actions/actions';
 import {baseURL} from './../../config/config'
+
 
 var md5 = require('md5');
 
@@ -34,7 +56,7 @@ class Login extends React.Component {
         lastName : response.profileObj.familyName})
         this.login(event);
     }
-  
+
     responseFacebook = (response,event) => {
       console.log(response);
       var fname = response.name.split(" ")[0];
@@ -93,35 +115,88 @@ class Login extends React.Component {
 
     render(){
     return (
-      <div class="container">
-        <Card >
-          <CardBody style={{display:"flex",flexDirection:"column"}}>
-            <CardTitle><h3>Sign in with your account!</h3></CardTitle>
-            <AvForm onInvalidSubmit={this.handleInvalidSubmit} onValidSubmit={this.login}>
-              <AvField name="emailId" label="Email Address" id="emailId" type="email" onChange={this.handleChange} placeholder="email" required />
-              <AvField name="password" label="Password" id="password" type="password" onChange={this.handlePasswordChange} placeholder="password" required />
-              <Button style={{ justifyContent: "center" }} >Submit</Button>
-            </AvForm>
-            <FacebookLogin
-              appId= {FB_APP_ID}
-              fields="name,email,picture"
-              callback={this.responseFacebook}
-              icon="fa-facebook"
+<>
+<div className="wrapper">
+  <div className="page-header">
+    <div className="page-header-image" />
+    <div className="content">
+      <Container>
+        <Row>
+          <Col>
+            <img
+              alt="..."
+              className=""
+              src={require('../../assets/img/old-master.png')}
             />
-            {/* <GoogleLogin
-              clientId= {GOOGLE_CLIENT_ID}
-              onSuccess={responseGoogle}
-              onFailure={responseGoogle}
-            /> */}
-            <GoogleLogin
-              clientId= {GOOGLE_CLIENT_ID}
-              onSuccess={this.responseGoogle}
-              onFailure={this.responseGoogle}
-            />
-            {this.state.error && <div style={{ color: "red" }}>{this.state.error}</div>}
-          </CardBody>
-        </Card>
-      </div>
+          </Col>
+          <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
+            <Card className="card-register">
+              <CardHeader>
+                <CardTitle>Login</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <AvForm onInvalidSubmit={this.handleInvalidSubmit} onValidSubmit={this.login}>
+
+                  <AvField name="emailId" id="emailId" type="email" onChange={this.handleChange} placeholder="Email" required />
+                  <AvField name="password" id="password" type="password" onChange={this.handlePasswordChange} placeholder="Password" required />
+                  <hr/>
+                  <Row>
+                    <Col className="text-center" xs={6}>
+                      <Button className="btn-round" color="success" size="lg" >Log In</Button>
+                    </Col>
+                    <Col className="text-center" xs={6}>
+                      <Button className="btn-round" color="light" size="lg" >Back</Button>
+                    </Col>
+                  </Row>
+                </AvForm>
+                <hr className="hr-center" color="grey"/>
+                <Row>
+                  <Col className="text-center" xs={6}>
+                    <FacebookLogin
+                      appId = {FB_APP_ID}
+                      autoLoad
+                      fields="name,email,picture"
+                      callback={this.responseFacebook}
+                      render={renderProps => (
+                        <button class="btn-round btn-success btn-lg" onClick={renderProps.onClick}><i class="fab fa-facebook-f"></i>  Facebook</button>
+                      )}
+                    />
+                  </Col>
+                  <Col className="text-center" xs={6}>
+                    <GoogleLogin
+                        clientId={GOOGLE_CLIENT_ID}
+                        render={renderProps => (
+                          <button class="btn-round btn-success btn-lg" onClick={renderProps.onClick} disabled={renderProps.disabled}><i class="fab fa-google"></i> Google </button>
+                        )}
+                        buttonText="Login"
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                      />
+                    </Col>
+                </Row>
+
+              </CardBody>
+                    {/* <FacebookLogin
+                      appId= {FB_APP_ID}
+                      fields="name,email,picture"
+                      callback={this.responseFacebook}
+                      cssClass="btn btn-round btn-success fab fa-facebook-square"
+                    /> */}
+                    {/* <GoogleLogin
+                      clientId= {GOOGLE_CLIENT_ID}
+                      onSuccess={this.responseGoogle}
+                      onFailure={this.responseGoogle}
+                      className="btn-round btn-success"
+                    /> */}
+            </Card>
+          </Col>
+        </Row>
+
+      </Container>
+    </div>
+  </div>
+</div>
+</>
     );
     }
 }
