@@ -10,7 +10,7 @@ import Dashboard from './Dashboard/Dashboard';
 import Landing from '../views/landing';
 import SignUpK from '../views/signup';
 import LogInK from '../views/login';
-
+import Facts from './Facts/Facts';
 
 class Main extends React.Component{
     constructor(){
@@ -30,6 +30,7 @@ class Main extends React.Component{
 
                     <Route path="/ksu" component={SignUpK}/>
                     <Route path="/kli" component={LogInK}/>
+                    <Route path="/facts" component={Facts}/>
 
                 </Router>
             </div>

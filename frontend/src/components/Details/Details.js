@@ -1,7 +1,8 @@
 import React from 'react';
 import {
     Card, CardBody,
-    CardTitle, Button, FormGroup
+    CardTitle, Button, FormGroup, Row, Col, Container
+
 } from 'reactstrap';
 import { AvForm, AvField, AvRadioGroup, AvRadio } from 'availity-reactstrap-validation';
 import {baseURL} from './../../config/config';
@@ -94,7 +95,8 @@ class Details extends React.Component {
         let satDetails = null;
         if (this.state.satStatus == "appeared") {
             satDetails =
-                (<div>
+                (
+                  <div>
                     <FormGroup>
                         <AvField type="number" name="readingWritingScore" min={200} max={800} label="Reading Writing Score:" id="readingWritingScore" onChange={this.changeHandler} placeholder="" required />
                         <div class="input-group-prepend">
@@ -154,12 +156,24 @@ class Details extends React.Component {
                 </div>)
         }
         return (
-            <div class="jumbotron jumbotron-fluid">
-                <h1 class="display-4">Get Started!</h1>
-                <div className="container">
-                    <Card>
+          <>
+
+              <div className= "header-image facts"/>
+
+              <Container>
+                <Row>
+                  <Col className="text-center">
+                    <h1 className="title text-danger">Your GoSAT Details</h1>
+                    <h3 className="title d-none d-sm-block">
+                      Insert details .
+                    </h3>
+                    <hr className="line-success hr-center"/>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                      <Card>
                         <CardBody>
-                            <CardTitle><h3>Fill in your details!</h3></CardTitle>
                             <AvForm onInvalidSubmit={this.handleInvalidSubmit} onValidSubmit={this.updateProfileDetails}>
                                 <FormGroup>
                                     <AvField type="text" label="Dream School:" name="school" id="school" onChange={this.changeHandler} placeholder="School" required />
@@ -198,21 +212,24 @@ class Details extends React.Component {
                             </AvForm>
                         </CardBody>
                     </Card>
-                </div>
-            </div>
+                  </Col>
+                </Row>
+
+          </Container>
+        </>
         )
     }
 }
 
 const mapStateToProps = (state) => {;
   }
-  
+
   const mapDispatchToProps = (dispatch) => {
     return {
         updateProfileDetailsSuccessDispatch: (payload) => { dispatch(onUpdateProfileDetailsSuccess(payload)) },
         updateProfileDetailsFailureDispatch: () => { dispatch(onUpdateProfileDetailsFailure()) }
     }
   }
-  
-  
+
+
   export default connect(mapStateToProps, mapDispatchToProps)(Details);
