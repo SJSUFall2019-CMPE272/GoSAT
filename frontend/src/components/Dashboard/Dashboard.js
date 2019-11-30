@@ -21,6 +21,7 @@ import {
 
 import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
 import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
+import DashboardExtraInsight from "../DashboardExtraInsight/DashboardExtraInsight";
 
 import MyNavbar from "../Navbars/MyNavbar";
 import Footer from "../Footer/Footer";
@@ -132,7 +133,9 @@ class Dashboard extends React.Component {
       <DashboardButtonCard title = "32" bodyText="ACT" buttonText="Update"/>
       <DashboardButtonCard title = "12" bodyText="A-G courses" buttonText="Update"/>
       <DashboardButtonCard title = "5" bodyText="H courses" buttonText="Update"/>
-
+    </Row>
+    <Row>
+      <DashboardExtraInsight />
     </Row>
   </Container>
 <Footer/>
