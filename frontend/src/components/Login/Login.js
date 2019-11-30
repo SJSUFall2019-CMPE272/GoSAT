@@ -14,14 +14,6 @@ import {baseURL} from './../../config/config'
 
 var md5 = require('md5');
 
-const responseFacebook = (response) => {
-    console.log(response);
-  }
-
-const responseGoogle = (response) => {
-    console.log(response);
-  }
-
 class Login extends React.Component {
     constructor(){
         super();
@@ -31,6 +23,24 @@ class Login extends React.Component {
             password: "",
             error: null
         }
+    }
+
+    responseGoogle = (response,event) => {
+      const pword = response.profileObj.googleId;
+      this.setState({
+        emailId : response.profileObj.email ,
+        password : pword,
+        firstName : response.profileObj.givenName,
+        lastName : response.profileObj.familyName})
+        this.login(event);
+    }
+  
+    responseFacebook = (response,event) => {
+      console.log(response);
+      var fname = response.name.split(" ")[0];
+      var lname = response.name.split(" ")[1];
+      this.setState({emailId : response.email , password : response.id , firstName : fname , lastName : lname});
+      this.login(event);
     }
 
     handleInvalidSubmit = (event, errors, values) => {
@@ -48,7 +58,7 @@ class Login extends React.Component {
 
     login = (event) => {
       console.log("state is ", this.state);
-
+      if(event)
       event.preventDefault();
       fetch(baseURL+'/api/auth/login', {
         headers: {
@@ -72,7 +82,10 @@ class Login extends React.Component {
           ls.set('jwtToken', jsonRes.token);
           ls.set('isLoggedIn', true);
           this.props.loginSuccessDispatch(jsonRes);
+          if(this.props.profileDetails != undefined)
           this.props.history.push("/dashboard");
+          else
+          this.props.history.push("/details");
         }
       })
     }
@@ -92,18 +105,18 @@ class Login extends React.Component {
             <FacebookLogin
               appId= {FB_APP_ID}
               fields="name,email,picture"
-              callback={responseFacebook}
+              callback={this.responseFacebook}
               icon="fa-facebook"
             />
-            <GoogleLogin
+            {/* <GoogleLogin
               clientId= {GOOGLE_CLIENT_ID}
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
-            />
+            /> */}
             <GoogleLogin
               clientId= {GOOGLE_CLIENT_ID}
-              onSuccess={responseGoogle}
-              onFailure={responseGoogle}
+              onSuccess={this.responseGoogle}
+              onFailure={this.responseGoogle}
             />
             {this.state.error && <div style={{ color: "red" }}>{this.state.error}</div>}
           </CardBody>
@@ -117,7 +130,8 @@ class Login extends React.Component {
 
 const mapStateToProps = (state) => {
   const isLoggedIn = state.app.isLoggedIn;
-  return { isLoggedIn };
+  const profileDetails = state.app.profileDetails;
+  return { isLoggedIn , profileDetails  };
 }
 
 const mapDispatchToProps = (dispatch) => {

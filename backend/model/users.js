@@ -22,14 +22,13 @@ const UserSchema = new Schema({
   },
   phone: {
     type: String,
-    unique: true,
   },
   displayPic: {
     type: String,
   },
-  dreamUniv : [ {
+  dreamUniv : {
     type : String
-  }],
+  },
   profileDetails: {
     cgpa : {
       type : Number,
@@ -49,9 +48,6 @@ const UserSchema = new Schema({
       },
       mathScore : {
         type  : Number
-      },
-      Subject2Score : {
-        type  : Number
       }
     },
     act : {
@@ -65,6 +61,12 @@ const UserSchema = new Schema({
         type  : Number
       },
     },
+    agc : {
+      type : Number
+    },
+    hc : {
+      type  : Number
+    },
     ethnicity : {
       type : String
     },
@@ -72,6 +74,39 @@ const UserSchema = new Schema({
       type : Boolean
     }  
   },
+  results : [{
+    id : {
+      type : Number,
+    },
+    name : {
+      type : String
+    },
+    admitRate : {
+      type : Number
+    },
+    similarRanking : {
+      name : {
+        type : String
+      },
+      place : {
+        type : String
+      }
+    },
+    similarTuition : {
+      name : {
+        type : String
+      },
+      place : {
+        type : String
+      },
+      price : {
+        type : Number
+      }
+    },
+    score : {
+      type : Number
+    }
+  }]
 });
 
 var User = mongoose.model('User', UserSchema);

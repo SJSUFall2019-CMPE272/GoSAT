@@ -72,6 +72,20 @@ routes.post('/updateProfileDetails', (req, res) => {
     })
 })
 
+routes.post('/updateResults', (req, res) => {
+    var payload = {
+            email: req.body.emailId,
+            results: req.body.results,
+        }
+    userService.updateResults(payload)
+    .then( results => {
+        res.status(200).json({ success: true, message: "Updated details", payload: results });
+    })
+    .catch( err => {
+        res.status(400).json({ success: false, message: err.message, payload: null });
+    })
+})
+
 
 
 module.exports.routes = routes;

@@ -15,8 +15,8 @@ import {
   Collapse
 } from "reactstrap";
 
-import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
-import RecommendationCard from "../RecommendationCard/RecommendationCard";
+import RecommendationCard from "./../RecommendationCard/RecommendationCard"
+
 
 const RecommendationsCardCarousal = (props) => {
   const [isOpen, setIsOpen] = useState(false);

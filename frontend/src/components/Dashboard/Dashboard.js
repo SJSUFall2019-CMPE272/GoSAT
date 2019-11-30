@@ -22,7 +22,7 @@ import {
 import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
 import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
 import DashboardExtraInsight from "../DashboardExtraInsight/DashboardExtraInsight";
-
+import {connect} from 'react-redux';
 import MyNavbar from "../Navbars/MyNavbar";
 import Footer from "../Footer/Footer";
 
@@ -34,7 +34,18 @@ class Dashboard extends React.Component {
     super();
   }
 
+  goToDetails = () => {
+    this.props.history.push('/details');
+  }
+
   render(){
+    let univList  = this.props.results;
+    let profileDetails = this.props.profileDetails;
+    let sat = profileDetails && parseInt(profileDetails.sat.readingWritingScore)
+                + parseInt(profileDetails.sat.essayScore)
+                  + parseInt(profileDetails.sat.mathScore);
+    let act = profileDetails && parseInt(profileDetails.act.compositeScore)
+                + parseInt(profileDetails.act.elaScore);
     return (
 <>
   <MyNavbar />
@@ -49,26 +60,30 @@ class Dashboard extends React.Component {
         <hr className="line-success hr-center"/>
       </Col>
     </Row>
-    <Row>
-      <DashboardPictureCard
-        title={"UC Irvine"}
-        imagePath={require("../../assets/img/uc-irvine.jpg")}
-        chancePercentage={75}
-        acceptance={75}
-      />
-      <DashboardPictureCard
-        title={"UC Los Angeles"}
-        imagePath={require("../../assets/img/uc-la.jpg")}
-        chancePercentage={67}
-        acceptance={42}
-      />
-      <DashboardPictureCard
-        title={"UC Berkeley"}
-        imagePath={require("../../assets/img/uc-berkeley.jpg")}
-        chancePercentage={34}
-        acceptance={12}
-      />
-    </Row>
+    {
+      univList && 
+        <Row>
+            <DashboardPictureCard
+              title={univList[0].name}
+              imagePath={require("../../assets/img/uc-irvine.jpg")}
+              chancePercentage={univList[0].score}
+              acceptance={univList[0].admitRate}
+            />
+              <DashboardPictureCard
+                title={univList[1].name}
+                imagePath={require("../../assets/img/uc-irvine.jpg")}
+                chancePercentage={univList[1].score}
+                acceptance={univList[1].admitRate}
+              />
+              <DashboardPictureCard
+                title={univList[2].name}
+                imagePath={require("../../assets/img/uc-la.jpg")}
+                chancePercentage={univList[2].score}
+                acceptance={univList[2].admitRate}
+              />
+        </Row>
+    }
+    
     <Row>
       <Col>
         <Table responsive>
@@ -81,42 +96,18 @@ class Dashboard extends React.Component {
           </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>4</td>
-              <td>UC Merced</td>
-              <td>45 %</td>
-              <td>45 %</td>
+          {
+            univList && 
+            univList.map( (univ,i) => {
+              if(i >2)
+              return <tr>
+              <td>{i+1}</td>
+              <td>{univ.name}</td>
+              <td>{univ.score}</td>
+              <td>{univ.admitRate}</td>
             </tr>
-            <tr>
-              <td>5</td>
-              <td>UC Santa Cruz</td>
-              <td>45 %</td>
-              <td>45 %</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+            })
+          }
           </tbody>
         </Table>
       </Col>
@@ -127,22 +118,41 @@ class Dashboard extends React.Component {
         <hr className="line-success hr-center"/>
       </Col>
     </Row>
-    <Row>
-      <DashboardButtonCard title = "3.6" bodyText="GPA" buttonText="Update"/>
-      <DashboardButtonCard title = "1462" bodyText="SAT" buttonText="Update"/>
-      <DashboardButtonCard title = "32" bodyText="ACT" buttonText="Update"/>
-      <DashboardButtonCard title = "12" bodyText="A-G courses" buttonText="Update"/>
-      <DashboardButtonCard title = "5" bodyText="H courses" buttonText="Update"/>
+    {
+      profileDetails && 
+      <>
+      <Row>
+      <DashboardButtonCard title = {profileDetails.cgpa} bodyText="GPA" buttonText="Update"/>
+      <DashboardButtonCard title = {sat} bodyText="SAT" buttonText="Update"/>
+      <DashboardButtonCard title = {act} bodyText="ACT" buttonText="Update"/>
+      <DashboardButtonCard title = {profileDetails.agc} bodyText="A-G courses" buttonText="Update"/>
+      <DashboardButtonCard title = {profileDetails.hc} bodyText="H courses" buttonText="Update"/>
+      
     </Row>
-    <Row>
+    
+    <Row className="text-right">
       <Col>
-        <h1 className="title text-center">Extra Insights</h1>
-        <hr className="line-success hr-center"/>
+      <Button className="btn" onClick={this.goToDetails} color="primary" size="lg">
+          Update
+        </Button>
       </Col>
-    </Row>
-    <Row>
-      <DashboardExtraInsight />
-    </Row>
+      </Row>
+      </>
+    }
+    {
+      !this.props.isLoggedIn && 
+      <div>
+        <Row>
+          <Col>
+            <h1 className="title text-center">Extra Insights</h1>
+            <hr className="line-success hr-center"/>
+          </Col>
+        </Row>
+        <Row>
+        <DashboardExtraInsight />
+      </Row>
+      </div>
+    }
   </Container>
 <Footer/>
 </>
@@ -150,5 +160,15 @@ class Dashboard extends React.Component {
   );
   }
 }
+const mapStateToProps = (state) => {
+  const {results, isLoggedIn, profileDetails} = state.app;
+  return {results , isLoggedIn ,profileDetails};
+}
 
-export default Dashboard;
+const mapDispatchToProps = (dispatch) => {
+  return {
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
