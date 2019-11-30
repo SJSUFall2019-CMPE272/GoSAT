@@ -139,24 +139,30 @@ class Login extends React.Component {
 
                   <AvField name="emailId" id="emailId" type="email" onChange={this.handleChange} placeholder="Email" required />
                   <AvField name="password" id="password" type="password" onChange={this.handlePasswordChange} placeholder="Password" required />
-                  <Button className="btn-round" color="success" size="lg" >Log In</Button>
+                  <hr/>
+                  <Row>
+                    <Col className="text-center" xs={6}>
+                      <Button className="btn-round" color="success" size="lg" >Log In</Button>
+                    </Col>
+                    <Col className="text-center" xs={6}>
+                      <Button className="btn-round" color="light" size="lg" >Back</Button>
+                    </Col>
+                  </Row>
                 </AvForm>
-                <hr/>
+                <hr className="hr-center" color="grey"/>
                 <Row>
-                  <Col xs={6}>
+                  <Col className="text-center" xs={6}>
                     <FacebookLogin
                       appId = {FB_APP_ID}
                       autoLoad
+                      fields="name,email,picture"
                       callback={this.responseFacebook}
                       render={renderProps => (
                         <button class="btn-round btn-success btn-lg" onClick={renderProps.onClick}><i class="fab fa-facebook-f"></i>  Facebook</button>
                       )}
                     />
                   </Col>
-                </Row>
-                <hr/>
-                <Row>
-                  <Col xs={6}>
+                  <Col className="text-center" xs={6}>
                     <GoogleLogin
                         clientId={GOOGLE_CLIENT_ID}
                         render={renderProps => (

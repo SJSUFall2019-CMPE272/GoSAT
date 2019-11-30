@@ -1,14 +1,29 @@
 import React from 'react';
 import {
-  Card, CardBody,
-  CardTitle, Button, FormGroup
-} from 'reactstrap';
+  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  CardImg,
+  CardTitle,
+  Label,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col
+} from "reactstrap";
 import { AvForm, AvField,} from 'availity-reactstrap-validation';
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
 import {baseURL} from './../../config/config'
 import GoogleLogin from 'react-google-login';
 import { onSignUpFailure, onSignUpSuccess} from './../../redux/actions/actions'
-import FacebookLogin from 'react-facebook-login';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import {connect} from 'react-redux';
 
 var md5 = require('md5');
@@ -46,7 +61,7 @@ class SignUp extends React.Component {
     this.setState({emailId : response.email , password : response.id , firstName : fname , lastName : lname});
     this.signUp(event);
   }
-  
+
 
   signUp(e) {
     if(e)
@@ -95,39 +110,71 @@ class SignUp extends React.Component {
 
 
   render() {
-    return <div className="container">
-      <Card>
-        <CardBody>
-          <CardTitle><h3>Sign up for a GoSAT account!</h3></CardTitle>
-          <AvForm onInvalidSubmit={this.handleInvalidSubmit} onValidSubmit={this.signUp}>
-            <FormGroup>
-              <AvField type="text" label="First Name:" name="firstName" id="firstName" onChange={this.changeHandler} placeholder="name" required />
-            </FormGroup>
-            <FormGroup>
-              <AvField type="text" name="lastName" label="Last Name:" id="lastName" onChange={this.changeHandler} placeholder="name" required />
-            </FormGroup>
-            <FormGroup>
-              <AvField type="email" name="emailId" id="emailId" label="Email:" onChange={this.changeHandler} placeholder="email" required />
-            </FormGroup>
-            <FormGroup>
-              <AvField type="password" name="password" id="password" label="Password:" onChange={this.handlePasswordChange} placeholder="password" required />
-            </FormGroup>
-            <Button type="submit" >Submit</Button>
-          </AvForm>
-          <FacebookLogin
-              appId= {FB_APP_ID}
-              fields="name,email,picture"
-              callback={this.responseFacebook}
-              icon="fa-facebook"
-            />
-            <GoogleLogin 
-              clientId= {GOOGLE_CLIENT_ID}
-              onSuccess={this.responseGoogle}
-              onFailure={this.responseGoogle}
-            />
-        </CardBody>
-      </Card>
-    </div>
+
+    return (
+    <div className="wrapper">
+      <div className="page-header">
+        <div className="page-header-image" />
+        <div className="content">
+          <Container>
+            <Row>
+              <Col>
+                <img
+                  alt="..."
+                  className=""
+                  src={require('../../assets/img/boy-master.png')}
+                />
+              </Col>
+              <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
+                <Card className="card-register">
+                  <CardHeader>
+                    <CardTitle>Register</CardTitle>
+                  </CardHeader>
+                  <CardBody>
+                    <AvForm onInvalidSubmit={this.handleInvalidSubmit} onValidSubmit={this.signUp}>
+                      <FormGroup>
+                        <AvField type="text"  name="firstName" id="firstName" onChange={this.changeHandler} placeholder="First Name" required />
+                      </FormGroup>
+                      <FormGroup>
+                        <AvField type="text" name="lastName" id="lastName" onChange={this.changeHandler} placeholder="Last Name" required />
+                      </FormGroup>
+                      <FormGroup>
+                        <AvField type="email" name="emailId" id="emailId"  onChange={this.changeHandler} placeholder="Email Address" required />
+                      </FormGroup>
+                      <FormGroup>
+                        <AvField type="password" name="password" id="password" onChange={this.handlePasswordChange} placeholder="Password" required />
+                      </FormGroup>
+                      <Button className="btn-round" color="primary" size="lg" type="submit" >Get Started</Button>
+                    </AvForm>
+                    <hr className="hr-center" color="grey"/>
+                    <FacebookLogin
+                        appId= {FB_APP_ID}
+                        autoLoad
+                        fields="name,email,picture"
+                        callback={this.responseFacebook}
+                        render={renderProps => (
+                          <button class="btn-round btn-success btn-lg" onClick={renderProps.onClick}><i class="fab fa-facebook-f"></i>  Facebook</button>
+                        )}
+                      />
+                      <GoogleLogin
+                        clientId= {GOOGLE_CLIENT_ID}
+                        render={renderProps => (
+                          <button class="btn-round btn-success btn-lg" onClick={renderProps.onClick} disabled={renderProps.disabled}><i class="fab fa-google"></i> Google </button>
+                        )}
+                        buttonText="Login"
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                      />
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+
+  </div>
+  )
   }
 }
 
