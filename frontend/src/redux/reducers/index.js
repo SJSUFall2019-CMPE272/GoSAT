@@ -6,6 +6,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         {
             id : 0,
             name : "UC Berkeley",
+            admitRate : 14.9,
             similarRanking : {
                 name : "University of Southern California",
                 place : "Los Angeles, CA"
@@ -18,6 +19,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         }, {
             id : 1,
             name : "UC Los Angeles",
+            admitRate : 14.1,
             similarRanking : {
                 name : "Washington University in St. Louis",
                 place : "St. Louis, MO",
@@ -30,6 +32,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         }, {
             id : 2,
             name : "UC San Diego",
+            admitRate : 30.2,
             similarRanking : {
                 name : "Boston College",
                 place : "Chestnut Hill, MA"
@@ -42,6 +45,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         },{
             id : 3,
             name : "UC Santa Barbara",
+            admitRate : 32.3,
             similarRanking : {
                 name : "University of Rochester",
                 place : "Rochester, NY"
@@ -54,6 +58,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         },{
             id : 4,
             name  : "UC Davis",
+            admitRate : 41.2,
             similarRanking : {
                 name  : "Boston University",
                 place : "Boston, MA"
@@ -66,6 +71,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         },{
             id : 5,
             name  : "UC Irvine",
+            admitRate : 28.8,
             similarRanking : {
                 name  : "University of Florida",
                 place : "Gainesville, FL"
@@ -78,6 +84,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         },{ 
             id : 6,
             name  : "UC Santa Cruz",
+            admitRate : 47.7,
             similarRanking : {
                 name  : "North Carolina State University",
                 place : "Raleigh, NC"
@@ -90,6 +97,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         },{
             id : 7,
             name  : "UC Riverside",
+            admitRate : 50.9,
             similarRanking : {
                 name  : "Stony Brook University--SUNY",
                 place : "Stony Brook, NY"
@@ -102,6 +110,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         },{
             id : 8,
             name  : "UC Merced",
+            admitRate : 66.9,
             similarRanking : {
                 name  : "Temple University",
                 place : "Philadelphia, PA"
@@ -125,7 +134,8 @@ function app(state = { univList , isLoggedIn : false}, action) {
                 isLoggedIn: true,
                 displayPic: action.payload.payload.displayPic,
                 profileDetails : action.payload.payload.profileDetails,
-                dreamUniversities : action.payload.payload.dreamUniv
+                dreamUniv : action.payload.payload.dreamUniv,
+                results : action.payload.payload.results
             })
         case ML_PREDICTION_SUCCESS :
             return Object.assign({},state,{
@@ -135,7 +145,7 @@ function app(state = { univList , isLoggedIn : false}, action) {
         case SIGNUP_FAILURE:
         case SIGNUP_SUCCESS:
         case LOGOUT_SUCCESS:
-            return Object.assign({}, { isLoggedIn: false, emailId: null, firstName: null })
+            return Object.assign({},state, { isLoggedIn: false, emailId: null, firstName: null })
         case UPDATE_PROFILE_DETAILS_SUCCESS:
             return Object.assign({},state,{
                 profileDetails : action.payload.profileDetails

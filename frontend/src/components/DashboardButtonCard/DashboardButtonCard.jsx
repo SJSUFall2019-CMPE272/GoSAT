@@ -19,11 +19,6 @@ const DashboardButtonCard = (props) => (
       <CardBody>
         <p>{props.bodyText}</p>
       </CardBody>
-      <CardFooter className="text-center">
-        <Button className="btn-simple" color="info">
-          {props.buttonText}
-        </Button>
-      </CardFooter>
     </Card>
   </Col>
 );

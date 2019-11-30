@@ -14,7 +14,8 @@ import {
   Col
 } from "reactstrap";
 
-import RecommendationCard from "../RecommendationsCard/RecommendationCard";
+import RecommendationCard from "./../RecommendationCard/RecommendationCard"
+
 
 const RecommendationsCardCarousal = (props) => (
 <>

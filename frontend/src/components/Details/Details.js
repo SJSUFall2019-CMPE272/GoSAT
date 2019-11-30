@@ -68,7 +68,7 @@ class Details extends React.Component {
     updateProfileDetails = (event) => {
         event.preventDefault();
         var data = {
-            "emailId" : this.state.emailId,
+            "emailId" : this.props.emailId,
             "profileDetails" : {
                 "cgpa": this.state.cgpa,
                 "gender": this.state.gender,
@@ -103,7 +103,7 @@ class Details extends React.Component {
                 "hc" : this.state.hc
             }
         }
-        if(this.props.isLoggedIn){
+        //if(this.props.isLoggedIn){
             fetch(baseURL+'/api/user/updateProfileDetails', {
                 headers: {
                     'Content-Type': 'application/json'
@@ -121,7 +121,7 @@ class Details extends React.Component {
                     this.props.history.push('/dashboard');
                 }
             })
-        }
+        //}
         // fetch(mlURL, {
         //     headers: {
         //         'Content-Type': 'application/json'
@@ -163,7 +163,7 @@ class Details extends React.Component {
                         'Content-Type': 'application/json'
                       },
                     method: 'POST',
-                    body: JSON.stringify({emailId : this.props.emailId,results})
+                    body: JSON.stringify({emailId : this.props.emailId,results : results})
                 })
                 .then((response) => {
                     return response.json();
