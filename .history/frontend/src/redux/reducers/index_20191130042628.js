@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
-     UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS, ML_PREDICTION_SUCCESS } from './../actions/actions';
+     UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS } from './../actions/actions';
 
-    const univList = [ 
-        {
-            id : 0,
+    const univList = {
+        0 : {
             name : "UC Berkeley",
             similarRanking : {
                 name : "University of Southern California",
@@ -15,8 +14,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Dayton, OH",
                 price : 44100
             }
-        }, {
-            id : 1,
+        },
+        1 : {
             name : "UC Los Angeles",
             similarRanking : {
                 name : "Washington University in St. Louis",
@@ -27,8 +26,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Tulsa, OK",
                 price : 42238
             }
-        }, {
-            id : 2,
+        },
+        2 : {
             name : "UC San Diego",
             similarRanking : {
                 name : "Boston College",
@@ -39,8 +38,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "La Verne, CA",
                 price : 44500
             }
-        },{
-            id : 3,
+        },
+        3 : {
             name : "UC Santa Barbara",
             similarRanking : {
                 name : "University of Rochester",
@@ -51,8 +50,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Milwaukee, WI",
                 price : 43936
             }
-        },{
-            id : 4,
+        },
+        4 : {
             name  : "UC Davis",
             similarRanking : {
                 name  : "Boston University",
@@ -63,8 +62,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "South Orange, NJ",
                 price : 43780
             }
-        },{
-            id : 5,
+        },
+        5 : {
             name  : "UC Irvine",
             similarRanking : {
                 name  : "University of Florida",
@@ -75,11 +74,11 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Burlington, VT",
                 price : 43690
             }
-        },{ 
-            id : 6,
+        },
+        6 : { 
             name  : "UC Santa Cruz",
             similarRanking : {
-                name  : "North Carolina State University",
+                name  : "North Carolina State University--Raleigh",
                 place : "Raleigh, NC"
             },
             similarTuition : {
@@ -87,8 +86,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Fairfield, CT",
                 price : 43070
             }
-        },{
-            id : 7,
+        },
+        7 : {
             name  : "UC Riverside",
             similarRanking : {
                 name  : "Stony Brook University--SUNY",
@@ -99,8 +98,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Des Moines, IA",
                 price : 42840
             }
-        },{
-            id : 8,
+        },
+        8 : {
             name  : "UC Merced",
             similarRanking : {
                 name  : "Temple University",
@@ -112,9 +111,9 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 price : 42736
             }
         }
-    ]
+      }  
 
-function app(state = { univList , isLoggedIn : false}, action) {
+function app(state = { univList}, action) {
     switch(action.type){
         case LOGIN_SUCCESS :
             return Object.assign({}, state, {
@@ -126,10 +125,6 @@ function app(state = { univList , isLoggedIn : false}, action) {
                 displayPic: action.payload.payload.displayPic,
                 profileDetails : action.payload.payload.profileDetails,
                 dreamUniversities : action.payload.payload.dreamUniv
-            })
-        case ML_PREDICTION_SUCCESS :
-            return Object.assign({},state,{
-                results : action.payload
             })
         case LOGIN_FAILURE:
         case SIGNUP_FAILURE:

@@ -4,7 +4,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
 
     const univList = [ 
         {
-            id : 0,
+            id : 1,
             name : "UC Berkeley",
             similarRanking : {
                 name : "University of Southern California",
@@ -16,7 +16,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 price : 44100
             }
         }, {
-            id : 1,
+            id : 2,
             name : "UC Los Angeles",
             similarRanking : {
                 name : "Washington University in St. Louis",
@@ -79,7 +79,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
             id : 6,
             name  : "UC Santa Cruz",
             similarRanking : {
-                name  : "North Carolina State University",
+                name  : "North Carolina State University--Raleigh",
                 place : "Raleigh, NC"
             },
             similarTuition : {
@@ -114,7 +114,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         }
     ]
 
-function app(state = { univList , isLoggedIn : false}, action) {
+function app(state = { univList}, action) {
     switch(action.type){
         case LOGIN_SUCCESS :
             return Object.assign({}, state, {

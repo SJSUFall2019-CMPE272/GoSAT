@@ -77,7 +77,7 @@ routes.post('/updateResults', (req, res) => {
             email: req.body.emailId,
             profileDetails: req.body.results,
         }
-    userService.updateResults(payload)
+    userService.updateProfileDetails(payload)
     .then( results => {
         res.status(200).json({ success: true, message: "Updated details", payload: results });
     })

@@ -22,7 +22,7 @@ import {
 import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
 import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
 import DashboardExtraInsight from "../DashboardExtraInsight/DashboardExtraInsight";
-import {connect} from 'react-redux';
+
 import MyNavbar from "../Navbars/MyNavbar";
 import Footer from "../Footer/Footer";
 
@@ -145,8 +145,8 @@ class Dashboard extends React.Component {
   }
 }
 const mapStateToProps = (state) => {
-  const {results, isLoggedIn} = state.app;
-  return {results , isLoggedIn };
+  const {univList, isLoggedIn, emailId} = state.app;
+  return {univList , isLoggedIn , emailId};
 }
 
 const mapDispatchToProps = (dispatch) => {

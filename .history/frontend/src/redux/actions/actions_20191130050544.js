@@ -63,10 +63,3 @@ export function onMLPredictionSuccess(payload) {
         payload : payload
     }
 }
-
-export function onMLPredictionFailure() {
-    return {
-        type : ML_PREDICTION_FAILURE,
-        payload : null
-    }
-}

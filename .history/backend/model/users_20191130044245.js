@@ -61,12 +61,6 @@ const UserSchema = new Schema({
         type  : Number
       },
     },
-    agc : {
-      type : Number
-    },
-    hc : {
-      type  : Number
-    },
     ethnicity : {
       type : String
     },
@@ -74,7 +68,6 @@ const UserSchema = new Schema({
       type : Boolean
     }  
   },
-  results : []
 });
 
 var User = mongoose.model('User', UserSchema);

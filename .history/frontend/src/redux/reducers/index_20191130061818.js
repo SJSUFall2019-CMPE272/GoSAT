@@ -114,7 +114,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         }
     ]
 
-function app(state = { univList , isLoggedIn : false}, action) {
+function app(state = { univList}, action) {
     switch(action.type){
         case LOGIN_SUCCESS :
             return Object.assign({}, state, {

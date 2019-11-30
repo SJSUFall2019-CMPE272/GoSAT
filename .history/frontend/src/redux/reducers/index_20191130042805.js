@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
-     UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS, ML_PREDICTION_SUCCESS } from './../actions/actions';
+     UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS } from './../actions/actions';
 
     const univList = [ 
         {
-            id : 0,
+            id : 1,
             name : "UC Berkeley",
             similarRanking : {
                 name : "University of Southern California",
@@ -16,7 +16,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 price : 44100
             }
         }, {
-            id : 1,
+            id : 2,
             name : "UC Los Angeles",
             similarRanking : {
                 name : "Washington University in St. Louis",
@@ -79,7 +79,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
             id : 6,
             name  : "UC Santa Cruz",
             similarRanking : {
-                name  : "North Carolina State University",
+                name  : "North Carolina State University--Raleigh",
                 place : "Raleigh, NC"
             },
             similarTuition : {
@@ -114,7 +114,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
         }
     ]
 
-function app(state = { univList , isLoggedIn : false}, action) {
+function app(state = { univList}, action) {
     switch(action.type){
         case LOGIN_SUCCESS :
             return Object.assign({}, state, {
@@ -126,10 +126,6 @@ function app(state = { univList , isLoggedIn : false}, action) {
                 displayPic: action.payload.payload.displayPic,
                 profileDetails : action.payload.payload.profileDetails,
                 dreamUniversities : action.payload.payload.dreamUniv
-            })
-        case ML_PREDICTION_SUCCESS :
-            return Object.assign({},state,{
-                results : action.payload
             })
         case LOGIN_FAILURE:
         case SIGNUP_FAILURE:

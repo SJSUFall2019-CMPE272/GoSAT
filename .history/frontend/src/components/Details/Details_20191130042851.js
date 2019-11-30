@@ -5,9 +5,9 @@ import {
 
 } from 'reactstrap';
 import { AvForm, AvField, AvRadioGroup, AvRadio } from 'availity-reactstrap-validation';
-import {baseURL,mlURL} from './../../config/config';
+import {baseURL} from './../../config/config';
 import {connect} from 'react-redux';
-import {onUpdateProfileDetailsFailure, onUpdateProfileDetailsSuccess , onMLPredictionSuccess, onMLPredictionFailure} from './../../redux/actions/actions'
+import {onUpdateProfileDetailsFailure, onUpdateProfileDetailsSuccess} from './../../redux/actions/actions'
 import MyNavbar from "../Navbars/MyNavbar";
 
 
@@ -52,19 +52,6 @@ class Details extends React.Component {
         this.setState({ transfer: value });
     }
 
-    compare = (a, b) =>  {
-        let comparison = 0;
-  let score1 = a.score;
-      let score2 = b.score;
-      if(score1>score2)
-          comparison = -1;
-      else if(score2 > score1)
-          comparison = 1;
-      else
-          comparison = 0;
-      return comparison;
-  }
-
     updateProfileDetails = (event) => {
         event.preventDefault();
         var data = {
@@ -77,101 +64,33 @@ class Details extends React.Component {
                 "ethnicity": this.state.ethnicity,
                 "sat": {
                     "status" : this.state.satStatus,
-                    "readingWritingScore" : this.state.satW,
-                    "essayScore" : this.state.satE,
-                    "mathScore" : this.state.satM,
+                    "readingWritingScore" : this.state.readingWritingScore,
+                    "essayScore" : this.state.essayScore,
+                    "mathScore" : this.state.mathScore,
+                    "Subject2Score" : this.state.Subject2Score
                 },
                 "act": {
                     "status" : this.state.actStatus,
-                    "compositeScore" : this.state.actC,
-                    "elaScore" : this.state.actE
+                    "compositeScore" : this.state.compositeScore,
+                    "elaScore" : this.state.elaScore
                 },
-                "transferStudent" : this.state.transfer,
-                "agc" : this.state.agc,
-                "hc" : this.state.hc
-            },
-            "dreamUniv" : this.state.univ
-        }
-        var mlReqBody = {
-            data : {
-                "actE" : this.state.actE,
-                "actC" : this.state.actC,
-                "satW" : this.state.satW,
-                "satM" : this.state.satM,
-                "satE" : this.state.satE,
-                "agc" : this.state.agc,
-                "hc" : this.state.hc
+                "transferStudent" : this.state.transfer
             }
         }
-        if(this.props.isLoggedIn){
-            fetch(baseURL+'/api/user/updateProfileDetails', {
-                headers: {
-                    'Content-Type': 'application/json'
-                  },
-                method: 'POST',
-                body: JSON.stringify(data)
-            })
-            .then((response) => {
-                return response.json();
-            }).then((jsonRes) => {
-                if (jsonRes.success == false) {
-                this.props.updateProfileDetailsFailureDispatch();
-                } else {
-                    this.props.updateProfileDetailsSuccessDispatch(data);
-                    this.props.history.push('/dashboard');
-                }
-            })
+    fetch(baseURL+'/api/user/updateProfileDetails', {
+      method: 'POST',
+      body: data
+    })
+      .then((response) => {
+        return response.json();
+      }).then((jsonRes) => {
+        if (jsonRes.success == false) {
+          this.props.updateProfileDetailsFailureDispatch();
+        } else {
+            this.props.updateProfileDetailsSuccessDispatch(data);
+            this.props.history.push('/dashboard');
         }
-        // fetch(mlURL, {
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //       },
-        //     method: 'POST',
-        //     body: JSON.stringify(mlReqBody)
-        //     })
-        //     .then((response) => {
-        //         return response.json();
-        //     }).then((jsonRes) => {
-        //         if (jsonRes != null) {
-                        var jsonRes = {
-                                0 : 76.56,
-                                1 : 37.87,
-                                2 : 62.54,
-                                3 : 89.12,
-                                4 : 34.89,
-                                5 : 79.34,
-                                6 : 90.12,
-                                7 : 34.67,
-                                8 : 21.67
-                            }
-                        let results = [];
-                        for(var i=0;i<9;i=i+1){
-                            var univ = this.props.univList[i];
-                            univ["score"] = jsonRes[i];
-                            results.push(univ);
-                        }
-                        results.sort(this.compare);
-                        this.props.mlPredictionSuccessDispatch(results);
-                //} else {
-                 //     this.props.mlPredictionFailureDispatch(data);
-                //}
-                        this.props.history.push('/dashboard');
-            //})
-            if(this.props.isLoggedIn){
-                fetch(baseURL+'/api/user/updateResults', {
-                    headers: {
-                        'Content-Type': 'application/json'
-                      },
-                    method: 'POST',
-                    body: JSON.stringify({emailId : this.props.emailId,results})
-                })
-                .then((response) => {
-                    return response.json();
-                }).then((jsonRes) => {
-                    console.log("results stored in db")
-                })
-            }
-
+      })
     }
 
     render() {
@@ -229,12 +148,13 @@ class Details extends React.Component {
   <MyNavbar />
 
               <div className= "header-image facts"/>
+
               <Container>
                 <Row>
                   <Col className="text-center">
                     <h1 className="title text-danger">Your GoSAT Details</h1>
                     <h3 className="title d-none d-sm-block">
-                      Insert details !
+                      Insert details .
                     </h3>
                     <hr className="line-success hr-center"/>
                   </Col>
@@ -247,7 +167,7 @@ class Details extends React.Component {
                                 <FormGroup>
                                     <fieldset>
                                         <legend>Dream School:</legend>
-                                        <select class="form-control dropdown" id="univ" onChange={this.changeHandler} name="univ">
+                                        <select class="form-control dropdown" id="school" name="school">
                                             <option value="" selected="selected" disabled="disabled">-- select one --</option>
                                                 {
                                                     this.props.univList && this.props.univList.map(univ => {
@@ -258,8 +178,8 @@ class Details extends React.Component {
                                     </fieldset>
                                 </FormGroup>
                                 <FormGroup>
-                                <legend>Current GPA:</legend>
-                                    <AvField type="number"  name="cgpa"  id="cgpa" onChange={this.changeHandler} placeholder="" required />
+                                Current GPA:
+                                    <AvField type="number"  name="cgpa" label="Current GPA:" id="cgpa" onChange={this.changeHandler} placeholder="" required />
                                 </FormGroup>
                                 <AvRadioGroup inline name="satStatus" label="SAT" required>
                                     <AvRadio label="Appeared" value="appeared" name="Appeared" id="appeared" onChange={this.changeRadioHandlerSat} />
@@ -272,14 +192,10 @@ class Details extends React.Component {
                                 </AvRadioGroup>
                                 <div>{actDetails}</div>
                                 <FormGroup>
-                                <legend>A-G Requirement Courses Completed::</legend>
-
-                        <AvField type="number" name="agc" min={0} max={100} id="agc" onChange={this.changeHandler} placeholder="" required />
+                        <AvField type="number" name="agc" min={0} max={100} label="A-G Requirement Courses Completed:" id="agc" onChange={this.changeHandler} placeholder="" required />
                     </FormGroup>
                     <FormGroup>
-                    <legend>Honors Courses Completed:</legend>
-
-                        <AvField type="number" name="hc" min={0} max={100} id="hc" onChange={this.changeHandler} placeholder="" required />
+                        <AvField type="number" name="hc" min={0} max={100} label="Honors Courses Completed:" id="hc" onChange={this.changeHandler} placeholder="" required />
                         
                     </FormGroup>
                                 <AvRadioGroup inline name="transfer" label="Transfer Student" required>
@@ -289,7 +205,7 @@ class Details extends React.Component {
                                 <FormGroup>
                                     <fieldset>
                                         <legend>Ethnicity:</legend>
-                                        <select class="form-control dropdown" id="ethnicity" onChange={this.changeHandler} name="ethnicity">
+                                        <select class="form-control dropdown" id="ethnicity" name="ethnicity">
                                             <option value="" selected="selected" disabled="disabled">-- select one --</option>
                                                 <option value="Asian">Asian</option>
                                                 <option value="Hispanic">Hispanic</option>
@@ -313,16 +229,14 @@ class Details extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    const {univList, isLoggedIn, emailId} = state.app;
-    return {univList , isLoggedIn , emailId};
+    const {univList} = state.app;
+    return {univList};
   }
 
   const mapDispatchToProps = (dispatch) => {
     return {
         updateProfileDetailsSuccessDispatch: (payload) => { dispatch(onUpdateProfileDetailsSuccess(payload)) },
-        updateProfileDetailsFailureDispatch: () => { dispatch(onUpdateProfileDetailsFailure()) },
-        mlPredictionSuccessDispatch : (payload) => { dispatch(onMLPredictionSuccess(payload))},
-        mlPredictionFailureDispatch : () => { dispatch(onMLPredictionFailure())}
+        updateProfileDetailsFailureDispatch: () => { dispatch(onUpdateProfileDetailsFailure()) }
     }
   }
 

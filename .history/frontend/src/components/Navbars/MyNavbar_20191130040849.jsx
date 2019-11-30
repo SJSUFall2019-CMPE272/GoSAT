@@ -159,9 +159,7 @@ class MyNavbar extends React.Component {
                 </Button>
                 }
               </NavItem>
-              {
-                this.props.isLoggedIn && 
-                <UncontrolledDropdown nav>
+              <UncontrolledDropdown nav>
 
                 <DropdownToggle
                   caret
@@ -183,9 +181,6 @@ class MyNavbar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
-              }
-              
               <NavItem>
             {/* TODO: Add onClick metthod to logout*/}
             { this.props.isLoggedIn && 

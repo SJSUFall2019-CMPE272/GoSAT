@@ -57,9 +57,9 @@ class Details extends React.Component {
   let score1 = a.score;
       let score2 = b.score;
       if(score1>score2)
-          comparison = -1;
-      else if(score2 > score1)
           comparison = 1;
+      else if(score2 > score1)
+          comparison = -1;
       else
           comparison = 0;
       return comparison;
@@ -133,44 +133,31 @@ class Details extends React.Component {
         //         return response.json();
         //     }).then((jsonRes) => {
         //         if (jsonRes != null) {
-                        var jsonRes = {
-                                0 : 76.56,
-                                1 : 37.87,
-                                2 : 62.54,
-                                3 : 89.12,
-                                4 : 34.89,
-                                5 : 79.34,
-                                6 : 90.12,
-                                7 : 34.67,
-                                8 : 21.67
-                            }
-                        let results = [];
-                        for(var i=0;i<9;i=i+1){
-                            var univ = this.props.univList[i];
-                            univ["score"] = jsonRes[i];
-                            results.push(univ);
-                        }
-                        results.sort(this.compare);
-                        this.props.mlPredictionSuccessDispatch(results);
-                //} else {
-                 //     this.props.mlPredictionFailureDispatch(data);
-                //}
-                        this.props.history.push('/dashboard');
-            //})
-            if(this.props.isLoggedIn){
-                fetch(baseURL+'/api/user/updateResults', {
-                    headers: {
-                        'Content-Type': 'application/json'
-                      },
-                    method: 'POST',
-                    body: JSON.stringify({emailId : this.props.emailId,results})
-                })
-                .then((response) => {
-                    return response.json();
-                }).then((jsonRes) => {
-                    console.log("results stored in db")
-                })
+           var jsonRes = {
+                0 : 76.56,
+                1 : 37.87,
+                2 : 62.54,
+                3 : 89.12,
+                4 : 34.89,
+                5 : 79.34,
+                6 : 90.12,
+                7 : 34.67,
+                8 : 21.67
             }
+                    let results = [];
+                    for(var i=0;i<9;i=i+1){
+                        var univ = this.props.univList[i];
+                        univ["score"] = jsonRes[i];
+                        results.push(univ);
+                    }
+                    results.sort(this.compare);
+                this.props.mlPredictionSuccessDispatch(results);
+                //} else {
+                 //   this.props.mlPredictionFailureDispatch(data);
+                //}
+                this.props.history.push('/dashboard');
+            //})
+
 
     }
 
@@ -313,8 +300,8 @@ class Details extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    const {univList, isLoggedIn, emailId} = state.app;
-    return {univList , isLoggedIn , emailId};
+    const {univList, isLoggedIn} = state.app;
+    return {univList , isLoggedIn};
   }
 
   const mapDispatchToProps = (dispatch) => {

@@ -163,7 +163,7 @@ class Details extends React.Component {
                         'Content-Type': 'application/json'
                       },
                     method: 'POST',
-                    body: JSON.stringify({emailId : this.props.emailId,results})
+                    body: JSON.stringify(results)
                 })
                 .then((response) => {
                     return response.json();
@@ -313,8 +313,8 @@ class Details extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    const {univList, isLoggedIn, emailId} = state.app;
-    return {univList , isLoggedIn , emailId};
+    const {univList, isLoggedIn} = state.app;
+    return {univList , isLoggedIn};
   }
 
   const mapDispatchToProps = (dispatch) => {

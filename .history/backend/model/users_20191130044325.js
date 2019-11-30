@@ -74,7 +74,6 @@ const UserSchema = new Schema({
       type : Boolean
     }  
   },
-  results : []
 });
 
 var User = mongoose.model('User', UserSchema);

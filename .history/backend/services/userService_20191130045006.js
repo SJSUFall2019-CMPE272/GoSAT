@@ -64,18 +64,3 @@ module.exports.updateProfileDetails = (payload) => {
         })
     })
 }
-
-module.exports.updateResults = (payload) => {
-    return new Promise(function (resolve, reject) {
-        userSchema.updateOne({ "emailId": payload.email}, {
-            "results": payload.results
-        }, function (error, res) {
-            if (error) {
-                console.log("Error in updateProfileDetails");
-                reject("error");
-            } else {
-                resolve(res);
-            }
-        })
-    })
-}

@@ -157,20 +157,7 @@ class Details extends React.Component {
                 //}
                         this.props.history.push('/dashboard');
             //})
-            if(this.props.isLoggedIn){
-                fetch(baseURL+'/api/user/updateResults', {
-                    headers: {
-                        'Content-Type': 'application/json'
-                      },
-                    method: 'POST',
-                    body: JSON.stringify({emailId : this.props.emailId,results})
-                })
-                .then((response) => {
-                    return response.json();
-                }).then((jsonRes) => {
-                    console.log("results stored in db")
-                })
-            }
+
 
     }
 
@@ -313,8 +300,8 @@ class Details extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    const {univList, isLoggedIn, emailId} = state.app;
-    return {univList , isLoggedIn , emailId};
+    const {univList, isLoggedIn} = state.app;
+    return {univList , isLoggedIn};
   }
 
   const mapDispatchToProps = (dispatch) => {
