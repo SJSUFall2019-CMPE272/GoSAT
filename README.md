@@ -85,7 +85,7 @@ curl -X POST \
         "satE": 20,
         "agc": 30,
         "hc": 15,
-        
+        "ethnicity" : 'American-Asian'
     }
 }'
 ```
