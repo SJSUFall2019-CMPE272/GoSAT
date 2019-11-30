@@ -6,6 +6,7 @@ import MyNavbar from "../components/Navbars/MyNavbar";
 import LandingJumbo from "../components/LandingJumbo/LandingJumbo";
 import LandingFeature from "../components/LandingFeature/LandingFeature";
 import LandingFeatureImage from "../components/LandingFeatureImage/LandingFeatureImage";
+import LandingToDetailsButton from "../components/LandingToDetailButton/LandingToDetailButton";
 import Footer from "../components/Footer/Footer";
 
 
@@ -50,10 +51,11 @@ class Landing extends React.Component {
         <MyNavbar />
 
         <LandingJumbo inputs = {variablesJumbo}/>
+        <LandingToDetailsButton/>
         <LandingFeatureImage inputs = {variablesFeatureImage2} />
         <LandingFeatureImage inputs = {variablesFeatureImage1} />
         <LandingFeature />
-
+        <LandingToDetailsButton/>
         <Footer />
 
       </>
