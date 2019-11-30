@@ -14,7 +14,7 @@ import {
   Col,
   Collapse
 } from "reactstrap";
-
+import {connect} from 'react-redux';
 import RecommendationCard from "./../RecommendationCard/RecommendationCard"
 
 
@@ -22,7 +22,7 @@ const RecommendationsCardCarousal = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
-
+    const results = props.results;
 return(
   <>
 <br/>
@@ -31,19 +31,18 @@ return(
   <Row>
 <Col>
   <Card className="card-plain">
-    <h2>{props.inputs.title}</h2>
+    <h2>{props.title}</h2>
   <Row>
-
-    <RecommendationCard uni={props.inputs.uni1} uniLoc={props.inputs.uniLoc1} imagePath={props.inputs.uniImg1}/>
-    <RecommendationCard uni={props.inputs.uni2} uniLoc={props.inputs.uniLoc2} imagePath={props.inputs.uniImg2}/>
-    <RecommendationCard uni={props.inputs.uni3} uniLoc={props.inputs.uniLoc3} imagePath={props.inputs.uniImg3}/>
+    <RecommendationCard uni={results[0]} />
+    <RecommendationCard uni={results[1]} />
+    <RecommendationCard uni={results[2]}/>
     <Collapse isOpen={isOpen}>
-    <RecommendationCard uni={props.inputs.uni4} uniLoc={props.inputs.uniLoc4} imagePath={props.inputs.uniImg4}/>
-    <RecommendationCard uni={props.inputs.uni5} uniLoc={props.inputs.uniLoc5} imagePath={props.inputs.uniImg5}/>
-    <RecommendationCard uni={props.inputs.uni6} uniLoc={props.inputs.uniLoc6} imagePath={props.inputs.uniImg6}/>
-    <RecommendationCard uni={props.inputs.uni7} uniLoc={props.inputs.uniLoc7} imagePath={props.inputs.uniImg7}/>
-    <RecommendationCard uni={props.inputs.uni8} uniLoc={props.inputs.uniLoc8} imagePath={props.inputs.uniImg8}/>
-    <RecommendationCard uni={props.inputs.uni9} uniLoc={props.inputs.uniLoc9} imagePath={props.inputs.uniImg9}/>
+    <RecommendationCard uni={results[3]}/>
+    <RecommendationCard uni={results[4]} />
+    <RecommendationCard uni={results[5]} />
+    <RecommendationCard uni={results[6]} />
+    <RecommendationCard uni={results[7]}/>
+    <RecommendationCard uni={results[8]}/>
     </Collapse>
   </Row>
   <Row>
@@ -64,17 +63,14 @@ return(
 );
 }
 
-
 const mapStateToProps = (state) => {
-  const isLoggedIn = state.app.isLoggedIn;
-  const profileDetails = state.app.profileDetails;
-  return { isLoggedIn , profileDetails  };
+  const { results} = state.results;
+  return {results};
+
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    loginSuccessDispatch: (payload) => { dispatch(onLoginSuccess(payload)) },
-    loginFailureDispatch: () => { dispatch(onLoginFailure()) }
   }
 }
 

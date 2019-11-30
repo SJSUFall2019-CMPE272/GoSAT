@@ -65,19 +65,19 @@ class Dashboard extends React.Component {
         <Row>
             <DashboardPictureCard
               title={univList[0].name}
-              imagePath={require("../../assets/img/uc-irvine.jpg")}
+              imagePath={univList[0].img}
               chancePercentage={univList[0].score}
               acceptance={univList[0].admitRate}
             />
               <DashboardPictureCard
                 title={univList[1].name}
-                imagePath={require("../../assets/img/uc-irvine.jpg")}
+                imagePath={univList[1].img}
                 chancePercentage={univList[1].score}
                 acceptance={univList[1].admitRate}
               />
               <DashboardPictureCard
                 title={univList[2].name}
-                imagePath={require("../../assets/img/uc-la.jpg")}
+                imagePath={univList[2].img}
                 chancePercentage={univList[2].score}
                 acceptance={univList[2].admitRate}
               />
