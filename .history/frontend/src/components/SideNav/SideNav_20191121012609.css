@@ -1,0 +1,57 @@
+:root {
+    --navcover-z-index: 99;
+    --sidenav-z-index: 100;
+  }
+  
+  .nav-cover {
+    position: fixed;
+    z-index: var(--navcover-z-index);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+  /*   background-color: rgba(0, 0, 0, 0.5); */
+  }
+  
+  .side-nav {
+    height: 100%;
+    width: 0;  /* to be set in js */
+    position: fixed;
+    overflow-x: hidden;
+    z-index: var(--sidenav-z-index);
+    top: 0;
+    left: 0;
+    background: #111;
+    padding-top: 3.5rem;
+    transition: 0.5s;
+  }
+  
+  .side-nav a {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #818181;
+    display: block;
+    transition: 0.53s;
+  }
+  
+  .side-nav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .side-nav .close-nav {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: 2.2rem;
+  }
+  
+  .site-wrapper {
+      transition: margin-left .5s;
+  }
+  
+  .open-nav {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
