@@ -60,6 +60,15 @@ class MyNavbar extends React.Component {
   goToLogin = () => {
     this.props.history.push('/login');
   }
+  goToSignUp = () => {
+    this.props.history.push('/signUp');
+  }
+  goToDashboard = () => {
+    this.props.history.push('/dashboard');
+  }
+  goToRecommendations = () => {
+    this.props.history.push('/recommendations')
+  }
   logout = () => {
     this.props.logoutSuccessDispatch();
     this.props.history.push('/');
@@ -150,6 +159,7 @@ class MyNavbar extends React.Component {
               <NavItem>
 
                 { !this.props.isLoggedIn && 
+                <>
                 <Button
                   className="btn-neutral"
                   color="default"
@@ -157,6 +167,14 @@ class MyNavbar extends React.Component {
                 >
                   <i className="fa fa-sign-in-alt" /> Sign In
                 </Button>
+                <Button
+                className="btn-neutral"
+                color="default"
+                onClick = {this.goToSignUp}
+              >
+                <i className="fa fa-sign-in-alt" /> Sign Up
+              </Button>
+              </>
                 }
               </NavItem>
               {
@@ -174,12 +192,12 @@ class MyNavbar extends React.Component {
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
                   {/* TODO: Edit this link to actual dashboard link*/}
-                  <DropdownItem tag={Link} to="/dashboard-page">
-                    <i className="fas fa-columns" /> Dashboard
+                  <DropdownItem tag={Link} to="/dashboard">
+                    <i className="fas fa-columns" /> <button onClick={this.goToDashboard} >Dashboard</button>
                   </DropdownItem>
                   {/* TODO: Edit this link to actual profile link*/}
-                  <DropdownItem tag={Link} to="/profile-page">
-                    <i className="fas fa-user" /> Profile Page
+                  <DropdownItem >
+                    <i className="fas fa-user" /> <button onClick={this.goToRecommendations} >Recommendations</button>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

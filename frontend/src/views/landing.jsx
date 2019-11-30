@@ -44,6 +44,7 @@ class Landing extends React.Component {
   componentWillUnmount() {
     document.body.classList.toggle("landing-page");
   }
+  
   render() {
     return (
       <>
@@ -55,7 +56,7 @@ class Landing extends React.Component {
         <LandingFeatureImage inputs = {variablesFeatureImage2} />
         <LandingFeatureImage inputs = {variablesFeatureImage1} />
         <LandingFeature />
-        <LandingToDetailsButton/>
+        <LandingToDetailsButton />
         <Footer />
 
       </>

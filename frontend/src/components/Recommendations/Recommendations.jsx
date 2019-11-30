@@ -25,31 +25,8 @@ import MyNavbar from "../Navbars/MyNavbar";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const uniWithSimRanking = {
-
-  title: 'Universities with similar ranking',
-
-  uni1: 'San Jose State University',
-  uniLoc1: 'San Jose, CA',
-  uniImg1: require("../../assets/img/uc-irvine.jpg"),
-  uni2: 'New York University',
-  uniLoc2: 'New York, NY',
-  uniImg2: require("../../assets/img/uc-irvine.jpg"),
-  uni3: 'University of Illinois at Chicago',
-  uniLoc3: 'Chicago, IL',
-  uniImg3: require("../../assets/img/uc-irvine.jpg"),
-}
-
-const uniWithSimTuition = {
-  title: 'University with similar tuition',
-  uni1: 'SJSU',
-  uniLoc1: 'San Jose, CA',
-  uni2: 'NYU',
-  uniLoc2: 'New York, NY',
-  uni3: 'UIC',
-  uniLoc3: 'Chicago, IL',
-}
-
+const uniWithSimRankingTitle =  "Universities with similar ranking";
+const uniWithSimTuitionTitile = "University with similar tuition";
 
 class Recommendations extends React.Component {
 
@@ -60,10 +37,11 @@ class Recommendations extends React.Component {
   render(){
     return (
       <>
+      <MyNavbar/>
       <div className="header-image"/>
       <Header pageTitle="Recommendations" pageSubTitle="To get more university recommendation outside UCs"/>
-      <RecommendationsCardCarousal inputs = {uniWithSimRanking} />
-      <RecommendationsCardCarousal inputs = {uniWithSimTuition} />
+      <RecommendationsCardCarousal title = {uniWithSimRankingTitle} />
+      <RecommendationsCardCarousal title = {uniWithSimTuitionTitile} />
 
       </>
     );

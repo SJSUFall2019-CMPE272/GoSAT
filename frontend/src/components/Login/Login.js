@@ -154,7 +154,6 @@ class Login extends React.Component {
                   <Col className="text-center" xs={6}>
                     <FacebookLogin
                       appId = {FB_APP_ID}
-                      autoLoad
                       fields="name,email,picture"
                       callback={this.responseFacebook}
                       render={renderProps => (

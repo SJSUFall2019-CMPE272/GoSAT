@@ -152,6 +152,7 @@ class Details extends React.Component {
                         }
                         results.sort(this.compare);
                         this.props.mlPredictionSuccessDispatch(results);
+                        console.log("res",results);
                 //} else {
                  //     this.props.mlPredictionFailureDispatch(data);
                 //}
