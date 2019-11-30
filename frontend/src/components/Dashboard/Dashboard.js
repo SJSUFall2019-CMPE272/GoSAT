@@ -135,6 +135,12 @@ class Dashboard extends React.Component {
       <DashboardButtonCard title = "5" bodyText="H courses" buttonText="Update"/>
     </Row>
     <Row>
+      <Col>
+        <h1 className="title text-center">Extra Insights</h1>
+        <hr className="line-success hr-center"/>
+      </Col>
+    </Row>
+    <Row>
       <DashboardExtraInsight />
     </Row>
   </Container>
