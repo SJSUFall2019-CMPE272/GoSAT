@@ -78,6 +78,9 @@ const UserSchema = new Schema({
     id : {
       type : Number,
     },
+    img : {
+      type : String
+    },
     name : {
       type : String
     },

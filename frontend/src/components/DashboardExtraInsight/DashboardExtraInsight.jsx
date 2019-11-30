@@ -10,29 +10,42 @@ import {
   Col,
   Row
 } from "reactstrap";
+import {withRouter} from 'react-router-dom';
 
 import Header from "../Header/Header"
 
-const DashboardExtraInsight = (props) => (
-  <>
+class DashboardExtraInsight extends React.Component{
 
-<Col sm={12} className="text-center">
-  <Card>
-    <CardBody>
-      <Col>
-        <h3 className =" h5 text-left">
-          We match you profile and analyse it even further. To provide you recommendation based on following,
-        </h3>
-      </Col>
-    </CardBody>
-    <CardFooter>
-        <Button className="btn" color="primary" size="lg">
-          Sign Up.
-        </Button>
-    </CardFooter>
-    </Card>
-</Col>
-</>
-);
 
-export default DashboardExtraInsight;
+  constructor(){
+    super();
+  }
+
+  goToSignUp = () => {
+    this.props.history.push('/signUp');
+  }
+
+  render(){
+    return <>
+    <Col sm={12} className="text-center">
+      <Card>
+        <CardBody>
+          <Col>
+            <h3 className =" h5 text-left">
+              We match you profile and analyse it even further. To provide you recommendation based on following,
+            </h3>
+          </Col>
+        </CardBody>
+        <CardFooter>
+            <Button className="btn" color="primary" size="lg" onClick = {this.goToSignUp}>
+              Sign Up.
+            </Button>
+        </CardFooter>
+        </Card>
+    </Col>
+    </>
+  }
+
+}
+
+export default withRouter(DashboardExtraInsight);

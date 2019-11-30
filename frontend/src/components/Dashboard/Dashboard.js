@@ -18,13 +18,14 @@ import {
   Col,
   Table
 } from "reactstrap";
-
+import {pic} from './../../assets/img/1.jpg'
 import DashboardButtonCard from "../DashboardButtonCard/DashboardButtonCard";
 import DashboardPictureCard from "../DashboardPictureCard/DashboardPictureCard";
 import DashboardExtraInsight from "../DashboardExtraInsight/DashboardExtraInsight";
 import {connect} from 'react-redux';
 import MyNavbar from "../Navbars/MyNavbar";
 import Footer from "../Footer/Footer";
+
 
 
 
@@ -46,6 +47,7 @@ class Dashboard extends React.Component {
                   + parseInt(profileDetails.sat.mathScore);
     let act = profileDetails && parseInt(profileDetails.act.compositeScore)
                 + parseInt(profileDetails.act.elaScore);
+    console.log(univList)
     return (
 <>
   <MyNavbar />
@@ -61,7 +63,7 @@ class Dashboard extends React.Component {
       </Col>
     </Row>
     {
-      univList && 
+      univList && univList.length!=0 &&
         <Row>
             <DashboardPictureCard
               title={univList[0].name}

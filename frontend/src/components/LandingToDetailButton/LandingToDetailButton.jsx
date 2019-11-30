@@ -1,4 +1,5 @@
 import React from 'react';
+import {withRouter } from 'react-router-dom';
 
 import {
   Button,
@@ -14,16 +15,27 @@ import {
   Col
 } from "reactstrap";
 
+ 
+class LandingToDetailsButton extends React.Component{
+  constructor(){
+    super();
+  }
 
-const LandingToDetailsButton = (props) => (
-<>
-  <Card className="card-plain">
-    <CardBody>
-      <Button className="btn-primary col">
-        Try, this app now!
-      </Button>
-    </CardBody>
-  </Card>
-</>
-);
-export default LandingToDetailsButton;
+  goToDetails = () =>{
+    this.props.history.push('/details');
+  }
+
+  render(){
+    return <>
+    <Card className="card-plain">
+      <CardBody>
+        <Button onClick = {this.goToDetails} className="btn-primary col">
+          Try this app now!
+        </Button>
+      </CardBody>
+    </Card>
+  </>
+  }
+} 
+
+export default withRouter(LandingToDetailsButton);

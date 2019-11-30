@@ -26,7 +26,7 @@ class Main extends React.Component{
                     <Route path="/profile" component={Profile}/>
                     <Route path="/details" component={Details} />
                     <Route path="/dashboard" component={Dashboard}/>
-                    <Route path="/landing" component={Landing}/>
+                    <Route exact path="/" component={Landing}/>
                     <Route path="/recommendations" component={Recommendations}/>
 
                     <Route path="/ksu" component={SignUpK}/>
