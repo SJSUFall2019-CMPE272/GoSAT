@@ -60,6 +60,7 @@ class Recommendations extends React.Component {
   render(){
     return (
       <>
+      <MyNavbar/>
       <div className="header-image"/>
       <Header pageTitle="Recommendations" pageSubTitle="To get more university recommendation outside UCs"/>
       <RecommendationsCardCarousal inputs = {uniWithSimRanking} />

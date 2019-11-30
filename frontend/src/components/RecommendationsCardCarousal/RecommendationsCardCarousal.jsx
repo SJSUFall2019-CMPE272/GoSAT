@@ -64,4 +64,18 @@ return(
 );
 }
 
-export default RecommendationsCardCarousal;
+
+const mapStateToProps = (state) => {
+  const isLoggedIn = state.app.isLoggedIn;
+  const profileDetails = state.app.profileDetails;
+  return { isLoggedIn , profileDetails  };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    loginSuccessDispatch: (payload) => { dispatch(onLoginSuccess(payload)) },
+    loginFailureDispatch: () => { dispatch(onLoginFailure()) }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(RecommendationsCardCarousal);
