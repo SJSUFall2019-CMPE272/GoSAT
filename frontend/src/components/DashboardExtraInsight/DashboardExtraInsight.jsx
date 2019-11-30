@@ -11,18 +11,12 @@ import {
   Row
 } from "reactstrap";
 
+import Header from "../Header/Header"
+
 const DashboardExtraInsight = (props) => (
+  <>
 
 <Col sm={12} className="text-center">
-<Row>
-  <Col className="text-center">
-    <h1 className="title text-danger">Extra insights</h1>
-    <h3 className="title d-none d-sm-block">
-      To get more university recommendation outside UCs
-    </h3>
-    <hr className="line-success hr-center"/>
-  </Col>
-</Row>
   <Card>
     <CardBody>
 
@@ -71,6 +65,7 @@ const DashboardExtraInsight = (props) => (
     </CardFooter>
     </Card>
 </Col>
+</>
 );
 
 export default DashboardExtraInsight;

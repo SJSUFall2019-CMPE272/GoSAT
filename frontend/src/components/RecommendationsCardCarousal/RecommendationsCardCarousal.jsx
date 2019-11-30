@@ -16,7 +16,13 @@ import {
 
 const RecommendationsCardCarousal = (props) => (
 <>
+<br/>
 <Container>
+
+  <Row>
+<Col>
+  <Card className="card-plain">
+    <h2>{props.inputs.title}</h2>
   <Row>
     <Col sm={4}>
       <Card>
@@ -50,6 +56,10 @@ const RecommendationsCardCarousal = (props) => (
     </Button>
   </Col>
   </Row>
+
+</Card>
+</Col>
+</Row>
 </Container>
 
 </>

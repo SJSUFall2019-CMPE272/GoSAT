@@ -26,6 +26,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 const uniWithSimRanking = {
+
+  title: 'Universities with similar ranking',
   uni1: 'SJSU',
   uniLoc1: 'San Jose, CA',
   uni2: 'NYU',
@@ -35,6 +37,7 @@ const uniWithSimRanking = {
 }
 
 const uniWithSimTuition = {
+  title: 'University with similar tuition',
   uni1: 'SJSU',
   uniLoc1: 'San Jose, CA',
   uni2: 'NYU',
@@ -54,9 +57,8 @@ class Recommendations extends React.Component {
     return (
       <>
       <div className="header-image"/>
-      <Header pageTitle="Universities with similar ranking"/>
+      <Header pageTitle="Recommendations" pageSubTitle="To get more university recommendation outside UCs"/>
       <RecommendationsCardCarousal inputs = {uniWithSimRanking} />
-      <Header pageTitle="Universities with similar tuition fees"/>
       <RecommendationsCardCarousal inputs = {uniWithSimTuition} />
 
       </>
