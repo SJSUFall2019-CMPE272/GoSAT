@@ -41,7 +41,7 @@ class Login extends React.Component {
       var pword = md5(event.target.value);
       this.setState({ password: pword });
     }
-  
+
     handleChange = (event)  => {
       this.setState({ emailId: event.target.value });
     }
@@ -77,7 +77,7 @@ class Login extends React.Component {
       })
     }
 
-    
+
     render(){
     return (
       <div class="container">
@@ -95,7 +95,12 @@ class Login extends React.Component {
               callback={responseFacebook}
               icon="fa-facebook"
             />
-            <GoogleLogin 
+            <GoogleLogin
+              clientId= {GOOGLE_CLIENT_ID}
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+            />
+            <GoogleLogin
               clientId= {GOOGLE_CLIENT_ID}
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
