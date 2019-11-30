@@ -31,13 +31,13 @@ const uniWithSimRanking = {
 
   uni1: 'San Jose State University',
   uniLoc1: 'San Jose, CA',
-  uniImg1: '',
+  uniImg1: require("../../assets/img/uc-irvine.jpg"),
   uni2: 'New York University',
   uniLoc2: 'New York, NY',
-  uniImg1: '',
+  uniImg2: require("../../assets/img/uc-irvine.jpg"),
   uni3: 'University of Illinois at Chicago',
   uniLoc3: 'Chicago, IL',
-  uniImg1: '',
+  uniImg3: require("../../assets/img/uc-irvine.jpg"),
 }
 
 const uniWithSimTuition = {
