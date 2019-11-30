@@ -1,0 +1,181 @@
+,County,Ethnicity,Gender,Campus
+0,Alameda,Hispanic/ Latino,Male,Universitywide
+1,Alameda,Hispanic/ Latino,Male,Santa Cruz
+2,Alameda,Hispanic/ Latino,Male,San Diego
+3,Alameda,Hispanic/ Latino,Male,Davis
+4,Alameda,Hispanic/ Latino,Male,Santa Barbara
+5,Alameda,Hispanic/ Latino,Male,Riverside
+6,Alameda,Hispanic/ Latino,Male,Los Angeles
+7,Alameda,Hispanic/ Latino,Male,Irvine
+8,Alameda,Hispanic/ Latino,Male,Berkeley
+9,Alameda,Hispanic/ Latino,Male,Merced
+10,Alameda,Hispanic/ Latino,Female,Universitywide
+11,Alameda,Hispanic/ Latino,Female,Santa Cruz
+12,Alameda,Hispanic/ Latino,Female,San Diego
+13,Alameda,Hispanic/ Latino,Female,Davis
+14,Alameda,Hispanic/ Latino,Female,Santa Barbara
+15,Alameda,Hispanic/ Latino,Female,Riverside
+16,Alameda,Hispanic/ Latino,Female,Los Angeles
+17,Alameda,Hispanic/ Latino,Female,Irvine
+18,Alameda,Hispanic/ Latino,Female,Berkeley
+19,Alameda,Hispanic/ Latino,Female,Merced
+20,Alameda,Hispanic/ Latino,All,Universitywide
+21,Alameda,Hispanic/ Latino,All,Santa Cruz
+22,Alameda,Hispanic/ Latino,All,San Diego
+23,Alameda,Hispanic/ Latino,All,Davis
+24,Alameda,Hispanic/ Latino,All,Santa Barbara
+25,Alameda,Hispanic/ Latino,All,Riverside
+26,Alameda,Hispanic/ Latino,All,Los Angeles
+27,Alameda,Hispanic/ Latino,All,Irvine
+28,Alameda,Hispanic/ Latino,All,Berkeley
+29,Alameda,Hispanic/ Latino,All,Merced
+30,Alameda,African American,Male,Universitywide
+31,Alameda,African American,Male,Santa Cruz
+32,Alameda,African American,Male,San Diego
+33,Alameda,African American,Male,Davis
+34,Alameda,African American,Male,Santa Barbara
+35,Alameda,African American,Male,Riverside
+36,Alameda,African American,Male,Los Angeles
+37,Alameda,African American,Male,Irvine
+38,Alameda,African American,Male,Berkeley
+39,Alameda,African American,Male,Merced
+40,Alameda,African American,Female,Universitywide
+41,Alameda,African American,Female,Santa Cruz
+42,Alameda,African American,Female,San Diego
+43,Alameda,African American,Female,Davis
+44,Alameda,African American,Female,Santa Barbara
+45,Alameda,African American,Female,Riverside
+46,Alameda,African American,Female,Los Angeles
+47,Alameda,African American,Female,Irvine
+48,Alameda,African American,Female,Berkeley
+49,Alameda,African American,Female,Merced
+50,Alameda,African American,All,Universitywide
+51,Alameda,African American,All,Santa Cruz
+52,Alameda,African American,All,San Diego
+53,Alameda,African American,All,Davis
+54,Alameda,African American,All,Santa Barbara
+55,Alameda,African American,All,Riverside
+56,Alameda,African American,All,Los Angeles
+57,Alameda,African American,All,Irvine
+58,Alameda,African American,All,Berkeley
+59,Alameda,African American,All,Merced
+60,Alameda,All,Male,Universitywide
+61,Alameda,All,Male,Santa Cruz
+62,Alameda,All,Male,San Diego
+63,Alameda,All,Male,Davis
+64,Alameda,All,Male,Santa Barbara
+65,Alameda,All,Male,Riverside
+66,Alameda,All,Male,Los Angeles
+67,Alameda,All,Male,Irvine
+68,Alameda,All,Male,Berkeley
+69,Alameda,All,Male,Merced
+70,Alameda,All,Female,Universitywide
+71,Alameda,All,Female,Santa Cruz
+72,Alameda,All,Female,San Diego
+73,Alameda,All,Female,Davis
+74,Alameda,All,Female,Santa Barbara
+75,Alameda,All,Female,Riverside
+76,Alameda,All,Female,Los Angeles
+77,Alameda,All,Female,Irvine
+78,Alameda,All,Female,Berkeley
+79,Alameda,All,Female,Merced
+80,Alameda,All,All,Universitywide
+81,Alameda,All,All,Santa Cruz
+82,Alameda,All,All,San Diego
+83,Alameda,All,All,Davis
+84,Alameda,All,All,Santa Barbara
+85,Alameda,All,All,Riverside
+86,Alameda,All,All,Los Angeles
+87,Alameda,All,All,Irvine
+88,Alameda,All,All,Berkeley
+89,Alameda,All,All,Merced
+90,Alameda,Domestic Unknown,Male,Universitywide
+91,Alameda,Domestic Unknown,Male,Santa Cruz
+92,Alameda,Domestic Unknown,Male,San Diego
+93,Alameda,Domestic Unknown,Male,Davis
+94,Alameda,Domestic Unknown,Male,Santa Barbara
+95,Alameda,Domestic Unknown,Male,Riverside
+96,Alameda,Domestic Unknown,Male,Los Angeles
+97,Alameda,Domestic Unknown,Male,Irvine
+98,Alameda,Domestic Unknown,Male,Berkeley
+99,Alameda,Domestic Unknown,Male,Merced
+100,Alameda,Domestic Unknown,Female,Universitywide
+101,Alameda,Domestic Unknown,Female,Santa Cruz
+102,Alameda,Domestic Unknown,Female,San Diego
+103,Alameda,Domestic Unknown,Female,Davis
+104,Alameda,Domestic Unknown,Female,Santa Barbara
+105,Alameda,Domestic Unknown,Female,Riverside
+106,Alameda,Domestic Unknown,Female,Los Angeles
+107,Alameda,Domestic Unknown,Female,Irvine
+108,Alameda,Domestic Unknown,Female,Berkeley
+109,Alameda,Domestic Unknown,Female,Merced
+110,Alameda,Domestic Unknown,All,Universitywide
+111,Alameda,Domestic Unknown,All,Santa Cruz
+112,Alameda,Domestic Unknown,All,San Diego
+113,Alameda,Domestic Unknown,All,Davis
+114,Alameda,Domestic Unknown,All,Santa Barbara
+115,Alameda,Domestic Unknown,All,Riverside
+116,Alameda,Domestic Unknown,All,Los Angeles
+117,Alameda,Domestic Unknown,All,Irvine
+118,Alameda,Domestic Unknown,All,Berkeley
+119,Alameda,Domestic Unknown,All,Merced
+120,Alameda,Asian,Male,Universitywide
+121,Alameda,Asian,Male,Santa Cruz
+122,Alameda,Asian,Male,San Diego
+123,Alameda,Asian,Male,Davis
+124,Alameda,Asian,Male,Santa Barbara
+125,Alameda,Asian,Male,Riverside
+126,Alameda,Asian,Male,Los Angeles
+127,Alameda,Asian,Male,Irvine
+128,Alameda,Asian,Male,Berkeley
+129,Alameda,Asian,Male,Merced
+130,Alameda,Asian,Female,Universitywide
+131,Alameda,Asian,Female,Santa Cruz
+132,Alameda,Asian,Female,San Diego
+133,Alameda,Asian,Female,Davis
+134,Alameda,Asian,Female,Santa Barbara
+135,Alameda,Asian,Female,Riverside
+136,Alameda,Asian,Female,Los Angeles
+137,Alameda,Asian,Female,Irvine
+138,Alameda,Asian,Female,Berkeley
+139,Alameda,Asian,Female,Merced
+140,Alameda,Asian,All,Universitywide
+141,Alameda,Asian,All,Santa Cruz
+142,Alameda,Asian,All,San Diego
+143,Alameda,Asian,All,Davis
+144,Alameda,Asian,All,Santa Barbara
+145,Alameda,Asian,All,Riverside
+146,Alameda,Asian,All,Los Angeles
+147,Alameda,Asian,All,Irvine
+148,Alameda,Asian,All,Berkeley
+149,Alameda,Asian,All,Merced
+150,Alameda,White,Male,Universitywide
+151,Alameda,White,Male,Santa Cruz
+152,Alameda,White,Male,San Diego
+153,Alameda,White,Male,Davis
+154,Alameda,White,Male,Santa Barbara
+155,Alameda,White,Male,Riverside
+156,Alameda,White,Male,Los Angeles
+157,Alameda,White,Male,Irvine
+158,Alameda,White,Male,Berkeley
+159,Alameda,White,Male,Merced
+160,Alameda,White,Female,Universitywide
+161,Alameda,White,Female,Santa Cruz
+162,Alameda,White,Female,San Diego
+163,Alameda,White,Female,Davis
+164,Alameda,White,Female,Santa Barbara
+165,Alameda,White,Female,Riverside
+166,Alameda,White,Female,Los Angeles
+167,Alameda,White,Female,Irvine
+168,Alameda,White,Female,Berkeley
+169,Alameda,White,Female,Merced
+170,Alameda,White,All,Universitywide
+171,Alameda,White,All,Santa Cruz
+172,Alameda,White,All,San Diego
+173,Alameda,White,All,Davis
+174,Alameda,White,All,Santa Barbara
+175,Alameda,White,All,Riverside
+176,Alameda,White,All,Los Angeles
+177,Alameda,White,All,Irvine
+178,Alameda,White,All,Berkeley
+179,Alameda,White,All,Merced

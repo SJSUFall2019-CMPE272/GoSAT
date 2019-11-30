@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a79a8be.chunk.css",
+    "main.js": "/static/js/main.82fe336f.chunk.js",
+    "main.js.map": "/static/js/main.82fe336f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.baeb1881.js",
+    "runtime-main.js.map": "/static/js/runtime-main.baeb1881.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.977cfde4.chunk.js": "/static/js/2.977cfde4.chunk.js",
+    "static/js/2.977cfde4.chunk.js.map": "/static/js/2.977cfde4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6a7bb1fa36a54a040ada54391fe8aeae.js": "/precache-manifest.6a7bb1fa36a54a040ada54391fe8aeae.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.4a79a8be.chunk.css.map": "/static/css/main.4a79a8be.chunk.css.map",
+    "static/media/boy-master.png": "/static/media/boy-master.99c7dbef.png",
+    "static/media/main.css": "/static/media/group-study.21f04747.svg",
+    "static/media/explorer.png": "/static/media/explorer.08a1679d.png",
+    "static/media/glass-boy.png": "/static/media/glass-boy.a27c6aed.png",
+    "static/media/logo.svg": "/static/media/logo.25bf045c.svg",
+    "static/media/old-master.png": "/static/media/old-master.07b6c8e5.png",
+    "static/media/uc-irvine.jpg": "/static/media/uc-irvine.55ef24e6.jpg",
+    "static/media/uc-la.jpg": "/static/media/uc-la.3f54b6ba.jpg",
+    "static/media/wizard-boy.png": "/static/media/wizard-boy.87044275.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.baeb1881.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.977cfde4.chunk.js",
+    "static/css/main.4a79a8be.chunk.css",
+    "static/js/main.82fe336f.chunk.js"
+  ]
+}
