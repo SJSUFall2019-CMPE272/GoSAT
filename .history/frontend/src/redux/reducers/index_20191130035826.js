@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
-     UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS } from './../actions/actions';
+    UPDATE_PROFILE_DETAILS_FAILURE, UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS } from './../actions/actions';
 
     const univList = {
         0 : {
@@ -10,21 +10,19 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Los Angeles, CA"
                 },
             similarTuition : {
-                name : "University of Dayton",
-                place : "Dayton, OH",
-                price : 44100
+                name : "",
+                place : ""
             }
         },
         1 : {
             name : "UC Los Angeles",
             similarRanking : {
                 name : "Washington University in St. Louis",
-                place : "St. Louis, MO",
+                place : "St. Louis, MO"
             },
             similarTuition : {
-                name : "University of Tulsa",
-                place : "Tulsa, OK",
-                price : 42238
+                name : "",
+                place : ""
             }
         },
         2 : {
@@ -34,9 +32,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Chestnut Hill, MA"
             },
             similarTuition : {
-                name : "University of La Verne",
-                place : "La Verne, CA",
-                price : 44500
+                name : "",
+                place : ""
             }
         },
         3 : {
@@ -46,9 +43,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Rochester, NY"
             },
             similarTuition : {
-                name : "Marquette University",
-                place : "Milwaukee, WI",
-                price : 43936
+                name : "",
+                place : ""
             }
         },
         4 : {
@@ -59,8 +55,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
             },
             similarTuition : {
                 name : "Seton Hall University",
-                place : "South Orange, NJ",
-                price : 43780
+                place : "South Orange, NJ"
             }
         },
         5 : {
@@ -71,8 +66,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
             },
             similarTuition : {
                 name : "University of Vermont",
-                place : "Burlington, VT",
-                price : 43690
+                place : "Burlington, VT"
             }
         },
         6 : { 
@@ -82,9 +76,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Raleigh, NC"
             },
             similarTuition : {
-                name : "Sacred Heart University",
-                place : "Fairfield, CT",
-                price : 43070
+                name : "",
+                place : ""
             }
         },
         7 : {
@@ -94,9 +87,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Stony Brook, NY"
             },
             similarTuition : {
-                name : "Drake University",
-                place : "Des Moines, IA",
-                price : 42840
+                name : "",
+                place : ""
             }
         },
         8 : {
@@ -106,9 +98,8 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
                 place : "Philadelphia, PA"
             },
             similarTuition : {
-                name : "University of St. Thomas",
-                place : "St. Paul, MN",
-                price : 42736
+                name : "",
+                place : ""
             }
         }
       }  

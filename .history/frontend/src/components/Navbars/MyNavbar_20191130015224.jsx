@@ -207,7 +207,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    logoutSuccessDispatch: () => { dispatch(onLogoutSuccess())}
+    logoutSuccessDispatch = () => { dispatch(onLogoutSuccess())}
   }
 }
 

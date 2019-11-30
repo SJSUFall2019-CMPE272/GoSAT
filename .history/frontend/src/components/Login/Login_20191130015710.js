@@ -82,10 +82,7 @@ class Login extends React.Component {
           ls.set('jwtToken', jsonRes.token);
           ls.set('isLoggedIn', true);
           this.props.loginSuccessDispatch(jsonRes);
-          if(this.props.profileDetails!=null)
           this.props.history.push("/dashboard");
-          else
-          this.props.history.push("/details");
         }
       })
     }

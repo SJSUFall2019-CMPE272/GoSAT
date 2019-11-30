@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Button,
   Collapse,
@@ -17,7 +17,6 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { onLogoutSuccess} from './../../redux/actions/actions';
 import {connect} from 'react-redux';
 
 class MyNavbar extends React.Component {
@@ -59,10 +58,6 @@ class MyNavbar extends React.Component {
   };
   goToLogin = () => {
     this.props.history.push('/login');
-  }
-  logout = () => {
-    this.props.logoutSuccessDispatch();
-    this.props.history.push('/');
   }
   onCollapseExiting = () => {
     this.setState({
@@ -186,7 +181,6 @@ class MyNavbar extends React.Component {
                 <Button
                   className="btn-neutral"
                   color="default"
-                  onClick = {this.logout}
                 >
                   <i className="fa fa-sign-out-alt" /> Sign Out
                 </Button>
@@ -207,8 +201,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    logoutSuccessDispatch: () => { dispatch(onLogoutSuccess())}
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(withRouter(MyNavbar));
+export default connect(mapStateToProps,mapDispatchToProps)(MyNavbar);

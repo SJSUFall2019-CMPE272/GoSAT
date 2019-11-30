@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { LOGIN_SUCCESS, LOGIN_FAILURE, SIGNUP_FAILURE, SIGNUP_SUCCESS,
-     UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS } from './../actions/actions';
+    UPDATE_PROFILE_DETAILS_FAILURE, UPDATE_PROFILE_DETAILS_SUCCESS, LOGOUT_SUCCESS } from './../actions/actions';
 
     const univList = {
         0 : {

@@ -27,13 +27,6 @@ export function onSignUpSuccess() {
     }
 }
 
-export function onLogoutSuccess() {
-    return {
-        type: LOGOUT_SUCCESS,
-        payload: null
-    }
-}
-
 export function onSignUpFailure() {
     return {
         type: SIGNUP_FAILURE,

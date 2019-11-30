@@ -154,7 +154,8 @@ class Details extends React.Component {
                 </div>)
         }
         return (
-            <div >
+            // <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">Get Started!</h1>
                 <div className="container">
                     <Card>
                         <CardBody>
@@ -198,7 +199,7 @@ class Details extends React.Component {
                         </CardBody>
                     </Card>
                 </div>
-            </div>
+            // </div>
         )
     }
 }

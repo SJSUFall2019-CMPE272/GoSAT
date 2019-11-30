@@ -17,7 +17,6 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { onLogoutSuccess} from './../../redux/actions/actions';
 import {connect} from 'react-redux';
 
 class MyNavbar extends React.Component {
@@ -207,7 +206,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    logoutSuccessDispatch: () => { dispatch(onLogoutSuccess())}
+    logoutSuccessDispatch = () => { dispatch(onLogoutSuccess())}
   }
 }
 

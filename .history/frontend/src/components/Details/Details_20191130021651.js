@@ -155,6 +155,7 @@ class Details extends React.Component {
         }
         return (
             <div >
+                <h1 class="display-4">Get Started!</h1>
                 <div className="container">
                     <Card>
                         <CardBody>

@@ -82,10 +82,7 @@ class Login extends React.Component {
           ls.set('jwtToken', jsonRes.token);
           ls.set('isLoggedIn', true);
           this.props.loginSuccessDispatch(jsonRes);
-          if(this.props.profileDetails!=null)
           this.props.history.push("/dashboard");
-          else
-          this.props.history.push("/details");
         }
       })
     }
@@ -130,8 +127,7 @@ class Login extends React.Component {
 
 const mapStateToProps = (state) => {
   const isLoggedIn = state.app.isLoggedIn;
-  const profileDetails = state.app.profileDetails;
-  return { isLoggedIn , profileDetails };
+  return { isLoggedIn };
 }
 
 const mapDispatchToProps = (dispatch) => {
