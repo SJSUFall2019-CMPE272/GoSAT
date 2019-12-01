@@ -73,10 +73,10 @@ A sample request for a prediction:
 
 ```
 curl -X POST \
-  https://r8naeu32e8.execute-api.us-east-1.amazonaws.com/prod/ \
+  https://883haygr14.execute-api.us-east-1.amazonaws.com/dev \
   -H 'Content-Type: application/json' \
   -d '{
-    "data": {
+  "data": {
         "gpa": 4,
         "actE": 31,
         "actC": 31,
@@ -85,7 +85,7 @@ curl -X POST \
         "satE": 20,
         "agc": 30,
         "hc": 15,
-        "ethnicity" : 'American-Asian'
+        "ethnicity" : "American-Asian"
     }
 }'
 ```
