@@ -31,9 +31,9 @@ import GoogleLogin from 'react-google-login';
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
 import ls from 'local-storage';
 import {onLoginFailure, onLoginSuccess} from './../../redux/actions/actions';
-import {baseURL} from './../../config/config'
 
-
+const mlURL = "https://883haygr14.execute-api.us-east-1.amazonaws.com/dev"
+const baseURL = "https://master.d12jzfklb8ijc4.amplifyapp.com/"
 var md5 = require('md5');
 
 class Login extends React.Component {
@@ -87,7 +87,7 @@ class Login extends React.Component {
           'Content-Type': 'application/json'
         },
         method: 'POST',
-        body: JSON.stringify({ emailId: this.state.emailId, password: this.state.password }),
+        body: { emailId: this.state.emailId, password: this.state.password },
       })
       .then((response) => {
         return response.json();

@@ -5,12 +5,12 @@ import {
 
 } from 'reactstrap';
 import { AvForm, AvField, AvRadioGroup, AvRadio } from 'availity-reactstrap-validation';
-import {baseURL,mlURL} from './../../config/config';
 import {connect} from 'react-redux';
 import {onUpdateProfileDetailsFailure, onUpdateProfileDetailsSuccess , onMLPredictionSuccess, onMLPredictionFailure} from './../../redux/actions/actions'
 import MyNavbar from "../Navbars/MyNavbar";
 
-
+const mlURL = "https://883haygr14.execute-api.us-east-1.amazonaws.com/dev"
+const baseURL = "https://master.d12jzfklb8ijc4.amplifyapp.com/"
 class Details extends React.Component {
 
     constructor() {
@@ -111,7 +111,7 @@ class Details extends React.Component {
                     'Content-Type': 'application/json'
                   },
                 method: 'POST',
-                body: JSON.stringify(data)
+                body: data
             })
             .then((response) => {
                 return response.json();

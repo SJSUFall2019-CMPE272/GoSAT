@@ -20,12 +20,12 @@ import {
 } from "reactstrap";
 import { AvForm, AvField,} from 'availity-reactstrap-validation';
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
-import {baseURL} from './../../config/config'
 import GoogleLogin from 'react-google-login';
 import { onSignUpFailure, onSignUpSuccess} from './../../redux/actions/actions'
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 import {connect} from 'react-redux';
-
+const mlURL = "https://883haygr14.execute-api.us-east-1.amazonaws.com/dev"
+const baseURL = "https://master.d12jzfklb8ijc4.amplifyapp.com/"
 var md5 = require('md5');
 
 class SignUp extends React.Component {
@@ -78,7 +78,7 @@ class SignUp extends React.Component {
         'Content-Type': 'application/json'
       },
       method: 'POST',
-      body: JSON.stringify(data)
+      body: data
     })
       .then((response) => {
         return response.json();
