@@ -23,15 +23,13 @@ import { AvForm, AvField } from 'availity-reactstrap-validation';
 
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
-
+import {baseURL, mlURL} from './../../config/config';
 
 import GoogleLogin from 'react-google-login';
-// import FacebookLogin from 'react-facebook-login';
 
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
 import ls from 'local-storage';
 import {onLoginFailure, onLoginSuccess} from './../../redux/actions/actions';
-import {baseURL} from './../../config/config'
 
 
 var md5 = require('md5');
@@ -87,7 +85,7 @@ class Login extends React.Component {
           'Content-Type': 'application/json'
         },
         method: 'POST',
-        body: JSON.stringify({ emailId: this.state.emailId, password: this.state.password }),
+        body: { emailId: this.state.emailId, password: this.state.password },
       })
       .then((response) => {
         return response.json();

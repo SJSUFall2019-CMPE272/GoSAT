@@ -4,8 +4,8 @@ import {
     CardTitle, Button, FormGroup, Row, Col, Container
 
 } from 'reactstrap';
+import { baseURL, mlURL} from './../../config/config'
 import { AvForm, AvField, AvRadioGroup, AvRadio } from 'availity-reactstrap-validation';
-import {baseURL,mlURL} from './../../config/config';
 import {connect} from 'react-redux';
 import {onUpdateProfileDetailsFailure, onUpdateProfileDetailsSuccess , onMLPredictionSuccess, onMLPredictionFailure} from './../../redux/actions/actions'
 import MyNavbar from "../Navbars/MyNavbar";
@@ -111,7 +111,7 @@ class Details extends React.Component {
                     'Content-Type': 'application/json'
                   },
                 method: 'POST',
-                body: JSON.stringify(data)
+                body: data
             })
             .then((response) => {
                 return response.json();
