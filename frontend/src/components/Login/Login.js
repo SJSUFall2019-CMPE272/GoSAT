@@ -23,17 +23,15 @@ import { AvForm, AvField } from 'availity-reactstrap-validation';
 
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
-
+import {baseURL, mlURL} from './../../config/config';
 
 import GoogleLogin from 'react-google-login';
-// import FacebookLogin from 'react-facebook-login';
 
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
 import ls from 'local-storage';
 import {onLoginFailure, onLoginSuccess} from './../../redux/actions/actions';
 
-const mlURL = "https://883haygr14.execute-api.us-east-1.amazonaws.com/dev"
-const baseURL = "https://master.d12jzfklb8ijc4.amplifyapp.com/"
+
 var md5 = require('md5');
 
 class Login extends React.Component {
