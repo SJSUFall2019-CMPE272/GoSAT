@@ -78,7 +78,7 @@ class SignUp extends React.Component {
         'Content-Type': 'application/json'
       },
       method: 'POST',
-      body: data
+      body: JSON.stringify(data)
     })
       .then((response) => {
         return response.json();
