@@ -18,9 +18,9 @@ import {
   Row,
   Col
 } from "reactstrap";
+import { baseURL, mlURL} from './../../config/config'
 import { AvForm, AvField,} from 'availity-reactstrap-validation';
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
-import {baseURL} from './../../config/config'
 import GoogleLogin from 'react-google-login';
 import { onSignUpFailure, onSignUpSuccess} from './../../redux/actions/actions'
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
@@ -75,7 +75,8 @@ class SignUp extends React.Component {
     console.log("data is ",data);
     fetch(baseURL+'/api/auth/signUp', {
       headers: {
-        'Content-Type': 'application/json'
+        'content-type': 'application/json',
+        'accept': 'application/json'
       },
       method: 'POST',
       body: JSON.stringify(data)

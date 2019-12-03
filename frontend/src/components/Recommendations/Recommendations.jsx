@@ -15,9 +15,9 @@ import {
   ListGroup,
   Container,
   Row,
-  Col,
+  Col, 
   Table
-} from "reactstrap";
+} from "reactstrap"; 
 
 import RecommendationsCardCarousal from "../RecommendationsCardCarousal/RecommendationsCardCarousal";
 
@@ -32,7 +32,7 @@ class Recommendations extends React.Component {
 
   constructor() {
     super();
-  }
+  } 
 
   render(){
     return (
