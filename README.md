@@ -68,11 +68,13 @@ yarn run build
 ![Screenshot](data-sample.png)
 
 GPA is grouped into low (1), medium (2), and high (3) buckets
+
 SAT scores (AvgScrMath, AvgScrWrit, and AvgScrRead) are also group into low(1), medium (2), and high (3) buckets
 
 Admittance Rate is a calculated probability representing the percentage of applicants for a UC campus and county that were admitted vs. applied.
 
 SAT data was sourced from the California Department of Education (CDE) 2015-2016 SAT reports
+
 UC applicant ethnicty, county, and gender were sourced from the UC System Infocenter Admissions by Source School in 2016
 
 Data from the separate sources was aggregated by county and admit status
