@@ -82,6 +82,7 @@ class SignUp extends React.Component {
       method: 'POST'
     })
     .then((response) => {
+      console.log("res is ",response);
       return response.json();
     })
     .then((jsonRes) => {
