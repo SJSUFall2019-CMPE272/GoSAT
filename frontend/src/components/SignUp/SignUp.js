@@ -91,7 +91,10 @@ class SignUp extends React.Component {
             this.props.signUpSuccessDispatch();
             this.props.history.push("/login");
         }
-      })
+    })
+    .catch(err => {
+      console.log("error in signup ",err.message);
+    })
   }
 
   handleInvalidSubmit = (event, errors, values) => {
