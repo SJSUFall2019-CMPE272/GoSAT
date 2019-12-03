@@ -18,6 +18,7 @@ import {
   Row,
   Col
 } from "reactstrap";
+import axios from 'axios';
 import { baseURL, mlURL} from './../../config/config'
 import { AvForm, AvField,} from 'availity-reactstrap-validation';
 import { FB_APP_ID, GOOGLE_CLIENT_ID } from '../../constants/constants';
@@ -73,13 +74,12 @@ class SignUp extends React.Component {
       "lastName" : this.state.lastName
     }
     console.log("data is ",data);
-    fetch(baseURL+'/api/auth/signUp', {
+    axios.post('/api/auth/signUp',JSON.stringify(data), {
       headers: {
-        'content-type': 'application/json',
-        'accept': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
-      method: 'POST',
-      body: JSON.stringify(data)
+      method: 'POST'
     })
       .then((response) => {
         return response.json();
