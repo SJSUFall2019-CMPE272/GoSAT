@@ -77,7 +77,7 @@ class SignUp extends React.Component {
     axios.post(baseURL+'/api/auth/signUp',JSON.stringify(data), {
       headers: {
         'Content-Type': 'application/json',
-        // 'Accept': 'application/json'
+        'Accept': 'application/json'
       },
       method: 'POST'
     })
