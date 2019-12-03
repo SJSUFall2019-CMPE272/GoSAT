@@ -44,3 +44,6 @@ app.use(express.static('public'))
 app.use('/uploads', express.static('uploads'));
 
 app.use('/api', routes);
+app.get("/*", function (req, res) {
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+})

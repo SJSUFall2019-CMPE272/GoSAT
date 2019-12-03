@@ -41,10 +41,10 @@ routes.post('/signUp', (req, res) => {
         console.log(" req is ",req.body );
     authService.createUser(payload)
     .then( results => {
-        res.status(200).json({ success: true, message: "User successfully created", payload: null });
+        res.status(200).send({ success: true, message: "User successfully created", payload: null });
     })
     .catch(err => {
-        res.status(500).json({ success: false, message: err.message, payload: null });
+        res.status(500).send({ success: false, message: err.message, payload: null });
     })
 })
 
