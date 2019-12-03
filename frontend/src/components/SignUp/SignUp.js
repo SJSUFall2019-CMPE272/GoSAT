@@ -75,7 +75,8 @@ class SignUp extends React.Component {
     console.log("data is ",data);
     fetch(baseURL+'/api/auth/signUp', {
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       method: 'POST',
       body: JSON.stringify(data)
