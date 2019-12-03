@@ -81,16 +81,18 @@ class SignUp extends React.Component {
       },
       method: 'POST'
     })
-      .then((response) => {
-        //return response.json();
-      }).then((jsonRes) => {
-        if (jsonRes.success == false) {
-          console.log("Couldnt signUp");
-          this.props.signUpFailureDispatch();
-        } else {
-            this.props.signUpSuccessDispatch();
-            this.props.history.push("/login");
-        }
+    .then((response) => {
+      return response.json();
+    })
+    .then((jsonRes) => {
+      console.log("res is ",jsonRes);
+      if (jsonRes.success == false) {
+        console.log("Couldnt signUp");
+        this.props.signUpFailureDispatch();
+      } else {
+          this.props.signUpSuccessDispatch();
+          this.props.history.push("/login");
+      }
     })
     .catch(err => {
       console.log("error in signup ",err.message);
