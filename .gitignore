@@ -8,6 +8,5 @@ machine-learning/serverless-machine-learning/gosat/
 machine-learning/models/
 projectgroup-25-dev-1574635667.zip
 *.ipynb_checkpoints/
-data/
 *.tar.gz
 .history/
