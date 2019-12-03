@@ -1,0 +1,2758 @@
+,County,Ethnicity,Gender,Campus,GPA,AvgScrRead,AvgScrMath,AvgScrWrit
+0,San Bernardino,Domestic Unknown,Male,Davis,4.2,460,460,440
+1,San Bernardino,Domestic Unknown,Male,Irvine,4.2,460,460,440
+2,San Bernardino,Domestic Unknown,Male,Merced,3.4,460,460,440
+3,San Bernardino,Domestic Unknown,Male,Riverside,3.8,460,460,440
+4,San Bernardino,Domestic Unknown,Male,San Diego,4.2,460,460,440
+5,San Bernardino,Domestic Unknown,Male,Santa Barbara,3.8,460,460,440
+6,San Bernardino,Domestic Unknown,Male,Santa Cruz,3.6,460,460,440
+7,San Bernardino,Domestic Unknown,Male,Universitywide,3.8,460,460,440
+8,San Bernardino,Domestic Unknown,Female,Davis,4.2,460,460,440
+9,San Bernardino,Domestic Unknown,Female,Irvine,4.2,460,460,440
+10,San Bernardino,Domestic Unknown,Female,Merced,3.4,460,460,440
+11,San Bernardino,Domestic Unknown,Female,Riverside,3.8,460,460,440
+12,San Bernardino,Domestic Unknown,Female,San Diego,4.2,460,460,440
+13,San Bernardino,Domestic Unknown,Female,Santa Barbara,3.8,460,460,440
+14,San Bernardino,Domestic Unknown,Female,Santa Cruz,3.6,460,460,440
+15,San Bernardino,Domestic Unknown,Female,Universitywide,3.8,460,460,440
+16,San Bernardino,Domestic Unknown,All,Davis,4.2,460,460,440
+17,San Bernardino,Domestic Unknown,All,Irvine,4.2,460,460,440
+18,San Bernardino,Domestic Unknown,All,Merced,3.4,460,460,440
+19,San Bernardino,Domestic Unknown,All,Riverside,3.8,460,460,440
+20,San Bernardino,Domestic Unknown,All,San Diego,4.2,460,460,440
+21,San Bernardino,Domestic Unknown,All,Santa Barbara,3.8,460,460,440
+22,San Bernardino,Domestic Unknown,All,Santa Cruz,3.6,460,460,440
+23,San Bernardino,Domestic Unknown,All,Universitywide,3.8,460,460,440
+24,San Bernardino,Asian,Male,Davis,4.2,460,460,440
+25,San Bernardino,Asian,Male,Irvine,4.2,460,460,440
+26,San Bernardino,Asian,Male,Merced,3.4,460,460,440
+27,San Bernardino,Asian,Male,Riverside,3.8,460,460,440
+28,San Bernardino,Asian,Male,San Diego,4.2,460,460,440
+29,San Bernardino,Asian,Male,Santa Barbara,3.8,460,460,440
+30,San Bernardino,Asian,Male,Santa Cruz,3.6,460,460,440
+31,San Bernardino,Asian,Male,Universitywide,3.8,460,460,440
+32,San Bernardino,Asian,Female,Davis,4.2,460,460,440
+33,San Bernardino,Asian,Female,Irvine,4.2,460,460,440
+34,San Bernardino,Asian,Female,Merced,3.4,460,460,440
+35,San Bernardino,Asian,Female,Riverside,3.8,460,460,440
+36,San Bernardino,Asian,Female,San Diego,4.2,460,460,440
+37,San Bernardino,Asian,Female,Santa Barbara,3.8,460,460,440
+38,San Bernardino,Asian,Female,Santa Cruz,3.6,460,460,440
+39,San Bernardino,Asian,Female,Universitywide,3.8,460,460,440
+40,San Bernardino,Asian,All,Davis,4.2,460,460,440
+41,San Bernardino,Asian,All,Irvine,4.2,460,460,440
+42,San Bernardino,Asian,All,Merced,3.4,460,460,440
+43,San Bernardino,Asian,All,Riverside,3.8,460,460,440
+44,San Bernardino,Asian,All,San Diego,4.2,460,460,440
+45,San Bernardino,Asian,All,Santa Barbara,3.8,460,460,440
+46,San Bernardino,Asian,All,Santa Cruz,3.6,460,460,440
+47,San Bernardino,Asian,All,Universitywide,3.8,460,460,440
+48,San Bernardino,Hispanic/ Latino,Male,Davis,4.2,460,460,440
+49,San Bernardino,Hispanic/ Latino,Male,Irvine,4.2,460,460,440
+50,San Bernardino,Hispanic/ Latino,Male,Merced,3.4,460,460,440
+51,San Bernardino,Hispanic/ Latino,Male,Riverside,3.8,460,460,440
+52,San Bernardino,Hispanic/ Latino,Male,San Diego,4.2,460,460,440
+53,San Bernardino,Hispanic/ Latino,Male,Santa Barbara,3.8,460,460,440
+54,San Bernardino,Hispanic/ Latino,Male,Santa Cruz,3.6,460,460,440
+55,San Bernardino,Hispanic/ Latino,Male,Universitywide,3.8,460,460,440
+56,San Bernardino,Hispanic/ Latino,Female,Davis,4.2,460,460,440
+57,San Bernardino,Hispanic/ Latino,Female,Irvine,4.2,460,460,440
+58,San Bernardino,Hispanic/ Latino,Female,Merced,3.4,460,460,440
+59,San Bernardino,Hispanic/ Latino,Female,Riverside,3.8,460,460,440
+60,San Bernardino,Hispanic/ Latino,Female,San Diego,4.2,460,460,440
+61,San Bernardino,Hispanic/ Latino,Female,Santa Barbara,3.8,460,460,440
+62,San Bernardino,Hispanic/ Latino,Female,Santa Cruz,3.6,460,460,440
+63,San Bernardino,Hispanic/ Latino,Female,Universitywide,3.8,460,460,440
+64,San Bernardino,Hispanic/ Latino,All,Davis,4.2,460,460,440
+65,San Bernardino,Hispanic/ Latino,All,Irvine,4.2,460,460,440
+66,San Bernardino,Hispanic/ Latino,All,Merced,3.4,460,460,440
+67,San Bernardino,Hispanic/ Latino,All,Riverside,3.8,460,460,440
+68,San Bernardino,Hispanic/ Latino,All,San Diego,4.2,460,460,440
+69,San Bernardino,Hispanic/ Latino,All,Santa Barbara,3.8,460,460,440
+70,San Bernardino,Hispanic/ Latino,All,Santa Cruz,3.6,460,460,440
+71,San Bernardino,Hispanic/ Latino,All,Universitywide,3.8,460,460,440
+72,San Bernardino,All,Male,Davis,4.2,460,460,440
+73,San Bernardino,All,Male,Irvine,4.2,460,460,440
+74,San Bernardino,All,Male,Merced,3.4,460,460,440
+75,San Bernardino,All,Male,Riverside,3.8,460,460,440
+76,San Bernardino,All,Male,San Diego,4.2,460,460,440
+77,San Bernardino,All,Male,Santa Barbara,3.8,460,460,440
+78,San Bernardino,All,Male,Santa Cruz,3.6,460,460,440
+79,San Bernardino,All,Male,Universitywide,3.8,460,460,440
+80,San Bernardino,All,Female,Davis,4.2,460,460,440
+81,San Bernardino,All,Female,Irvine,4.2,460,460,440
+82,San Bernardino,All,Female,Merced,3.4,460,460,440
+83,San Bernardino,All,Female,Riverside,3.8,460,460,440
+84,San Bernardino,All,Female,San Diego,4.2,460,460,440
+85,San Bernardino,All,Female,Santa Barbara,3.8,460,460,440
+86,San Bernardino,All,Female,Santa Cruz,3.6,460,460,440
+87,San Bernardino,All,Female,Universitywide,3.8,460,460,440
+88,San Bernardino,All,All,Davis,4.2,460,460,440
+89,San Bernardino,All,All,Irvine,4.2,460,460,440
+90,San Bernardino,All,All,Merced,3.4,460,460,440
+91,San Bernardino,All,All,Riverside,3.8,460,460,440
+92,San Bernardino,All,All,San Diego,4.2,460,460,440
+93,San Bernardino,All,All,Santa Barbara,3.8,460,460,440
+94,San Bernardino,All,All,Santa Cruz,3.6,460,460,440
+95,San Bernardino,All,All,Universitywide,3.8,460,460,440
+96,San Bernardino,White,Male,Davis,4.2,460,460,440
+97,San Bernardino,White,Male,Irvine,4.2,460,460,440
+98,San Bernardino,White,Male,Merced,3.4,460,460,440
+99,San Bernardino,White,Male,Riverside,3.8,460,460,440
+100,San Bernardino,White,Male,San Diego,4.2,460,460,440
+101,San Bernardino,White,Male,Santa Barbara,3.8,460,460,440
+102,San Bernardino,White,Male,Santa Cruz,3.6,460,460,440
+103,San Bernardino,White,Male,Universitywide,3.8,460,460,440
+104,San Bernardino,White,Female,Davis,4.2,460,460,440
+105,San Bernardino,White,Female,Irvine,4.2,460,460,440
+106,San Bernardino,White,Female,Merced,3.4,460,460,440
+107,San Bernardino,White,Female,Riverside,3.8,460,460,440
+108,San Bernardino,White,Female,San Diego,4.2,460,460,440
+109,San Bernardino,White,Female,Santa Barbara,3.8,460,460,440
+110,San Bernardino,White,Female,Santa Cruz,3.6,460,460,440
+111,San Bernardino,White,Female,Universitywide,3.8,460,460,440
+112,San Bernardino,White,All,Davis,4.2,460,460,440
+113,San Bernardino,White,All,Irvine,4.2,460,460,440
+114,San Bernardino,White,All,Merced,3.4,460,460,440
+115,San Bernardino,White,All,Riverside,3.8,460,460,440
+116,San Bernardino,White,All,San Diego,4.2,460,460,440
+117,San Bernardino,White,All,Santa Barbara,3.8,460,460,440
+118,San Bernardino,White,All,Santa Cruz,3.6,460,460,440
+119,San Bernardino,White,All,Universitywide,3.8,460,460,440
+120,San Bernardino,African American,Male,Davis,4.2,460,460,440
+121,San Bernardino,African American,Male,Irvine,4.2,460,460,440
+122,San Bernardino,African American,Male,Merced,3.4,460,460,440
+123,San Bernardino,African American,Male,Riverside,3.8,460,460,440
+124,San Bernardino,African American,Male,San Diego,4.2,460,460,440
+125,San Bernardino,African American,Male,Santa Barbara,3.8,460,460,440
+126,San Bernardino,African American,Male,Santa Cruz,3.6,460,460,440
+127,San Bernardino,African American,Male,Universitywide,3.8,460,460,440
+128,San Bernardino,African American,Female,Davis,4.2,460,460,440
+129,San Bernardino,African American,Female,Irvine,4.2,460,460,440
+130,San Bernardino,African American,Female,Merced,3.4,460,460,440
+131,San Bernardino,African American,Female,Riverside,3.8,460,460,440
+132,San Bernardino,African American,Female,San Diego,4.2,460,460,440
+133,San Bernardino,African American,Female,Santa Barbara,3.8,460,460,440
+134,San Bernardino,African American,Female,Santa Cruz,3.6,460,460,440
+135,San Bernardino,African American,Female,Universitywide,3.8,460,460,440
+136,San Bernardino,African American,All,Davis,4.2,460,460,440
+137,San Bernardino,African American,All,Irvine,4.2,460,460,440
+138,San Bernardino,African American,All,Merced,3.4,460,460,440
+139,San Bernardino,African American,All,Riverside,3.8,460,460,440
+140,San Bernardino,African American,All,San Diego,4.2,460,460,440
+141,San Bernardino,African American,All,Santa Barbara,3.8,460,460,440
+142,San Bernardino,African American,All,Santa Cruz,3.6,460,460,440
+143,San Bernardino,African American,All,Universitywide,3.8,460,460,440
+144,San Bernardino,Inter- national,Male,Davis,4.2,460,460,440
+145,San Bernardino,Inter- national,Male,Irvine,4.2,460,460,440
+146,San Bernardino,Inter- national,Male,Merced,3.4,460,460,440
+147,San Bernardino,Inter- national,Male,Riverside,3.8,460,460,440
+148,San Bernardino,Inter- national,Male,San Diego,4.2,460,460,440
+149,San Bernardino,Inter- national,Male,Santa Barbara,3.8,460,460,440
+150,San Bernardino,Inter- national,Male,Santa Cruz,3.6,460,460,440
+151,San Bernardino,Inter- national,Male,Universitywide,3.8,460,460,440
+152,San Bernardino,Inter- national,Female,Davis,4.2,460,460,440
+153,San Bernardino,Inter- national,Female,Irvine,4.2,460,460,440
+154,San Bernardino,Inter- national,Female,Merced,3.4,460,460,440
+155,San Bernardino,Inter- national,Female,Riverside,3.8,460,460,440
+156,San Bernardino,Inter- national,Female,San Diego,4.2,460,460,440
+157,San Bernardino,Inter- national,Female,Santa Barbara,3.8,460,460,440
+158,San Bernardino,Inter- national,Female,Santa Cruz,3.6,460,460,440
+159,San Bernardino,Inter- national,Female,Universitywide,3.8,460,460,440
+160,San Bernardino,Inter- national,All,Davis,4.2,460,460,440
+161,San Bernardino,Inter- national,All,Irvine,4.2,460,460,440
+162,San Bernardino,Inter- national,All,Merced,3.4,460,460,440
+163,San Bernardino,Inter- national,All,Riverside,3.8,460,460,440
+164,San Bernardino,Inter- national,All,San Diego,4.2,460,460,440
+165,San Bernardino,Inter- national,All,Santa Barbara,3.8,460,460,440
+166,San Bernardino,Inter- national,All,Santa Cruz,3.6,460,460,440
+167,San Bernardino,Inter- national,All,Universitywide,3.8,460,460,440
+168,Los Angeles,Asian,Male,Berkeley,4.4,440,440,440
+169,Los Angeles,Asian,Male,Davis,4.2,440,440,440
+170,Los Angeles,Asian,Male,Irvine,4.2,440,440,440
+171,Los Angeles,Asian,Male,Los Angeles,4.2,440,440,440
+172,Los Angeles,Asian,Male,Merced,3.4,440,440,440
+173,Los Angeles,Asian,Male,Riverside,3.8,440,440,440
+174,Los Angeles,Asian,Male,San Diego,4.2,440,440,440
+175,Los Angeles,Asian,Male,Santa Barbara,4.2,440,440,440
+176,Los Angeles,Asian,Male,Santa Cruz,3.8,440,440,440
+177,Los Angeles,Asian,Male,Universitywide,3.8,440,440,440
+178,Los Angeles,Asian,Female,Berkeley,4.4,440,440,440
+179,Los Angeles,Asian,Female,Davis,4.2,440,440,440
+180,Los Angeles,Asian,Female,Irvine,4.2,440,440,440
+181,Los Angeles,Asian,Female,Los Angeles,4.2,440,440,440
+182,Los Angeles,Asian,Female,Merced,3.4,440,440,440
+183,Los Angeles,Asian,Female,Riverside,3.8,440,440,440
+184,Los Angeles,Asian,Female,San Diego,4.2,440,440,440
+185,Los Angeles,Asian,Female,Santa Barbara,4.2,440,440,440
+186,Los Angeles,Asian,Female,Santa Cruz,3.8,440,440,440
+187,Los Angeles,Asian,Female,Universitywide,3.8,440,440,440
+188,Los Angeles,Asian,All,Berkeley,4.4,440,440,440
+189,Los Angeles,Asian,All,Davis,4.2,440,440,440
+190,Los Angeles,Asian,All,Irvine,4.2,440,440,440
+191,Los Angeles,Asian,All,Los Angeles,4.2,440,440,440
+192,Los Angeles,Asian,All,Merced,3.4,440,440,440
+193,Los Angeles,Asian,All,Riverside,3.8,440,440,440
+194,Los Angeles,Asian,All,San Diego,4.2,440,440,440
+195,Los Angeles,Asian,All,Santa Barbara,4.2,440,440,440
+196,Los Angeles,Asian,All,Santa Cruz,3.8,440,440,440
+197,Los Angeles,Asian,All,Universitywide,3.8,440,440,440
+198,Los Angeles,Asian,Unknown,Berkeley,4.4,440,440,440
+199,Los Angeles,Asian,Unknown,Davis,4.2,440,440,440
+200,Los Angeles,Asian,Unknown,Irvine,4.2,440,440,440
+201,Los Angeles,Asian,Unknown,Los Angeles,4.2,440,440,440
+202,Los Angeles,Asian,Unknown,Merced,3.4,440,440,440
+203,Los Angeles,Asian,Unknown,Riverside,3.8,440,440,440
+204,Los Angeles,Asian,Unknown,San Diego,4.2,440,440,440
+205,Los Angeles,Asian,Unknown,Santa Barbara,4.2,440,440,440
+206,Los Angeles,Asian,Unknown,Santa Cruz,3.8,440,440,440
+207,Los Angeles,Asian,Unknown,Universitywide,3.8,440,440,440
+208,Los Angeles,Hispanic/ Latino,Male,Berkeley,4.4,440,440,440
+209,Los Angeles,Hispanic/ Latino,Male,Davis,4.2,440,440,440
+210,Los Angeles,Hispanic/ Latino,Male,Irvine,4.2,440,440,440
+211,Los Angeles,Hispanic/ Latino,Male,Los Angeles,4.2,440,440,440
+212,Los Angeles,Hispanic/ Latino,Male,Merced,3.4,440,440,440
+213,Los Angeles,Hispanic/ Latino,Male,Riverside,3.8,440,440,440
+214,Los Angeles,Hispanic/ Latino,Male,San Diego,4.2,440,440,440
+215,Los Angeles,Hispanic/ Latino,Male,Santa Barbara,4.2,440,440,440
+216,Los Angeles,Hispanic/ Latino,Male,Santa Cruz,3.8,440,440,440
+217,Los Angeles,Hispanic/ Latino,Male,Universitywide,3.8,440,440,440
+218,Los Angeles,Hispanic/ Latino,Female,Berkeley,4.4,440,440,440
+219,Los Angeles,Hispanic/ Latino,Female,Davis,4.2,440,440,440
+220,Los Angeles,Hispanic/ Latino,Female,Irvine,4.2,440,440,440
+221,Los Angeles,Hispanic/ Latino,Female,Los Angeles,4.2,440,440,440
+222,Los Angeles,Hispanic/ Latino,Female,Merced,3.4,440,440,440
+223,Los Angeles,Hispanic/ Latino,Female,Riverside,3.8,440,440,440
+224,Los Angeles,Hispanic/ Latino,Female,San Diego,4.2,440,440,440
+225,Los Angeles,Hispanic/ Latino,Female,Santa Barbara,4.2,440,440,440
+226,Los Angeles,Hispanic/ Latino,Female,Santa Cruz,3.8,440,440,440
+227,Los Angeles,Hispanic/ Latino,Female,Universitywide,3.8,440,440,440
+228,Los Angeles,Hispanic/ Latino,All,Berkeley,4.4,440,440,440
+229,Los Angeles,Hispanic/ Latino,All,Davis,4.2,440,440,440
+230,Los Angeles,Hispanic/ Latino,All,Irvine,4.2,440,440,440
+231,Los Angeles,Hispanic/ Latino,All,Los Angeles,4.2,440,440,440
+232,Los Angeles,Hispanic/ Latino,All,Merced,3.4,440,440,440
+233,Los Angeles,Hispanic/ Latino,All,Riverside,3.8,440,440,440
+234,Los Angeles,Hispanic/ Latino,All,San Diego,4.2,440,440,440
+235,Los Angeles,Hispanic/ Latino,All,Santa Barbara,4.2,440,440,440
+236,Los Angeles,Hispanic/ Latino,All,Santa Cruz,3.8,440,440,440
+237,Los Angeles,Hispanic/ Latino,All,Universitywide,3.8,440,440,440
+238,Los Angeles,Hispanic/ Latino,Unknown,Berkeley,4.4,440,440,440
+239,Los Angeles,Hispanic/ Latino,Unknown,Davis,4.2,440,440,440
+240,Los Angeles,Hispanic/ Latino,Unknown,Irvine,4.2,440,440,440
+241,Los Angeles,Hispanic/ Latino,Unknown,Los Angeles,4.2,440,440,440
+242,Los Angeles,Hispanic/ Latino,Unknown,Merced,3.4,440,440,440
+243,Los Angeles,Hispanic/ Latino,Unknown,Riverside,3.8,440,440,440
+244,Los Angeles,Hispanic/ Latino,Unknown,San Diego,4.2,440,440,440
+245,Los Angeles,Hispanic/ Latino,Unknown,Santa Barbara,4.2,440,440,440
+246,Los Angeles,Hispanic/ Latino,Unknown,Santa Cruz,3.8,440,440,440
+247,Los Angeles,Hispanic/ Latino,Unknown,Universitywide,3.8,440,440,440
+248,Los Angeles,All,Male,Berkeley,4.4,440,440,440
+249,Los Angeles,All,Male,Davis,4.2,440,440,440
+250,Los Angeles,All,Male,Irvine,4.2,440,440,440
+251,Los Angeles,All,Male,Los Angeles,4.2,440,440,440
+252,Los Angeles,All,Male,Merced,3.4,440,440,440
+253,Los Angeles,All,Male,Riverside,3.8,440,440,440
+254,Los Angeles,All,Male,San Diego,4.2,440,440,440
+255,Los Angeles,All,Male,Santa Barbara,4.2,440,440,440
+256,Los Angeles,All,Male,Santa Cruz,3.8,440,440,440
+257,Los Angeles,All,Male,Universitywide,3.8,440,440,440
+258,Los Angeles,All,Female,Berkeley,4.4,440,440,440
+259,Los Angeles,All,Female,Davis,4.2,440,440,440
+260,Los Angeles,All,Female,Irvine,4.2,440,440,440
+261,Los Angeles,All,Female,Los Angeles,4.2,440,440,440
+262,Los Angeles,All,Female,Merced,3.4,440,440,440
+263,Los Angeles,All,Female,Riverside,3.8,440,440,440
+264,Los Angeles,All,Female,San Diego,4.2,440,440,440
+265,Los Angeles,All,Female,Santa Barbara,4.2,440,440,440
+266,Los Angeles,All,Female,Santa Cruz,3.8,440,440,440
+267,Los Angeles,All,Female,Universitywide,3.8,440,440,440
+268,Los Angeles,All,All,Berkeley,4.4,440,440,440
+269,Los Angeles,All,All,Davis,4.2,440,440,440
+270,Los Angeles,All,All,Irvine,4.2,440,440,440
+271,Los Angeles,All,All,Los Angeles,4.2,440,440,440
+272,Los Angeles,All,All,Merced,3.4,440,440,440
+273,Los Angeles,All,All,Riverside,3.8,440,440,440
+274,Los Angeles,All,All,San Diego,4.2,440,440,440
+275,Los Angeles,All,All,Santa Barbara,4.2,440,440,440
+276,Los Angeles,All,All,Santa Cruz,3.8,440,440,440
+277,Los Angeles,All,All,Universitywide,3.8,440,440,440
+278,Los Angeles,All,Unknown,Berkeley,4.4,440,440,440
+279,Los Angeles,All,Unknown,Davis,4.2,440,440,440
+280,Los Angeles,All,Unknown,Irvine,4.2,440,440,440
+281,Los Angeles,All,Unknown,Los Angeles,4.2,440,440,440
+282,Los Angeles,All,Unknown,Merced,3.4,440,440,440
+283,Los Angeles,All,Unknown,Riverside,3.8,440,440,440
+284,Los Angeles,All,Unknown,San Diego,4.2,440,440,440
+285,Los Angeles,All,Unknown,Santa Barbara,4.2,440,440,440
+286,Los Angeles,All,Unknown,Santa Cruz,3.8,440,440,440
+287,Los Angeles,All,Unknown,Universitywide,3.8,440,440,440
+288,Los Angeles,White,Male,Berkeley,4.4,440,440,440
+289,Los Angeles,White,Male,Davis,4.2,440,440,440
+290,Los Angeles,White,Male,Irvine,4.2,440,440,440
+291,Los Angeles,White,Male,Los Angeles,4.2,440,440,440
+292,Los Angeles,White,Male,Merced,3.4,440,440,440
+293,Los Angeles,White,Male,Riverside,3.8,440,440,440
+294,Los Angeles,White,Male,San Diego,4.2,440,440,440
+295,Los Angeles,White,Male,Santa Barbara,4.2,440,440,440
+296,Los Angeles,White,Male,Santa Cruz,3.8,440,440,440
+297,Los Angeles,White,Male,Universitywide,3.8,440,440,440
+298,Los Angeles,White,Female,Berkeley,4.4,440,440,440
+299,Los Angeles,White,Female,Davis,4.2,440,440,440
+300,Los Angeles,White,Female,Irvine,4.2,440,440,440
+301,Los Angeles,White,Female,Los Angeles,4.2,440,440,440
+302,Los Angeles,White,Female,Merced,3.4,440,440,440
+303,Los Angeles,White,Female,Riverside,3.8,440,440,440
+304,Los Angeles,White,Female,San Diego,4.2,440,440,440
+305,Los Angeles,White,Female,Santa Barbara,4.2,440,440,440
+306,Los Angeles,White,Female,Santa Cruz,3.8,440,440,440
+307,Los Angeles,White,Female,Universitywide,3.8,440,440,440
+308,Los Angeles,White,All,Berkeley,4.4,440,440,440
+309,Los Angeles,White,All,Davis,4.2,440,440,440
+310,Los Angeles,White,All,Irvine,4.2,440,440,440
+311,Los Angeles,White,All,Los Angeles,4.2,440,440,440
+312,Los Angeles,White,All,Merced,3.4,440,440,440
+313,Los Angeles,White,All,Riverside,3.8,440,440,440
+314,Los Angeles,White,All,San Diego,4.2,440,440,440
+315,Los Angeles,White,All,Santa Barbara,4.2,440,440,440
+316,Los Angeles,White,All,Santa Cruz,3.8,440,440,440
+317,Los Angeles,White,All,Universitywide,3.8,440,440,440
+318,Los Angeles,White,Unknown,Berkeley,4.4,440,440,440
+319,Los Angeles,White,Unknown,Davis,4.2,440,440,440
+320,Los Angeles,White,Unknown,Irvine,4.2,440,440,440
+321,Los Angeles,White,Unknown,Los Angeles,4.2,440,440,440
+322,Los Angeles,White,Unknown,Merced,3.4,440,440,440
+323,Los Angeles,White,Unknown,Riverside,3.8,440,440,440
+324,Los Angeles,White,Unknown,San Diego,4.2,440,440,440
+325,Los Angeles,White,Unknown,Santa Barbara,4.2,440,440,440
+326,Los Angeles,White,Unknown,Santa Cruz,3.8,440,440,440
+327,Los Angeles,White,Unknown,Universitywide,3.8,440,440,440
+328,Los Angeles,Domestic Unknown,Male,Berkeley,4.4,440,440,440
+329,Los Angeles,Domestic Unknown,Male,Davis,4.2,440,440,440
+330,Los Angeles,Domestic Unknown,Male,Irvine,4.2,440,440,440
+331,Los Angeles,Domestic Unknown,Male,Los Angeles,4.2,440,440,440
+332,Los Angeles,Domestic Unknown,Male,Merced,3.4,440,440,440
+333,Los Angeles,Domestic Unknown,Male,Riverside,3.8,440,440,440
+334,Los Angeles,Domestic Unknown,Male,San Diego,4.2,440,440,440
+335,Los Angeles,Domestic Unknown,Male,Santa Barbara,4.2,440,440,440
+336,Los Angeles,Domestic Unknown,Male,Santa Cruz,3.8,440,440,440
+337,Los Angeles,Domestic Unknown,Male,Universitywide,3.8,440,440,440
+338,Los Angeles,Domestic Unknown,Female,Berkeley,4.4,440,440,440
+339,Los Angeles,Domestic Unknown,Female,Davis,4.2,440,440,440
+340,Los Angeles,Domestic Unknown,Female,Irvine,4.2,440,440,440
+341,Los Angeles,Domestic Unknown,Female,Los Angeles,4.2,440,440,440
+342,Los Angeles,Domestic Unknown,Female,Merced,3.4,440,440,440
+343,Los Angeles,Domestic Unknown,Female,Riverside,3.8,440,440,440
+344,Los Angeles,Domestic Unknown,Female,San Diego,4.2,440,440,440
+345,Los Angeles,Domestic Unknown,Female,Santa Barbara,4.2,440,440,440
+346,Los Angeles,Domestic Unknown,Female,Santa Cruz,3.8,440,440,440
+347,Los Angeles,Domestic Unknown,Female,Universitywide,3.8,440,440,440
+348,Los Angeles,Domestic Unknown,All,Berkeley,4.4,440,440,440
+349,Los Angeles,Domestic Unknown,All,Davis,4.2,440,440,440
+350,Los Angeles,Domestic Unknown,All,Irvine,4.2,440,440,440
+351,Los Angeles,Domestic Unknown,All,Los Angeles,4.2,440,440,440
+352,Los Angeles,Domestic Unknown,All,Merced,3.4,440,440,440
+353,Los Angeles,Domestic Unknown,All,Riverside,3.8,440,440,440
+354,Los Angeles,Domestic Unknown,All,San Diego,4.2,440,440,440
+355,Los Angeles,Domestic Unknown,All,Santa Barbara,4.2,440,440,440
+356,Los Angeles,Domestic Unknown,All,Santa Cruz,3.8,440,440,440
+357,Los Angeles,Domestic Unknown,All,Universitywide,3.8,440,440,440
+358,Los Angeles,Domestic Unknown,Unknown,Berkeley,4.4,440,440,440
+359,Los Angeles,Domestic Unknown,Unknown,Davis,4.2,440,440,440
+360,Los Angeles,Domestic Unknown,Unknown,Irvine,4.2,440,440,440
+361,Los Angeles,Domestic Unknown,Unknown,Los Angeles,4.2,440,440,440
+362,Los Angeles,Domestic Unknown,Unknown,Merced,3.4,440,440,440
+363,Los Angeles,Domestic Unknown,Unknown,Riverside,3.8,440,440,440
+364,Los Angeles,Domestic Unknown,Unknown,San Diego,4.2,440,440,440
+365,Los Angeles,Domestic Unknown,Unknown,Santa Barbara,4.2,440,440,440
+366,Los Angeles,Domestic Unknown,Unknown,Santa Cruz,3.8,440,440,440
+367,Los Angeles,Domestic Unknown,Unknown,Universitywide,3.8,440,440,440
+368,Los Angeles,African American,Male,Berkeley,4.4,440,440,440
+369,Los Angeles,African American,Male,Davis,4.2,440,440,440
+370,Los Angeles,African American,Male,Irvine,4.2,440,440,440
+371,Los Angeles,African American,Male,Los Angeles,4.2,440,440,440
+372,Los Angeles,African American,Male,Merced,3.4,440,440,440
+373,Los Angeles,African American,Male,Riverside,3.8,440,440,440
+374,Los Angeles,African American,Male,San Diego,4.2,440,440,440
+375,Los Angeles,African American,Male,Santa Barbara,4.2,440,440,440
+376,Los Angeles,African American,Male,Santa Cruz,3.8,440,440,440
+377,Los Angeles,African American,Male,Universitywide,3.8,440,440,440
+378,Los Angeles,African American,Female,Berkeley,4.4,440,440,440
+379,Los Angeles,African American,Female,Davis,4.2,440,440,440
+380,Los Angeles,African American,Female,Irvine,4.2,440,440,440
+381,Los Angeles,African American,Female,Los Angeles,4.2,440,440,440
+382,Los Angeles,African American,Female,Merced,3.4,440,440,440
+383,Los Angeles,African American,Female,Riverside,3.8,440,440,440
+384,Los Angeles,African American,Female,San Diego,4.2,440,440,440
+385,Los Angeles,African American,Female,Santa Barbara,4.2,440,440,440
+386,Los Angeles,African American,Female,Santa Cruz,3.8,440,440,440
+387,Los Angeles,African American,Female,Universitywide,3.8,440,440,440
+388,Los Angeles,African American,All,Berkeley,4.4,440,440,440
+389,Los Angeles,African American,All,Davis,4.2,440,440,440
+390,Los Angeles,African American,All,Irvine,4.2,440,440,440
+391,Los Angeles,African American,All,Los Angeles,4.2,440,440,440
+392,Los Angeles,African American,All,Merced,3.4,440,440,440
+393,Los Angeles,African American,All,Riverside,3.8,440,440,440
+394,Los Angeles,African American,All,San Diego,4.2,440,440,440
+395,Los Angeles,African American,All,Santa Barbara,4.2,440,440,440
+396,Los Angeles,African American,All,Santa Cruz,3.8,440,440,440
+397,Los Angeles,African American,All,Universitywide,3.8,440,440,440
+398,Los Angeles,African American,Unknown,Berkeley,4.4,440,440,440
+399,Los Angeles,African American,Unknown,Davis,4.2,440,440,440
+400,Los Angeles,African American,Unknown,Irvine,4.2,440,440,440
+401,Los Angeles,African American,Unknown,Los Angeles,4.2,440,440,440
+402,Los Angeles,African American,Unknown,Merced,3.4,440,440,440
+403,Los Angeles,African American,Unknown,Riverside,3.8,440,440,440
+404,Los Angeles,African American,Unknown,San Diego,4.2,440,440,440
+405,Los Angeles,African American,Unknown,Santa Barbara,4.2,440,440,440
+406,Los Angeles,African American,Unknown,Santa Cruz,3.8,440,440,440
+407,Los Angeles,African American,Unknown,Universitywide,3.8,440,440,440
+408,Los Angeles,Inter- national,Male,Berkeley,4.4,440,440,440
+409,Los Angeles,Inter- national,Male,Davis,4.2,440,440,440
+410,Los Angeles,Inter- national,Male,Irvine,4.2,440,440,440
+411,Los Angeles,Inter- national,Male,Los Angeles,4.2,440,440,440
+412,Los Angeles,Inter- national,Male,Merced,3.4,440,440,440
+413,Los Angeles,Inter- national,Male,Riverside,3.8,440,440,440
+414,Los Angeles,Inter- national,Male,San Diego,4.2,440,440,440
+415,Los Angeles,Inter- national,Male,Santa Barbara,4.2,440,440,440
+416,Los Angeles,Inter- national,Male,Santa Cruz,3.8,440,440,440
+417,Los Angeles,Inter- national,Male,Universitywide,3.8,440,440,440
+418,Los Angeles,Inter- national,Female,Berkeley,4.4,440,440,440
+419,Los Angeles,Inter- national,Female,Davis,4.2,440,440,440
+420,Los Angeles,Inter- national,Female,Irvine,4.2,440,440,440
+421,Los Angeles,Inter- national,Female,Los Angeles,4.2,440,440,440
+422,Los Angeles,Inter- national,Female,Merced,3.4,440,440,440
+423,Los Angeles,Inter- national,Female,Riverside,3.8,440,440,440
+424,Los Angeles,Inter- national,Female,San Diego,4.2,440,440,440
+425,Los Angeles,Inter- national,Female,Santa Barbara,4.2,440,440,440
+426,Los Angeles,Inter- national,Female,Santa Cruz,3.8,440,440,440
+427,Los Angeles,Inter- national,Female,Universitywide,3.8,440,440,440
+428,Los Angeles,Inter- national,All,Berkeley,4.4,440,440,440
+429,Los Angeles,Inter- national,All,Davis,4.2,440,440,440
+430,Los Angeles,Inter- national,All,Irvine,4.2,440,440,440
+431,Los Angeles,Inter- national,All,Los Angeles,4.2,440,440,440
+432,Los Angeles,Inter- national,All,Merced,3.4,440,440,440
+433,Los Angeles,Inter- national,All,Riverside,3.8,440,440,440
+434,Los Angeles,Inter- national,All,San Diego,4.2,440,440,440
+435,Los Angeles,Inter- national,All,Santa Barbara,4.2,440,440,440
+436,Los Angeles,Inter- national,All,Santa Cruz,3.8,440,440,440
+437,Los Angeles,Inter- national,All,Universitywide,3.8,440,440,440
+438,Los Angeles,Inter- national,Unknown,Berkeley,4.4,440,440,440
+439,Los Angeles,Inter- national,Unknown,Davis,4.2,440,440,440
+440,Los Angeles,Inter- national,Unknown,Irvine,4.2,440,440,440
+441,Los Angeles,Inter- national,Unknown,Los Angeles,4.2,440,440,440
+442,Los Angeles,Inter- national,Unknown,Merced,3.4,440,440,440
+443,Los Angeles,Inter- national,Unknown,Riverside,3.8,440,440,440
+444,Los Angeles,Inter- national,Unknown,San Diego,4.2,440,440,440
+445,Los Angeles,Inter- national,Unknown,Santa Barbara,4.2,440,440,440
+446,Los Angeles,Inter- national,Unknown,Santa Cruz,3.8,440,440,440
+447,Los Angeles,Inter- national,Unknown,Universitywide,3.8,440,440,440
+448,San Francisco,Domestic Unknown,Male,Berkeley,4.2,440,460,400
+449,San Francisco,Domestic Unknown,Male,Davis,4.2,440,460,400
+450,San Francisco,Domestic Unknown,Male,Irvine,4.2,440,460,400
+451,San Francisco,Domestic Unknown,Male,Los Angeles,4.4,440,460,400
+452,San Francisco,Domestic Unknown,Male,Merced,3.8,440,460,400
+453,San Francisco,Domestic Unknown,Male,Riverside,3.8,440,460,400
+454,San Francisco,Domestic Unknown,Male,San Diego,4.2,440,460,400
+455,San Francisco,Domestic Unknown,Male,Santa Barbara,4.2,440,460,400
+456,San Francisco,Domestic Unknown,Male,Santa Cruz,4.2,440,460,400
+457,San Francisco,Domestic Unknown,Male,Universitywide,3.8,440,460,400
+458,San Francisco,Domestic Unknown,Female,Berkeley,4.2,440,460,400
+459,San Francisco,Domestic Unknown,Female,Davis,4.2,440,460,400
+460,San Francisco,Domestic Unknown,Female,Irvine,4.2,440,460,400
+461,San Francisco,Domestic Unknown,Female,Los Angeles,4.4,440,460,400
+462,San Francisco,Domestic Unknown,Female,Merced,3.8,440,460,400
+463,San Francisco,Domestic Unknown,Female,Riverside,3.8,440,460,400
+464,San Francisco,Domestic Unknown,Female,San Diego,4.2,440,460,400
+465,San Francisco,Domestic Unknown,Female,Santa Barbara,4.2,440,460,400
+466,San Francisco,Domestic Unknown,Female,Santa Cruz,4.2,440,460,400
+467,San Francisco,Domestic Unknown,Female,Universitywide,3.8,440,460,400
+468,San Francisco,Domestic Unknown,All,Berkeley,4.2,440,460,400
+469,San Francisco,Domestic Unknown,All,Davis,4.2,440,460,400
+470,San Francisco,Domestic Unknown,All,Irvine,4.2,440,460,400
+471,San Francisco,Domestic Unknown,All,Los Angeles,4.4,440,460,400
+472,San Francisco,Domestic Unknown,All,Merced,3.8,440,460,400
+473,San Francisco,Domestic Unknown,All,Riverside,3.8,440,460,400
+474,San Francisco,Domestic Unknown,All,San Diego,4.2,440,460,400
+475,San Francisco,Domestic Unknown,All,Santa Barbara,4.2,440,460,400
+476,San Francisco,Domestic Unknown,All,Santa Cruz,4.2,440,460,400
+477,San Francisco,Domestic Unknown,All,Universitywide,3.8,440,460,400
+478,San Francisco,White,Male,Berkeley,4.2,440,460,400
+479,San Francisco,White,Male,Davis,4.2,440,460,400
+480,San Francisco,White,Male,Irvine,4.2,440,460,400
+481,San Francisco,White,Male,Los Angeles,4.4,440,460,400
+482,San Francisco,White,Male,Merced,3.8,440,460,400
+483,San Francisco,White,Male,Riverside,3.8,440,460,400
+484,San Francisco,White,Male,San Diego,4.2,440,460,400
+485,San Francisco,White,Male,Santa Barbara,4.2,440,460,400
+486,San Francisco,White,Male,Santa Cruz,4.2,440,460,400
+487,San Francisco,White,Male,Universitywide,3.8,440,460,400
+488,San Francisco,White,Female,Berkeley,4.2,440,460,400
+489,San Francisco,White,Female,Davis,4.2,440,460,400
+490,San Francisco,White,Female,Irvine,4.2,440,460,400
+491,San Francisco,White,Female,Los Angeles,4.4,440,460,400
+492,San Francisco,White,Female,Merced,3.8,440,460,400
+493,San Francisco,White,Female,Riverside,3.8,440,460,400
+494,San Francisco,White,Female,San Diego,4.2,440,460,400
+495,San Francisco,White,Female,Santa Barbara,4.2,440,460,400
+496,San Francisco,White,Female,Santa Cruz,4.2,440,460,400
+497,San Francisco,White,Female,Universitywide,3.8,440,460,400
+498,San Francisco,White,All,Berkeley,4.2,440,460,400
+499,San Francisco,White,All,Davis,4.2,440,460,400
+500,San Francisco,White,All,Irvine,4.2,440,460,400
+501,San Francisco,White,All,Los Angeles,4.4,440,460,400
+502,San Francisco,White,All,Merced,3.8,440,460,400
+503,San Francisco,White,All,Riverside,3.8,440,460,400
+504,San Francisco,White,All,San Diego,4.2,440,460,400
+505,San Francisco,White,All,Santa Barbara,4.2,440,460,400
+506,San Francisco,White,All,Santa Cruz,4.2,440,460,400
+507,San Francisco,White,All,Universitywide,3.8,440,460,400
+508,San Francisco,Asian,Male,Berkeley,4.2,440,460,400
+509,San Francisco,Asian,Male,Davis,4.2,440,460,400
+510,San Francisco,Asian,Male,Irvine,4.2,440,460,400
+511,San Francisco,Asian,Male,Los Angeles,4.4,440,460,400
+512,San Francisco,Asian,Male,Merced,3.8,440,460,400
+513,San Francisco,Asian,Male,Riverside,3.8,440,460,400
+514,San Francisco,Asian,Male,San Diego,4.2,440,460,400
+515,San Francisco,Asian,Male,Santa Barbara,4.2,440,460,400
+516,San Francisco,Asian,Male,Santa Cruz,4.2,440,460,400
+517,San Francisco,Asian,Male,Universitywide,3.8,440,460,400
+518,San Francisco,Asian,Female,Berkeley,4.2,440,460,400
+519,San Francisco,Asian,Female,Davis,4.2,440,460,400
+520,San Francisco,Asian,Female,Irvine,4.2,440,460,400
+521,San Francisco,Asian,Female,Los Angeles,4.4,440,460,400
+522,San Francisco,Asian,Female,Merced,3.8,440,460,400
+523,San Francisco,Asian,Female,Riverside,3.8,440,460,400
+524,San Francisco,Asian,Female,San Diego,4.2,440,460,400
+525,San Francisco,Asian,Female,Santa Barbara,4.2,440,460,400
+526,San Francisco,Asian,Female,Santa Cruz,4.2,440,460,400
+527,San Francisco,Asian,Female,Universitywide,3.8,440,460,400
+528,San Francisco,Asian,All,Berkeley,4.2,440,460,400
+529,San Francisco,Asian,All,Davis,4.2,440,460,400
+530,San Francisco,Asian,All,Irvine,4.2,440,460,400
+531,San Francisco,Asian,All,Los Angeles,4.4,440,460,400
+532,San Francisco,Asian,All,Merced,3.8,440,460,400
+533,San Francisco,Asian,All,Riverside,3.8,440,460,400
+534,San Francisco,Asian,All,San Diego,4.2,440,460,400
+535,San Francisco,Asian,All,Santa Barbara,4.2,440,460,400
+536,San Francisco,Asian,All,Santa Cruz,4.2,440,460,400
+537,San Francisco,Asian,All,Universitywide,3.8,440,460,400
+538,San Francisco,Hispanic/ Latino,Male,Berkeley,4.2,440,460,400
+539,San Francisco,Hispanic/ Latino,Male,Davis,4.2,440,460,400
+540,San Francisco,Hispanic/ Latino,Male,Irvine,4.2,440,460,400
+541,San Francisco,Hispanic/ Latino,Male,Los Angeles,4.4,440,460,400
+542,San Francisco,Hispanic/ Latino,Male,Merced,3.8,440,460,400
+543,San Francisco,Hispanic/ Latino,Male,Riverside,3.8,440,460,400
+544,San Francisco,Hispanic/ Latino,Male,San Diego,4.2,440,460,400
+545,San Francisco,Hispanic/ Latino,Male,Santa Barbara,4.2,440,460,400
+546,San Francisco,Hispanic/ Latino,Male,Santa Cruz,4.2,440,460,400
+547,San Francisco,Hispanic/ Latino,Male,Universitywide,3.8,440,460,400
+548,San Francisco,Hispanic/ Latino,Female,Berkeley,4.2,440,460,400
+549,San Francisco,Hispanic/ Latino,Female,Davis,4.2,440,460,400
+550,San Francisco,Hispanic/ Latino,Female,Irvine,4.2,440,460,400
+551,San Francisco,Hispanic/ Latino,Female,Los Angeles,4.4,440,460,400
+552,San Francisco,Hispanic/ Latino,Female,Merced,3.8,440,460,400
+553,San Francisco,Hispanic/ Latino,Female,Riverside,3.8,440,460,400
+554,San Francisco,Hispanic/ Latino,Female,San Diego,4.2,440,460,400
+555,San Francisco,Hispanic/ Latino,Female,Santa Barbara,4.2,440,460,400
+556,San Francisco,Hispanic/ Latino,Female,Santa Cruz,4.2,440,460,400
+557,San Francisco,Hispanic/ Latino,Female,Universitywide,3.8,440,460,400
+558,San Francisco,Hispanic/ Latino,All,Berkeley,4.2,440,460,400
+559,San Francisco,Hispanic/ Latino,All,Davis,4.2,440,460,400
+560,San Francisco,Hispanic/ Latino,All,Irvine,4.2,440,460,400
+561,San Francisco,Hispanic/ Latino,All,Los Angeles,4.4,440,460,400
+562,San Francisco,Hispanic/ Latino,All,Merced,3.8,440,460,400
+563,San Francisco,Hispanic/ Latino,All,Riverside,3.8,440,460,400
+564,San Francisco,Hispanic/ Latino,All,San Diego,4.2,440,460,400
+565,San Francisco,Hispanic/ Latino,All,Santa Barbara,4.2,440,460,400
+566,San Francisco,Hispanic/ Latino,All,Santa Cruz,4.2,440,460,400
+567,San Francisco,Hispanic/ Latino,All,Universitywide,3.8,440,460,400
+568,San Francisco,All,Male,Berkeley,4.2,440,460,400
+569,San Francisco,All,Male,Davis,4.2,440,460,400
+570,San Francisco,All,Male,Irvine,4.2,440,460,400
+571,San Francisco,All,Male,Los Angeles,4.4,440,460,400
+572,San Francisco,All,Male,Merced,3.8,440,460,400
+573,San Francisco,All,Male,Riverside,3.8,440,460,400
+574,San Francisco,All,Male,San Diego,4.2,440,460,400
+575,San Francisco,All,Male,Santa Barbara,4.2,440,460,400
+576,San Francisco,All,Male,Santa Cruz,4.2,440,460,400
+577,San Francisco,All,Male,Universitywide,3.8,440,460,400
+578,San Francisco,All,Female,Berkeley,4.2,440,460,400
+579,San Francisco,All,Female,Davis,4.2,440,460,400
+580,San Francisco,All,Female,Irvine,4.2,440,460,400
+581,San Francisco,All,Female,Los Angeles,4.4,440,460,400
+582,San Francisco,All,Female,Merced,3.8,440,460,400
+583,San Francisco,All,Female,Riverside,3.8,440,460,400
+584,San Francisco,All,Female,San Diego,4.2,440,460,400
+585,San Francisco,All,Female,Santa Barbara,4.2,440,460,400
+586,San Francisco,All,Female,Santa Cruz,4.2,440,460,400
+587,San Francisco,All,Female,Universitywide,3.8,440,460,400
+588,San Francisco,All,All,Berkeley,4.2,440,460,400
+589,San Francisco,All,All,Davis,4.2,440,460,400
+590,San Francisco,All,All,Irvine,4.2,440,460,400
+591,San Francisco,All,All,Los Angeles,4.4,440,460,400
+592,San Francisco,All,All,Merced,3.8,440,460,400
+593,San Francisco,All,All,Riverside,3.8,440,460,400
+594,San Francisco,All,All,San Diego,4.2,440,460,400
+595,San Francisco,All,All,Santa Barbara,4.2,440,460,400
+596,San Francisco,All,All,Santa Cruz,4.2,440,460,400
+597,San Francisco,All,All,Universitywide,3.8,440,460,400
+598,Santa Clara,White,Male,Berkeley,4.4,520,540,520
+599,Santa Clara,White,Male,Davis,4.4,520,540,520
+600,Santa Clara,White,Male,Irvine,4.2,520,540,520
+601,Santa Clara,White,Male,Los Angeles,4.4,520,540,520
+602,Santa Clara,White,Male,Merced,3.8,520,540,520
+603,Santa Clara,White,Male,Riverside,3.8,520,540,520
+604,Santa Clara,White,Male,San Diego,4.4,520,540,520
+605,Santa Clara,White,Male,Santa Barbara,4.2,520,540,520
+606,Santa Clara,White,Male,Santa Cruz,4.2,520,540,520
+607,Santa Clara,White,Male,Universitywide,4.2,520,540,520
+608,Santa Clara,White,Female,Berkeley,4.4,520,540,520
+609,Santa Clara,White,Female,Davis,4.4,520,540,520
+610,Santa Clara,White,Female,Irvine,4.2,520,540,520
+611,Santa Clara,White,Female,Los Angeles,4.4,520,540,520
+612,Santa Clara,White,Female,Merced,3.8,520,540,520
+613,Santa Clara,White,Female,Riverside,3.8,520,540,520
+614,Santa Clara,White,Female,San Diego,4.4,520,540,520
+615,Santa Clara,White,Female,Santa Barbara,4.2,520,540,520
+616,Santa Clara,White,Female,Santa Cruz,4.2,520,540,520
+617,Santa Clara,White,Female,Universitywide,4.2,520,540,520
+618,Santa Clara,White,All,Berkeley,4.4,520,540,520
+619,Santa Clara,White,All,Davis,4.4,520,540,520
+620,Santa Clara,White,All,Irvine,4.2,520,540,520
+621,Santa Clara,White,All,Los Angeles,4.4,520,540,520
+622,Santa Clara,White,All,Merced,3.8,520,540,520
+623,Santa Clara,White,All,Riverside,3.8,520,540,520
+624,Santa Clara,White,All,San Diego,4.4,520,540,520
+625,Santa Clara,White,All,Santa Barbara,4.2,520,540,520
+626,Santa Clara,White,All,Santa Cruz,4.2,520,540,520
+627,Santa Clara,White,All,Universitywide,4.2,520,540,520
+628,Santa Clara,White,Unknown,Berkeley,4.4,520,540,520
+629,Santa Clara,White,Unknown,Davis,4.4,520,540,520
+630,Santa Clara,White,Unknown,Irvine,4.2,520,540,520
+631,Santa Clara,White,Unknown,Los Angeles,4.4,520,540,520
+632,Santa Clara,White,Unknown,Merced,3.8,520,540,520
+633,Santa Clara,White,Unknown,Riverside,3.8,520,540,520
+634,Santa Clara,White,Unknown,San Diego,4.4,520,540,520
+635,Santa Clara,White,Unknown,Santa Barbara,4.2,520,540,520
+636,Santa Clara,White,Unknown,Santa Cruz,4.2,520,540,520
+637,Santa Clara,White,Unknown,Universitywide,4.2,520,540,520
+638,Santa Clara,Asian,Male,Berkeley,4.4,520,540,520
+639,Santa Clara,Asian,Male,Davis,4.4,520,540,520
+640,Santa Clara,Asian,Male,Irvine,4.2,520,540,520
+641,Santa Clara,Asian,Male,Los Angeles,4.4,520,540,520
+642,Santa Clara,Asian,Male,Merced,3.8,520,540,520
+643,Santa Clara,Asian,Male,Riverside,3.8,520,540,520
+644,Santa Clara,Asian,Male,San Diego,4.4,520,540,520
+645,Santa Clara,Asian,Male,Santa Barbara,4.2,520,540,520
+646,Santa Clara,Asian,Male,Santa Cruz,4.2,520,540,520
+647,Santa Clara,Asian,Male,Universitywide,4.2,520,540,520
+648,Santa Clara,Asian,Female,Berkeley,4.4,520,540,520
+649,Santa Clara,Asian,Female,Davis,4.4,520,540,520
+650,Santa Clara,Asian,Female,Irvine,4.2,520,540,520
+651,Santa Clara,Asian,Female,Los Angeles,4.4,520,540,520
+652,Santa Clara,Asian,Female,Merced,3.8,520,540,520
+653,Santa Clara,Asian,Female,Riverside,3.8,520,540,520
+654,Santa Clara,Asian,Female,San Diego,4.4,520,540,520
+655,Santa Clara,Asian,Female,Santa Barbara,4.2,520,540,520
+656,Santa Clara,Asian,Female,Santa Cruz,4.2,520,540,520
+657,Santa Clara,Asian,Female,Universitywide,4.2,520,540,520
+658,Santa Clara,Asian,All,Berkeley,4.4,520,540,520
+659,Santa Clara,Asian,All,Davis,4.4,520,540,520
+660,Santa Clara,Asian,All,Irvine,4.2,520,540,520
+661,Santa Clara,Asian,All,Los Angeles,4.4,520,540,520
+662,Santa Clara,Asian,All,Merced,3.8,520,540,520
+663,Santa Clara,Asian,All,Riverside,3.8,520,540,520
+664,Santa Clara,Asian,All,San Diego,4.4,520,540,520
+665,Santa Clara,Asian,All,Santa Barbara,4.2,520,540,520
+666,Santa Clara,Asian,All,Santa Cruz,4.2,520,540,520
+667,Santa Clara,Asian,All,Universitywide,4.2,520,540,520
+668,Santa Clara,Asian,Unknown,Berkeley,4.4,520,540,520
+669,Santa Clara,Asian,Unknown,Davis,4.4,520,540,520
+670,Santa Clara,Asian,Unknown,Irvine,4.2,520,540,520
+671,Santa Clara,Asian,Unknown,Los Angeles,4.4,520,540,520
+672,Santa Clara,Asian,Unknown,Merced,3.8,520,540,520
+673,Santa Clara,Asian,Unknown,Riverside,3.8,520,540,520
+674,Santa Clara,Asian,Unknown,San Diego,4.4,520,540,520
+675,Santa Clara,Asian,Unknown,Santa Barbara,4.2,520,540,520
+676,Santa Clara,Asian,Unknown,Santa Cruz,4.2,520,540,520
+677,Santa Clara,Asian,Unknown,Universitywide,4.2,520,540,520
+678,Santa Clara,Hispanic/ Latino,Male,Berkeley,4.4,520,540,520
+679,Santa Clara,Hispanic/ Latino,Male,Davis,4.4,520,540,520
+680,Santa Clara,Hispanic/ Latino,Male,Irvine,4.2,520,540,520
+681,Santa Clara,Hispanic/ Latino,Male,Los Angeles,4.4,520,540,520
+682,Santa Clara,Hispanic/ Latino,Male,Merced,3.8,520,540,520
+683,Santa Clara,Hispanic/ Latino,Male,Riverside,3.8,520,540,520
+684,Santa Clara,Hispanic/ Latino,Male,San Diego,4.4,520,540,520
+685,Santa Clara,Hispanic/ Latino,Male,Santa Barbara,4.2,520,540,520
+686,Santa Clara,Hispanic/ Latino,Male,Santa Cruz,4.2,520,540,520
+687,Santa Clara,Hispanic/ Latino,Male,Universitywide,4.2,520,540,520
+688,Santa Clara,Hispanic/ Latino,Female,Berkeley,4.4,520,540,520
+689,Santa Clara,Hispanic/ Latino,Female,Davis,4.4,520,540,520
+690,Santa Clara,Hispanic/ Latino,Female,Irvine,4.2,520,540,520
+691,Santa Clara,Hispanic/ Latino,Female,Los Angeles,4.4,520,540,520
+692,Santa Clara,Hispanic/ Latino,Female,Merced,3.8,520,540,520
+693,Santa Clara,Hispanic/ Latino,Female,Riverside,3.8,520,540,520
+694,Santa Clara,Hispanic/ Latino,Female,San Diego,4.4,520,540,520
+695,Santa Clara,Hispanic/ Latino,Female,Santa Barbara,4.2,520,540,520
+696,Santa Clara,Hispanic/ Latino,Female,Santa Cruz,4.2,520,540,520
+697,Santa Clara,Hispanic/ Latino,Female,Universitywide,4.2,520,540,520
+698,Santa Clara,Hispanic/ Latino,All,Berkeley,4.4,520,540,520
+699,Santa Clara,Hispanic/ Latino,All,Davis,4.4,520,540,520
+700,Santa Clara,Hispanic/ Latino,All,Irvine,4.2,520,540,520
+701,Santa Clara,Hispanic/ Latino,All,Los Angeles,4.4,520,540,520
+702,Santa Clara,Hispanic/ Latino,All,Merced,3.8,520,540,520
+703,Santa Clara,Hispanic/ Latino,All,Riverside,3.8,520,540,520
+704,Santa Clara,Hispanic/ Latino,All,San Diego,4.4,520,540,520
+705,Santa Clara,Hispanic/ Latino,All,Santa Barbara,4.2,520,540,520
+706,Santa Clara,Hispanic/ Latino,All,Santa Cruz,4.2,520,540,520
+707,Santa Clara,Hispanic/ Latino,All,Universitywide,4.2,520,540,520
+708,Santa Clara,Hispanic/ Latino,Unknown,Berkeley,4.4,520,540,520
+709,Santa Clara,Hispanic/ Latino,Unknown,Davis,4.4,520,540,520
+710,Santa Clara,Hispanic/ Latino,Unknown,Irvine,4.2,520,540,520
+711,Santa Clara,Hispanic/ Latino,Unknown,Los Angeles,4.4,520,540,520
+712,Santa Clara,Hispanic/ Latino,Unknown,Merced,3.8,520,540,520
+713,Santa Clara,Hispanic/ Latino,Unknown,Riverside,3.8,520,540,520
+714,Santa Clara,Hispanic/ Latino,Unknown,San Diego,4.4,520,540,520
+715,Santa Clara,Hispanic/ Latino,Unknown,Santa Barbara,4.2,520,540,520
+716,Santa Clara,Hispanic/ Latino,Unknown,Santa Cruz,4.2,520,540,520
+717,Santa Clara,Hispanic/ Latino,Unknown,Universitywide,4.2,520,540,520
+718,Santa Clara,All,Male,Berkeley,4.4,520,540,520
+719,Santa Clara,All,Male,Davis,4.4,520,540,520
+720,Santa Clara,All,Male,Irvine,4.2,520,540,520
+721,Santa Clara,All,Male,Los Angeles,4.4,520,540,520
+722,Santa Clara,All,Male,Merced,3.8,520,540,520
+723,Santa Clara,All,Male,Riverside,3.8,520,540,520
+724,Santa Clara,All,Male,San Diego,4.4,520,540,520
+725,Santa Clara,All,Male,Santa Barbara,4.2,520,540,520
+726,Santa Clara,All,Male,Santa Cruz,4.2,520,540,520
+727,Santa Clara,All,Male,Universitywide,4.2,520,540,520
+728,Santa Clara,All,Female,Berkeley,4.4,520,540,520
+729,Santa Clara,All,Female,Davis,4.4,520,540,520
+730,Santa Clara,All,Female,Irvine,4.2,520,540,520
+731,Santa Clara,All,Female,Los Angeles,4.4,520,540,520
+732,Santa Clara,All,Female,Merced,3.8,520,540,520
+733,Santa Clara,All,Female,Riverside,3.8,520,540,520
+734,Santa Clara,All,Female,San Diego,4.4,520,540,520
+735,Santa Clara,All,Female,Santa Barbara,4.2,520,540,520
+736,Santa Clara,All,Female,Santa Cruz,4.2,520,540,520
+737,Santa Clara,All,Female,Universitywide,4.2,520,540,520
+738,Santa Clara,All,All,Berkeley,4.4,520,540,520
+739,Santa Clara,All,All,Davis,4.4,520,540,520
+740,Santa Clara,All,All,Irvine,4.2,520,540,520
+741,Santa Clara,All,All,Los Angeles,4.4,520,540,520
+742,Santa Clara,All,All,Merced,3.8,520,540,520
+743,Santa Clara,All,All,Riverside,3.8,520,540,520
+744,Santa Clara,All,All,San Diego,4.4,520,540,520
+745,Santa Clara,All,All,Santa Barbara,4.2,520,540,520
+746,Santa Clara,All,All,Santa Cruz,4.2,520,540,520
+747,Santa Clara,All,All,Universitywide,4.2,520,540,520
+748,Santa Clara,All,Unknown,Berkeley,4.4,520,540,520
+749,Santa Clara,All,Unknown,Davis,4.4,520,540,520
+750,Santa Clara,All,Unknown,Irvine,4.2,520,540,520
+751,Santa Clara,All,Unknown,Los Angeles,4.4,520,540,520
+752,Santa Clara,All,Unknown,Merced,3.8,520,540,520
+753,Santa Clara,All,Unknown,Riverside,3.8,520,540,520
+754,Santa Clara,All,Unknown,San Diego,4.4,520,540,520
+755,Santa Clara,All,Unknown,Santa Barbara,4.2,520,540,520
+756,Santa Clara,All,Unknown,Santa Cruz,4.2,520,540,520
+757,Santa Clara,All,Unknown,Universitywide,4.2,520,540,520
+758,Santa Clara,African American,Male,Berkeley,4.4,520,540,520
+759,Santa Clara,African American,Male,Davis,4.4,520,540,520
+760,Santa Clara,African American,Male,Irvine,4.2,520,540,520
+761,Santa Clara,African American,Male,Los Angeles,4.4,520,540,520
+762,Santa Clara,African American,Male,Merced,3.8,520,540,520
+763,Santa Clara,African American,Male,Riverside,3.8,520,540,520
+764,Santa Clara,African American,Male,San Diego,4.4,520,540,520
+765,Santa Clara,African American,Male,Santa Barbara,4.2,520,540,520
+766,Santa Clara,African American,Male,Santa Cruz,4.2,520,540,520
+767,Santa Clara,African American,Male,Universitywide,4.2,520,540,520
+768,Santa Clara,African American,Female,Berkeley,4.4,520,540,520
+769,Santa Clara,African American,Female,Davis,4.4,520,540,520
+770,Santa Clara,African American,Female,Irvine,4.2,520,540,520
+771,Santa Clara,African American,Female,Los Angeles,4.4,520,540,520
+772,Santa Clara,African American,Female,Merced,3.8,520,540,520
+773,Santa Clara,African American,Female,Riverside,3.8,520,540,520
+774,Santa Clara,African American,Female,San Diego,4.4,520,540,520
+775,Santa Clara,African American,Female,Santa Barbara,4.2,520,540,520
+776,Santa Clara,African American,Female,Santa Cruz,4.2,520,540,520
+777,Santa Clara,African American,Female,Universitywide,4.2,520,540,520
+778,Santa Clara,African American,All,Berkeley,4.4,520,540,520
+779,Santa Clara,African American,All,Davis,4.4,520,540,520
+780,Santa Clara,African American,All,Irvine,4.2,520,540,520
+781,Santa Clara,African American,All,Los Angeles,4.4,520,540,520
+782,Santa Clara,African American,All,Merced,3.8,520,540,520
+783,Santa Clara,African American,All,Riverside,3.8,520,540,520
+784,Santa Clara,African American,All,San Diego,4.4,520,540,520
+785,Santa Clara,African American,All,Santa Barbara,4.2,520,540,520
+786,Santa Clara,African American,All,Santa Cruz,4.2,520,540,520
+787,Santa Clara,African American,All,Universitywide,4.2,520,540,520
+788,Santa Clara,African American,Unknown,Berkeley,4.4,520,540,520
+789,Santa Clara,African American,Unknown,Davis,4.4,520,540,520
+790,Santa Clara,African American,Unknown,Irvine,4.2,520,540,520
+791,Santa Clara,African American,Unknown,Los Angeles,4.4,520,540,520
+792,Santa Clara,African American,Unknown,Merced,3.8,520,540,520
+793,Santa Clara,African American,Unknown,Riverside,3.8,520,540,520
+794,Santa Clara,African American,Unknown,San Diego,4.4,520,540,520
+795,Santa Clara,African American,Unknown,Santa Barbara,4.2,520,540,520
+796,Santa Clara,African American,Unknown,Santa Cruz,4.2,520,540,520
+797,Santa Clara,African American,Unknown,Universitywide,4.2,520,540,520
+798,Humboldt,White,Male,Davis,4.4,500,500,480
+799,Humboldt,White,Male,San Diego,4.4,500,500,480
+800,Humboldt,White,Male,Santa Barbara,4.4,500,500,480
+801,Humboldt,White,Male,Santa Cruz,4.2,500,500,480
+802,Humboldt,White,Male,Universitywide,3.8,500,500,480
+803,Humboldt,White,Female,Davis,4.4,500,500,480
+804,Humboldt,White,Female,San Diego,4.4,500,500,480
+805,Humboldt,White,Female,Santa Barbara,4.4,500,500,480
+806,Humboldt,White,Female,Santa Cruz,4.2,500,500,480
+807,Humboldt,White,Female,Universitywide,3.8,500,500,480
+808,Humboldt,White,All,Davis,4.4,500,500,480
+809,Humboldt,White,All,San Diego,4.4,500,500,480
+810,Humboldt,White,All,Santa Barbara,4.4,500,500,480
+811,Humboldt,White,All,Santa Cruz,4.2,500,500,480
+812,Humboldt,White,All,Universitywide,3.8,500,500,480
+813,Humboldt,All,Male,Davis,4.4,500,500,480
+814,Humboldt,All,Male,San Diego,4.4,500,500,480
+815,Humboldt,All,Male,Santa Barbara,4.4,500,500,480
+816,Humboldt,All,Male,Santa Cruz,4.2,500,500,480
+817,Humboldt,All,Male,Universitywide,3.8,500,500,480
+818,Humboldt,All,Female,Davis,4.4,500,500,480
+819,Humboldt,All,Female,San Diego,4.4,500,500,480
+820,Humboldt,All,Female,Santa Barbara,4.4,500,500,480
+821,Humboldt,All,Female,Santa Cruz,4.2,500,500,480
+822,Humboldt,All,Female,Universitywide,3.8,500,500,480
+823,Humboldt,All,All,Davis,4.4,500,500,480
+824,Humboldt,All,All,San Diego,4.4,500,500,480
+825,Humboldt,All,All,Santa Barbara,4.4,500,500,480
+826,Humboldt,All,All,Santa Cruz,4.2,500,500,480
+827,Humboldt,All,All,Universitywide,3.8,500,500,480
+828,San Diego,White,Female,Berkeley,4.4,480,480,480
+829,San Diego,White,Female,Davis,4.2,480,480,480
+830,San Diego,White,Female,Irvine,4.2,480,480,480
+831,San Diego,White,Female,Los Angeles,4.4,480,480,480
+832,San Diego,White,Female,Riverside,3.8,480,480,480
+833,San Diego,White,Female,San Diego,4.4,480,480,480
+834,San Diego,White,Female,Santa Barbara,4.2,480,480,480
+835,San Diego,White,Female,Santa Cruz,4.4,480,480,480
+836,San Diego,White,Female,Universitywide,4.2,480,480,480
+837,San Diego,White,All,Berkeley,4.4,480,480,480
+838,San Diego,White,All,Davis,4.2,480,480,480
+839,San Diego,White,All,Irvine,4.2,480,480,480
+840,San Diego,White,All,Los Angeles,4.4,480,480,480
+841,San Diego,White,All,Riverside,3.8,480,480,480
+842,San Diego,White,All,San Diego,4.4,480,480,480
+843,San Diego,White,All,Santa Barbara,4.2,480,480,480
+844,San Diego,White,All,Santa Cruz,4.4,480,480,480
+845,San Diego,White,All,Universitywide,4.2,480,480,480
+846,San Diego,White,Male,Berkeley,4.4,480,480,480
+847,San Diego,White,Male,Davis,4.2,480,480,480
+848,San Diego,White,Male,Irvine,4.2,480,480,480
+849,San Diego,White,Male,Los Angeles,4.4,480,480,480
+850,San Diego,White,Male,Riverside,3.8,480,480,480
+851,San Diego,White,Male,San Diego,4.4,480,480,480
+852,San Diego,White,Male,Santa Barbara,4.2,480,480,480
+853,San Diego,White,Male,Santa Cruz,4.4,480,480,480
+854,San Diego,White,Male,Universitywide,4.2,480,480,480
+855,San Diego,White,Unknown,Berkeley,4.4,480,480,480
+856,San Diego,White,Unknown,Davis,4.2,480,480,480
+857,San Diego,White,Unknown,Irvine,4.2,480,480,480
+858,San Diego,White,Unknown,Los Angeles,4.4,480,480,480
+859,San Diego,White,Unknown,Riverside,3.8,480,480,480
+860,San Diego,White,Unknown,San Diego,4.4,480,480,480
+861,San Diego,White,Unknown,Santa Barbara,4.2,480,480,480
+862,San Diego,White,Unknown,Santa Cruz,4.4,480,480,480
+863,San Diego,White,Unknown,Universitywide,4.2,480,480,480
+864,San Diego,Asian,Female,Berkeley,4.4,480,480,480
+865,San Diego,Asian,Female,Davis,4.2,480,480,480
+866,San Diego,Asian,Female,Irvine,4.2,480,480,480
+867,San Diego,Asian,Female,Los Angeles,4.4,480,480,480
+868,San Diego,Asian,Female,Riverside,3.8,480,480,480
+869,San Diego,Asian,Female,San Diego,4.4,480,480,480
+870,San Diego,Asian,Female,Santa Barbara,4.2,480,480,480
+871,San Diego,Asian,Female,Santa Cruz,4.4,480,480,480
+872,San Diego,Asian,Female,Universitywide,4.2,480,480,480
+873,San Diego,Asian,All,Berkeley,4.4,480,480,480
+874,San Diego,Asian,All,Davis,4.2,480,480,480
+875,San Diego,Asian,All,Irvine,4.2,480,480,480
+876,San Diego,Asian,All,Los Angeles,4.4,480,480,480
+877,San Diego,Asian,All,Riverside,3.8,480,480,480
+878,San Diego,Asian,All,San Diego,4.4,480,480,480
+879,San Diego,Asian,All,Santa Barbara,4.2,480,480,480
+880,San Diego,Asian,All,Santa Cruz,4.4,480,480,480
+881,San Diego,Asian,All,Universitywide,4.2,480,480,480
+882,San Diego,Asian,Male,Berkeley,4.4,480,480,480
+883,San Diego,Asian,Male,Davis,4.2,480,480,480
+884,San Diego,Asian,Male,Irvine,4.2,480,480,480
+885,San Diego,Asian,Male,Los Angeles,4.4,480,480,480
+886,San Diego,Asian,Male,Riverside,3.8,480,480,480
+887,San Diego,Asian,Male,San Diego,4.4,480,480,480
+888,San Diego,Asian,Male,Santa Barbara,4.2,480,480,480
+889,San Diego,Asian,Male,Santa Cruz,4.4,480,480,480
+890,San Diego,Asian,Male,Universitywide,4.2,480,480,480
+891,San Diego,Asian,Unknown,Berkeley,4.4,480,480,480
+892,San Diego,Asian,Unknown,Davis,4.2,480,480,480
+893,San Diego,Asian,Unknown,Irvine,4.2,480,480,480
+894,San Diego,Asian,Unknown,Los Angeles,4.4,480,480,480
+895,San Diego,Asian,Unknown,Riverside,3.8,480,480,480
+896,San Diego,Asian,Unknown,San Diego,4.4,480,480,480
+897,San Diego,Asian,Unknown,Santa Barbara,4.2,480,480,480
+898,San Diego,Asian,Unknown,Santa Cruz,4.4,480,480,480
+899,San Diego,Asian,Unknown,Universitywide,4.2,480,480,480
+900,San Diego,Hispanic/ Latino,Female,Berkeley,4.4,480,480,480
+901,San Diego,Hispanic/ Latino,Female,Davis,4.2,480,480,480
+902,San Diego,Hispanic/ Latino,Female,Irvine,4.2,480,480,480
+903,San Diego,Hispanic/ Latino,Female,Los Angeles,4.4,480,480,480
+904,San Diego,Hispanic/ Latino,Female,Riverside,3.8,480,480,480
+905,San Diego,Hispanic/ Latino,Female,San Diego,4.4,480,480,480
+906,San Diego,Hispanic/ Latino,Female,Santa Barbara,4.2,480,480,480
+907,San Diego,Hispanic/ Latino,Female,Santa Cruz,4.4,480,480,480
+908,San Diego,Hispanic/ Latino,Female,Universitywide,4.2,480,480,480
+909,San Diego,Hispanic/ Latino,All,Berkeley,4.4,480,480,480
+910,San Diego,Hispanic/ Latino,All,Davis,4.2,480,480,480
+911,San Diego,Hispanic/ Latino,All,Irvine,4.2,480,480,480
+912,San Diego,Hispanic/ Latino,All,Los Angeles,4.4,480,480,480
+913,San Diego,Hispanic/ Latino,All,Riverside,3.8,480,480,480
+914,San Diego,Hispanic/ Latino,All,San Diego,4.4,480,480,480
+915,San Diego,Hispanic/ Latino,All,Santa Barbara,4.2,480,480,480
+916,San Diego,Hispanic/ Latino,All,Santa Cruz,4.4,480,480,480
+917,San Diego,Hispanic/ Latino,All,Universitywide,4.2,480,480,480
+918,San Diego,Hispanic/ Latino,Male,Berkeley,4.4,480,480,480
+919,San Diego,Hispanic/ Latino,Male,Davis,4.2,480,480,480
+920,San Diego,Hispanic/ Latino,Male,Irvine,4.2,480,480,480
+921,San Diego,Hispanic/ Latino,Male,Los Angeles,4.4,480,480,480
+922,San Diego,Hispanic/ Latino,Male,Riverside,3.8,480,480,480
+923,San Diego,Hispanic/ Latino,Male,San Diego,4.4,480,480,480
+924,San Diego,Hispanic/ Latino,Male,Santa Barbara,4.2,480,480,480
+925,San Diego,Hispanic/ Latino,Male,Santa Cruz,4.4,480,480,480
+926,San Diego,Hispanic/ Latino,Male,Universitywide,4.2,480,480,480
+927,San Diego,Hispanic/ Latino,Unknown,Berkeley,4.4,480,480,480
+928,San Diego,Hispanic/ Latino,Unknown,Davis,4.2,480,480,480
+929,San Diego,Hispanic/ Latino,Unknown,Irvine,4.2,480,480,480
+930,San Diego,Hispanic/ Latino,Unknown,Los Angeles,4.4,480,480,480
+931,San Diego,Hispanic/ Latino,Unknown,Riverside,3.8,480,480,480
+932,San Diego,Hispanic/ Latino,Unknown,San Diego,4.4,480,480,480
+933,San Diego,Hispanic/ Latino,Unknown,Santa Barbara,4.2,480,480,480
+934,San Diego,Hispanic/ Latino,Unknown,Santa Cruz,4.4,480,480,480
+935,San Diego,Hispanic/ Latino,Unknown,Universitywide,4.2,480,480,480
+936,San Diego,African American,Female,Berkeley,4.4,480,480,480
+937,San Diego,African American,Female,Davis,4.2,480,480,480
+938,San Diego,African American,Female,Irvine,4.2,480,480,480
+939,San Diego,African American,Female,Los Angeles,4.4,480,480,480
+940,San Diego,African American,Female,Riverside,3.8,480,480,480
+941,San Diego,African American,Female,San Diego,4.4,480,480,480
+942,San Diego,African American,Female,Santa Barbara,4.2,480,480,480
+943,San Diego,African American,Female,Santa Cruz,4.4,480,480,480
+944,San Diego,African American,Female,Universitywide,4.2,480,480,480
+945,San Diego,African American,All,Berkeley,4.4,480,480,480
+946,San Diego,African American,All,Davis,4.2,480,480,480
+947,San Diego,African American,All,Irvine,4.2,480,480,480
+948,San Diego,African American,All,Los Angeles,4.4,480,480,480
+949,San Diego,African American,All,Riverside,3.8,480,480,480
+950,San Diego,African American,All,San Diego,4.4,480,480,480
+951,San Diego,African American,All,Santa Barbara,4.2,480,480,480
+952,San Diego,African American,All,Santa Cruz,4.4,480,480,480
+953,San Diego,African American,All,Universitywide,4.2,480,480,480
+954,San Diego,African American,Male,Berkeley,4.4,480,480,480
+955,San Diego,African American,Male,Davis,4.2,480,480,480
+956,San Diego,African American,Male,Irvine,4.2,480,480,480
+957,San Diego,African American,Male,Los Angeles,4.4,480,480,480
+958,San Diego,African American,Male,Riverside,3.8,480,480,480
+959,San Diego,African American,Male,San Diego,4.4,480,480,480
+960,San Diego,African American,Male,Santa Barbara,4.2,480,480,480
+961,San Diego,African American,Male,Santa Cruz,4.4,480,480,480
+962,San Diego,African American,Male,Universitywide,4.2,480,480,480
+963,San Diego,African American,Unknown,Berkeley,4.4,480,480,480
+964,San Diego,African American,Unknown,Davis,4.2,480,480,480
+965,San Diego,African American,Unknown,Irvine,4.2,480,480,480
+966,San Diego,African American,Unknown,Los Angeles,4.4,480,480,480
+967,San Diego,African American,Unknown,Riverside,3.8,480,480,480
+968,San Diego,African American,Unknown,San Diego,4.4,480,480,480
+969,San Diego,African American,Unknown,Santa Barbara,4.2,480,480,480
+970,San Diego,African American,Unknown,Santa Cruz,4.4,480,480,480
+971,San Diego,African American,Unknown,Universitywide,4.2,480,480,480
+972,San Diego,All,Female,Berkeley,4.4,480,480,480
+973,San Diego,All,Female,Davis,4.2,480,480,480
+974,San Diego,All,Female,Irvine,4.2,480,480,480
+975,San Diego,All,Female,Los Angeles,4.4,480,480,480
+976,San Diego,All,Female,Riverside,3.8,480,480,480
+977,San Diego,All,Female,San Diego,4.4,480,480,480
+978,San Diego,All,Female,Santa Barbara,4.2,480,480,480
+979,San Diego,All,Female,Santa Cruz,4.4,480,480,480
+980,San Diego,All,Female,Universitywide,4.2,480,480,480
+981,San Diego,All,All,Berkeley,4.4,480,480,480
+982,San Diego,All,All,Davis,4.2,480,480,480
+983,San Diego,All,All,Irvine,4.2,480,480,480
+984,San Diego,All,All,Los Angeles,4.4,480,480,480
+985,San Diego,All,All,Riverside,3.8,480,480,480
+986,San Diego,All,All,San Diego,4.4,480,480,480
+987,San Diego,All,All,Santa Barbara,4.2,480,480,480
+988,San Diego,All,All,Santa Cruz,4.4,480,480,480
+989,San Diego,All,All,Universitywide,4.2,480,480,480
+990,San Diego,All,Male,Berkeley,4.4,480,480,480
+991,San Diego,All,Male,Davis,4.2,480,480,480
+992,San Diego,All,Male,Irvine,4.2,480,480,480
+993,San Diego,All,Male,Los Angeles,4.4,480,480,480
+994,San Diego,All,Male,Riverside,3.8,480,480,480
+995,San Diego,All,Male,San Diego,4.4,480,480,480
+996,San Diego,All,Male,Santa Barbara,4.2,480,480,480
+997,San Diego,All,Male,Santa Cruz,4.4,480,480,480
+998,San Diego,All,Male,Universitywide,4.2,480,480,480
+999,San Diego,All,Unknown,Berkeley,4.4,480,480,480
+1000,San Diego,All,Unknown,Davis,4.2,480,480,480
+1001,San Diego,All,Unknown,Irvine,4.2,480,480,480
+1002,San Diego,All,Unknown,Los Angeles,4.4,480,480,480
+1003,San Diego,All,Unknown,Riverside,3.8,480,480,480
+1004,San Diego,All,Unknown,San Diego,4.4,480,480,480
+1005,San Diego,All,Unknown,Santa Barbara,4.2,480,480,480
+1006,San Diego,All,Unknown,Santa Cruz,4.4,480,480,480
+1007,San Diego,All,Unknown,Universitywide,4.2,480,480,480
+1008,Contra Costa,White,Male,Berkeley,4.2,480,480,480
+1009,Contra Costa,White,Male,Davis,4.2,480,480,480
+1010,Contra Costa,White,Male,Irvine,4.2,480,480,480
+1011,Contra Costa,White,Male,Los Angeles,4.2,480,480,480
+1012,Contra Costa,White,Male,Merced,3.6,480,480,480
+1013,Contra Costa,White,Male,Riverside,3.6,480,480,480
+1014,Contra Costa,White,Male,San Diego,4.4,480,480,480
+1015,Contra Costa,White,Male,Santa Barbara,4.2,480,480,480
+1016,Contra Costa,White,Male,Santa Cruz,3.8,480,480,480
+1017,Contra Costa,White,Male,Universitywide,3.8,480,480,480
+1018,Contra Costa,White,Female,Berkeley,4.2,480,480,480
+1019,Contra Costa,White,Female,Davis,4.2,480,480,480
+1020,Contra Costa,White,Female,Irvine,4.2,480,480,480
+1021,Contra Costa,White,Female,Los Angeles,4.2,480,480,480
+1022,Contra Costa,White,Female,Merced,3.6,480,480,480
+1023,Contra Costa,White,Female,Riverside,3.6,480,480,480
+1024,Contra Costa,White,Female,San Diego,4.4,480,480,480
+1025,Contra Costa,White,Female,Santa Barbara,4.2,480,480,480
+1026,Contra Costa,White,Female,Santa Cruz,3.8,480,480,480
+1027,Contra Costa,White,Female,Universitywide,3.8,480,480,480
+1028,Contra Costa,White,All,Berkeley,4.2,480,480,480
+1029,Contra Costa,White,All,Davis,4.2,480,480,480
+1030,Contra Costa,White,All,Irvine,4.2,480,480,480
+1031,Contra Costa,White,All,Los Angeles,4.2,480,480,480
+1032,Contra Costa,White,All,Merced,3.6,480,480,480
+1033,Contra Costa,White,All,Riverside,3.6,480,480,480
+1034,Contra Costa,White,All,San Diego,4.4,480,480,480
+1035,Contra Costa,White,All,Santa Barbara,4.2,480,480,480
+1036,Contra Costa,White,All,Santa Cruz,3.8,480,480,480
+1037,Contra Costa,White,All,Universitywide,3.8,480,480,480
+1038,Contra Costa,White,Unknown,Berkeley,4.2,480,480,480
+1039,Contra Costa,White,Unknown,Davis,4.2,480,480,480
+1040,Contra Costa,White,Unknown,Irvine,4.2,480,480,480
+1041,Contra Costa,White,Unknown,Los Angeles,4.2,480,480,480
+1042,Contra Costa,White,Unknown,Merced,3.6,480,480,480
+1043,Contra Costa,White,Unknown,Riverside,3.6,480,480,480
+1044,Contra Costa,White,Unknown,San Diego,4.4,480,480,480
+1045,Contra Costa,White,Unknown,Santa Barbara,4.2,480,480,480
+1046,Contra Costa,White,Unknown,Santa Cruz,3.8,480,480,480
+1047,Contra Costa,White,Unknown,Universitywide,3.8,480,480,480
+1048,Contra Costa,Asian,Male,Berkeley,4.2,480,480,480
+1049,Contra Costa,Asian,Male,Davis,4.2,480,480,480
+1050,Contra Costa,Asian,Male,Irvine,4.2,480,480,480
+1051,Contra Costa,Asian,Male,Los Angeles,4.2,480,480,480
+1052,Contra Costa,Asian,Male,Merced,3.6,480,480,480
+1053,Contra Costa,Asian,Male,Riverside,3.6,480,480,480
+1054,Contra Costa,Asian,Male,San Diego,4.4,480,480,480
+1055,Contra Costa,Asian,Male,Santa Barbara,4.2,480,480,480
+1056,Contra Costa,Asian,Male,Santa Cruz,3.8,480,480,480
+1057,Contra Costa,Asian,Male,Universitywide,3.8,480,480,480
+1058,Contra Costa,Asian,Female,Berkeley,4.2,480,480,480
+1059,Contra Costa,Asian,Female,Davis,4.2,480,480,480
+1060,Contra Costa,Asian,Female,Irvine,4.2,480,480,480
+1061,Contra Costa,Asian,Female,Los Angeles,4.2,480,480,480
+1062,Contra Costa,Asian,Female,Merced,3.6,480,480,480
+1063,Contra Costa,Asian,Female,Riverside,3.6,480,480,480
+1064,Contra Costa,Asian,Female,San Diego,4.4,480,480,480
+1065,Contra Costa,Asian,Female,Santa Barbara,4.2,480,480,480
+1066,Contra Costa,Asian,Female,Santa Cruz,3.8,480,480,480
+1067,Contra Costa,Asian,Female,Universitywide,3.8,480,480,480
+1068,Contra Costa,Asian,All,Berkeley,4.2,480,480,480
+1069,Contra Costa,Asian,All,Davis,4.2,480,480,480
+1070,Contra Costa,Asian,All,Irvine,4.2,480,480,480
+1071,Contra Costa,Asian,All,Los Angeles,4.2,480,480,480
+1072,Contra Costa,Asian,All,Merced,3.6,480,480,480
+1073,Contra Costa,Asian,All,Riverside,3.6,480,480,480
+1074,Contra Costa,Asian,All,San Diego,4.4,480,480,480
+1075,Contra Costa,Asian,All,Santa Barbara,4.2,480,480,480
+1076,Contra Costa,Asian,All,Santa Cruz,3.8,480,480,480
+1077,Contra Costa,Asian,All,Universitywide,3.8,480,480,480
+1078,Contra Costa,Asian,Unknown,Berkeley,4.2,480,480,480
+1079,Contra Costa,Asian,Unknown,Davis,4.2,480,480,480
+1080,Contra Costa,Asian,Unknown,Irvine,4.2,480,480,480
+1081,Contra Costa,Asian,Unknown,Los Angeles,4.2,480,480,480
+1082,Contra Costa,Asian,Unknown,Merced,3.6,480,480,480
+1083,Contra Costa,Asian,Unknown,Riverside,3.6,480,480,480
+1084,Contra Costa,Asian,Unknown,San Diego,4.4,480,480,480
+1085,Contra Costa,Asian,Unknown,Santa Barbara,4.2,480,480,480
+1086,Contra Costa,Asian,Unknown,Santa Cruz,3.8,480,480,480
+1087,Contra Costa,Asian,Unknown,Universitywide,3.8,480,480,480
+1088,Contra Costa,Hispanic/ Latino,Male,Berkeley,4.2,480,480,480
+1089,Contra Costa,Hispanic/ Latino,Male,Davis,4.2,480,480,480
+1090,Contra Costa,Hispanic/ Latino,Male,Irvine,4.2,480,480,480
+1091,Contra Costa,Hispanic/ Latino,Male,Los Angeles,4.2,480,480,480
+1092,Contra Costa,Hispanic/ Latino,Male,Merced,3.6,480,480,480
+1093,Contra Costa,Hispanic/ Latino,Male,Riverside,3.6,480,480,480
+1094,Contra Costa,Hispanic/ Latino,Male,San Diego,4.4,480,480,480
+1095,Contra Costa,Hispanic/ Latino,Male,Santa Barbara,4.2,480,480,480
+1096,Contra Costa,Hispanic/ Latino,Male,Santa Cruz,3.8,480,480,480
+1097,Contra Costa,Hispanic/ Latino,Male,Universitywide,3.8,480,480,480
+1098,Contra Costa,Hispanic/ Latino,Female,Berkeley,4.2,480,480,480
+1099,Contra Costa,Hispanic/ Latino,Female,Davis,4.2,480,480,480
+1100,Contra Costa,Hispanic/ Latino,Female,Irvine,4.2,480,480,480
+1101,Contra Costa,Hispanic/ Latino,Female,Los Angeles,4.2,480,480,480
+1102,Contra Costa,Hispanic/ Latino,Female,Merced,3.6,480,480,480
+1103,Contra Costa,Hispanic/ Latino,Female,Riverside,3.6,480,480,480
+1104,Contra Costa,Hispanic/ Latino,Female,San Diego,4.4,480,480,480
+1105,Contra Costa,Hispanic/ Latino,Female,Santa Barbara,4.2,480,480,480
+1106,Contra Costa,Hispanic/ Latino,Female,Santa Cruz,3.8,480,480,480
+1107,Contra Costa,Hispanic/ Latino,Female,Universitywide,3.8,480,480,480
+1108,Contra Costa,Hispanic/ Latino,All,Berkeley,4.2,480,480,480
+1109,Contra Costa,Hispanic/ Latino,All,Davis,4.2,480,480,480
+1110,Contra Costa,Hispanic/ Latino,All,Irvine,4.2,480,480,480
+1111,Contra Costa,Hispanic/ Latino,All,Los Angeles,4.2,480,480,480
+1112,Contra Costa,Hispanic/ Latino,All,Merced,3.6,480,480,480
+1113,Contra Costa,Hispanic/ Latino,All,Riverside,3.6,480,480,480
+1114,Contra Costa,Hispanic/ Latino,All,San Diego,4.4,480,480,480
+1115,Contra Costa,Hispanic/ Latino,All,Santa Barbara,4.2,480,480,480
+1116,Contra Costa,Hispanic/ Latino,All,Santa Cruz,3.8,480,480,480
+1117,Contra Costa,Hispanic/ Latino,All,Universitywide,3.8,480,480,480
+1118,Contra Costa,Hispanic/ Latino,Unknown,Berkeley,4.2,480,480,480
+1119,Contra Costa,Hispanic/ Latino,Unknown,Davis,4.2,480,480,480
+1120,Contra Costa,Hispanic/ Latino,Unknown,Irvine,4.2,480,480,480
+1121,Contra Costa,Hispanic/ Latino,Unknown,Los Angeles,4.2,480,480,480
+1122,Contra Costa,Hispanic/ Latino,Unknown,Merced,3.6,480,480,480
+1123,Contra Costa,Hispanic/ Latino,Unknown,Riverside,3.6,480,480,480
+1124,Contra Costa,Hispanic/ Latino,Unknown,San Diego,4.4,480,480,480
+1125,Contra Costa,Hispanic/ Latino,Unknown,Santa Barbara,4.2,480,480,480
+1126,Contra Costa,Hispanic/ Latino,Unknown,Santa Cruz,3.8,480,480,480
+1127,Contra Costa,Hispanic/ Latino,Unknown,Universitywide,3.8,480,480,480
+1128,Contra Costa,All,Male,Berkeley,4.2,480,480,480
+1129,Contra Costa,All,Male,Davis,4.2,480,480,480
+1130,Contra Costa,All,Male,Irvine,4.2,480,480,480
+1131,Contra Costa,All,Male,Los Angeles,4.2,480,480,480
+1132,Contra Costa,All,Male,Merced,3.6,480,480,480
+1133,Contra Costa,All,Male,Riverside,3.6,480,480,480
+1134,Contra Costa,All,Male,San Diego,4.4,480,480,480
+1135,Contra Costa,All,Male,Santa Barbara,4.2,480,480,480
+1136,Contra Costa,All,Male,Santa Cruz,3.8,480,480,480
+1137,Contra Costa,All,Male,Universitywide,3.8,480,480,480
+1138,Contra Costa,All,Female,Berkeley,4.2,480,480,480
+1139,Contra Costa,All,Female,Davis,4.2,480,480,480
+1140,Contra Costa,All,Female,Irvine,4.2,480,480,480
+1141,Contra Costa,All,Female,Los Angeles,4.2,480,480,480
+1142,Contra Costa,All,Female,Merced,3.6,480,480,480
+1143,Contra Costa,All,Female,Riverside,3.6,480,480,480
+1144,Contra Costa,All,Female,San Diego,4.4,480,480,480
+1145,Contra Costa,All,Female,Santa Barbara,4.2,480,480,480
+1146,Contra Costa,All,Female,Santa Cruz,3.8,480,480,480
+1147,Contra Costa,All,Female,Universitywide,3.8,480,480,480
+1148,Contra Costa,All,All,Berkeley,4.2,480,480,480
+1149,Contra Costa,All,All,Davis,4.2,480,480,480
+1150,Contra Costa,All,All,Irvine,4.2,480,480,480
+1151,Contra Costa,All,All,Los Angeles,4.2,480,480,480
+1152,Contra Costa,All,All,Merced,3.6,480,480,480
+1153,Contra Costa,All,All,Riverside,3.6,480,480,480
+1154,Contra Costa,All,All,San Diego,4.4,480,480,480
+1155,Contra Costa,All,All,Santa Barbara,4.2,480,480,480
+1156,Contra Costa,All,All,Santa Cruz,3.8,480,480,480
+1157,Contra Costa,All,All,Universitywide,3.8,480,480,480
+1158,Contra Costa,All,Unknown,Berkeley,4.2,480,480,480
+1159,Contra Costa,All,Unknown,Davis,4.2,480,480,480
+1160,Contra Costa,All,Unknown,Irvine,4.2,480,480,480
+1161,Contra Costa,All,Unknown,Los Angeles,4.2,480,480,480
+1162,Contra Costa,All,Unknown,Merced,3.6,480,480,480
+1163,Contra Costa,All,Unknown,Riverside,3.6,480,480,480
+1164,Contra Costa,All,Unknown,San Diego,4.4,480,480,480
+1165,Contra Costa,All,Unknown,Santa Barbara,4.2,480,480,480
+1166,Contra Costa,All,Unknown,Santa Cruz,3.8,480,480,480
+1167,Contra Costa,All,Unknown,Universitywide,3.8,480,480,480
+1168,Contra Costa,Domestic Unknown,Male,Berkeley,4.2,480,480,480
+1169,Contra Costa,Domestic Unknown,Male,Davis,4.2,480,480,480
+1170,Contra Costa,Domestic Unknown,Male,Irvine,4.2,480,480,480
+1171,Contra Costa,Domestic Unknown,Male,Los Angeles,4.2,480,480,480
+1172,Contra Costa,Domestic Unknown,Male,Merced,3.6,480,480,480
+1173,Contra Costa,Domestic Unknown,Male,Riverside,3.6,480,480,480
+1174,Contra Costa,Domestic Unknown,Male,San Diego,4.4,480,480,480
+1175,Contra Costa,Domestic Unknown,Male,Santa Barbara,4.2,480,480,480
+1176,Contra Costa,Domestic Unknown,Male,Santa Cruz,3.8,480,480,480
+1177,Contra Costa,Domestic Unknown,Male,Universitywide,3.8,480,480,480
+1178,Contra Costa,Domestic Unknown,Female,Berkeley,4.2,480,480,480
+1179,Contra Costa,Domestic Unknown,Female,Davis,4.2,480,480,480
+1180,Contra Costa,Domestic Unknown,Female,Irvine,4.2,480,480,480
+1181,Contra Costa,Domestic Unknown,Female,Los Angeles,4.2,480,480,480
+1182,Contra Costa,Domestic Unknown,Female,Merced,3.6,480,480,480
+1183,Contra Costa,Domestic Unknown,Female,Riverside,3.6,480,480,480
+1184,Contra Costa,Domestic Unknown,Female,San Diego,4.4,480,480,480
+1185,Contra Costa,Domestic Unknown,Female,Santa Barbara,4.2,480,480,480
+1186,Contra Costa,Domestic Unknown,Female,Santa Cruz,3.8,480,480,480
+1187,Contra Costa,Domestic Unknown,Female,Universitywide,3.8,480,480,480
+1188,Contra Costa,Domestic Unknown,All,Berkeley,4.2,480,480,480
+1189,Contra Costa,Domestic Unknown,All,Davis,4.2,480,480,480
+1190,Contra Costa,Domestic Unknown,All,Irvine,4.2,480,480,480
+1191,Contra Costa,Domestic Unknown,All,Los Angeles,4.2,480,480,480
+1192,Contra Costa,Domestic Unknown,All,Merced,3.6,480,480,480
+1193,Contra Costa,Domestic Unknown,All,Riverside,3.6,480,480,480
+1194,Contra Costa,Domestic Unknown,All,San Diego,4.4,480,480,480
+1195,Contra Costa,Domestic Unknown,All,Santa Barbara,4.2,480,480,480
+1196,Contra Costa,Domestic Unknown,All,Santa Cruz,3.8,480,480,480
+1197,Contra Costa,Domestic Unknown,All,Universitywide,3.8,480,480,480
+1198,Contra Costa,Domestic Unknown,Unknown,Berkeley,4.2,480,480,480
+1199,Contra Costa,Domestic Unknown,Unknown,Davis,4.2,480,480,480
+1200,Contra Costa,Domestic Unknown,Unknown,Irvine,4.2,480,480,480
+1201,Contra Costa,Domestic Unknown,Unknown,Los Angeles,4.2,480,480,480
+1202,Contra Costa,Domestic Unknown,Unknown,Merced,3.6,480,480,480
+1203,Contra Costa,Domestic Unknown,Unknown,Riverside,3.6,480,480,480
+1204,Contra Costa,Domestic Unknown,Unknown,San Diego,4.4,480,480,480
+1205,Contra Costa,Domestic Unknown,Unknown,Santa Barbara,4.2,480,480,480
+1206,Contra Costa,Domestic Unknown,Unknown,Santa Cruz,3.8,480,480,480
+1207,Contra Costa,Domestic Unknown,Unknown,Universitywide,3.8,480,480,480
+1208,Ventura,White,Male,Berkeley,4.4,500,500,500
+1209,Ventura,White,Male,Davis,4.4,500,500,500
+1210,Ventura,White,Male,Irvine,4.4,500,500,500
+1211,Ventura,White,Male,Los Angeles,4.4,500,500,500
+1212,Ventura,White,Male,Merced,3.8,500,500,500
+1213,Ventura,White,Male,Riverside,3.8,500,500,500
+1214,Ventura,White,Male,San Diego,4.4,500,500,500
+1215,Ventura,White,Male,Santa Barbara,4.4,500,500,500
+1216,Ventura,White,Male,Santa Cruz,4.2,500,500,500
+1217,Ventura,White,Male,Universitywide,4.2,500,500,500
+1218,Ventura,White,Female,Berkeley,4.4,500,500,500
+1219,Ventura,White,Female,Davis,4.4,500,500,500
+1220,Ventura,White,Female,Irvine,4.4,500,500,500
+1221,Ventura,White,Female,Los Angeles,4.4,500,500,500
+1222,Ventura,White,Female,Merced,3.8,500,500,500
+1223,Ventura,White,Female,Riverside,3.8,500,500,500
+1224,Ventura,White,Female,San Diego,4.4,500,500,500
+1225,Ventura,White,Female,Santa Barbara,4.4,500,500,500
+1226,Ventura,White,Female,Santa Cruz,4.2,500,500,500
+1227,Ventura,White,Female,Universitywide,4.2,500,500,500
+1228,Ventura,White,All,Berkeley,4.4,500,500,500
+1229,Ventura,White,All,Davis,4.4,500,500,500
+1230,Ventura,White,All,Irvine,4.4,500,500,500
+1231,Ventura,White,All,Los Angeles,4.4,500,500,500
+1232,Ventura,White,All,Merced,3.8,500,500,500
+1233,Ventura,White,All,Riverside,3.8,500,500,500
+1234,Ventura,White,All,San Diego,4.4,500,500,500
+1235,Ventura,White,All,Santa Barbara,4.4,500,500,500
+1236,Ventura,White,All,Santa Cruz,4.2,500,500,500
+1237,Ventura,White,All,Universitywide,4.2,500,500,500
+1238,Ventura,Asian,Male,Berkeley,4.4,500,500,500
+1239,Ventura,Asian,Male,Davis,4.4,500,500,500
+1240,Ventura,Asian,Male,Irvine,4.4,500,500,500
+1241,Ventura,Asian,Male,Los Angeles,4.4,500,500,500
+1242,Ventura,Asian,Male,Merced,3.8,500,500,500
+1243,Ventura,Asian,Male,Riverside,3.8,500,500,500
+1244,Ventura,Asian,Male,San Diego,4.4,500,500,500
+1245,Ventura,Asian,Male,Santa Barbara,4.4,500,500,500
+1246,Ventura,Asian,Male,Santa Cruz,4.2,500,500,500
+1247,Ventura,Asian,Male,Universitywide,4.2,500,500,500
+1248,Ventura,Asian,Female,Berkeley,4.4,500,500,500
+1249,Ventura,Asian,Female,Davis,4.4,500,500,500
+1250,Ventura,Asian,Female,Irvine,4.4,500,500,500
+1251,Ventura,Asian,Female,Los Angeles,4.4,500,500,500
+1252,Ventura,Asian,Female,Merced,3.8,500,500,500
+1253,Ventura,Asian,Female,Riverside,3.8,500,500,500
+1254,Ventura,Asian,Female,San Diego,4.4,500,500,500
+1255,Ventura,Asian,Female,Santa Barbara,4.4,500,500,500
+1256,Ventura,Asian,Female,Santa Cruz,4.2,500,500,500
+1257,Ventura,Asian,Female,Universitywide,4.2,500,500,500
+1258,Ventura,Asian,All,Berkeley,4.4,500,500,500
+1259,Ventura,Asian,All,Davis,4.4,500,500,500
+1260,Ventura,Asian,All,Irvine,4.4,500,500,500
+1261,Ventura,Asian,All,Los Angeles,4.4,500,500,500
+1262,Ventura,Asian,All,Merced,3.8,500,500,500
+1263,Ventura,Asian,All,Riverside,3.8,500,500,500
+1264,Ventura,Asian,All,San Diego,4.4,500,500,500
+1265,Ventura,Asian,All,Santa Barbara,4.4,500,500,500
+1266,Ventura,Asian,All,Santa Cruz,4.2,500,500,500
+1267,Ventura,Asian,All,Universitywide,4.2,500,500,500
+1268,Ventura,Hispanic/ Latino,Male,Berkeley,4.4,500,500,500
+1269,Ventura,Hispanic/ Latino,Male,Davis,4.4,500,500,500
+1270,Ventura,Hispanic/ Latino,Male,Irvine,4.4,500,500,500
+1271,Ventura,Hispanic/ Latino,Male,Los Angeles,4.4,500,500,500
+1272,Ventura,Hispanic/ Latino,Male,Merced,3.8,500,500,500
+1273,Ventura,Hispanic/ Latino,Male,Riverside,3.8,500,500,500
+1274,Ventura,Hispanic/ Latino,Male,San Diego,4.4,500,500,500
+1275,Ventura,Hispanic/ Latino,Male,Santa Barbara,4.4,500,500,500
+1276,Ventura,Hispanic/ Latino,Male,Santa Cruz,4.2,500,500,500
+1277,Ventura,Hispanic/ Latino,Male,Universitywide,4.2,500,500,500
+1278,Ventura,Hispanic/ Latino,Female,Berkeley,4.4,500,500,500
+1279,Ventura,Hispanic/ Latino,Female,Davis,4.4,500,500,500
+1280,Ventura,Hispanic/ Latino,Female,Irvine,4.4,500,500,500
+1281,Ventura,Hispanic/ Latino,Female,Los Angeles,4.4,500,500,500
+1282,Ventura,Hispanic/ Latino,Female,Merced,3.8,500,500,500
+1283,Ventura,Hispanic/ Latino,Female,Riverside,3.8,500,500,500
+1284,Ventura,Hispanic/ Latino,Female,San Diego,4.4,500,500,500
+1285,Ventura,Hispanic/ Latino,Female,Santa Barbara,4.4,500,500,500
+1286,Ventura,Hispanic/ Latino,Female,Santa Cruz,4.2,500,500,500
+1287,Ventura,Hispanic/ Latino,Female,Universitywide,4.2,500,500,500
+1288,Ventura,Hispanic/ Latino,All,Berkeley,4.4,500,500,500
+1289,Ventura,Hispanic/ Latino,All,Davis,4.4,500,500,500
+1290,Ventura,Hispanic/ Latino,All,Irvine,4.4,500,500,500
+1291,Ventura,Hispanic/ Latino,All,Los Angeles,4.4,500,500,500
+1292,Ventura,Hispanic/ Latino,All,Merced,3.8,500,500,500
+1293,Ventura,Hispanic/ Latino,All,Riverside,3.8,500,500,500
+1294,Ventura,Hispanic/ Latino,All,San Diego,4.4,500,500,500
+1295,Ventura,Hispanic/ Latino,All,Santa Barbara,4.4,500,500,500
+1296,Ventura,Hispanic/ Latino,All,Santa Cruz,4.2,500,500,500
+1297,Ventura,Hispanic/ Latino,All,Universitywide,4.2,500,500,500
+1298,Ventura,All,Male,Berkeley,4.4,500,500,500
+1299,Ventura,All,Male,Davis,4.4,500,500,500
+1300,Ventura,All,Male,Irvine,4.4,500,500,500
+1301,Ventura,All,Male,Los Angeles,4.4,500,500,500
+1302,Ventura,All,Male,Merced,3.8,500,500,500
+1303,Ventura,All,Male,Riverside,3.8,500,500,500
+1304,Ventura,All,Male,San Diego,4.4,500,500,500
+1305,Ventura,All,Male,Santa Barbara,4.4,500,500,500
+1306,Ventura,All,Male,Santa Cruz,4.2,500,500,500
+1307,Ventura,All,Male,Universitywide,4.2,500,500,500
+1308,Ventura,All,Female,Berkeley,4.4,500,500,500
+1309,Ventura,All,Female,Davis,4.4,500,500,500
+1310,Ventura,All,Female,Irvine,4.4,500,500,500
+1311,Ventura,All,Female,Los Angeles,4.4,500,500,500
+1312,Ventura,All,Female,Merced,3.8,500,500,500
+1313,Ventura,All,Female,Riverside,3.8,500,500,500
+1314,Ventura,All,Female,San Diego,4.4,500,500,500
+1315,Ventura,All,Female,Santa Barbara,4.4,500,500,500
+1316,Ventura,All,Female,Santa Cruz,4.2,500,500,500
+1317,Ventura,All,Female,Universitywide,4.2,500,500,500
+1318,Ventura,All,All,Berkeley,4.4,500,500,500
+1319,Ventura,All,All,Davis,4.4,500,500,500
+1320,Ventura,All,All,Irvine,4.4,500,500,500
+1321,Ventura,All,All,Los Angeles,4.4,500,500,500
+1322,Ventura,All,All,Merced,3.8,500,500,500
+1323,Ventura,All,All,Riverside,3.8,500,500,500
+1324,Ventura,All,All,San Diego,4.4,500,500,500
+1325,Ventura,All,All,Santa Barbara,4.4,500,500,500
+1326,Ventura,All,All,Santa Cruz,4.2,500,500,500
+1327,Ventura,All,All,Universitywide,4.2,500,500,500
+1328,Sacramento,White,Male,Berkeley,4.2,480,480,460
+1329,Sacramento,White,Male,Davis,4.2,480,480,460
+1330,Sacramento,White,Male,Irvine,4.2,480,480,460
+1331,Sacramento,White,Male,Merced,3.6,480,480,460
+1332,Sacramento,White,Male,Riverside,3.8,480,480,460
+1333,Sacramento,White,Male,San Diego,4.4,480,480,460
+1334,Sacramento,White,Male,Santa Barbara,4.2,480,480,460
+1335,Sacramento,White,Male,Santa Cruz,3.8,480,480,460
+1336,Sacramento,White,Male,Universitywide,4.2,480,480,460
+1337,Sacramento,White,Female,Berkeley,4.2,480,480,460
+1338,Sacramento,White,Female,Davis,4.2,480,480,460
+1339,Sacramento,White,Female,Irvine,4.2,480,480,460
+1340,Sacramento,White,Female,Merced,3.6,480,480,460
+1341,Sacramento,White,Female,Riverside,3.8,480,480,460
+1342,Sacramento,White,Female,San Diego,4.4,480,480,460
+1343,Sacramento,White,Female,Santa Barbara,4.2,480,480,460
+1344,Sacramento,White,Female,Santa Cruz,3.8,480,480,460
+1345,Sacramento,White,Female,Universitywide,4.2,480,480,460
+1346,Sacramento,White,All,Berkeley,4.2,480,480,460
+1347,Sacramento,White,All,Davis,4.2,480,480,460
+1348,Sacramento,White,All,Irvine,4.2,480,480,460
+1349,Sacramento,White,All,Merced,3.6,480,480,460
+1350,Sacramento,White,All,Riverside,3.8,480,480,460
+1351,Sacramento,White,All,San Diego,4.4,480,480,460
+1352,Sacramento,White,All,Santa Barbara,4.2,480,480,460
+1353,Sacramento,White,All,Santa Cruz,3.8,480,480,460
+1354,Sacramento,White,All,Universitywide,4.2,480,480,460
+1355,Sacramento,All,Male,Berkeley,4.2,480,480,460
+1356,Sacramento,All,Male,Davis,4.2,480,480,460
+1357,Sacramento,All,Male,Irvine,4.2,480,480,460
+1358,Sacramento,All,Male,Merced,3.6,480,480,460
+1359,Sacramento,All,Male,Riverside,3.8,480,480,460
+1360,Sacramento,All,Male,San Diego,4.4,480,480,460
+1361,Sacramento,All,Male,Santa Barbara,4.2,480,480,460
+1362,Sacramento,All,Male,Santa Cruz,3.8,480,480,460
+1363,Sacramento,All,Male,Universitywide,4.2,480,480,460
+1364,Sacramento,All,Female,Berkeley,4.2,480,480,460
+1365,Sacramento,All,Female,Davis,4.2,480,480,460
+1366,Sacramento,All,Female,Irvine,4.2,480,480,460
+1367,Sacramento,All,Female,Merced,3.6,480,480,460
+1368,Sacramento,All,Female,Riverside,3.8,480,480,460
+1369,Sacramento,All,Female,San Diego,4.4,480,480,460
+1370,Sacramento,All,Female,Santa Barbara,4.2,480,480,460
+1371,Sacramento,All,Female,Santa Cruz,3.8,480,480,460
+1372,Sacramento,All,Female,Universitywide,4.2,480,480,460
+1373,Sacramento,All,All,Berkeley,4.2,480,480,460
+1374,Sacramento,All,All,Davis,4.2,480,480,460
+1375,Sacramento,All,All,Irvine,4.2,480,480,460
+1376,Sacramento,All,All,Merced,3.6,480,480,460
+1377,Sacramento,All,All,Riverside,3.8,480,480,460
+1378,Sacramento,All,All,San Diego,4.4,480,480,460
+1379,Sacramento,All,All,Santa Barbara,4.2,480,480,460
+1380,Sacramento,All,All,Santa Cruz,3.8,480,480,460
+1381,Sacramento,All,All,Universitywide,4.2,480,480,460
+1382,Sacramento,Asian,Male,Berkeley,4.2,480,480,460
+1383,Sacramento,Asian,Male,Davis,4.2,480,480,460
+1384,Sacramento,Asian,Male,Irvine,4.2,480,480,460
+1385,Sacramento,Asian,Male,Merced,3.6,480,480,460
+1386,Sacramento,Asian,Male,Riverside,3.8,480,480,460
+1387,Sacramento,Asian,Male,San Diego,4.4,480,480,460
+1388,Sacramento,Asian,Male,Santa Barbara,4.2,480,480,460
+1389,Sacramento,Asian,Male,Santa Cruz,3.8,480,480,460
+1390,Sacramento,Asian,Male,Universitywide,4.2,480,480,460
+1391,Sacramento,Asian,Female,Berkeley,4.2,480,480,460
+1392,Sacramento,Asian,Female,Davis,4.2,480,480,460
+1393,Sacramento,Asian,Female,Irvine,4.2,480,480,460
+1394,Sacramento,Asian,Female,Merced,3.6,480,480,460
+1395,Sacramento,Asian,Female,Riverside,3.8,480,480,460
+1396,Sacramento,Asian,Female,San Diego,4.4,480,480,460
+1397,Sacramento,Asian,Female,Santa Barbara,4.2,480,480,460
+1398,Sacramento,Asian,Female,Santa Cruz,3.8,480,480,460
+1399,Sacramento,Asian,Female,Universitywide,4.2,480,480,460
+1400,Sacramento,Asian,All,Berkeley,4.2,480,480,460
+1401,Sacramento,Asian,All,Davis,4.2,480,480,460
+1402,Sacramento,Asian,All,Irvine,4.2,480,480,460
+1403,Sacramento,Asian,All,Merced,3.6,480,480,460
+1404,Sacramento,Asian,All,Riverside,3.8,480,480,460
+1405,Sacramento,Asian,All,San Diego,4.4,480,480,460
+1406,Sacramento,Asian,All,Santa Barbara,4.2,480,480,460
+1407,Sacramento,Asian,All,Santa Cruz,3.8,480,480,460
+1408,Sacramento,Asian,All,Universitywide,4.2,480,480,460
+1409,Sacramento,Hispanic/ Latino,Male,Berkeley,4.2,480,480,460
+1410,Sacramento,Hispanic/ Latino,Male,Davis,4.2,480,480,460
+1411,Sacramento,Hispanic/ Latino,Male,Irvine,4.2,480,480,460
+1412,Sacramento,Hispanic/ Latino,Male,Merced,3.6,480,480,460
+1413,Sacramento,Hispanic/ Latino,Male,Riverside,3.8,480,480,460
+1414,Sacramento,Hispanic/ Latino,Male,San Diego,4.4,480,480,460
+1415,Sacramento,Hispanic/ Latino,Male,Santa Barbara,4.2,480,480,460
+1416,Sacramento,Hispanic/ Latino,Male,Santa Cruz,3.8,480,480,460
+1417,Sacramento,Hispanic/ Latino,Male,Universitywide,4.2,480,480,460
+1418,Sacramento,Hispanic/ Latino,Female,Berkeley,4.2,480,480,460
+1419,Sacramento,Hispanic/ Latino,Female,Davis,4.2,480,480,460
+1420,Sacramento,Hispanic/ Latino,Female,Irvine,4.2,480,480,460
+1421,Sacramento,Hispanic/ Latino,Female,Merced,3.6,480,480,460
+1422,Sacramento,Hispanic/ Latino,Female,Riverside,3.8,480,480,460
+1423,Sacramento,Hispanic/ Latino,Female,San Diego,4.4,480,480,460
+1424,Sacramento,Hispanic/ Latino,Female,Santa Barbara,4.2,480,480,460
+1425,Sacramento,Hispanic/ Latino,Female,Santa Cruz,3.8,480,480,460
+1426,Sacramento,Hispanic/ Latino,Female,Universitywide,4.2,480,480,460
+1427,Sacramento,Hispanic/ Latino,All,Berkeley,4.2,480,480,460
+1428,Sacramento,Hispanic/ Latino,All,Davis,4.2,480,480,460
+1429,Sacramento,Hispanic/ Latino,All,Irvine,4.2,480,480,460
+1430,Sacramento,Hispanic/ Latino,All,Merced,3.6,480,480,460
+1431,Sacramento,Hispanic/ Latino,All,Riverside,3.8,480,480,460
+1432,Sacramento,Hispanic/ Latino,All,San Diego,4.4,480,480,460
+1433,Sacramento,Hispanic/ Latino,All,Santa Barbara,4.2,480,480,460
+1434,Sacramento,Hispanic/ Latino,All,Santa Cruz,3.8,480,480,460
+1435,Sacramento,Hispanic/ Latino,All,Universitywide,4.2,480,480,460
+1436,Sacramento,African American,Male,Berkeley,4.2,480,480,460
+1437,Sacramento,African American,Male,Davis,4.2,480,480,460
+1438,Sacramento,African American,Male,Irvine,4.2,480,480,460
+1439,Sacramento,African American,Male,Merced,3.6,480,480,460
+1440,Sacramento,African American,Male,Riverside,3.8,480,480,460
+1441,Sacramento,African American,Male,San Diego,4.4,480,480,460
+1442,Sacramento,African American,Male,Santa Barbara,4.2,480,480,460
+1443,Sacramento,African American,Male,Santa Cruz,3.8,480,480,460
+1444,Sacramento,African American,Male,Universitywide,4.2,480,480,460
+1445,Sacramento,African American,Female,Berkeley,4.2,480,480,460
+1446,Sacramento,African American,Female,Davis,4.2,480,480,460
+1447,Sacramento,African American,Female,Irvine,4.2,480,480,460
+1448,Sacramento,African American,Female,Merced,3.6,480,480,460
+1449,Sacramento,African American,Female,Riverside,3.8,480,480,460
+1450,Sacramento,African American,Female,San Diego,4.4,480,480,460
+1451,Sacramento,African American,Female,Santa Barbara,4.2,480,480,460
+1452,Sacramento,African American,Female,Santa Cruz,3.8,480,480,460
+1453,Sacramento,African American,Female,Universitywide,4.2,480,480,460
+1454,Sacramento,African American,All,Berkeley,4.2,480,480,460
+1455,Sacramento,African American,All,Davis,4.2,480,480,460
+1456,Sacramento,African American,All,Irvine,4.2,480,480,460
+1457,Sacramento,African American,All,Merced,3.6,480,480,460
+1458,Sacramento,African American,All,Riverside,3.8,480,480,460
+1459,Sacramento,African American,All,San Diego,4.4,480,480,460
+1460,Sacramento,African American,All,Santa Barbara,4.2,480,480,460
+1461,Sacramento,African American,All,Santa Cruz,3.8,480,480,460
+1462,Sacramento,African American,All,Universitywide,4.2,480,480,460
+1463,Alameda,White,Male,Berkeley,4.4,480,480,460
+1464,Alameda,White,Male,Davis,4.2,480,480,460
+1465,Alameda,White,Male,Irvine,4.2,480,480,460
+1466,Alameda,White,Male,Los Angeles,4.4,480,480,460
+1467,Alameda,White,Male,Merced,3.6,480,480,460
+1468,Alameda,White,Male,Riverside,3.8,480,480,460
+1469,Alameda,White,Male,San Diego,4.4,480,480,460
+1470,Alameda,White,Male,Santa Barbara,4.2,480,480,460
+1471,Alameda,White,Male,Santa Cruz,4.2,480,480,460
+1472,Alameda,White,Male,Universitywide,3.8,480,480,460
+1473,Alameda,White,Female,Berkeley,4.4,480,480,460
+1474,Alameda,White,Female,Davis,4.2,480,480,460
+1475,Alameda,White,Female,Irvine,4.2,480,480,460
+1476,Alameda,White,Female,Los Angeles,4.4,480,480,460
+1477,Alameda,White,Female,Merced,3.6,480,480,460
+1478,Alameda,White,Female,Riverside,3.8,480,480,460
+1479,Alameda,White,Female,San Diego,4.4,480,480,460
+1480,Alameda,White,Female,Santa Barbara,4.2,480,480,460
+1481,Alameda,White,Female,Santa Cruz,4.2,480,480,460
+1482,Alameda,White,Female,Universitywide,3.8,480,480,460
+1483,Alameda,White,All,Berkeley,4.4,480,480,460
+1484,Alameda,White,All,Davis,4.2,480,480,460
+1485,Alameda,White,All,Irvine,4.2,480,480,460
+1486,Alameda,White,All,Los Angeles,4.4,480,480,460
+1487,Alameda,White,All,Merced,3.6,480,480,460
+1488,Alameda,White,All,Riverside,3.8,480,480,460
+1489,Alameda,White,All,San Diego,4.4,480,480,460
+1490,Alameda,White,All,Santa Barbara,4.2,480,480,460
+1491,Alameda,White,All,Santa Cruz,4.2,480,480,460
+1492,Alameda,White,All,Universitywide,3.8,480,480,460
+1493,Alameda,White,Unknown,Berkeley,4.4,480,480,460
+1494,Alameda,White,Unknown,Davis,4.2,480,480,460
+1495,Alameda,White,Unknown,Irvine,4.2,480,480,460
+1496,Alameda,White,Unknown,Los Angeles,4.4,480,480,460
+1497,Alameda,White,Unknown,Merced,3.6,480,480,460
+1498,Alameda,White,Unknown,Riverside,3.8,480,480,460
+1499,Alameda,White,Unknown,San Diego,4.4,480,480,460
+1500,Alameda,White,Unknown,Santa Barbara,4.2,480,480,460
+1501,Alameda,White,Unknown,Santa Cruz,4.2,480,480,460
+1502,Alameda,White,Unknown,Universitywide,3.8,480,480,460
+1503,Alameda,Asian,Male,Berkeley,4.4,480,480,460
+1504,Alameda,Asian,Male,Davis,4.2,480,480,460
+1505,Alameda,Asian,Male,Irvine,4.2,480,480,460
+1506,Alameda,Asian,Male,Los Angeles,4.4,480,480,460
+1507,Alameda,Asian,Male,Merced,3.6,480,480,460
+1508,Alameda,Asian,Male,Riverside,3.8,480,480,460
+1509,Alameda,Asian,Male,San Diego,4.4,480,480,460
+1510,Alameda,Asian,Male,Santa Barbara,4.2,480,480,460
+1511,Alameda,Asian,Male,Santa Cruz,4.2,480,480,460
+1512,Alameda,Asian,Male,Universitywide,3.8,480,480,460
+1513,Alameda,Asian,Female,Berkeley,4.4,480,480,460
+1514,Alameda,Asian,Female,Davis,4.2,480,480,460
+1515,Alameda,Asian,Female,Irvine,4.2,480,480,460
+1516,Alameda,Asian,Female,Los Angeles,4.4,480,480,460
+1517,Alameda,Asian,Female,Merced,3.6,480,480,460
+1518,Alameda,Asian,Female,Riverside,3.8,480,480,460
+1519,Alameda,Asian,Female,San Diego,4.4,480,480,460
+1520,Alameda,Asian,Female,Santa Barbara,4.2,480,480,460
+1521,Alameda,Asian,Female,Santa Cruz,4.2,480,480,460
+1522,Alameda,Asian,Female,Universitywide,3.8,480,480,460
+1523,Alameda,Asian,All,Berkeley,4.4,480,480,460
+1524,Alameda,Asian,All,Davis,4.2,480,480,460
+1525,Alameda,Asian,All,Irvine,4.2,480,480,460
+1526,Alameda,Asian,All,Los Angeles,4.4,480,480,460
+1527,Alameda,Asian,All,Merced,3.6,480,480,460
+1528,Alameda,Asian,All,Riverside,3.8,480,480,460
+1529,Alameda,Asian,All,San Diego,4.4,480,480,460
+1530,Alameda,Asian,All,Santa Barbara,4.2,480,480,460
+1531,Alameda,Asian,All,Santa Cruz,4.2,480,480,460
+1532,Alameda,Asian,All,Universitywide,3.8,480,480,460
+1533,Alameda,Asian,Unknown,Berkeley,4.4,480,480,460
+1534,Alameda,Asian,Unknown,Davis,4.2,480,480,460
+1535,Alameda,Asian,Unknown,Irvine,4.2,480,480,460
+1536,Alameda,Asian,Unknown,Los Angeles,4.4,480,480,460
+1537,Alameda,Asian,Unknown,Merced,3.6,480,480,460
+1538,Alameda,Asian,Unknown,Riverside,3.8,480,480,460
+1539,Alameda,Asian,Unknown,San Diego,4.4,480,480,460
+1540,Alameda,Asian,Unknown,Santa Barbara,4.2,480,480,460
+1541,Alameda,Asian,Unknown,Santa Cruz,4.2,480,480,460
+1542,Alameda,Asian,Unknown,Universitywide,3.8,480,480,460
+1543,Alameda,All,Male,Berkeley,4.4,480,480,460
+1544,Alameda,All,Male,Davis,4.2,480,480,460
+1545,Alameda,All,Male,Irvine,4.2,480,480,460
+1546,Alameda,All,Male,Los Angeles,4.4,480,480,460
+1547,Alameda,All,Male,Merced,3.6,480,480,460
+1548,Alameda,All,Male,Riverside,3.8,480,480,460
+1549,Alameda,All,Male,San Diego,4.4,480,480,460
+1550,Alameda,All,Male,Santa Barbara,4.2,480,480,460
+1551,Alameda,All,Male,Santa Cruz,4.2,480,480,460
+1552,Alameda,All,Male,Universitywide,3.8,480,480,460
+1553,Alameda,All,Female,Berkeley,4.4,480,480,460
+1554,Alameda,All,Female,Davis,4.2,480,480,460
+1555,Alameda,All,Female,Irvine,4.2,480,480,460
+1556,Alameda,All,Female,Los Angeles,4.4,480,480,460
+1557,Alameda,All,Female,Merced,3.6,480,480,460
+1558,Alameda,All,Female,Riverside,3.8,480,480,460
+1559,Alameda,All,Female,San Diego,4.4,480,480,460
+1560,Alameda,All,Female,Santa Barbara,4.2,480,480,460
+1561,Alameda,All,Female,Santa Cruz,4.2,480,480,460
+1562,Alameda,All,Female,Universitywide,3.8,480,480,460
+1563,Alameda,All,All,Berkeley,4.4,480,480,460
+1564,Alameda,All,All,Davis,4.2,480,480,460
+1565,Alameda,All,All,Irvine,4.2,480,480,460
+1566,Alameda,All,All,Los Angeles,4.4,480,480,460
+1567,Alameda,All,All,Merced,3.6,480,480,460
+1568,Alameda,All,All,Riverside,3.8,480,480,460
+1569,Alameda,All,All,San Diego,4.4,480,480,460
+1570,Alameda,All,All,Santa Barbara,4.2,480,480,460
+1571,Alameda,All,All,Santa Cruz,4.2,480,480,460
+1572,Alameda,All,All,Universitywide,3.8,480,480,460
+1573,Alameda,All,Unknown,Berkeley,4.4,480,480,460
+1574,Alameda,All,Unknown,Davis,4.2,480,480,460
+1575,Alameda,All,Unknown,Irvine,4.2,480,480,460
+1576,Alameda,All,Unknown,Los Angeles,4.4,480,480,460
+1577,Alameda,All,Unknown,Merced,3.6,480,480,460
+1578,Alameda,All,Unknown,Riverside,3.8,480,480,460
+1579,Alameda,All,Unknown,San Diego,4.4,480,480,460
+1580,Alameda,All,Unknown,Santa Barbara,4.2,480,480,460
+1581,Alameda,All,Unknown,Santa Cruz,4.2,480,480,460
+1582,Alameda,All,Unknown,Universitywide,3.8,480,480,460
+1583,Alameda,Inter- national,Male,Berkeley,4.4,480,480,460
+1584,Alameda,Inter- national,Male,Davis,4.2,480,480,460
+1585,Alameda,Inter- national,Male,Irvine,4.2,480,480,460
+1586,Alameda,Inter- national,Male,Los Angeles,4.4,480,480,460
+1587,Alameda,Inter- national,Male,Merced,3.6,480,480,460
+1588,Alameda,Inter- national,Male,Riverside,3.8,480,480,460
+1589,Alameda,Inter- national,Male,San Diego,4.4,480,480,460
+1590,Alameda,Inter- national,Male,Santa Barbara,4.2,480,480,460
+1591,Alameda,Inter- national,Male,Santa Cruz,4.2,480,480,460
+1592,Alameda,Inter- national,Male,Universitywide,3.8,480,480,460
+1593,Alameda,Inter- national,Female,Berkeley,4.4,480,480,460
+1594,Alameda,Inter- national,Female,Davis,4.2,480,480,460
+1595,Alameda,Inter- national,Female,Irvine,4.2,480,480,460
+1596,Alameda,Inter- national,Female,Los Angeles,4.4,480,480,460
+1597,Alameda,Inter- national,Female,Merced,3.6,480,480,460
+1598,Alameda,Inter- national,Female,Riverside,3.8,480,480,460
+1599,Alameda,Inter- national,Female,San Diego,4.4,480,480,460
+1600,Alameda,Inter- national,Female,Santa Barbara,4.2,480,480,460
+1601,Alameda,Inter- national,Female,Santa Cruz,4.2,480,480,460
+1602,Alameda,Inter- national,Female,Universitywide,3.8,480,480,460
+1603,Alameda,Inter- national,All,Berkeley,4.4,480,480,460
+1604,Alameda,Inter- national,All,Davis,4.2,480,480,460
+1605,Alameda,Inter- national,All,Irvine,4.2,480,480,460
+1606,Alameda,Inter- national,All,Los Angeles,4.4,480,480,460
+1607,Alameda,Inter- national,All,Merced,3.6,480,480,460
+1608,Alameda,Inter- national,All,Riverside,3.8,480,480,460
+1609,Alameda,Inter- national,All,San Diego,4.4,480,480,460
+1610,Alameda,Inter- national,All,Santa Barbara,4.2,480,480,460
+1611,Alameda,Inter- national,All,Santa Cruz,4.2,480,480,460
+1612,Alameda,Inter- national,All,Universitywide,3.8,480,480,460
+1613,Alameda,Inter- national,Unknown,Berkeley,4.4,480,480,460
+1614,Alameda,Inter- national,Unknown,Davis,4.2,480,480,460
+1615,Alameda,Inter- national,Unknown,Irvine,4.2,480,480,460
+1616,Alameda,Inter- national,Unknown,Los Angeles,4.4,480,480,460
+1617,Alameda,Inter- national,Unknown,Merced,3.6,480,480,460
+1618,Alameda,Inter- national,Unknown,Riverside,3.8,480,480,460
+1619,Alameda,Inter- national,Unknown,San Diego,4.4,480,480,460
+1620,Alameda,Inter- national,Unknown,Santa Barbara,4.2,480,480,460
+1621,Alameda,Inter- national,Unknown,Santa Cruz,4.2,480,480,460
+1622,Alameda,Inter- national,Unknown,Universitywide,3.8,480,480,460
+1623,Alameda,Hispanic/ Latino,Male,Berkeley,4.4,480,480,460
+1624,Alameda,Hispanic/ Latino,Male,Davis,4.2,480,480,460
+1625,Alameda,Hispanic/ Latino,Male,Irvine,4.2,480,480,460
+1626,Alameda,Hispanic/ Latino,Male,Los Angeles,4.4,480,480,460
+1627,Alameda,Hispanic/ Latino,Male,Merced,3.6,480,480,460
+1628,Alameda,Hispanic/ Latino,Male,Riverside,3.8,480,480,460
+1629,Alameda,Hispanic/ Latino,Male,San Diego,4.4,480,480,460
+1630,Alameda,Hispanic/ Latino,Male,Santa Barbara,4.2,480,480,460
+1631,Alameda,Hispanic/ Latino,Male,Santa Cruz,4.2,480,480,460
+1632,Alameda,Hispanic/ Latino,Male,Universitywide,3.8,480,480,460
+1633,Alameda,Hispanic/ Latino,Female,Berkeley,4.4,480,480,460
+1634,Alameda,Hispanic/ Latino,Female,Davis,4.2,480,480,460
+1635,Alameda,Hispanic/ Latino,Female,Irvine,4.2,480,480,460
+1636,Alameda,Hispanic/ Latino,Female,Los Angeles,4.4,480,480,460
+1637,Alameda,Hispanic/ Latino,Female,Merced,3.6,480,480,460
+1638,Alameda,Hispanic/ Latino,Female,Riverside,3.8,480,480,460
+1639,Alameda,Hispanic/ Latino,Female,San Diego,4.4,480,480,460
+1640,Alameda,Hispanic/ Latino,Female,Santa Barbara,4.2,480,480,460
+1641,Alameda,Hispanic/ Latino,Female,Santa Cruz,4.2,480,480,460
+1642,Alameda,Hispanic/ Latino,Female,Universitywide,3.8,480,480,460
+1643,Alameda,Hispanic/ Latino,All,Berkeley,4.4,480,480,460
+1644,Alameda,Hispanic/ Latino,All,Davis,4.2,480,480,460
+1645,Alameda,Hispanic/ Latino,All,Irvine,4.2,480,480,460
+1646,Alameda,Hispanic/ Latino,All,Los Angeles,4.4,480,480,460
+1647,Alameda,Hispanic/ Latino,All,Merced,3.6,480,480,460
+1648,Alameda,Hispanic/ Latino,All,Riverside,3.8,480,480,460
+1649,Alameda,Hispanic/ Latino,All,San Diego,4.4,480,480,460
+1650,Alameda,Hispanic/ Latino,All,Santa Barbara,4.2,480,480,460
+1651,Alameda,Hispanic/ Latino,All,Santa Cruz,4.2,480,480,460
+1652,Alameda,Hispanic/ Latino,All,Universitywide,3.8,480,480,460
+1653,Alameda,Hispanic/ Latino,Unknown,Berkeley,4.4,480,480,460
+1654,Alameda,Hispanic/ Latino,Unknown,Davis,4.2,480,480,460
+1655,Alameda,Hispanic/ Latino,Unknown,Irvine,4.2,480,480,460
+1656,Alameda,Hispanic/ Latino,Unknown,Los Angeles,4.4,480,480,460
+1657,Alameda,Hispanic/ Latino,Unknown,Merced,3.6,480,480,460
+1658,Alameda,Hispanic/ Latino,Unknown,Riverside,3.8,480,480,460
+1659,Alameda,Hispanic/ Latino,Unknown,San Diego,4.4,480,480,460
+1660,Alameda,Hispanic/ Latino,Unknown,Santa Barbara,4.2,480,480,460
+1661,Alameda,Hispanic/ Latino,Unknown,Santa Cruz,4.2,480,480,460
+1662,Alameda,Hispanic/ Latino,Unknown,Universitywide,3.8,480,480,460
+1663,Alameda,African American,Male,Berkeley,4.4,480,480,460
+1664,Alameda,African American,Male,Davis,4.2,480,480,460
+1665,Alameda,African American,Male,Irvine,4.2,480,480,460
+1666,Alameda,African American,Male,Los Angeles,4.4,480,480,460
+1667,Alameda,African American,Male,Merced,3.6,480,480,460
+1668,Alameda,African American,Male,Riverside,3.8,480,480,460
+1669,Alameda,African American,Male,San Diego,4.4,480,480,460
+1670,Alameda,African American,Male,Santa Barbara,4.2,480,480,460
+1671,Alameda,African American,Male,Santa Cruz,4.2,480,480,460
+1672,Alameda,African American,Male,Universitywide,3.8,480,480,460
+1673,Alameda,African American,Female,Berkeley,4.4,480,480,460
+1674,Alameda,African American,Female,Davis,4.2,480,480,460
+1675,Alameda,African American,Female,Irvine,4.2,480,480,460
+1676,Alameda,African American,Female,Los Angeles,4.4,480,480,460
+1677,Alameda,African American,Female,Merced,3.6,480,480,460
+1678,Alameda,African American,Female,Riverside,3.8,480,480,460
+1679,Alameda,African American,Female,San Diego,4.4,480,480,460
+1680,Alameda,African American,Female,Santa Barbara,4.2,480,480,460
+1681,Alameda,African American,Female,Santa Cruz,4.2,480,480,460
+1682,Alameda,African American,Female,Universitywide,3.8,480,480,460
+1683,Alameda,African American,All,Berkeley,4.4,480,480,460
+1684,Alameda,African American,All,Davis,4.2,480,480,460
+1685,Alameda,African American,All,Irvine,4.2,480,480,460
+1686,Alameda,African American,All,Los Angeles,4.4,480,480,460
+1687,Alameda,African American,All,Merced,3.6,480,480,460
+1688,Alameda,African American,All,Riverside,3.8,480,480,460
+1689,Alameda,African American,All,San Diego,4.4,480,480,460
+1690,Alameda,African American,All,Santa Barbara,4.2,480,480,460
+1691,Alameda,African American,All,Santa Cruz,4.2,480,480,460
+1692,Alameda,African American,All,Universitywide,3.8,480,480,460
+1693,Alameda,African American,Unknown,Berkeley,4.4,480,480,460
+1694,Alameda,African American,Unknown,Davis,4.2,480,480,460
+1695,Alameda,African American,Unknown,Irvine,4.2,480,480,460
+1696,Alameda,African American,Unknown,Los Angeles,4.4,480,480,460
+1697,Alameda,African American,Unknown,Merced,3.6,480,480,460
+1698,Alameda,African American,Unknown,Riverside,3.8,480,480,460
+1699,Alameda,African American,Unknown,San Diego,4.4,480,480,460
+1700,Alameda,African American,Unknown,Santa Barbara,4.2,480,480,460
+1701,Alameda,African American,Unknown,Santa Cruz,4.2,480,480,460
+1702,Alameda,African American,Unknown,Universitywide,3.8,480,480,460
+1703,Alameda,Domestic Unknown,Male,Berkeley,4.4,480,480,460
+1704,Alameda,Domestic Unknown,Male,Davis,4.2,480,480,460
+1705,Alameda,Domestic Unknown,Male,Irvine,4.2,480,480,460
+1706,Alameda,Domestic Unknown,Male,Los Angeles,4.4,480,480,460
+1707,Alameda,Domestic Unknown,Male,Merced,3.6,480,480,460
+1708,Alameda,Domestic Unknown,Male,Riverside,3.8,480,480,460
+1709,Alameda,Domestic Unknown,Male,San Diego,4.4,480,480,460
+1710,Alameda,Domestic Unknown,Male,Santa Barbara,4.2,480,480,460
+1711,Alameda,Domestic Unknown,Male,Santa Cruz,4.2,480,480,460
+1712,Alameda,Domestic Unknown,Male,Universitywide,3.8,480,480,460
+1713,Alameda,Domestic Unknown,Female,Berkeley,4.4,480,480,460
+1714,Alameda,Domestic Unknown,Female,Davis,4.2,480,480,460
+1715,Alameda,Domestic Unknown,Female,Irvine,4.2,480,480,460
+1716,Alameda,Domestic Unknown,Female,Los Angeles,4.4,480,480,460
+1717,Alameda,Domestic Unknown,Female,Merced,3.6,480,480,460
+1718,Alameda,Domestic Unknown,Female,Riverside,3.8,480,480,460
+1719,Alameda,Domestic Unknown,Female,San Diego,4.4,480,480,460
+1720,Alameda,Domestic Unknown,Female,Santa Barbara,4.2,480,480,460
+1721,Alameda,Domestic Unknown,Female,Santa Cruz,4.2,480,480,460
+1722,Alameda,Domestic Unknown,Female,Universitywide,3.8,480,480,460
+1723,Alameda,Domestic Unknown,All,Berkeley,4.4,480,480,460
+1724,Alameda,Domestic Unknown,All,Davis,4.2,480,480,460
+1725,Alameda,Domestic Unknown,All,Irvine,4.2,480,480,460
+1726,Alameda,Domestic Unknown,All,Los Angeles,4.4,480,480,460
+1727,Alameda,Domestic Unknown,All,Merced,3.6,480,480,460
+1728,Alameda,Domestic Unknown,All,Riverside,3.8,480,480,460
+1729,Alameda,Domestic Unknown,All,San Diego,4.4,480,480,460
+1730,Alameda,Domestic Unknown,All,Santa Barbara,4.2,480,480,460
+1731,Alameda,Domestic Unknown,All,Santa Cruz,4.2,480,480,460
+1732,Alameda,Domestic Unknown,All,Universitywide,3.8,480,480,460
+1733,Alameda,Domestic Unknown,Unknown,Berkeley,4.4,480,480,460
+1734,Alameda,Domestic Unknown,Unknown,Davis,4.2,480,480,460
+1735,Alameda,Domestic Unknown,Unknown,Irvine,4.2,480,480,460
+1736,Alameda,Domestic Unknown,Unknown,Los Angeles,4.4,480,480,460
+1737,Alameda,Domestic Unknown,Unknown,Merced,3.6,480,480,460
+1738,Alameda,Domestic Unknown,Unknown,Riverside,3.8,480,480,460
+1739,Alameda,Domestic Unknown,Unknown,San Diego,4.4,480,480,460
+1740,Alameda,Domestic Unknown,Unknown,Santa Barbara,4.2,480,480,460
+1741,Alameda,Domestic Unknown,Unknown,Santa Cruz,4.2,480,480,460
+1742,Alameda,Domestic Unknown,Unknown,Universitywide,3.8,480,480,460
+1743,Monterey,Hispanic/ Latino,Male,Berkeley,4.2,460,440,440
+1744,Monterey,Hispanic/ Latino,Male,Davis,4.2,460,440,440
+1745,Monterey,Hispanic/ Latino,Male,Irvine,4.2,460,440,440
+1746,Monterey,Hispanic/ Latino,Male,Los Angeles,4.2,460,440,440
+1747,Monterey,Hispanic/ Latino,Male,Merced,3.6,460,440,440
+1748,Monterey,Hispanic/ Latino,Male,Riverside,3.6,460,440,440
+1749,Monterey,Hispanic/ Latino,Male,Santa Barbara,4.2,460,440,440
+1750,Monterey,Hispanic/ Latino,Male,Santa Cruz,4.2,460,440,440
+1751,Monterey,Hispanic/ Latino,Male,Universitywide,3.6,460,440,440
+1752,Monterey,Hispanic/ Latino,Female,Berkeley,4.2,460,440,440
+1753,Monterey,Hispanic/ Latino,Female,Davis,4.2,460,440,440
+1754,Monterey,Hispanic/ Latino,Female,Irvine,4.2,460,440,440
+1755,Monterey,Hispanic/ Latino,Female,Los Angeles,4.2,460,440,440
+1756,Monterey,Hispanic/ Latino,Female,Merced,3.6,460,440,440
+1757,Monterey,Hispanic/ Latino,Female,Riverside,3.6,460,440,440
+1758,Monterey,Hispanic/ Latino,Female,Santa Barbara,4.2,460,440,440
+1759,Monterey,Hispanic/ Latino,Female,Santa Cruz,4.2,460,440,440
+1760,Monterey,Hispanic/ Latino,Female,Universitywide,3.6,460,440,440
+1761,Monterey,Hispanic/ Latino,All,Berkeley,4.2,460,440,440
+1762,Monterey,Hispanic/ Latino,All,Davis,4.2,460,440,440
+1763,Monterey,Hispanic/ Latino,All,Irvine,4.2,460,440,440
+1764,Monterey,Hispanic/ Latino,All,Los Angeles,4.2,460,440,440
+1765,Monterey,Hispanic/ Latino,All,Merced,3.6,460,440,440
+1766,Monterey,Hispanic/ Latino,All,Riverside,3.6,460,440,440
+1767,Monterey,Hispanic/ Latino,All,Santa Barbara,4.2,460,440,440
+1768,Monterey,Hispanic/ Latino,All,Santa Cruz,4.2,460,440,440
+1769,Monterey,Hispanic/ Latino,All,Universitywide,3.6,460,440,440
+1770,Monterey,All,Male,Berkeley,4.2,460,440,440
+1771,Monterey,All,Male,Davis,4.2,460,440,440
+1772,Monterey,All,Male,Irvine,4.2,460,440,440
+1773,Monterey,All,Male,Los Angeles,4.2,460,440,440
+1774,Monterey,All,Male,Merced,3.6,460,440,440
+1775,Monterey,All,Male,Riverside,3.6,460,440,440
+1776,Monterey,All,Male,Santa Barbara,4.2,460,440,440
+1777,Monterey,All,Male,Santa Cruz,4.2,460,440,440
+1778,Monterey,All,Male,Universitywide,3.6,460,440,440
+1779,Monterey,All,Female,Berkeley,4.2,460,440,440
+1780,Monterey,All,Female,Davis,4.2,460,440,440
+1781,Monterey,All,Female,Irvine,4.2,460,440,440
+1782,Monterey,All,Female,Los Angeles,4.2,460,440,440
+1783,Monterey,All,Female,Merced,3.6,460,440,440
+1784,Monterey,All,Female,Riverside,3.6,460,440,440
+1785,Monterey,All,Female,Santa Barbara,4.2,460,440,440
+1786,Monterey,All,Female,Santa Cruz,4.2,460,440,440
+1787,Monterey,All,Female,Universitywide,3.6,460,440,440
+1788,Monterey,All,All,Berkeley,4.2,460,440,440
+1789,Monterey,All,All,Davis,4.2,460,440,440
+1790,Monterey,All,All,Irvine,4.2,460,440,440
+1791,Monterey,All,All,Los Angeles,4.2,460,440,440
+1792,Monterey,All,All,Merced,3.6,460,440,440
+1793,Monterey,All,All,Riverside,3.6,460,440,440
+1794,Monterey,All,All,Santa Barbara,4.2,460,440,440
+1795,Monterey,All,All,Santa Cruz,4.2,460,440,440
+1796,Monterey,All,All,Universitywide,3.6,460,440,440
+1797,Orange,Inter- national,Male,Berkeley,4.2,500,520,500
+1798,Orange,Inter- national,Male,Davis,4.2,500,520,500
+1799,Orange,Inter- national,Male,Irvine,4.2,500,520,500
+1800,Orange,Inter- national,Male,Los Angeles,4.4,500,520,500
+1801,Orange,Inter- national,Male,Merced,3.6,500,520,500
+1802,Orange,Inter- national,Male,Riverside,3.6,500,520,500
+1803,Orange,Inter- national,Male,San Diego,4.2,500,520,500
+1804,Orange,Inter- national,Male,Santa Barbara,4.2,500,520,500
+1805,Orange,Inter- national,Male,Santa Cruz,3.8,500,520,500
+1806,Orange,Inter- national,Male,Universitywide,3.8,500,520,500
+1807,Orange,Inter- national,Female,Berkeley,4.2,500,520,500
+1808,Orange,Inter- national,Female,Davis,4.2,500,520,500
+1809,Orange,Inter- national,Female,Irvine,4.2,500,520,500
+1810,Orange,Inter- national,Female,Los Angeles,4.4,500,520,500
+1811,Orange,Inter- national,Female,Merced,3.6,500,520,500
+1812,Orange,Inter- national,Female,Riverside,3.6,500,520,500
+1813,Orange,Inter- national,Female,San Diego,4.2,500,520,500
+1814,Orange,Inter- national,Female,Santa Barbara,4.2,500,520,500
+1815,Orange,Inter- national,Female,Santa Cruz,3.8,500,520,500
+1816,Orange,Inter- national,Female,Universitywide,3.8,500,520,500
+1817,Orange,Inter- national,All,Berkeley,4.2,500,520,500
+1818,Orange,Inter- national,All,Davis,4.2,500,520,500
+1819,Orange,Inter- national,All,Irvine,4.2,500,520,500
+1820,Orange,Inter- national,All,Los Angeles,4.4,500,520,500
+1821,Orange,Inter- national,All,Merced,3.6,500,520,500
+1822,Orange,Inter- national,All,Riverside,3.6,500,520,500
+1823,Orange,Inter- national,All,San Diego,4.2,500,520,500
+1824,Orange,Inter- national,All,Santa Barbara,4.2,500,520,500
+1825,Orange,Inter- national,All,Santa Cruz,3.8,500,520,500
+1826,Orange,Inter- national,All,Universitywide,3.8,500,520,500
+1827,Orange,Inter- national,Unknown,Berkeley,4.2,500,520,500
+1828,Orange,Inter- national,Unknown,Davis,4.2,500,520,500
+1829,Orange,Inter- national,Unknown,Irvine,4.2,500,520,500
+1830,Orange,Inter- national,Unknown,Los Angeles,4.4,500,520,500
+1831,Orange,Inter- national,Unknown,Merced,3.6,500,520,500
+1832,Orange,Inter- national,Unknown,Riverside,3.6,500,520,500
+1833,Orange,Inter- national,Unknown,San Diego,4.2,500,520,500
+1834,Orange,Inter- national,Unknown,Santa Barbara,4.2,500,520,500
+1835,Orange,Inter- national,Unknown,Santa Cruz,3.8,500,520,500
+1836,Orange,Inter- national,Unknown,Universitywide,3.8,500,520,500
+1837,Orange,White,Male,Berkeley,4.2,500,520,500
+1838,Orange,White,Male,Davis,4.2,500,520,500
+1839,Orange,White,Male,Irvine,4.2,500,520,500
+1840,Orange,White,Male,Los Angeles,4.4,500,520,500
+1841,Orange,White,Male,Merced,3.6,500,520,500
+1842,Orange,White,Male,Riverside,3.6,500,520,500
+1843,Orange,White,Male,San Diego,4.2,500,520,500
+1844,Orange,White,Male,Santa Barbara,4.2,500,520,500
+1845,Orange,White,Male,Santa Cruz,3.8,500,520,500
+1846,Orange,White,Male,Universitywide,3.8,500,520,500
+1847,Orange,White,Female,Berkeley,4.2,500,520,500
+1848,Orange,White,Female,Davis,4.2,500,520,500
+1849,Orange,White,Female,Irvine,4.2,500,520,500
+1850,Orange,White,Female,Los Angeles,4.4,500,520,500
+1851,Orange,White,Female,Merced,3.6,500,520,500
+1852,Orange,White,Female,Riverside,3.6,500,520,500
+1853,Orange,White,Female,San Diego,4.2,500,520,500
+1854,Orange,White,Female,Santa Barbara,4.2,500,520,500
+1855,Orange,White,Female,Santa Cruz,3.8,500,520,500
+1856,Orange,White,Female,Universitywide,3.8,500,520,500
+1857,Orange,White,All,Berkeley,4.2,500,520,500
+1858,Orange,White,All,Davis,4.2,500,520,500
+1859,Orange,White,All,Irvine,4.2,500,520,500
+1860,Orange,White,All,Los Angeles,4.4,500,520,500
+1861,Orange,White,All,Merced,3.6,500,520,500
+1862,Orange,White,All,Riverside,3.6,500,520,500
+1863,Orange,White,All,San Diego,4.2,500,520,500
+1864,Orange,White,All,Santa Barbara,4.2,500,520,500
+1865,Orange,White,All,Santa Cruz,3.8,500,520,500
+1866,Orange,White,All,Universitywide,3.8,500,520,500
+1867,Orange,White,Unknown,Berkeley,4.2,500,520,500
+1868,Orange,White,Unknown,Davis,4.2,500,520,500
+1869,Orange,White,Unknown,Irvine,4.2,500,520,500
+1870,Orange,White,Unknown,Los Angeles,4.4,500,520,500
+1871,Orange,White,Unknown,Merced,3.6,500,520,500
+1872,Orange,White,Unknown,Riverside,3.6,500,520,500
+1873,Orange,White,Unknown,San Diego,4.2,500,520,500
+1874,Orange,White,Unknown,Santa Barbara,4.2,500,520,500
+1875,Orange,White,Unknown,Santa Cruz,3.8,500,520,500
+1876,Orange,White,Unknown,Universitywide,3.8,500,520,500
+1877,Orange,Asian,Male,Berkeley,4.2,500,520,500
+1878,Orange,Asian,Male,Davis,4.2,500,520,500
+1879,Orange,Asian,Male,Irvine,4.2,500,520,500
+1880,Orange,Asian,Male,Los Angeles,4.4,500,520,500
+1881,Orange,Asian,Male,Merced,3.6,500,520,500
+1882,Orange,Asian,Male,Riverside,3.6,500,520,500
+1883,Orange,Asian,Male,San Diego,4.2,500,520,500
+1884,Orange,Asian,Male,Santa Barbara,4.2,500,520,500
+1885,Orange,Asian,Male,Santa Cruz,3.8,500,520,500
+1886,Orange,Asian,Male,Universitywide,3.8,500,520,500
+1887,Orange,Asian,Female,Berkeley,4.2,500,520,500
+1888,Orange,Asian,Female,Davis,4.2,500,520,500
+1889,Orange,Asian,Female,Irvine,4.2,500,520,500
+1890,Orange,Asian,Female,Los Angeles,4.4,500,520,500
+1891,Orange,Asian,Female,Merced,3.6,500,520,500
+1892,Orange,Asian,Female,Riverside,3.6,500,520,500
+1893,Orange,Asian,Female,San Diego,4.2,500,520,500
+1894,Orange,Asian,Female,Santa Barbara,4.2,500,520,500
+1895,Orange,Asian,Female,Santa Cruz,3.8,500,520,500
+1896,Orange,Asian,Female,Universitywide,3.8,500,520,500
+1897,Orange,Asian,All,Berkeley,4.2,500,520,500
+1898,Orange,Asian,All,Davis,4.2,500,520,500
+1899,Orange,Asian,All,Irvine,4.2,500,520,500
+1900,Orange,Asian,All,Los Angeles,4.4,500,520,500
+1901,Orange,Asian,All,Merced,3.6,500,520,500
+1902,Orange,Asian,All,Riverside,3.6,500,520,500
+1903,Orange,Asian,All,San Diego,4.2,500,520,500
+1904,Orange,Asian,All,Santa Barbara,4.2,500,520,500
+1905,Orange,Asian,All,Santa Cruz,3.8,500,520,500
+1906,Orange,Asian,All,Universitywide,3.8,500,520,500
+1907,Orange,Asian,Unknown,Berkeley,4.2,500,520,500
+1908,Orange,Asian,Unknown,Davis,4.2,500,520,500
+1909,Orange,Asian,Unknown,Irvine,4.2,500,520,500
+1910,Orange,Asian,Unknown,Los Angeles,4.4,500,520,500
+1911,Orange,Asian,Unknown,Merced,3.6,500,520,500
+1912,Orange,Asian,Unknown,Riverside,3.6,500,520,500
+1913,Orange,Asian,Unknown,San Diego,4.2,500,520,500
+1914,Orange,Asian,Unknown,Santa Barbara,4.2,500,520,500
+1915,Orange,Asian,Unknown,Santa Cruz,3.8,500,520,500
+1916,Orange,Asian,Unknown,Universitywide,3.8,500,520,500
+1917,Orange,Hispanic/ Latino,Male,Berkeley,4.2,500,520,500
+1918,Orange,Hispanic/ Latino,Male,Davis,4.2,500,520,500
+1919,Orange,Hispanic/ Latino,Male,Irvine,4.2,500,520,500
+1920,Orange,Hispanic/ Latino,Male,Los Angeles,4.4,500,520,500
+1921,Orange,Hispanic/ Latino,Male,Merced,3.6,500,520,500
+1922,Orange,Hispanic/ Latino,Male,Riverside,3.6,500,520,500
+1923,Orange,Hispanic/ Latino,Male,San Diego,4.2,500,520,500
+1924,Orange,Hispanic/ Latino,Male,Santa Barbara,4.2,500,520,500
+1925,Orange,Hispanic/ Latino,Male,Santa Cruz,3.8,500,520,500
+1926,Orange,Hispanic/ Latino,Male,Universitywide,3.8,500,520,500
+1927,Orange,Hispanic/ Latino,Female,Berkeley,4.2,500,520,500
+1928,Orange,Hispanic/ Latino,Female,Davis,4.2,500,520,500
+1929,Orange,Hispanic/ Latino,Female,Irvine,4.2,500,520,500
+1930,Orange,Hispanic/ Latino,Female,Los Angeles,4.4,500,520,500
+1931,Orange,Hispanic/ Latino,Female,Merced,3.6,500,520,500
+1932,Orange,Hispanic/ Latino,Female,Riverside,3.6,500,520,500
+1933,Orange,Hispanic/ Latino,Female,San Diego,4.2,500,520,500
+1934,Orange,Hispanic/ Latino,Female,Santa Barbara,4.2,500,520,500
+1935,Orange,Hispanic/ Latino,Female,Santa Cruz,3.8,500,520,500
+1936,Orange,Hispanic/ Latino,Female,Universitywide,3.8,500,520,500
+1937,Orange,Hispanic/ Latino,All,Berkeley,4.2,500,520,500
+1938,Orange,Hispanic/ Latino,All,Davis,4.2,500,520,500
+1939,Orange,Hispanic/ Latino,All,Irvine,4.2,500,520,500
+1940,Orange,Hispanic/ Latino,All,Los Angeles,4.4,500,520,500
+1941,Orange,Hispanic/ Latino,All,Merced,3.6,500,520,500
+1942,Orange,Hispanic/ Latino,All,Riverside,3.6,500,520,500
+1943,Orange,Hispanic/ Latino,All,San Diego,4.2,500,520,500
+1944,Orange,Hispanic/ Latino,All,Santa Barbara,4.2,500,520,500
+1945,Orange,Hispanic/ Latino,All,Santa Cruz,3.8,500,520,500
+1946,Orange,Hispanic/ Latino,All,Universitywide,3.8,500,520,500
+1947,Orange,Hispanic/ Latino,Unknown,Berkeley,4.2,500,520,500
+1948,Orange,Hispanic/ Latino,Unknown,Davis,4.2,500,520,500
+1949,Orange,Hispanic/ Latino,Unknown,Irvine,4.2,500,520,500
+1950,Orange,Hispanic/ Latino,Unknown,Los Angeles,4.4,500,520,500
+1951,Orange,Hispanic/ Latino,Unknown,Merced,3.6,500,520,500
+1952,Orange,Hispanic/ Latino,Unknown,Riverside,3.6,500,520,500
+1953,Orange,Hispanic/ Latino,Unknown,San Diego,4.2,500,520,500
+1954,Orange,Hispanic/ Latino,Unknown,Santa Barbara,4.2,500,520,500
+1955,Orange,Hispanic/ Latino,Unknown,Santa Cruz,3.8,500,520,500
+1956,Orange,Hispanic/ Latino,Unknown,Universitywide,3.8,500,520,500
+1957,Orange,African American,Male,Berkeley,4.2,500,520,500
+1958,Orange,African American,Male,Davis,4.2,500,520,500
+1959,Orange,African American,Male,Irvine,4.2,500,520,500
+1960,Orange,African American,Male,Los Angeles,4.4,500,520,500
+1961,Orange,African American,Male,Merced,3.6,500,520,500
+1962,Orange,African American,Male,Riverside,3.6,500,520,500
+1963,Orange,African American,Male,San Diego,4.2,500,520,500
+1964,Orange,African American,Male,Santa Barbara,4.2,500,520,500
+1965,Orange,African American,Male,Santa Cruz,3.8,500,520,500
+1966,Orange,African American,Male,Universitywide,3.8,500,520,500
+1967,Orange,African American,Female,Berkeley,4.2,500,520,500
+1968,Orange,African American,Female,Davis,4.2,500,520,500
+1969,Orange,African American,Female,Irvine,4.2,500,520,500
+1970,Orange,African American,Female,Los Angeles,4.4,500,520,500
+1971,Orange,African American,Female,Merced,3.6,500,520,500
+1972,Orange,African American,Female,Riverside,3.6,500,520,500
+1973,Orange,African American,Female,San Diego,4.2,500,520,500
+1974,Orange,African American,Female,Santa Barbara,4.2,500,520,500
+1975,Orange,African American,Female,Santa Cruz,3.8,500,520,500
+1976,Orange,African American,Female,Universitywide,3.8,500,520,500
+1977,Orange,African American,All,Berkeley,4.2,500,520,500
+1978,Orange,African American,All,Davis,4.2,500,520,500
+1979,Orange,African American,All,Irvine,4.2,500,520,500
+1980,Orange,African American,All,Los Angeles,4.4,500,520,500
+1981,Orange,African American,All,Merced,3.6,500,520,500
+1982,Orange,African American,All,Riverside,3.6,500,520,500
+1983,Orange,African American,All,San Diego,4.2,500,520,500
+1984,Orange,African American,All,Santa Barbara,4.2,500,520,500
+1985,Orange,African American,All,Santa Cruz,3.8,500,520,500
+1986,Orange,African American,All,Universitywide,3.8,500,520,500
+1987,Orange,African American,Unknown,Berkeley,4.2,500,520,500
+1988,Orange,African American,Unknown,Davis,4.2,500,520,500
+1989,Orange,African American,Unknown,Irvine,4.2,500,520,500
+1990,Orange,African American,Unknown,Los Angeles,4.4,500,520,500
+1991,Orange,African American,Unknown,Merced,3.6,500,520,500
+1992,Orange,African American,Unknown,Riverside,3.6,500,520,500
+1993,Orange,African American,Unknown,San Diego,4.2,500,520,500
+1994,Orange,African American,Unknown,Santa Barbara,4.2,500,520,500
+1995,Orange,African American,Unknown,Santa Cruz,3.8,500,520,500
+1996,Orange,African American,Unknown,Universitywide,3.8,500,520,500
+1997,Orange,All,Male,Berkeley,4.2,500,520,500
+1998,Orange,All,Male,Davis,4.2,500,520,500
+1999,Orange,All,Male,Irvine,4.2,500,520,500
+2000,Orange,All,Male,Los Angeles,4.4,500,520,500
+2001,Orange,All,Male,Merced,3.6,500,520,500
+2002,Orange,All,Male,Riverside,3.6,500,520,500
+2003,Orange,All,Male,San Diego,4.2,500,520,500
+2004,Orange,All,Male,Santa Barbara,4.2,500,520,500
+2005,Orange,All,Male,Santa Cruz,3.8,500,520,500
+2006,Orange,All,Male,Universitywide,3.8,500,520,500
+2007,Orange,All,Female,Berkeley,4.2,500,520,500
+2008,Orange,All,Female,Davis,4.2,500,520,500
+2009,Orange,All,Female,Irvine,4.2,500,520,500
+2010,Orange,All,Female,Los Angeles,4.4,500,520,500
+2011,Orange,All,Female,Merced,3.6,500,520,500
+2012,Orange,All,Female,Riverside,3.6,500,520,500
+2013,Orange,All,Female,San Diego,4.2,500,520,500
+2014,Orange,All,Female,Santa Barbara,4.2,500,520,500
+2015,Orange,All,Female,Santa Cruz,3.8,500,520,500
+2016,Orange,All,Female,Universitywide,3.8,500,520,500
+2017,Orange,All,All,Berkeley,4.2,500,520,500
+2018,Orange,All,All,Davis,4.2,500,520,500
+2019,Orange,All,All,Irvine,4.2,500,520,500
+2020,Orange,All,All,Los Angeles,4.4,500,520,500
+2021,Orange,All,All,Merced,3.6,500,520,500
+2022,Orange,All,All,Riverside,3.6,500,520,500
+2023,Orange,All,All,San Diego,4.2,500,520,500
+2024,Orange,All,All,Santa Barbara,4.2,500,520,500
+2025,Orange,All,All,Santa Cruz,3.8,500,520,500
+2026,Orange,All,All,Universitywide,3.8,500,520,500
+2027,Orange,All,Unknown,Berkeley,4.2,500,520,500
+2028,Orange,All,Unknown,Davis,4.2,500,520,500
+2029,Orange,All,Unknown,Irvine,4.2,500,520,500
+2030,Orange,All,Unknown,Los Angeles,4.4,500,520,500
+2031,Orange,All,Unknown,Merced,3.6,500,520,500
+2032,Orange,All,Unknown,Riverside,3.6,500,520,500
+2033,Orange,All,Unknown,San Diego,4.2,500,520,500
+2034,Orange,All,Unknown,Santa Barbara,4.2,500,520,500
+2035,Orange,All,Unknown,Santa Cruz,3.8,500,520,500
+2036,Orange,All,Unknown,Universitywide,3.8,500,520,500
+2037,Orange,Domestic Unknown,Male,Berkeley,4.2,500,520,500
+2038,Orange,Domestic Unknown,Male,Davis,4.2,500,520,500
+2039,Orange,Domestic Unknown,Male,Irvine,4.2,500,520,500
+2040,Orange,Domestic Unknown,Male,Los Angeles,4.4,500,520,500
+2041,Orange,Domestic Unknown,Male,Merced,3.6,500,520,500
+2042,Orange,Domestic Unknown,Male,Riverside,3.6,500,520,500
+2043,Orange,Domestic Unknown,Male,San Diego,4.2,500,520,500
+2044,Orange,Domestic Unknown,Male,Santa Barbara,4.2,500,520,500
+2045,Orange,Domestic Unknown,Male,Santa Cruz,3.8,500,520,500
+2046,Orange,Domestic Unknown,Male,Universitywide,3.8,500,520,500
+2047,Orange,Domestic Unknown,Female,Berkeley,4.2,500,520,500
+2048,Orange,Domestic Unknown,Female,Davis,4.2,500,520,500
+2049,Orange,Domestic Unknown,Female,Irvine,4.2,500,520,500
+2050,Orange,Domestic Unknown,Female,Los Angeles,4.4,500,520,500
+2051,Orange,Domestic Unknown,Female,Merced,3.6,500,520,500
+2052,Orange,Domestic Unknown,Female,Riverside,3.6,500,520,500
+2053,Orange,Domestic Unknown,Female,San Diego,4.2,500,520,500
+2054,Orange,Domestic Unknown,Female,Santa Barbara,4.2,500,520,500
+2055,Orange,Domestic Unknown,Female,Santa Cruz,3.8,500,520,500
+2056,Orange,Domestic Unknown,Female,Universitywide,3.8,500,520,500
+2057,Orange,Domestic Unknown,All,Berkeley,4.2,500,520,500
+2058,Orange,Domestic Unknown,All,Davis,4.2,500,520,500
+2059,Orange,Domestic Unknown,All,Irvine,4.2,500,520,500
+2060,Orange,Domestic Unknown,All,Los Angeles,4.4,500,520,500
+2061,Orange,Domestic Unknown,All,Merced,3.6,500,520,500
+2062,Orange,Domestic Unknown,All,Riverside,3.6,500,520,500
+2063,Orange,Domestic Unknown,All,San Diego,4.2,500,520,500
+2064,Orange,Domestic Unknown,All,Santa Barbara,4.2,500,520,500
+2065,Orange,Domestic Unknown,All,Santa Cruz,3.8,500,520,500
+2066,Orange,Domestic Unknown,All,Universitywide,3.8,500,520,500
+2067,Orange,Domestic Unknown,Unknown,Berkeley,4.2,500,520,500
+2068,Orange,Domestic Unknown,Unknown,Davis,4.2,500,520,500
+2069,Orange,Domestic Unknown,Unknown,Irvine,4.2,500,520,500
+2070,Orange,Domestic Unknown,Unknown,Los Angeles,4.4,500,520,500
+2071,Orange,Domestic Unknown,Unknown,Merced,3.6,500,520,500
+2072,Orange,Domestic Unknown,Unknown,Riverside,3.6,500,520,500
+2073,Orange,Domestic Unknown,Unknown,San Diego,4.2,500,520,500
+2074,Orange,Domestic Unknown,Unknown,Santa Barbara,4.2,500,520,500
+2075,Orange,Domestic Unknown,Unknown,Santa Cruz,3.8,500,520,500
+2076,Orange,Domestic Unknown,Unknown,Universitywide,3.8,500,520,500
+2077,Amador,White,Male,Santa Barbara,4.2,520,520,500
+2078,Amador,White,Male,Universitywide,4.2,520,520,500
+2079,Amador,White,Female,Santa Barbara,4.2,520,520,500
+2080,Amador,White,Female,Universitywide,4.2,520,520,500
+2081,Amador,White,All,Santa Barbara,4.2,520,520,500
+2082,Amador,White,All,Universitywide,4.2,520,520,500
+2083,Amador,All,Male,Santa Barbara,4.2,520,520,500
+2084,Amador,All,Male,Universitywide,4.2,520,520,500
+2085,Amador,All,Female,Santa Barbara,4.2,520,520,500
+2086,Amador,All,Female,Universitywide,4.2,520,520,500
+2087,Amador,All,All,Santa Barbara,4.2,520,520,500
+2088,Amador,All,All,Universitywide,4.2,520,520,500
+2089,Napa,White,Male,Berkeley,4.2,480,480,480
+2090,Napa,White,Male,Davis,4.2,480,480,480
+2091,Napa,White,Male,Irvine,4.2,480,480,480
+2092,Napa,White,Male,Los Angeles,4.2,480,480,480
+2093,Napa,White,Male,Merced,3.6,480,480,480
+2094,Napa,White,Male,Santa Barbara,4.2,480,480,480
+2095,Napa,White,Male,Santa Cruz,3.8,480,480,480
+2096,Napa,White,Male,Universitywide,4.2,480,480,480
+2097,Napa,White,Female,Berkeley,4.2,480,480,480
+2098,Napa,White,Female,Davis,4.2,480,480,480
+2099,Napa,White,Female,Irvine,4.2,480,480,480
+2100,Napa,White,Female,Los Angeles,4.2,480,480,480
+2101,Napa,White,Female,Merced,3.6,480,480,480
+2102,Napa,White,Female,Santa Barbara,4.2,480,480,480
+2103,Napa,White,Female,Santa Cruz,3.8,480,480,480
+2104,Napa,White,Female,Universitywide,4.2,480,480,480
+2105,Napa,White,All,Berkeley,4.2,480,480,480
+2106,Napa,White,All,Davis,4.2,480,480,480
+2107,Napa,White,All,Irvine,4.2,480,480,480
+2108,Napa,White,All,Los Angeles,4.2,480,480,480
+2109,Napa,White,All,Merced,3.6,480,480,480
+2110,Napa,White,All,Santa Barbara,4.2,480,480,480
+2111,Napa,White,All,Santa Cruz,3.8,480,480,480
+2112,Napa,White,All,Universitywide,4.2,480,480,480
+2113,Napa,Asian,Male,Berkeley,4.2,480,480,480
+2114,Napa,Asian,Male,Davis,4.2,480,480,480
+2115,Napa,Asian,Male,Irvine,4.2,480,480,480
+2116,Napa,Asian,Male,Los Angeles,4.2,480,480,480
+2117,Napa,Asian,Male,Merced,3.6,480,480,480
+2118,Napa,Asian,Male,Santa Barbara,4.2,480,480,480
+2119,Napa,Asian,Male,Santa Cruz,3.8,480,480,480
+2120,Napa,Asian,Male,Universitywide,4.2,480,480,480
+2121,Napa,Asian,Female,Berkeley,4.2,480,480,480
+2122,Napa,Asian,Female,Davis,4.2,480,480,480
+2123,Napa,Asian,Female,Irvine,4.2,480,480,480
+2124,Napa,Asian,Female,Los Angeles,4.2,480,480,480
+2125,Napa,Asian,Female,Merced,3.6,480,480,480
+2126,Napa,Asian,Female,Santa Barbara,4.2,480,480,480
+2127,Napa,Asian,Female,Santa Cruz,3.8,480,480,480
+2128,Napa,Asian,Female,Universitywide,4.2,480,480,480
+2129,Napa,Asian,All,Berkeley,4.2,480,480,480
+2130,Napa,Asian,All,Davis,4.2,480,480,480
+2131,Napa,Asian,All,Irvine,4.2,480,480,480
+2132,Napa,Asian,All,Los Angeles,4.2,480,480,480
+2133,Napa,Asian,All,Merced,3.6,480,480,480
+2134,Napa,Asian,All,Santa Barbara,4.2,480,480,480
+2135,Napa,Asian,All,Santa Cruz,3.8,480,480,480
+2136,Napa,Asian,All,Universitywide,4.2,480,480,480
+2137,Napa,Hispanic/ Latino,Male,Berkeley,4.2,480,480,480
+2138,Napa,Hispanic/ Latino,Male,Davis,4.2,480,480,480
+2139,Napa,Hispanic/ Latino,Male,Irvine,4.2,480,480,480
+2140,Napa,Hispanic/ Latino,Male,Los Angeles,4.2,480,480,480
+2141,Napa,Hispanic/ Latino,Male,Merced,3.6,480,480,480
+2142,Napa,Hispanic/ Latino,Male,Santa Barbara,4.2,480,480,480
+2143,Napa,Hispanic/ Latino,Male,Santa Cruz,3.8,480,480,480
+2144,Napa,Hispanic/ Latino,Male,Universitywide,4.2,480,480,480
+2145,Napa,Hispanic/ Latino,Female,Berkeley,4.2,480,480,480
+2146,Napa,Hispanic/ Latino,Female,Davis,4.2,480,480,480
+2147,Napa,Hispanic/ Latino,Female,Irvine,4.2,480,480,480
+2148,Napa,Hispanic/ Latino,Female,Los Angeles,4.2,480,480,480
+2149,Napa,Hispanic/ Latino,Female,Merced,3.6,480,480,480
+2150,Napa,Hispanic/ Latino,Female,Santa Barbara,4.2,480,480,480
+2151,Napa,Hispanic/ Latino,Female,Santa Cruz,3.8,480,480,480
+2152,Napa,Hispanic/ Latino,Female,Universitywide,4.2,480,480,480
+2153,Napa,Hispanic/ Latino,All,Berkeley,4.2,480,480,480
+2154,Napa,Hispanic/ Latino,All,Davis,4.2,480,480,480
+2155,Napa,Hispanic/ Latino,All,Irvine,4.2,480,480,480
+2156,Napa,Hispanic/ Latino,All,Los Angeles,4.2,480,480,480
+2157,Napa,Hispanic/ Latino,All,Merced,3.6,480,480,480
+2158,Napa,Hispanic/ Latino,All,Santa Barbara,4.2,480,480,480
+2159,Napa,Hispanic/ Latino,All,Santa Cruz,3.8,480,480,480
+2160,Napa,Hispanic/ Latino,All,Universitywide,4.2,480,480,480
+2161,Napa,African American,Male,Berkeley,4.2,480,480,480
+2162,Napa,African American,Male,Davis,4.2,480,480,480
+2163,Napa,African American,Male,Irvine,4.2,480,480,480
+2164,Napa,African American,Male,Los Angeles,4.2,480,480,480
+2165,Napa,African American,Male,Merced,3.6,480,480,480
+2166,Napa,African American,Male,Santa Barbara,4.2,480,480,480
+2167,Napa,African American,Male,Santa Cruz,3.8,480,480,480
+2168,Napa,African American,Male,Universitywide,4.2,480,480,480
+2169,Napa,African American,Female,Berkeley,4.2,480,480,480
+2170,Napa,African American,Female,Davis,4.2,480,480,480
+2171,Napa,African American,Female,Irvine,4.2,480,480,480
+2172,Napa,African American,Female,Los Angeles,4.2,480,480,480
+2173,Napa,African American,Female,Merced,3.6,480,480,480
+2174,Napa,African American,Female,Santa Barbara,4.2,480,480,480
+2175,Napa,African American,Female,Santa Cruz,3.8,480,480,480
+2176,Napa,African American,Female,Universitywide,4.2,480,480,480
+2177,Napa,African American,All,Berkeley,4.2,480,480,480
+2178,Napa,African American,All,Davis,4.2,480,480,480
+2179,Napa,African American,All,Irvine,4.2,480,480,480
+2180,Napa,African American,All,Los Angeles,4.2,480,480,480
+2181,Napa,African American,All,Merced,3.6,480,480,480
+2182,Napa,African American,All,Santa Barbara,4.2,480,480,480
+2183,Napa,African American,All,Santa Cruz,3.8,480,480,480
+2184,Napa,African American,All,Universitywide,4.2,480,480,480
+2185,Napa,All,Male,Berkeley,4.2,480,480,480
+2186,Napa,All,Male,Davis,4.2,480,480,480
+2187,Napa,All,Male,Irvine,4.2,480,480,480
+2188,Napa,All,Male,Los Angeles,4.2,480,480,480
+2189,Napa,All,Male,Merced,3.6,480,480,480
+2190,Napa,All,Male,Santa Barbara,4.2,480,480,480
+2191,Napa,All,Male,Santa Cruz,3.8,480,480,480
+2192,Napa,All,Male,Universitywide,4.2,480,480,480
+2193,Napa,All,Female,Berkeley,4.2,480,480,480
+2194,Napa,All,Female,Davis,4.2,480,480,480
+2195,Napa,All,Female,Irvine,4.2,480,480,480
+2196,Napa,All,Female,Los Angeles,4.2,480,480,480
+2197,Napa,All,Female,Merced,3.6,480,480,480
+2198,Napa,All,Female,Santa Barbara,4.2,480,480,480
+2199,Napa,All,Female,Santa Cruz,3.8,480,480,480
+2200,Napa,All,Female,Universitywide,4.2,480,480,480
+2201,Napa,All,All,Berkeley,4.2,480,480,480
+2202,Napa,All,All,Davis,4.2,480,480,480
+2203,Napa,All,All,Irvine,4.2,480,480,480
+2204,Napa,All,All,Los Angeles,4.2,480,480,480
+2205,Napa,All,All,Merced,3.6,480,480,480
+2206,Napa,All,All,Santa Barbara,4.2,480,480,480
+2207,Napa,All,All,Santa Cruz,3.8,480,480,480
+2208,Napa,All,All,Universitywide,4.2,480,480,480
+2209,San Joaquin,All,Male,Davis,4.2,460,460,460
+2210,San Joaquin,All,Male,Merced,3.8,460,460,460
+2211,San Joaquin,All,Male,Riverside,3.8,460,460,460
+2212,San Joaquin,All,Male,Santa Cruz,3.8,460,460,460
+2213,San Joaquin,All,Male,Universitywide,3.8,460,460,460
+2214,San Joaquin,All,Female,Davis,4.2,460,460,460
+2215,San Joaquin,All,Female,Merced,3.8,460,460,460
+2216,San Joaquin,All,Female,Riverside,3.8,460,460,460
+2217,San Joaquin,All,Female,Santa Cruz,3.8,460,460,460
+2218,San Joaquin,All,Female,Universitywide,3.8,460,460,460
+2219,San Joaquin,All,All,Davis,4.2,460,460,460
+2220,San Joaquin,All,All,Merced,3.8,460,460,460
+2221,San Joaquin,All,All,Riverside,3.8,460,460,460
+2222,San Joaquin,All,All,Santa Cruz,3.8,460,460,460
+2223,San Joaquin,All,All,Universitywide,3.8,460,460,460
+2224,Sonoma,White,Male,Berkeley,4.4,500,500,480
+2225,Sonoma,White,Male,Davis,4.2,500,500,480
+2226,Sonoma,White,Male,San Diego,4.4,500,500,480
+2227,Sonoma,White,Male,Santa Barbara,4.2,500,500,480
+2228,Sonoma,White,Male,Santa Cruz,4.2,500,500,480
+2229,Sonoma,White,Male,Universitywide,4.2,500,500,480
+2230,Sonoma,White,Female,Berkeley,4.4,500,500,480
+2231,Sonoma,White,Female,Davis,4.2,500,500,480
+2232,Sonoma,White,Female,San Diego,4.4,500,500,480
+2233,Sonoma,White,Female,Santa Barbara,4.2,500,500,480
+2234,Sonoma,White,Female,Santa Cruz,4.2,500,500,480
+2235,Sonoma,White,Female,Universitywide,4.2,500,500,480
+2236,Sonoma,White,All,Berkeley,4.4,500,500,480
+2237,Sonoma,White,All,Davis,4.2,500,500,480
+2238,Sonoma,White,All,San Diego,4.4,500,500,480
+2239,Sonoma,White,All,Santa Barbara,4.2,500,500,480
+2240,Sonoma,White,All,Santa Cruz,4.2,500,500,480
+2241,Sonoma,White,All,Universitywide,4.2,500,500,480
+2242,Sonoma,Hispanic/ Latino,Male,Berkeley,4.4,500,500,480
+2243,Sonoma,Hispanic/ Latino,Male,Davis,4.2,500,500,480
+2244,Sonoma,Hispanic/ Latino,Male,San Diego,4.4,500,500,480
+2245,Sonoma,Hispanic/ Latino,Male,Santa Barbara,4.2,500,500,480
+2246,Sonoma,Hispanic/ Latino,Male,Santa Cruz,4.2,500,500,480
+2247,Sonoma,Hispanic/ Latino,Male,Universitywide,4.2,500,500,480
+2248,Sonoma,Hispanic/ Latino,Female,Berkeley,4.4,500,500,480
+2249,Sonoma,Hispanic/ Latino,Female,Davis,4.2,500,500,480
+2250,Sonoma,Hispanic/ Latino,Female,San Diego,4.4,500,500,480
+2251,Sonoma,Hispanic/ Latino,Female,Santa Barbara,4.2,500,500,480
+2252,Sonoma,Hispanic/ Latino,Female,Santa Cruz,4.2,500,500,480
+2253,Sonoma,Hispanic/ Latino,Female,Universitywide,4.2,500,500,480
+2254,Sonoma,Hispanic/ Latino,All,Berkeley,4.4,500,500,480
+2255,Sonoma,Hispanic/ Latino,All,Davis,4.2,500,500,480
+2256,Sonoma,Hispanic/ Latino,All,San Diego,4.4,500,500,480
+2257,Sonoma,Hispanic/ Latino,All,Santa Barbara,4.2,500,500,480
+2258,Sonoma,Hispanic/ Latino,All,Santa Cruz,4.2,500,500,480
+2259,Sonoma,Hispanic/ Latino,All,Universitywide,4.2,500,500,480
+2260,Sonoma,All,Male,Berkeley,4.4,500,500,480
+2261,Sonoma,All,Male,Davis,4.2,500,500,480
+2262,Sonoma,All,Male,San Diego,4.4,500,500,480
+2263,Sonoma,All,Male,Santa Barbara,4.2,500,500,480
+2264,Sonoma,All,Male,Santa Cruz,4.2,500,500,480
+2265,Sonoma,All,Male,Universitywide,4.2,500,500,480
+2266,Sonoma,All,Female,Berkeley,4.4,500,500,480
+2267,Sonoma,All,Female,Davis,4.2,500,500,480
+2268,Sonoma,All,Female,San Diego,4.4,500,500,480
+2269,Sonoma,All,Female,Santa Barbara,4.2,500,500,480
+2270,Sonoma,All,Female,Santa Cruz,4.2,500,500,480
+2271,Sonoma,All,Female,Universitywide,4.2,500,500,480
+2272,Sonoma,All,All,Berkeley,4.4,500,500,480
+2273,Sonoma,All,All,Davis,4.2,500,500,480
+2274,Sonoma,All,All,San Diego,4.4,500,500,480
+2275,Sonoma,All,All,Santa Barbara,4.2,500,500,480
+2276,Sonoma,All,All,Santa Cruz,4.2,500,500,480
+2277,Sonoma,All,All,Universitywide,4.2,500,500,480
+2278,Shasta,White,Female,Davis,4.4,520,500,500
+2279,Shasta,White,Female,Universitywide,4.2,520,500,500
+2280,Shasta,White,All,Davis,4.4,520,500,500
+2281,Shasta,White,All,Universitywide,4.2,520,500,500
+2282,Shasta,White,Male,Davis,4.4,520,500,500
+2283,Shasta,White,Male,Universitywide,4.2,520,500,500
+2284,Shasta,All,Female,Davis,4.4,520,500,500
+2285,Shasta,All,Female,Universitywide,4.2,520,500,500
+2286,Shasta,All,All,Davis,4.4,520,500,500
+2287,Shasta,All,All,Universitywide,4.2,520,500,500
+2288,Shasta,All,Male,Davis,4.4,520,500,500
+2289,Shasta,All,Male,Universitywide,4.2,520,500,500
+2290,Mendocino,White,Male,Davis,4.4,500,500,500
+2291,Mendocino,White,Male,Universitywide,4.4,500,500,500
+2292,Mendocino,White,All,Davis,4.4,500,500,500
+2293,Mendocino,White,All,Universitywide,4.4,500,500,500
+2294,Mendocino,White,Female,Davis,4.4,500,500,500
+2295,Mendocino,White,Female,Universitywide,4.4,500,500,500
+2296,Mendocino,All,Male,Davis,4.4,500,500,500
+2297,Mendocino,All,Male,Universitywide,4.4,500,500,500
+2298,Mendocino,All,All,Davis,4.4,500,500,500
+2299,Mendocino,All,All,Universitywide,4.4,500,500,500
+2300,Mendocino,All,Female,Davis,4.4,500,500,500
+2301,Mendocino,All,Female,Universitywide,4.4,500,500,500
+2302,Solano,White,Male,Berkeley,4.4,480,480,460
+2303,Solano,White,Male,Davis,4.4,480,480,460
+2304,Solano,White,Male,Irvine,4.2,480,480,460
+2305,Solano,White,Male,Los Angeles,4.4,480,480,460
+2306,Solano,White,Male,Merced,3.6,480,480,460
+2307,Solano,White,Male,Riverside,3.8,480,480,460
+2308,Solano,White,Male,San Diego,4.4,480,480,460
+2309,Solano,White,Male,Santa Barbara,4.2,480,480,460
+2310,Solano,White,Male,Santa Cruz,3.8,480,480,460
+2311,Solano,White,Male,Universitywide,3.8,480,480,460
+2312,Solano,White,Female,Berkeley,4.4,480,480,460
+2313,Solano,White,Female,Davis,4.4,480,480,460
+2314,Solano,White,Female,Irvine,4.2,480,480,460
+2315,Solano,White,Female,Los Angeles,4.4,480,480,460
+2316,Solano,White,Female,Merced,3.6,480,480,460
+2317,Solano,White,Female,Riverside,3.8,480,480,460
+2318,Solano,White,Female,San Diego,4.4,480,480,460
+2319,Solano,White,Female,Santa Barbara,4.2,480,480,460
+2320,Solano,White,Female,Santa Cruz,3.8,480,480,460
+2321,Solano,White,Female,Universitywide,3.8,480,480,460
+2322,Solano,White,All,Berkeley,4.4,480,480,460
+2323,Solano,White,All,Davis,4.4,480,480,460
+2324,Solano,White,All,Irvine,4.2,480,480,460
+2325,Solano,White,All,Los Angeles,4.4,480,480,460
+2326,Solano,White,All,Merced,3.6,480,480,460
+2327,Solano,White,All,Riverside,3.8,480,480,460
+2328,Solano,White,All,San Diego,4.4,480,480,460
+2329,Solano,White,All,Santa Barbara,4.2,480,480,460
+2330,Solano,White,All,Santa Cruz,3.8,480,480,460
+2331,Solano,White,All,Universitywide,3.8,480,480,460
+2332,Solano,White,Unknown,Berkeley,4.4,480,480,460
+2333,Solano,White,Unknown,Davis,4.4,480,480,460
+2334,Solano,White,Unknown,Irvine,4.2,480,480,460
+2335,Solano,White,Unknown,Los Angeles,4.4,480,480,460
+2336,Solano,White,Unknown,Merced,3.6,480,480,460
+2337,Solano,White,Unknown,Riverside,3.8,480,480,460
+2338,Solano,White,Unknown,San Diego,4.4,480,480,460
+2339,Solano,White,Unknown,Santa Barbara,4.2,480,480,460
+2340,Solano,White,Unknown,Santa Cruz,3.8,480,480,460
+2341,Solano,White,Unknown,Universitywide,3.8,480,480,460
+2342,Solano,Asian,Male,Berkeley,4.4,480,480,460
+2343,Solano,Asian,Male,Davis,4.4,480,480,460
+2344,Solano,Asian,Male,Irvine,4.2,480,480,460
+2345,Solano,Asian,Male,Los Angeles,4.4,480,480,460
+2346,Solano,Asian,Male,Merced,3.6,480,480,460
+2347,Solano,Asian,Male,Riverside,3.8,480,480,460
+2348,Solano,Asian,Male,San Diego,4.4,480,480,460
+2349,Solano,Asian,Male,Santa Barbara,4.2,480,480,460
+2350,Solano,Asian,Male,Santa Cruz,3.8,480,480,460
+2351,Solano,Asian,Male,Universitywide,3.8,480,480,460
+2352,Solano,Asian,Female,Berkeley,4.4,480,480,460
+2353,Solano,Asian,Female,Davis,4.4,480,480,460
+2354,Solano,Asian,Female,Irvine,4.2,480,480,460
+2355,Solano,Asian,Female,Los Angeles,4.4,480,480,460
+2356,Solano,Asian,Female,Merced,3.6,480,480,460
+2357,Solano,Asian,Female,Riverside,3.8,480,480,460
+2358,Solano,Asian,Female,San Diego,4.4,480,480,460
+2359,Solano,Asian,Female,Santa Barbara,4.2,480,480,460
+2360,Solano,Asian,Female,Santa Cruz,3.8,480,480,460
+2361,Solano,Asian,Female,Universitywide,3.8,480,480,460
+2362,Solano,Asian,All,Berkeley,4.4,480,480,460
+2363,Solano,Asian,All,Davis,4.4,480,480,460
+2364,Solano,Asian,All,Irvine,4.2,480,480,460
+2365,Solano,Asian,All,Los Angeles,4.4,480,480,460
+2366,Solano,Asian,All,Merced,3.6,480,480,460
+2367,Solano,Asian,All,Riverside,3.8,480,480,460
+2368,Solano,Asian,All,San Diego,4.4,480,480,460
+2369,Solano,Asian,All,Santa Barbara,4.2,480,480,460
+2370,Solano,Asian,All,Santa Cruz,3.8,480,480,460
+2371,Solano,Asian,All,Universitywide,3.8,480,480,460
+2372,Solano,Asian,Unknown,Berkeley,4.4,480,480,460
+2373,Solano,Asian,Unknown,Davis,4.4,480,480,460
+2374,Solano,Asian,Unknown,Irvine,4.2,480,480,460
+2375,Solano,Asian,Unknown,Los Angeles,4.4,480,480,460
+2376,Solano,Asian,Unknown,Merced,3.6,480,480,460
+2377,Solano,Asian,Unknown,Riverside,3.8,480,480,460
+2378,Solano,Asian,Unknown,San Diego,4.4,480,480,460
+2379,Solano,Asian,Unknown,Santa Barbara,4.2,480,480,460
+2380,Solano,Asian,Unknown,Santa Cruz,3.8,480,480,460
+2381,Solano,Asian,Unknown,Universitywide,3.8,480,480,460
+2382,Solano,Hispanic/ Latino,Male,Berkeley,4.4,480,480,460
+2383,Solano,Hispanic/ Latino,Male,Davis,4.4,480,480,460
+2384,Solano,Hispanic/ Latino,Male,Irvine,4.2,480,480,460
+2385,Solano,Hispanic/ Latino,Male,Los Angeles,4.4,480,480,460
+2386,Solano,Hispanic/ Latino,Male,Merced,3.6,480,480,460
+2387,Solano,Hispanic/ Latino,Male,Riverside,3.8,480,480,460
+2388,Solano,Hispanic/ Latino,Male,San Diego,4.4,480,480,460
+2389,Solano,Hispanic/ Latino,Male,Santa Barbara,4.2,480,480,460
+2390,Solano,Hispanic/ Latino,Male,Santa Cruz,3.8,480,480,460
+2391,Solano,Hispanic/ Latino,Male,Universitywide,3.8,480,480,460
+2392,Solano,Hispanic/ Latino,Female,Berkeley,4.4,480,480,460
+2393,Solano,Hispanic/ Latino,Female,Davis,4.4,480,480,460
+2394,Solano,Hispanic/ Latino,Female,Irvine,4.2,480,480,460
+2395,Solano,Hispanic/ Latino,Female,Los Angeles,4.4,480,480,460
+2396,Solano,Hispanic/ Latino,Female,Merced,3.6,480,480,460
+2397,Solano,Hispanic/ Latino,Female,Riverside,3.8,480,480,460
+2398,Solano,Hispanic/ Latino,Female,San Diego,4.4,480,480,460
+2399,Solano,Hispanic/ Latino,Female,Santa Barbara,4.2,480,480,460
+2400,Solano,Hispanic/ Latino,Female,Santa Cruz,3.8,480,480,460
+2401,Solano,Hispanic/ Latino,Female,Universitywide,3.8,480,480,460
+2402,Solano,Hispanic/ Latino,All,Berkeley,4.4,480,480,460
+2403,Solano,Hispanic/ Latino,All,Davis,4.4,480,480,460
+2404,Solano,Hispanic/ Latino,All,Irvine,4.2,480,480,460
+2405,Solano,Hispanic/ Latino,All,Los Angeles,4.4,480,480,460
+2406,Solano,Hispanic/ Latino,All,Merced,3.6,480,480,460
+2407,Solano,Hispanic/ Latino,All,Riverside,3.8,480,480,460
+2408,Solano,Hispanic/ Latino,All,San Diego,4.4,480,480,460
+2409,Solano,Hispanic/ Latino,All,Santa Barbara,4.2,480,480,460
+2410,Solano,Hispanic/ Latino,All,Santa Cruz,3.8,480,480,460
+2411,Solano,Hispanic/ Latino,All,Universitywide,3.8,480,480,460
+2412,Solano,Hispanic/ Latino,Unknown,Berkeley,4.4,480,480,460
+2413,Solano,Hispanic/ Latino,Unknown,Davis,4.4,480,480,460
+2414,Solano,Hispanic/ Latino,Unknown,Irvine,4.2,480,480,460
+2415,Solano,Hispanic/ Latino,Unknown,Los Angeles,4.4,480,480,460
+2416,Solano,Hispanic/ Latino,Unknown,Merced,3.6,480,480,460
+2417,Solano,Hispanic/ Latino,Unknown,Riverside,3.8,480,480,460
+2418,Solano,Hispanic/ Latino,Unknown,San Diego,4.4,480,480,460
+2419,Solano,Hispanic/ Latino,Unknown,Santa Barbara,4.2,480,480,460
+2420,Solano,Hispanic/ Latino,Unknown,Santa Cruz,3.8,480,480,460
+2421,Solano,Hispanic/ Latino,Unknown,Universitywide,3.8,480,480,460
+2422,Solano,African American,Male,Berkeley,4.4,480,480,460
+2423,Solano,African American,Male,Davis,4.4,480,480,460
+2424,Solano,African American,Male,Irvine,4.2,480,480,460
+2425,Solano,African American,Male,Los Angeles,4.4,480,480,460
+2426,Solano,African American,Male,Merced,3.6,480,480,460
+2427,Solano,African American,Male,Riverside,3.8,480,480,460
+2428,Solano,African American,Male,San Diego,4.4,480,480,460
+2429,Solano,African American,Male,Santa Barbara,4.2,480,480,460
+2430,Solano,African American,Male,Santa Cruz,3.8,480,480,460
+2431,Solano,African American,Male,Universitywide,3.8,480,480,460
+2432,Solano,African American,Female,Berkeley,4.4,480,480,460
+2433,Solano,African American,Female,Davis,4.4,480,480,460
+2434,Solano,African American,Female,Irvine,4.2,480,480,460
+2435,Solano,African American,Female,Los Angeles,4.4,480,480,460
+2436,Solano,African American,Female,Merced,3.6,480,480,460
+2437,Solano,African American,Female,Riverside,3.8,480,480,460
+2438,Solano,African American,Female,San Diego,4.4,480,480,460
+2439,Solano,African American,Female,Santa Barbara,4.2,480,480,460
+2440,Solano,African American,Female,Santa Cruz,3.8,480,480,460
+2441,Solano,African American,Female,Universitywide,3.8,480,480,460
+2442,Solano,African American,All,Berkeley,4.4,480,480,460
+2443,Solano,African American,All,Davis,4.4,480,480,460
+2444,Solano,African American,All,Irvine,4.2,480,480,460
+2445,Solano,African American,All,Los Angeles,4.4,480,480,460
+2446,Solano,African American,All,Merced,3.6,480,480,460
+2447,Solano,African American,All,Riverside,3.8,480,480,460
+2448,Solano,African American,All,San Diego,4.4,480,480,460
+2449,Solano,African American,All,Santa Barbara,4.2,480,480,460
+2450,Solano,African American,All,Santa Cruz,3.8,480,480,460
+2451,Solano,African American,All,Universitywide,3.8,480,480,460
+2452,Solano,African American,Unknown,Berkeley,4.4,480,480,460
+2453,Solano,African American,Unknown,Davis,4.4,480,480,460
+2454,Solano,African American,Unknown,Irvine,4.2,480,480,460
+2455,Solano,African American,Unknown,Los Angeles,4.4,480,480,460
+2456,Solano,African American,Unknown,Merced,3.6,480,480,460
+2457,Solano,African American,Unknown,Riverside,3.8,480,480,460
+2458,Solano,African American,Unknown,San Diego,4.4,480,480,460
+2459,Solano,African American,Unknown,Santa Barbara,4.2,480,480,460
+2460,Solano,African American,Unknown,Santa Cruz,3.8,480,480,460
+2461,Solano,African American,Unknown,Universitywide,3.8,480,480,460
+2462,Solano,All,Male,Berkeley,4.4,480,480,460
+2463,Solano,All,Male,Davis,4.4,480,480,460
+2464,Solano,All,Male,Irvine,4.2,480,480,460
+2465,Solano,All,Male,Los Angeles,4.4,480,480,460
+2466,Solano,All,Male,Merced,3.6,480,480,460
+2467,Solano,All,Male,Riverside,3.8,480,480,460
+2468,Solano,All,Male,San Diego,4.4,480,480,460
+2469,Solano,All,Male,Santa Barbara,4.2,480,480,460
+2470,Solano,All,Male,Santa Cruz,3.8,480,480,460
+2471,Solano,All,Male,Universitywide,3.8,480,480,460
+2472,Solano,All,Female,Berkeley,4.4,480,480,460
+2473,Solano,All,Female,Davis,4.4,480,480,460
+2474,Solano,All,Female,Irvine,4.2,480,480,460
+2475,Solano,All,Female,Los Angeles,4.4,480,480,460
+2476,Solano,All,Female,Merced,3.6,480,480,460
+2477,Solano,All,Female,Riverside,3.8,480,480,460
+2478,Solano,All,Female,San Diego,4.4,480,480,460
+2479,Solano,All,Female,Santa Barbara,4.2,480,480,460
+2480,Solano,All,Female,Santa Cruz,3.8,480,480,460
+2481,Solano,All,Female,Universitywide,3.8,480,480,460
+2482,Solano,All,All,Berkeley,4.4,480,480,460
+2483,Solano,All,All,Davis,4.4,480,480,460
+2484,Solano,All,All,Irvine,4.2,480,480,460
+2485,Solano,All,All,Los Angeles,4.4,480,480,460
+2486,Solano,All,All,Merced,3.6,480,480,460
+2487,Solano,All,All,Riverside,3.8,480,480,460
+2488,Solano,All,All,San Diego,4.4,480,480,460
+2489,Solano,All,All,Santa Barbara,4.2,480,480,460
+2490,Solano,All,All,Santa Cruz,3.8,480,480,460
+2491,Solano,All,All,Universitywide,3.8,480,480,460
+2492,Solano,All,Unknown,Berkeley,4.4,480,480,460
+2493,Solano,All,Unknown,Davis,4.4,480,480,460
+2494,Solano,All,Unknown,Irvine,4.2,480,480,460
+2495,Solano,All,Unknown,Los Angeles,4.4,480,480,460
+2496,Solano,All,Unknown,Merced,3.6,480,480,460
+2497,Solano,All,Unknown,Riverside,3.8,480,480,460
+2498,Solano,All,Unknown,San Diego,4.4,480,480,460
+2499,Solano,All,Unknown,Santa Barbara,4.2,480,480,460
+2500,Solano,All,Unknown,Santa Cruz,3.8,480,480,460
+2501,Solano,All,Unknown,Universitywide,3.8,480,480,460
+2502,San Benito,White,Male,Davis,4.2,480,460,460
+2503,San Benito,White,Male,Merced,3.8,480,460,460
+2504,San Benito,White,Male,Universitywide,3.8,480,460,460
+2505,San Benito,White,Female,Davis,4.2,480,460,460
+2506,San Benito,White,Female,Merced,3.8,480,460,460
+2507,San Benito,White,Female,Universitywide,3.8,480,460,460
+2508,San Benito,White,All,Davis,4.2,480,460,460
+2509,San Benito,White,All,Merced,3.8,480,460,460
+2510,San Benito,White,All,Universitywide,3.8,480,460,460
+2511,San Benito,Hispanic/ Latino,Male,Davis,4.2,480,460,460
+2512,San Benito,Hispanic/ Latino,Male,Merced,3.8,480,460,460
+2513,San Benito,Hispanic/ Latino,Male,Universitywide,3.8,480,460,460
+2514,San Benito,Hispanic/ Latino,Female,Davis,4.2,480,460,460
+2515,San Benito,Hispanic/ Latino,Female,Merced,3.8,480,460,460
+2516,San Benito,Hispanic/ Latino,Female,Universitywide,3.8,480,460,460
+2517,San Benito,Hispanic/ Latino,All,Davis,4.2,480,460,460
+2518,San Benito,Hispanic/ Latino,All,Merced,3.8,480,460,460
+2519,San Benito,Hispanic/ Latino,All,Universitywide,3.8,480,460,460
+2520,San Benito,All,Male,Davis,4.2,480,460,460
+2521,San Benito,All,Male,Merced,3.8,480,460,460
+2522,San Benito,All,Male,Universitywide,3.8,480,460,460
+2523,San Benito,All,Female,Davis,4.2,480,460,460
+2524,San Benito,All,Female,Merced,3.8,480,460,460
+2525,San Benito,All,Female,Universitywide,3.8,480,460,460
+2526,San Benito,All,All,Davis,4.2,480,460,460
+2527,San Benito,All,All,Merced,3.8,480,460,460
+2528,San Benito,All,All,Universitywide,3.8,480,460,460
+2529,Santa Cruz,White,Male,Berkeley,4.4,520,520,500
+2530,Santa Cruz,White,Male,Davis,4.4,520,520,500
+2531,Santa Cruz,White,Male,Irvine,4.4,520,520,500
+2532,Santa Cruz,White,Male,Los Angeles,4.4,520,520,500
+2533,Santa Cruz,White,Male,Riverside,3.8,520,520,500
+2534,Santa Cruz,White,Male,San Diego,4.4,520,520,500
+2535,Santa Cruz,White,Male,Santa Barbara,4.4,520,520,500
+2536,Santa Cruz,White,Male,Santa Cruz,4.2,520,520,500
+2537,Santa Cruz,White,Male,Universitywide,4.2,520,520,500
+2538,Santa Cruz,White,Female,Berkeley,4.4,520,520,500
+2539,Santa Cruz,White,Female,Davis,4.4,520,520,500
+2540,Santa Cruz,White,Female,Irvine,4.4,520,520,500
+2541,Santa Cruz,White,Female,Los Angeles,4.4,520,520,500
+2542,Santa Cruz,White,Female,Riverside,3.8,520,520,500
+2543,Santa Cruz,White,Female,San Diego,4.4,520,520,500
+2544,Santa Cruz,White,Female,Santa Barbara,4.4,520,520,500
+2545,Santa Cruz,White,Female,Santa Cruz,4.2,520,520,500
+2546,Santa Cruz,White,Female,Universitywide,4.2,520,520,500
+2547,Santa Cruz,White,All,Berkeley,4.4,520,520,500
+2548,Santa Cruz,White,All,Davis,4.4,520,520,500
+2549,Santa Cruz,White,All,Irvine,4.4,520,520,500
+2550,Santa Cruz,White,All,Los Angeles,4.4,520,520,500
+2551,Santa Cruz,White,All,Riverside,3.8,520,520,500
+2552,Santa Cruz,White,All,San Diego,4.4,520,520,500
+2553,Santa Cruz,White,All,Santa Barbara,4.4,520,520,500
+2554,Santa Cruz,White,All,Santa Cruz,4.2,520,520,500
+2555,Santa Cruz,White,All,Universitywide,4.2,520,520,500
+2556,Santa Cruz,Asian,Male,Berkeley,4.4,520,520,500
+2557,Santa Cruz,Asian,Male,Davis,4.4,520,520,500
+2558,Santa Cruz,Asian,Male,Irvine,4.4,520,520,500
+2559,Santa Cruz,Asian,Male,Los Angeles,4.4,520,520,500
+2560,Santa Cruz,Asian,Male,Riverside,3.8,520,520,500
+2561,Santa Cruz,Asian,Male,San Diego,4.4,520,520,500
+2562,Santa Cruz,Asian,Male,Santa Barbara,4.4,520,520,500
+2563,Santa Cruz,Asian,Male,Santa Cruz,4.2,520,520,500
+2564,Santa Cruz,Asian,Male,Universitywide,4.2,520,520,500
+2565,Santa Cruz,Asian,Female,Berkeley,4.4,520,520,500
+2566,Santa Cruz,Asian,Female,Davis,4.4,520,520,500
+2567,Santa Cruz,Asian,Female,Irvine,4.4,520,520,500
+2568,Santa Cruz,Asian,Female,Los Angeles,4.4,520,520,500
+2569,Santa Cruz,Asian,Female,Riverside,3.8,520,520,500
+2570,Santa Cruz,Asian,Female,San Diego,4.4,520,520,500
+2571,Santa Cruz,Asian,Female,Santa Barbara,4.4,520,520,500
+2572,Santa Cruz,Asian,Female,Santa Cruz,4.2,520,520,500
+2573,Santa Cruz,Asian,Female,Universitywide,4.2,520,520,500
+2574,Santa Cruz,Asian,All,Berkeley,4.4,520,520,500
+2575,Santa Cruz,Asian,All,Davis,4.4,520,520,500
+2576,Santa Cruz,Asian,All,Irvine,4.4,520,520,500
+2577,Santa Cruz,Asian,All,Los Angeles,4.4,520,520,500
+2578,Santa Cruz,Asian,All,Riverside,3.8,520,520,500
+2579,Santa Cruz,Asian,All,San Diego,4.4,520,520,500
+2580,Santa Cruz,Asian,All,Santa Barbara,4.4,520,520,500
+2581,Santa Cruz,Asian,All,Santa Cruz,4.2,520,520,500
+2582,Santa Cruz,Asian,All,Universitywide,4.2,520,520,500
+2583,Santa Cruz,Hispanic/ Latino,Male,Berkeley,4.4,520,520,500
+2584,Santa Cruz,Hispanic/ Latino,Male,Davis,4.4,520,520,500
+2585,Santa Cruz,Hispanic/ Latino,Male,Irvine,4.4,520,520,500
+2586,Santa Cruz,Hispanic/ Latino,Male,Los Angeles,4.4,520,520,500
+2587,Santa Cruz,Hispanic/ Latino,Male,Riverside,3.8,520,520,500
+2588,Santa Cruz,Hispanic/ Latino,Male,San Diego,4.4,520,520,500
+2589,Santa Cruz,Hispanic/ Latino,Male,Santa Barbara,4.4,520,520,500
+2590,Santa Cruz,Hispanic/ Latino,Male,Santa Cruz,4.2,520,520,500
+2591,Santa Cruz,Hispanic/ Latino,Male,Universitywide,4.2,520,520,500
+2592,Santa Cruz,Hispanic/ Latino,Female,Berkeley,4.4,520,520,500
+2593,Santa Cruz,Hispanic/ Latino,Female,Davis,4.4,520,520,500
+2594,Santa Cruz,Hispanic/ Latino,Female,Irvine,4.4,520,520,500
+2595,Santa Cruz,Hispanic/ Latino,Female,Los Angeles,4.4,520,520,500
+2596,Santa Cruz,Hispanic/ Latino,Female,Riverside,3.8,520,520,500
+2597,Santa Cruz,Hispanic/ Latino,Female,San Diego,4.4,520,520,500
+2598,Santa Cruz,Hispanic/ Latino,Female,Santa Barbara,4.4,520,520,500
+2599,Santa Cruz,Hispanic/ Latino,Female,Santa Cruz,4.2,520,520,500
+2600,Santa Cruz,Hispanic/ Latino,Female,Universitywide,4.2,520,520,500
+2601,Santa Cruz,Hispanic/ Latino,All,Berkeley,4.4,520,520,500
+2602,Santa Cruz,Hispanic/ Latino,All,Davis,4.4,520,520,500
+2603,Santa Cruz,Hispanic/ Latino,All,Irvine,4.4,520,520,500
+2604,Santa Cruz,Hispanic/ Latino,All,Los Angeles,4.4,520,520,500
+2605,Santa Cruz,Hispanic/ Latino,All,Riverside,3.8,520,520,500
+2606,Santa Cruz,Hispanic/ Latino,All,San Diego,4.4,520,520,500
+2607,Santa Cruz,Hispanic/ Latino,All,Santa Barbara,4.4,520,520,500
+2608,Santa Cruz,Hispanic/ Latino,All,Santa Cruz,4.2,520,520,500
+2609,Santa Cruz,Hispanic/ Latino,All,Universitywide,4.2,520,520,500
+2610,Santa Cruz,All,Male,Berkeley,4.4,520,520,500
+2611,Santa Cruz,All,Male,Davis,4.4,520,520,500
+2612,Santa Cruz,All,Male,Irvine,4.4,520,520,500
+2613,Santa Cruz,All,Male,Los Angeles,4.4,520,520,500
+2614,Santa Cruz,All,Male,Riverside,3.8,520,520,500
+2615,Santa Cruz,All,Male,San Diego,4.4,520,520,500
+2616,Santa Cruz,All,Male,Santa Barbara,4.4,520,520,500
+2617,Santa Cruz,All,Male,Santa Cruz,4.2,520,520,500
+2618,Santa Cruz,All,Male,Universitywide,4.2,520,520,500
+2619,Santa Cruz,All,Female,Berkeley,4.4,520,520,500
+2620,Santa Cruz,All,Female,Davis,4.4,520,520,500
+2621,Santa Cruz,All,Female,Irvine,4.4,520,520,500
+2622,Santa Cruz,All,Female,Los Angeles,4.4,520,520,500
+2623,Santa Cruz,All,Female,Riverside,3.8,520,520,500
+2624,Santa Cruz,All,Female,San Diego,4.4,520,520,500
+2625,Santa Cruz,All,Female,Santa Barbara,4.4,520,520,500
+2626,Santa Cruz,All,Female,Santa Cruz,4.2,520,520,500
+2627,Santa Cruz,All,Female,Universitywide,4.2,520,520,500
+2628,Santa Cruz,All,All,Berkeley,4.4,520,520,500
+2629,Santa Cruz,All,All,Davis,4.4,520,520,500
+2630,Santa Cruz,All,All,Irvine,4.4,520,520,500
+2631,Santa Cruz,All,All,Los Angeles,4.4,520,520,500
+2632,Santa Cruz,All,All,Riverside,3.8,520,520,500
+2633,Santa Cruz,All,All,San Diego,4.4,520,520,500
+2634,Santa Cruz,All,All,Santa Barbara,4.4,520,520,500
+2635,Santa Cruz,All,All,Santa Cruz,4.2,520,520,500
+2636,Santa Cruz,All,All,Universitywide,4.2,520,520,500
+2637,San Mateo,White,Male,Berkeley,4.4,520,540,520
+2638,San Mateo,White,Male,Davis,4.4,520,540,520
+2639,San Mateo,White,Male,Irvine,4.4,520,540,520
+2640,San Mateo,White,Male,Los Angeles,4.4,520,540,520
+2641,San Mateo,White,Male,Merced,3.6,520,540,520
+2642,San Mateo,White,Male,Riverside,3.8,520,540,520
+2643,San Mateo,White,Male,San Diego,4.4,520,540,520
+2644,San Mateo,White,Male,Santa Barbara,4.2,520,540,520
+2645,San Mateo,White,Male,Santa Cruz,4.2,520,540,520
+2646,San Mateo,White,Male,Universitywide,4.2,520,540,520
+2647,San Mateo,White,Female,Berkeley,4.4,520,540,520
+2648,San Mateo,White,Female,Davis,4.4,520,540,520
+2649,San Mateo,White,Female,Irvine,4.4,520,540,520
+2650,San Mateo,White,Female,Los Angeles,4.4,520,540,520
+2651,San Mateo,White,Female,Merced,3.6,520,540,520
+2652,San Mateo,White,Female,Riverside,3.8,520,540,520
+2653,San Mateo,White,Female,San Diego,4.4,520,540,520
+2654,San Mateo,White,Female,Santa Barbara,4.2,520,540,520
+2655,San Mateo,White,Female,Santa Cruz,4.2,520,540,520
+2656,San Mateo,White,Female,Universitywide,4.2,520,540,520
+2657,San Mateo,White,All,Berkeley,4.4,520,540,520
+2658,San Mateo,White,All,Davis,4.4,520,540,520
+2659,San Mateo,White,All,Irvine,4.4,520,540,520
+2660,San Mateo,White,All,Los Angeles,4.4,520,540,520
+2661,San Mateo,White,All,Merced,3.6,520,540,520
+2662,San Mateo,White,All,Riverside,3.8,520,540,520
+2663,San Mateo,White,All,San Diego,4.4,520,540,520
+2664,San Mateo,White,All,Santa Barbara,4.2,520,540,520
+2665,San Mateo,White,All,Santa Cruz,4.2,520,540,520
+2666,San Mateo,White,All,Universitywide,4.2,520,540,520
+2667,San Mateo,Asian,Male,Berkeley,4.4,520,540,520
+2668,San Mateo,Asian,Male,Davis,4.4,520,540,520
+2669,San Mateo,Asian,Male,Irvine,4.4,520,540,520
+2670,San Mateo,Asian,Male,Los Angeles,4.4,520,540,520
+2671,San Mateo,Asian,Male,Merced,3.6,520,540,520
+2672,San Mateo,Asian,Male,Riverside,3.8,520,540,520
+2673,San Mateo,Asian,Male,San Diego,4.4,520,540,520
+2674,San Mateo,Asian,Male,Santa Barbara,4.2,520,540,520
+2675,San Mateo,Asian,Male,Santa Cruz,4.2,520,540,520
+2676,San Mateo,Asian,Male,Universitywide,4.2,520,540,520
+2677,San Mateo,Asian,Female,Berkeley,4.4,520,540,520
+2678,San Mateo,Asian,Female,Davis,4.4,520,540,520
+2679,San Mateo,Asian,Female,Irvine,4.4,520,540,520
+2680,San Mateo,Asian,Female,Los Angeles,4.4,520,540,520
+2681,San Mateo,Asian,Female,Merced,3.6,520,540,520
+2682,San Mateo,Asian,Female,Riverside,3.8,520,540,520
+2683,San Mateo,Asian,Female,San Diego,4.4,520,540,520
+2684,San Mateo,Asian,Female,Santa Barbara,4.2,520,540,520
+2685,San Mateo,Asian,Female,Santa Cruz,4.2,520,540,520
+2686,San Mateo,Asian,Female,Universitywide,4.2,520,540,520
+2687,San Mateo,Asian,All,Berkeley,4.4,520,540,520
+2688,San Mateo,Asian,All,Davis,4.4,520,540,520
+2689,San Mateo,Asian,All,Irvine,4.4,520,540,520
+2690,San Mateo,Asian,All,Los Angeles,4.4,520,540,520
+2691,San Mateo,Asian,All,Merced,3.6,520,540,520
+2692,San Mateo,Asian,All,Riverside,3.8,520,540,520
+2693,San Mateo,Asian,All,San Diego,4.4,520,540,520
+2694,San Mateo,Asian,All,Santa Barbara,4.2,520,540,520
+2695,San Mateo,Asian,All,Santa Cruz,4.2,520,540,520
+2696,San Mateo,Asian,All,Universitywide,4.2,520,540,520
+2697,San Mateo,Hispanic/ Latino,Male,Berkeley,4.4,520,540,520
+2698,San Mateo,Hispanic/ Latino,Male,Davis,4.4,520,540,520
+2699,San Mateo,Hispanic/ Latino,Male,Irvine,4.4,520,540,520
+2700,San Mateo,Hispanic/ Latino,Male,Los Angeles,4.4,520,540,520
+2701,San Mateo,Hispanic/ Latino,Male,Merced,3.6,520,540,520
+2702,San Mateo,Hispanic/ Latino,Male,Riverside,3.8,520,540,520
+2703,San Mateo,Hispanic/ Latino,Male,San Diego,4.4,520,540,520
+2704,San Mateo,Hispanic/ Latino,Male,Santa Barbara,4.2,520,540,520
+2705,San Mateo,Hispanic/ Latino,Male,Santa Cruz,4.2,520,540,520
+2706,San Mateo,Hispanic/ Latino,Male,Universitywide,4.2,520,540,520
+2707,San Mateo,Hispanic/ Latino,Female,Berkeley,4.4,520,540,520
+2708,San Mateo,Hispanic/ Latino,Female,Davis,4.4,520,540,520
+2709,San Mateo,Hispanic/ Latino,Female,Irvine,4.4,520,540,520
+2710,San Mateo,Hispanic/ Latino,Female,Los Angeles,4.4,520,540,520
+2711,San Mateo,Hispanic/ Latino,Female,Merced,3.6,520,540,520
+2712,San Mateo,Hispanic/ Latino,Female,Riverside,3.8,520,540,520
+2713,San Mateo,Hispanic/ Latino,Female,San Diego,4.4,520,540,520
+2714,San Mateo,Hispanic/ Latino,Female,Santa Barbara,4.2,520,540,520
+2715,San Mateo,Hispanic/ Latino,Female,Santa Cruz,4.2,520,540,520
+2716,San Mateo,Hispanic/ Latino,Female,Universitywide,4.2,520,540,520
+2717,San Mateo,Hispanic/ Latino,All,Berkeley,4.4,520,540,520
+2718,San Mateo,Hispanic/ Latino,All,Davis,4.4,520,540,520
+2719,San Mateo,Hispanic/ Latino,All,Irvine,4.4,520,540,520
+2720,San Mateo,Hispanic/ Latino,All,Los Angeles,4.4,520,540,520
+2721,San Mateo,Hispanic/ Latino,All,Merced,3.6,520,540,520
+2722,San Mateo,Hispanic/ Latino,All,Riverside,3.8,520,540,520
+2723,San Mateo,Hispanic/ Latino,All,San Diego,4.4,520,540,520
+2724,San Mateo,Hispanic/ Latino,All,Santa Barbara,4.2,520,540,520
+2725,San Mateo,Hispanic/ Latino,All,Santa Cruz,4.2,520,540,520
+2726,San Mateo,Hispanic/ Latino,All,Universitywide,4.2,520,540,520
+2727,San Mateo,All,Male,Berkeley,4.4,520,540,520
+2728,San Mateo,All,Male,Davis,4.4,520,540,520
+2729,San Mateo,All,Male,Irvine,4.4,520,540,520
+2730,San Mateo,All,Male,Los Angeles,4.4,520,540,520
+2731,San Mateo,All,Male,Merced,3.6,520,540,520
+2732,San Mateo,All,Male,Riverside,3.8,520,540,520
+2733,San Mateo,All,Male,San Diego,4.4,520,540,520
+2734,San Mateo,All,Male,Santa Barbara,4.2,520,540,520
+2735,San Mateo,All,Male,Santa Cruz,4.2,520,540,520
+2736,San Mateo,All,Male,Universitywide,4.2,520,540,520
+2737,San Mateo,All,Female,Berkeley,4.4,520,540,520
+2738,San Mateo,All,Female,Davis,4.4,520,540,520
+2739,San Mateo,All,Female,Irvine,4.4,520,540,520
+2740,San Mateo,All,Female,Los Angeles,4.4,520,540,520
+2741,San Mateo,All,Female,Merced,3.6,520,540,520
+2742,San Mateo,All,Female,Riverside,3.8,520,540,520
+2743,San Mateo,All,Female,San Diego,4.4,520,540,520
+2744,San Mateo,All,Female,Santa Barbara,4.2,520,540,520
+2745,San Mateo,All,Female,Santa Cruz,4.2,520,540,520
+2746,San Mateo,All,Female,Universitywide,4.2,520,540,520
+2747,San Mateo,All,All,Berkeley,4.4,520,540,520
+2748,San Mateo,All,All,Davis,4.4,520,540,520
+2749,San Mateo,All,All,Irvine,4.4,520,540,520
+2750,San Mateo,All,All,Los Angeles,4.4,520,540,520
+2751,San Mateo,All,All,Merced,3.6,520,540,520
+2752,San Mateo,All,All,Riverside,3.8,520,540,520
+2753,San Mateo,All,All,San Diego,4.4,520,540,520
+2754,San Mateo,All,All,Santa Barbara,4.2,520,540,520
+2755,San Mateo,All,All,Santa Cruz,4.2,520,540,520
+2756,San Mateo,All,All,Universitywide,4.2,520,540,520
