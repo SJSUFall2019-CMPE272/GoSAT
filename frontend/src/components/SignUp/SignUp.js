@@ -79,6 +79,9 @@ class SignUp extends React.Component {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
+      httpsAgent: {
+        rejectUnauthorized: false,
+      },
       method: 'POST'
     })
     .then((response) => {
