@@ -130,9 +130,9 @@ class Details extends React.Component {
                         + "/"+mldata.satM + "/"+mldata.satE
                         + "/"+mldata.agc + "/"+mldata.hc;// "/3/31/31/700/700/20/50/15";
             axios.get(url,{
-            headers: {
-                'Accept' : 'application/json'
-              },
+            // headers: {
+            //     'Accept' : 'application/json'
+            //   },
             })
             //.then((response) => {
             //   return response.json();
