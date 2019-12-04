@@ -114,9 +114,10 @@ class Details extends React.Component {
                   },
                 method: 'POST',
             })
-            .then((response) => {
-                return response.json();
-            }).then((jsonRes) => {
+            //.then((response) => {
+            //    return response.json();
+            //})
+            .then((jsonRes) => {
                 if (jsonRes.success == false) {
                 this.props.updateProfileDetailsFailureDispatch();
                 } else {
@@ -132,9 +133,10 @@ class Details extends React.Component {
               },
             method: 'POST',
             })
-            .then((response) => {
-                return response.json();
-            }).then((jsonRes) => {
+            //.then((response) => {
+            //    return response.json();
+            //})
+            .then((jsonRes) => {
                 if (jsonRes != null) {
                         // var jsonRes = {
                         //         0 : 76.56,
@@ -170,9 +172,10 @@ class Details extends React.Component {
                           },
                         method: 'POST',
                     })
-                    .then((response) => {
-                        return response.json();
-                    }).then((jsonRes) => {
+                    //.then((response) => {
+                    //    return response.json();
+                    //})
+                    .then((jsonRes) => {
                         console.log("results stored in db")
                     })
                 }
