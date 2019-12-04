@@ -4,14 +4,14 @@ import {
     CardTitle, Button, FormGroup, Row, Col, Container
 
 } from 'reactstrap';
-import { baseURL, mlURL} from './../../config/config'
+import { baseURL} from './../../config/config'
 import { AvForm, AvField, AvRadioGroup, AvRadio } from 'availity-reactstrap-validation';
 import {connect} from 'react-redux';
 import {onUpdateProfileDetailsFailure, onUpdateProfileDetailsSuccess , onMLPredictionSuccess, onMLPredictionFailure} from './../../redux/actions/actions'
 import MyNavbar from "../Navbars/MyNavbar";
 import axios from 'axios';
 
-
+const mlURL = "54.153.123.45/main_process";
 class Details extends React.Component {
 
     constructor() {
@@ -126,43 +126,47 @@ class Details extends React.Component {
                 }
             })
             let results = [];
-            // axios.post(mlURL, JSON.stringify(mlReqBody),{
-            // headers: {
-            //     'Content-Type': 'application/json',
-            //     'Accept' : 'application/json'
-            //   },
-            // method: 'POST',
-            // })
+            var url = mlURL
+                        + "/"+data.gpa + "/"+data.actE
+                        + "/"+data.actC + "/"+data.satW 
+                        + "/"+data.satM + "/"+data.satE
+                        + "/"+data.agc + "/"+data.hc;// "/3/31/31/700/700/20/50/15";
+            axios.get(url,{
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept' : 'application/json'
+              },
+            })
             //.then((response) => {
-            //    return response.json();
+            //   return response.json();
             //})
-            // .then((jsonRes) => {
-            //     if (jsonRes != null) {
-                        var jsonRes = {
-                                0 : 76.56,
-                                1 : 37.87,
-                                2 : 62.54,
-                                3 : 89.12,
-                                4 : 34.89,
-                                5 : 79.34,
-                                6 : 90.12,
-                                7 : 34.67,
-                                8 : 21.67
-                            }
+            .then((jsonRes) => {
+                if (jsonRes != null) {
+                        // var jsonRes = {
+                        //         0 : 76.56,
+                        //         1 : 37.87,
+                        //         2 : 62.54,
+                        //         3 : 89.12,
+                        //         4 : 34.89,
+                        //         5 : 79.34,
+                        //         6 : 90.12,
+                        //         7 : 34.67,
+                        //         8 : 21.67
+                        //     }
                         console.log("resp",jsonRes);
                         for(var i=0;i<9;i=i+1){
                             var univ = this.props.univList[i];
-                            univ["score"] = jsonRes[i]/10;
+                            univ["score"] = jsonRes[i];
                             results.push(univ);
                         }
                         results.sort(this.compare);
                         this.props.mlPredictionSuccessDispatch(results);
                         console.log("res",results);
-                // } else {
-                //      this.props.mlPredictionFailureDispatch(data);
-                // }
+                } else {
+                     this.props.mlPredictionFailureDispatch(data);
+                }
                         this.props.history.push('/dashboard');
-            // }).then( res => {
+             }).then( res => {
                 if(this.props.isLoggedIn){
                     axios.post(baseURL+'/api/user/updateResults', JSON.stringify({emailId : this.props.emailId,results : results}),
                     {
@@ -182,7 +186,7 @@ class Details extends React.Component {
                         console.log(err);
                     })
                 }
-            //})
+            })
             
 
     }
