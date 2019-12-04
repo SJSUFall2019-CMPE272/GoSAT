@@ -153,15 +153,15 @@ function app(state = { univList , isLoggedIn : false}, action) {
     switch(action.type){
         case LOGIN_SUCCESS :
             return Object.assign({}, state, {
-                emailId: action.payload.payload.emailId,
-                firstName: action.payload.payload.firstName,
-                lastName: action.payload.payload.lastName,
-                phone: action.payload.payload.phone,
+                emailId: action.payload.emailId,
+                firstName: action.payload.firstName,
+                lastName: action.payload.lastName,
+                phone: action.payload.phone,
                 isLoggedIn: true,
-                displayPic: action.payload.payload.displayPic,
-                profileDetails : action.payload.payload.profileDetails,
-                dreamUniv : action.payload.payload.dreamUniv,
-                results : action.payload.payload.results
+                displayPic: action.payload.displayPic,
+                profileDetails : action.payload.profileDetails,
+                dreamUniv : action.payload.dreamUniv,
+                results : action.payload.results
             })
         case ML_PREDICTION_SUCCESS :
             return Object.assign({},state,{

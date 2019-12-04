@@ -89,9 +89,10 @@ class Login extends React.Component {
         },
         method: 'POST',
       })
-      .then((response) => {
-        return response.json();
-      }).then((jsonRes) => {
+      //.then((response) => {
+      //  return response.json();
+      //})
+      .then((jsonRes) => {
         console.log("jsonRes is: ", jsonRes);
         if (jsonRes.success == false) {
           console.log("Couldnt login");
