@@ -20,7 +20,7 @@ import {
   } from 'reactstrap';
 import { connect } from 'react-redux'
 import { AvForm, AvField } from 'availity-reactstrap-validation';
-
+import axios from 'axios';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
 
 import {baseURL, mlURL} from './../../config/config';
@@ -80,7 +80,7 @@ class Login extends React.Component {
       console.log("state is ", this.state);
       if(event)
       event.preventDefault();
-      fetch(baseURL+'/api/auth/login', {
+      axios.post(baseURL+'/api/auth/login',JSON.stringify({ emailId: this.state.emailId, password: this.state.password }), {
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
@@ -89,11 +89,11 @@ class Login extends React.Component {
           rejectUnauthorized: false,
         },
         method: 'POST',
-        body: JSON.stringify({ emailId: this.state.emailId, password: this.state.password }),
       })
-      .then((response) => {
-        return response.json();
-      }).then((jsonRes) => {
+      //.then((response) => {
+      //  return response.json();
+      //})
+      .then((jsonRes) => {
         console.log("jsonRes is: ", jsonRes);
         if (jsonRes.success == false) {
           console.log("Couldnt login");

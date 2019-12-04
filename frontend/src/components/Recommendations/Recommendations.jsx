@@ -19,7 +19,9 @@ import {
   Table
 } from "reactstrap"; 
 
-import RecommendationsCardCarousal from "../RecommendationsCardCarousal/RecommendationsCardCarousal";
+import RecommendationsCardCarousalRanking from "../RecommendationsCardCarousal/RecommendationsCardCarousalRanking";
+import RecommendationsCardCarousalTuition from "../RecommendationsCardCarousal/RecommendationsCardCarousalTuition";
+
 
 import MyNavbar from "../Navbars/MyNavbar";
 import Header from "../Header/Header";
@@ -40,8 +42,8 @@ class Recommendations extends React.Component {
       <MyNavbar/>
       <div className="header-image"/>
       <Header pageTitle="Recommendations" pageSubTitle="To get more university recommendation outside UCs"/>
-      <RecommendationsCardCarousal title = {uniWithSimRankingTitle} />
-      <RecommendationsCardCarousal title = {uniWithSimTuitionTitile} />
+      <RecommendationsCardCarousalRanking title = {uniWithSimRankingTitle} />
+      <RecommendationsCardCarousalTuition title = {uniWithSimTuitionTitile} />
 
       </>
     );
