@@ -97,7 +97,7 @@ g13
 tp44
 Rp45
 (I1
-(I22
+(I23
 tp46
 g20
 I00
@@ -134,48 +134,50 @@ aS'San Joaquin'
 p62
 aS'San Mateo'
 p63
-aS'Santa Clara'
+aS'Santa Barbara'
 p64
-aS'Santa Cruz'
+aS'Santa Clara'
 p65
-aS'Shasta'
+aS'Santa Cruz'
 p66
-aS'Solano'
+aS'Shasta'
 p67
-aS'Sonoma'
+aS'Solano'
 p68
-aS'Ventura'
+aS'Sonoma'
 p69
-atp70
+aS'Ventura'
+p70
+atp71
 basS'dtype'
-p71
+p72
 cnumpy
 float64
-p72
-sS'_categories'
 p73
-S'auto'
+sS'_categories'
 p74
-sS'categorical_features'
+S'auto'
 p75
-NsS'n_values'
+sS'categorical_features'
 p76
-NsS'_legacy_mode'
+NsS'n_values'
 p77
+NsS'_legacy_mode'
+p78
 I00
 sS'_n_values'
-p78
-NsS'_sklearn_version'
 p79
-S'0.20.4'
+NsS'_sklearn_version'
 p80
-sS'sparse'
+S'0.20.4'
 p81
+sS'sparse'
+p82
 I01
 sS'handle_unknown'
-p82
-S'ignore'
 p83
-sS'categories'
+S'ignore'
 p84
+sS'categories'
+p85
 Nsb.
