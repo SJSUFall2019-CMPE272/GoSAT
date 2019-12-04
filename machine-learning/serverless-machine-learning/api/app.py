@@ -13,6 +13,7 @@ from sklearn import preprocessing
 BUCKET_NAME = 'gosat-models'
 MODEL_FILE_NAME = 'gosat_logistic_regression'
 ENCODER_FILE_NAME = 'gosat_logistic_encoder'
+LABEL_MAPPING = 'gosat_label_mapping.json'
 
 app = Flask(__name__)
 S3 = boto3.client('s3', region_name='eu-central-1')
@@ -44,6 +45,13 @@ def index():
 
     print ("Loaded encoder")
 
+    # Load label encoding from S3
+    labels_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=LABEL_MAPPING)
+    labels_str = labels_s3['Body'].read()
+    mapping = json.loads(labels_str)
+
+    print ("Loaded label mapping {0}".format(mapping))
+
     categorical_values = [[
      data['ethnicity'].encode("utf-8").lower(), 
      data['gender'].encode("utf-8").lower(),
@@ -67,7 +75,7 @@ def index():
 
     result = {}
     for pred, label in zip(prediction, model.classes_):
-        result[label] = pred
+        result[mapping[str(label)]] = pred
    
     return json.dumps(result)
 
