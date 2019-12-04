@@ -126,29 +126,29 @@ class Details extends React.Component {
                 }
             })
             let results = [];
-            axios.post(mlURL, JSON.stringify(mlReqBody),{
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept' : 'application/json'
-              },
-            method: 'POST',
-            })
+            // axios.post(mlURL, JSON.stringify(mlReqBody),{
+            // headers: {
+            //     'Content-Type': 'application/json',
+            //     'Accept' : 'application/json'
+            //   },
+            // method: 'POST',
+            // })
             //.then((response) => {
             //    return response.json();
             //})
-            .then((jsonRes) => {
-                if (jsonRes != null) {
-                        // var jsonRes = {
-                        //         0 : 76.56,
-                        //         1 : 37.87,
-                        //         2 : 62.54,
-                        //         3 : 89.12,
-                        //         4 : 34.89,
-                        //         5 : 79.34,
-                        //         6 : 90.12,
-                        //         7 : 34.67,
-                        //         8 : 21.67
-                        //     }
+            // .then((jsonRes) => {
+            //     if (jsonRes != null) {
+                        var jsonRes = {
+                                0 : 76.56,
+                                1 : 37.87,
+                                2 : 62.54,
+                                3 : 89.12,
+                                4 : 34.89,
+                                5 : 79.34,
+                                6 : 90.12,
+                                7 : 34.67,
+                                8 : 21.67
+                            }
                         console.log("resp",jsonRes);
                         for(var i=0;i<9;i=i+1){
                             var univ = this.props.univList[i];
@@ -158,11 +158,11 @@ class Details extends React.Component {
                         results.sort(this.compare);
                         this.props.mlPredictionSuccessDispatch(results);
                         console.log("res",results);
-                } else {
-                     this.props.mlPredictionFailureDispatch(data);
-                }
+                // } else {
+                //      this.props.mlPredictionFailureDispatch(data);
+                // }
                         this.props.history.push('/dashboard');
-            }).then( res => {
+            // }).then( res => {
                 if(this.props.isLoggedIn){
                     axios.post(baseURL+'/api/user/updateResults', JSON.stringify({emailId : this.props.emailId,results : results}),
                     {
@@ -178,10 +178,11 @@ class Details extends React.Component {
                     .then((jsonRes) => {
                         console.log("results stored in db")
                     })
+                    .catch( err => {
+                        console.log(err);
+                    })
                 }
-            }).catch( err => {
-                console.log(err);
-            })
+            //})
             
 
     }

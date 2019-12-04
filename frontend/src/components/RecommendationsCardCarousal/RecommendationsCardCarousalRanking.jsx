@@ -15,10 +15,10 @@ import {
   Collapse
 } from "reactstrap";
 import {connect} from 'react-redux';
-import RecommendationCard from "./../RecommendationCard/RecommendationCard"
+import RecommendationCard from "../RecommendationCard/RecommendationCard"
 
 
-class RecommendationsCardCarousal extends React.Component{
+class RecommendationsCardCarousalRanking extends React.Component{
   constructor(){
     super();
     this.state = {
@@ -34,12 +34,12 @@ class RecommendationsCardCarousal extends React.Component{
   render(){
     const results = this.props.results;
     console.log(results);
-    let d1 = <><RecommendationCard uni={results[3]}/>
-    <RecommendationCard uni={results[4]} />
-    <RecommendationCard uni={results[5]} />
-    <RecommendationCard uni={results[6]} />
-    <RecommendationCard uni={results[7]}/>
-    <RecommendationCard uni={results[8]}/></>
+    let d1 = <><RecommendationCard uni={results[3].similarRanking}/>
+    <RecommendationCard uni={results[4].similarRanking} />
+    <RecommendationCard uni={results[5].similarRanking} />
+    <RecommendationCard uni={results[6].similarRanking} />
+    <RecommendationCard uni={results[7].similarRanking}/>
+    <RecommendationCard uni={results[8].similarRanking}/></>
     return(
       <>
     <br/>
@@ -50,9 +50,9 @@ class RecommendationsCardCarousal extends React.Component{
       <Card className="card-plain">
         <h2>{this.props.title}</h2>
       <Row>
-        <RecommendationCard uni={results[0]} />
-        <RecommendationCard uni={results[1]} />
-        <RecommendationCard uni={results[2]}/>
+        <RecommendationCard uni={results[0].similarRanking} />
+        <RecommendationCard uni={results[1].similarRanking} />
+        <RecommendationCard uni={results[2].similarRanking}/>
         {/* <Collapse isOpen={this.toggle}> */}
         { this.state.show && 
         d1}
@@ -90,4 +90,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RecommendationsCardCarousal);
+export default connect(mapStateToProps, mapDispatchToProps)(RecommendationsCardCarousalRanking);
