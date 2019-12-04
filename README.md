@@ -63,27 +63,11 @@ cd frontend
 yarn run build
 ```
 
-### Dataset
-
-![Screenshot](data-sample.png)
-
-GPA is grouped into low (1), medium (2), and high (3) buckets
-
-SAT scores (AvgScrMath, AvgScrWrit, and AvgScrRead) are also group into low(1), medium (2), and high (3) buckets
-
-Admittance Rate is a calculated probability representing the percentage of applicants for a UC campus and county that were admitted vs. applied.
-
-SAT data was sourced from the California Department of Education (CDE) 2015-2016 SAT reports
-
-UC applicant ethnicty, county, and gender were sourced from the UC System Infocenter Admissions by Source School in 2016
-
-Data from the separate sources was aggregated by county and admit status
-
 ### Predict API Endpoint
 
 Our models are deployed on AWS and can be accessed through the following endpoint:
 
-https://r8naeu32e8.execute-api.us-east-1.amazonaws.com/prod/predict
+https://883haygr14.execute-api.us-east-1.amazonaws.com/dev
 
 A sample request for a prediction:
 
@@ -93,15 +77,13 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -d '{
   "data": {
-        "gpa": 4,
-        "actE": 31,
-        "actC": 31,
-        "satW": 700,
-        "satM": 700,
-        "satE": 20,
-        "agc": 30,
-        "hc": 15,
-        "ethnicity" : "American-Asian"
+        "ethnicity" : "Asian",
+        "gender": "Female",
+        "county": "San Francisco",
+        "gpa": 3.2,
+        "scrRead": 462.0,
+        "scrMath": 476,
+        "scrWrit": 550
     }
 }'
 ```
@@ -109,18 +91,7 @@ curl -X POST \
 and sample response:
 
 ```
-{
-    "data": 
-        "{   0 : '19.74125',
-             1 : '54.31875',  
-             2 : '41.4375',  
-             3 : '20.945',  
-             4 : '82.42875000000001',  
-             5 : '71.515',  
-             6 : '41.792500000000004',  
-             7 : '47.678749999999994',  
-             8 : '63.795', 
-             99:'5.0'
-          }"
-  }
+{"0": 6.826691855648445e-06, "1": 1.2664352537655565e-05, "2": 4.529042805729106, "3": 0.0006548731244381412, "4":
+0.00013671922651285322, "5": 95.01194997218089, "6": 0.0002797578719567147, "7": 3.600861581345171e-06, "8":
+0.005324744791251366, "9": 0.45258803516986573}
 ```
