@@ -95,7 +95,7 @@ class Details extends React.Component {
             },
             "dreamUniv" : this.state.univ
         }
-        var  data = {
+        var  mldata = {
                 "gpa" : this.state.cgpa,
                 "actE" : this.state.actE,
                 "actC" : this.state.actC,
@@ -125,10 +125,10 @@ class Details extends React.Component {
             })
             let results = [];
             var url = mlURL
-                        + "/"+data.gpa + "/"+data.actE
-                        + "/"+data.actC + "/"+data.satW 
-                        + "/"+data.satM + "/"+data.satE
-                        + "/"+data.agc + "/"+data.hc;// "/3/31/31/700/700/20/50/15";
+                        + "/"+mldata.gpa + "/"+mldata.actE
+                        + "/"+mldata.actC + "/"+mldata.satW 
+                        + "/"+mldata.satM + "/"+mldata.satE
+                        + "/"+mldata.agc + "/"+mldata.hc;// "/3/31/31/700/700/20/50/15";
             axios.get(url,{
             headers: {
                 'Content-Type': 'application/json',
