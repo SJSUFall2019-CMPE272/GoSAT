@@ -95,8 +95,7 @@ class Details extends React.Component {
             },
             "dreamUniv" : this.state.univ
         }
-        var mlReqBody = {
-            data : {
+        var  data = {
                 "gpa" : this.state.cgpa,
                 "actE" : this.state.actE,
                 "actC" : this.state.actC,
@@ -106,7 +105,6 @@ class Details extends React.Component {
                 "agc" : this.state.agc,
                 "hc" : this.state.hc
             }
-        }
         axios.post(baseURL+'/api/user/updateProfileDetails', JSON.stringify(data),{
                 headers: {
                     'Content-Type': 'application/json',
