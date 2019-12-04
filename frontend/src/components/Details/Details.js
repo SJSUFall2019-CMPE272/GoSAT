@@ -124,14 +124,13 @@ class Details extends React.Component {
                 }
             })
             let results = [];
-            var url = mlURL
+            var url = "54.153.123.45/main_process"
                         + "/"+mldata.gpa + "/"+mldata.actE
                         + "/"+mldata.actC + "/"+mldata.satW 
                         + "/"+mldata.satM + "/"+mldata.satE
                         + "/"+mldata.agc + "/"+mldata.hc;// "/3/31/31/700/700/20/50/15";
             axios.get(url,{
             headers: {
-                'Content-Type': 'application/json',
                 'Accept' : 'application/json'
               },
             })
