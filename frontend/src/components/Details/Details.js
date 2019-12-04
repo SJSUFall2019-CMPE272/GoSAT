@@ -9,6 +9,7 @@ import { AvForm, AvField, AvRadioGroup, AvRadio } from 'availity-reactstrap-vali
 import {connect} from 'react-redux';
 import {onUpdateProfileDetailsFailure, onUpdateProfileDetailsSuccess , onMLPredictionSuccess, onMLPredictionFailure} from './../../redux/actions/actions'
 import MyNavbar from "../Navbars/MyNavbar";
+import axios from 'axios';
 
 
 class Details extends React.Component {
@@ -106,12 +107,12 @@ class Details extends React.Component {
                 "hc" : this.state.hc
             }
         }
-            fetch(baseURL+'/api/user/updateProfileDetails', {
+        axios.post(baseURL+'/api/user/updateProfileDetails', JSON.stringify(data),{
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept' : 'application/json'
                   },
                 method: 'POST',
-                body: data
             })
             .then((response) => {
                 return response.json();
@@ -124,12 +125,12 @@ class Details extends React.Component {
                 }
             })
             let results = [];
-        fetch(mlURL, {
+            axios.post(mlURL, JSON.stringify(mlReqBody),{
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept' : 'application/json'
               },
             method: 'POST',
-            body: JSON.stringify(mlReqBody)
             })
             .then((response) => {
                 return response.json();
@@ -161,12 +162,13 @@ class Details extends React.Component {
                         this.props.history.push('/dashboard');
             }).then( res => {
                 if(this.props.isLoggedIn){
-                    fetch(baseURL+'/api/user/updateResults', {
+                    axios.post(baseURL+'/api/user/updateResults', JSON.stringify({emailId : this.props.emailId,results : results}),
+                    {
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'Accept' : 'application/json'
                           },
                         method: 'POST',
-                        body: JSON.stringify({emailId : this.props.emailId,results : results})
                     })
                     .then((response) => {
                         return response.json();
