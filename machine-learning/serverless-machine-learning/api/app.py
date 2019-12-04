@@ -3,31 +3,72 @@ https://medium.com/@patrickmichelberger/how-to-deploy-a-serverless-machine-learn
 """
 
 from flask import Flask, request, json
-import io
-import logic
+import boto3
+import pickle
+import numpy as np
+import random
+
+from sklearn import preprocessing
+
+BUCKET_NAME = 'gosat-models'
+MODEL_FILE_NAME = 'gosat_logistic_regression'
+ENCODER_FILE_NAME = 'gosat_logistic_encoder'
 
 app = Flask(__name__)
+S3 = boto3.client('s3', region_name='eu-central-1')
 
 @app.route('/', methods=['POST'])
 
-def index():
+def index():    
     # Parse request body for model input 
     body_dict = request.get_json(silent=True)    
     data = body_dict['data']
 
     print("Received request {0}".format(data))
 
-    gpa = data['gpa']
-    actE = data['actE']
-    actC = data['actC']
-    satW = data['satW']
-    satM = data['satM']
-    satE = data['satE']
-    agc = data['agc']
-    hc = data['hc']
+    # Load model from S3 bucket
+    model_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=MODEL_FILE_NAME)
 
-    logic.main_process(gpa, actE, actC, satW, satM, satE, agc, hc)
-    result = logic.main_process(gpa, actE, actC, satW, satM, satE, agc, hc)
+    # Load pickle model
+    model_str = model_s3['Body'].read()
+    model = pickle.loads(model_str)
+
+    print ("Loaded model")
+
+    # Load encoder from S3 bucket
+    encoder_s3 = S3.get_object(Bucket=BUCKET_NAME, Key=ENCODER_FILE_NAME)
+
+    # Load pickle model
+    encoder_str = encoder_s3['Body'].read()
+    encoder = pickle.loads(encoder_str)
+
+    print ("Loaded encoder")
+
+    categorical_values = [[
+     data['ethnicity'].encode("utf-8").lower(), 
+     data['gender'].encode("utf-8").lower(),
+     data['county'].encode("utf-8").lower()
+    ]]
+
+    non_categorical_values = [[
+     data['gpa'],
+     data['scrRead'],
+     data['scrMath'],
+     data['scrWrit']
+    ]]
+
+    categoricl_features = encoder.transform(categorical_values).toarray()
+
+    print ("Transformed categorical features {0}".format(categoricl_features.shape))
+    X = np.hstack((non_categorical_values, categoricl_features))
+    print ("Transformed final feature set {0}".format(X.shape))
+
+    prediction = [pred * 100 for pred in model.predict_proba(X)[0]]
+
+    result = {}
+    for pred, label in zip(prediction, model.classes_):
+        result[label] = pred
+   
     return json.dumps(result)
 
 if __name__ == '__main__':    
