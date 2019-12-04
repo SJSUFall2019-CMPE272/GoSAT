@@ -82,10 +82,14 @@ class Login extends React.Component {
       event.preventDefault();
       fetch(baseURL+'/api/auth/login', {
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        httpsAgent: {
+          rejectUnauthorized: false,
         },
         method: 'POST',
-        body: { emailId: this.state.emailId, password: this.state.password },
+        body: JSON.stringify({ emailId: this.state.emailId, password: this.state.password }),
       })
       .then((response) => {
         return response.json();
