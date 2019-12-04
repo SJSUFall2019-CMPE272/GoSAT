@@ -79,6 +79,7 @@ class Login extends React.Component {
     login = (event) => {
       console.log("state is ", this.state);
       if(event)
+      event.preventDefault();
       axios.post(baseURL+'/api/auth/login',JSON.stringify({ emailId: this.state.emailId, password: this.state.password }), {
         headers: {
           'Content-Type': 'application/json',
