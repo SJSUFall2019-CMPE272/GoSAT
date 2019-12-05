@@ -75,7 +75,6 @@ class Details extends React.Component {
             "profileDetails" : {
                 "cgpa": this.state.cgpa,
                 "gender": this.state.gender,
-                "transfer": this.state.transfer,
                 "school": this.state.school,
                 "ethnicity": this.state.ethnicity,
                 "sat": {
@@ -89,7 +88,7 @@ class Details extends React.Component {
                     "compositeScore" : this.state.actC,
                     "elaScore" : this.state.actE
                 },
-                "transferStudent" : this.state.transfer,
+                "county" : this.state.county,
                 "agc" : this.state.agc,
                 "hc" : this.state.hc
             },
@@ -222,7 +221,7 @@ class Details extends React.Component {
                         
                     </FormGroup>
                     <FormGroup>
-                        <AvField type="number" name="satE" min={0} max={124} label="Essay Score:" id="satE" onChange={this.changeHandler} placeholder="" required />
+                        <AvField type="number" name="satE" min={200} max={800} label="Essay Score:" id="satE" onChange={this.changeHandler} placeholder="" required />
                         
                     </FormGroup>
                     <FormGroup>
