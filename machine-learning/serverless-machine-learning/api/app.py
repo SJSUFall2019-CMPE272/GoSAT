@@ -73,7 +73,7 @@ def index():
     X = np.hstack((non_categorical_values, categoricl_features))
     print ("Transformed final feature set {0}".format(X.shape))
 
-    prediction = [round(pred, 2) * 100 for pred in model.predict_proba(X)[0]]
+    prediction = [round(pred * 100, 2) for pred in model.predict_proba(X)[0]]
 
     result = {}
     for pred, label in zip(prediction, model.classes_):
