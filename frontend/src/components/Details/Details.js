@@ -95,10 +95,10 @@ class Details extends React.Component {
             "dreamUniv" : this.state.univ
         }
         var  mldata = { data : {
-                "gpa" : this.state.cgpa,
-                "scrRead" : this.state.satW,
-                "scrMath" : this.state.satM,
-                "scrWrit" : this.state.satW,
+                "gpa" : parseFloat(this.state.cgpa),
+                "scrRead" : parseInt(this.state.satW),
+                "scrMath" : parseInt(this.state.satM),
+                "scrWrit" : parseInt(this.state.satW),
                 "county" : this.state.county,
                 "gender" : this.state.gender,
                 "ethnicity" : this.state.ethnicity
