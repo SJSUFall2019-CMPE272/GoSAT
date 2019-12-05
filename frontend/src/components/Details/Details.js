@@ -124,7 +124,7 @@ class Details extends React.Component {
                 }
             })
             let results = [];
-            var url = "54.153.123.45/main_process"
+            var url = "http://54.153.123.45/main_process"
                         + "/"+mldata.gpa + "/"+mldata.actE
                         + "/"+mldata.actC + "/"+mldata.satW 
                         + "/"+mldata.satM + "/"+mldata.satE
