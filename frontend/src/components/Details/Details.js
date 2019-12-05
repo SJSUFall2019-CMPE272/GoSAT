@@ -221,7 +221,7 @@ class Details extends React.Component {
                         
                     </FormGroup>
                     <FormGroup>
-                        <AvField type="number" name="satE" min={0} max={124} label="Essay Score:" id="satE" onChange={this.changeHandler} placeholder="" required />
+                        <AvField type="number" name="satE" min={200} max={800} label="Essay Score:" id="satE" onChange={this.changeHandler} placeholder="" required />
                         
                     </FormGroup>
                     <FormGroup>
