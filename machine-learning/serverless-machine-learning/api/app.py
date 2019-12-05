@@ -3,6 +3,7 @@ https://medium.com/@patrickmichelberger/how-to-deploy-a-serverless-machine-learn
 """
 
 from flask import Flask, request, json
+from flask_cors import CORS
 import boto3
 import pickle
 import numpy as np
@@ -18,6 +19,7 @@ LABEL_MAPPING = 'gosat_label_mapping.json'
 app = Flask(__name__)
 S3 = boto3.client('s3', region_name='eu-central-1')
 
+CORS(app)
 @app.route('/', methods=['POST'])
 
 def index():    
@@ -59,10 +61,10 @@ def index():
     ]]
 
     non_categorical_values = [[
-     data['gpa'],
-     data['scrRead'],
-     data['scrMath'],
-     data['scrWrit']
+     float(data['gpa']),
+     int(data['scrRead']),
+     int(data['scrMath']),
+     int(data['scrWrit'])
     ]]
 
     categoricl_features = encoder.transform(categorical_values).toarray()
@@ -71,12 +73,12 @@ def index():
     X = np.hstack((non_categorical_values, categoricl_features))
     print ("Transformed final feature set {0}".format(X.shape))
 
-    prediction = [pred * 100 for pred in model.predict_proba(X)[0]]
+    prediction = [round(pred, 2) * 100 for pred in model.predict_proba(X)[0]]
 
     result = {}
     for pred, label in zip(prediction, model.classes_):
-        result[mapping[str(label)]] = pred
-   
+        result[mapping[str(label)].replace(" ", "")] = pred
+
     return json.dumps(result)
 
 if __name__ == '__main__':    

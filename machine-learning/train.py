@@ -3,6 +3,7 @@
 
 # In[ ]:
 
+import boto3
 import numpy as np
 import pandas as pd
 import pickle
@@ -11,7 +12,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
-from sklearn.metrics import plot_confusion_matrix
 
 
 # In[ ]:
@@ -91,12 +91,13 @@ print ("y test dimensions {0}".format(y_test.shape))
 print (y_pred)
 print (y_test)
 
-disp = plot_confusion_matrix(clf, X_test, y_test,
-                                 display_labels=list(df['Campus'].unique()),
-                                 cmap=plt.cm.Blues,
-                                 normalize=true)
+# upload mode and encoder to AWS for prediction
+pickle.dump(clf, open('models/gosat_logistic_regression', 'w'))
+pickle.dump(encoder, open('models/gosat_logistic_encoder', 'w'))
 
-print(disp.confusion_matrix)
+s3 = boto3.client('s3')
+s3.upload_file('models/gosat_logistic_regression', 'gosat-models', 'gosat_logistic_regression')
+s3.upload_file('models/gosat_logistic_encoder', 'gosat-models', 'gosat_logistic_encoder')
 
 # upload mode and encoder to AWS for prediction
 #pickle.dump(clf, open('models/gosat_random_forest', 'w'))
