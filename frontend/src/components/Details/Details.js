@@ -75,7 +75,6 @@ class Details extends React.Component {
             "profileDetails" : {
                 "cgpa": this.state.cgpa,
                 "gender": this.state.gender,
-                "transfer": this.state.transfer,
                 "school": this.state.school,
                 "ethnicity": this.state.ethnicity,
                 "sat": {
@@ -89,7 +88,7 @@ class Details extends React.Component {
                     "compositeScore" : this.state.actC,
                     "elaScore" : this.state.actE
                 },
-                "transferStudent" : this.state.transfer,
+                "county" : this.state.county,
                 "agc" : this.state.agc,
                 "hc" : this.state.hc
             },
