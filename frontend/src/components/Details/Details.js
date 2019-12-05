@@ -154,13 +154,13 @@ class Details extends React.Component {
                             univ["score"] = jsonRes.data["Berkeley"];
                             results.push(univ);
                             var univ = this.props.univList[1];
-                            univ["score"] = jsonRes.data["Los Angeles"];
+                            univ["score"] = jsonRes.data["LosAngeles"];
                             results.push(univ);
                             var univ = this.props.univList[2];
-                            univ["score"] = jsonRes.data["San Diego"];
+                            univ["score"] = jsonRes.data["SanDiego"];
                             results.push(univ);
                             var univ = this.props.univList[3];
-                            univ["score"] = jsonRes.data["Santa Barbara"];
+                            univ["score"] = jsonRes.data["SantaBarbara"];
                             results.push(univ);
                             var univ = this.props.univList[4];
                             univ["score"] = jsonRes.data["Davis"];
@@ -169,7 +169,7 @@ class Details extends React.Component {
                             univ["score"] = jsonRes.data["Irvine"];
                             results.push(univ);
                             var univ = this.props.univList[6];
-                            univ["score"] = jsonRes.data["Santa Cruz"];
+                            univ["score"] = jsonRes.data["SantaCruz"];
                             results.push(univ);
                             var univ = this.props.univList[7];
                             univ["score"] = jsonRes.data["Riverside"];
