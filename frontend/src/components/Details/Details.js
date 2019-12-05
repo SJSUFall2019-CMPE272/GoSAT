@@ -50,7 +50,7 @@ class Details extends React.Component {
     changeRadioHandlerTransfer = (event) => {
         let value = event.target.value;
         console.log("value is ", value);
-        this.setState({ transfer: value });
+        this.setState({ gender: value });
     }
 
 
@@ -75,7 +75,6 @@ class Details extends React.Component {
             "profileDetails" : {
                 "cgpa": this.state.cgpa,
                 "gender": this.state.gender,
-                "transfer": this.state.transfer,
                 "school": this.state.school,
                 "ethnicity": this.state.ethnicity,
                 "sat": {
@@ -89,17 +88,17 @@ class Details extends React.Component {
                     "compositeScore" : this.state.actC,
                     "elaScore" : this.state.actE
                 },
-                "transferStudent" : this.state.transfer,
+                "county" : this.state.county,
                 "agc" : this.state.agc,
                 "hc" : this.state.hc
             },
             "dreamUniv" : this.state.univ
         }
         var  mldata = { data : {
-                "gpa" : this.state.cgpa,
-                "scrRead" : this.state.satW,
-                "scrMath" : this.state.satM,
-                "scrWrit" : this.state.satW,
+                "gpa" : parseFloat(this.state.cgpa),
+                "scrRead" : parseInt(this.state.satW),
+                "scrMath" : parseInt(this.state.satM),
+                "scrWrit" : parseInt(this.state.satW),
                 "county" : this.state.county,
                 "gender" : this.state.gender,
                 "ethnicity" : this.state.ethnicity
@@ -152,33 +151,33 @@ class Details extends React.Component {
                         //         8 : 21.67
                         //     }
                        var univ = this.props.univList[0];
-                            univ["score"] = jsonRes["Berkeley"];
+                            univ["score"] = jsonRes.data["Berkeley"];
                             results.push(univ);
                             var univ = this.props.univList[1];
-                            univ["score"] = jsonRes["Los Angeles"];
+                            univ["score"] = jsonRes.data["LosAngeles"];
                             results.push(univ);
                             var univ = this.props.univList[2];
-                            univ["score"] = jsonRes["San Diego"];
+                            univ["score"] = jsonRes.data["SanDiego"];
                             results.push(univ);
                             var univ = this.props.univList[3];
-                            univ["score"] = jsonRes["Santa Barbara"];
+                            univ["score"] = jsonRes.data["SantaBarbara"];
                             results.push(univ);
                             var univ = this.props.univList[4];
-                            univ["score"] = jsonRes["Davis"];
+                            univ["score"] = jsonRes.data["Davis"];
                             results.push(univ);
                             var univ = this.props.univList[5];
-                            univ["score"] = jsonRes["Irvine"];
+                            univ["score"] = jsonRes.data["Irvine"];
                             results.push(univ);
                             var univ = this.props.univList[6];
-                            univ["score"] = jsonRes["Santa Cruz"];
+                            univ["score"] = jsonRes.data["SantaCruz"];
                             results.push(univ);
                             var univ = this.props.univList[7];
-                            univ["score"] = jsonRes["Riverside"];
+                            univ["score"] = jsonRes.data["Riverside"];
                             results.push(univ);
                             var univ = this.props.univList[8];
-                            univ["score"] = jsonRes["Merced"];
+                            univ["score"] = jsonRes.data["Merced"];
                             results.push(univ)
-                        console.log("resp",jsonRes);
+                        console.log("resp",jsonRes.data);
                         results.sort(this.compare);
                         this.props.mlPredictionSuccessDispatch(results);
                         console.log("res",results);
@@ -222,7 +221,7 @@ class Details extends React.Component {
                         
                     </FormGroup>
                     <FormGroup>
-                        <AvField type="number" name="satE" min={0} max={124} label="Essay Score:" id="satE" onChange={this.changeHandler} placeholder="" required />
+                        <AvField type="number" name="satE" min={200} max={800} label="Essay Score:" id="satE" onChange={this.changeHandler} placeholder="" required />
                         
                     </FormGroup>
                     <FormGroup>
