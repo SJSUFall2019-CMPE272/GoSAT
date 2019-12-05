@@ -59,17 +59,17 @@ y = le.fit_transform(df['Campus'])
 print ("y dimensions {0}".format(y.shape))
 
 # split data into 80% train 20% test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=1000)
 
 print ("X train dimensions {0}".format(X_train.shape))
 print ("y train dimensions {0}".format(y_train.shape))
 
 # train model
 clf = LogisticRegression(
-    random_state=0,
+    random_state=50,
     solver='lbfgs',
     multi_class='multinomial',
-    max_iter=500)
+    max_iter=295)
 
 clf.fit(X_train, y_train)
 
@@ -81,7 +81,7 @@ pickle.dump(encoder, open('models/gosat_logistic_encoder', 'w'))
 # In[ ]:
 
 # train model
-clf = LogisticRegression(random_state=0, solver='lbfgs', multi_class='multinomial')
+clf = LogisticRegression(random_state=50, solver='lbfgs', multi_class='multinomial',max_iter=295)
 clf.fit(X_train, y_train)
 
 y_pred = clf.predict(X_test)
