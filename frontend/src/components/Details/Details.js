@@ -50,7 +50,7 @@ class Details extends React.Component {
     changeRadioHandlerTransfer = (event) => {
         let value = event.target.value;
         console.log("value is ", value);
-        this.setState({ transfer: value });
+        this.setState({ gender: value });
     }
 
 
