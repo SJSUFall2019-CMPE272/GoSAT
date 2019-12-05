@@ -151,33 +151,33 @@ class Details extends React.Component {
                         //         8 : 21.67
                         //     }
                        var univ = this.props.univList[0];
-                            univ["score"] = jsonRes["Berkeley"];
+                            univ["score"] = jsonRes.data["Berkeley"];
                             results.push(univ);
                             var univ = this.props.univList[1];
-                            univ["score"] = jsonRes["Los Angeles"];
+                            univ["score"] = jsonRes.data["Los Angeles"];
                             results.push(univ);
                             var univ = this.props.univList[2];
-                            univ["score"] = jsonRes["San Diego"];
+                            univ["score"] = jsonRes.data["San Diego"];
                             results.push(univ);
                             var univ = this.props.univList[3];
-                            univ["score"] = jsonRes["Santa Barbara"];
+                            univ["score"] = jsonRes.data["Santa Barbara"];
                             results.push(univ);
                             var univ = this.props.univList[4];
-                            univ["score"] = jsonRes["Davis"];
+                            univ["score"] = jsonRes.data["Davis"];
                             results.push(univ);
                             var univ = this.props.univList[5];
-                            univ["score"] = jsonRes["Irvine"];
+                            univ["score"] = jsonRes.data["Irvine"];
                             results.push(univ);
                             var univ = this.props.univList[6];
-                            univ["score"] = jsonRes["Santa Cruz"];
+                            univ["score"] = jsonRes.data["Santa Cruz"];
                             results.push(univ);
                             var univ = this.props.univList[7];
-                            univ["score"] = jsonRes["Riverside"];
+                            univ["score"] = jsonRes.data["Riverside"];
                             results.push(univ);
                             var univ = this.props.univList[8];
-                            univ["score"] = jsonRes["Merced"];
+                            univ["score"] = jsonRes.data["Merced"];
                             results.push(univ)
-                        console.log("resp",jsonRes);
+                        console.log("resp",jsonRes.data);
                         results.sort(this.compare);
                         this.props.mlPredictionSuccessDispatch(results);
                         console.log("res",results);
