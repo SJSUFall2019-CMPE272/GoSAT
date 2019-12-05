@@ -95,16 +95,15 @@ class Details extends React.Component {
             },
             "dreamUniv" : this.state.univ
         }
-        var  mldata = {
+        var  mldata = { data : {
                 "gpa" : this.state.cgpa,
-                "actE" : this.state.actE,
-                "actC" : this.state.actC,
-                "satW" : this.state.satW,
-                "satM" : this.state.satM,
-                "satE" : this.state.satE,
-                "agc" : this.state.agc,
-                "hc" : this.state.hc
-            }
+                "scrRead" : this.state.satW,
+                "scrMath" : this.state.satM,
+                "scrWrit" : this.state.satW,
+                "county" : this.state.county,
+                "gender" : this.state.gender,
+                "ethnicity" : this.state.ethnicity
+            }}
         axios.post(baseURL+'/api/user/updateProfileDetails', JSON.stringify(data),{
                 headers: {
                     'Content-Type': 'application/json',
@@ -129,10 +128,12 @@ class Details extends React.Component {
                         + "/"+mldata.actC + "/"+mldata.satW 
                         + "/"+mldata.satM + "/"+mldata.satE
                         + "/"+mldata.agc + "/"+mldata.hc;// "/3/31/31/700/700/20/50/15";
-            axios.get(url,{
-            // headers: {
-            //     'Accept' : 'application/json'
-            //   },
+            axios.post("https://883haygr14.execute-api.us-east-1.amazonaws.com/dev", JSON.stringify(mldata),{
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept' : 'application/json'
+              },
+              method: 'POST',
             })
             //.then((response) => {
             //   return response.json();
@@ -150,12 +151,34 @@ class Details extends React.Component {
                         //         7 : 34.67,
                         //         8 : 21.67
                         //     }
-                        console.log("resp",jsonRes);
-                        for(var i=0;i<9;i=i+1){
-                            var univ = this.props.univList[i];
-                            univ["score"] = jsonRes[i];
+                       var univ = this.props.univList[0];
+                            univ["score"] = jsonRes["Berkeley"];
                             results.push(univ);
-                        }
+                            var univ = this.props.univList[1];
+                            univ["score"] = jsonRes["Los Angeles"];
+                            results.push(univ);
+                            var univ = this.props.univList[2];
+                            univ["score"] = jsonRes["San Diego"];
+                            results.push(univ);
+                            var univ = this.props.univList[3];
+                            univ["score"] = jsonRes["Santa Barbara"];
+                            results.push(univ);
+                            var univ = this.props.univList[4];
+                            univ["score"] = jsonRes["Davis"];
+                            results.push(univ);
+                            var univ = this.props.univList[5];
+                            univ["score"] = jsonRes["Irvine"];
+                            results.push(univ);
+                            var univ = this.props.univList[6];
+                            univ["score"] = jsonRes["Santa Cruz"];
+                            results.push(univ);
+                            var univ = this.props.univList[7];
+                            univ["score"] = jsonRes["Riverside"];
+                            results.push(univ);
+                            var univ = this.props.univList[8];
+                            univ["score"] = jsonRes["Merced"];
+                            results.push(univ)
+                        console.log("resp",jsonRes);
                         results.sort(this.compare);
                         this.props.mlPredictionSuccessDispatch(results);
                         console.log("res",results);
@@ -296,9 +319,41 @@ class Details extends React.Component {
                         <AvField type="number" name="hc" min={0} max={100} id="hc" onChange={this.changeHandler} placeholder="" required />
                         
                     </FormGroup>
-                                <AvRadioGroup inline name="transfer" label="Transfer Student" required>
-                                    <AvRadio label="True" value="true" name="True" id="true" onChange={this.changeRadioHandlerTransfer} />
-                                    <AvRadio label="False" value="false" name="False" id="false" onChange={this.changeRadioHandlerTransfer} />
+                    <FormGroup>
+                                    <fieldset>
+                                        <legend>County:</legend>
+                                        <select class="form-control dropdown" id="county" onChange={this.changeHandler} name="county">
+                                            <option value="" selected="selected" disabled="disabled">-- select one --</option>
+                                                <option value="Alameda">Alameda</option>
+                                                <option value="Amador">Amador</option>
+                                                <option value="Contra Costa">Contra Costa</option>
+                                                <option value="Humboldt">Humboldt</option>
+                                                <option value="Los Angeles">Los Angeles</option>
+                                                <option value="Mendocino">Mendocino</option>
+                                                <option value="Monterey">Monterey</option>
+                                                <option value="Napa">Napa</option>
+                                                <option value="Orange">Orange</option>
+                                                <option value="Sacramento">Sacramento</option>
+                                                <option value="San Benito">San Benito</option>
+                                                <option value="San Bernardino">San Bernardino</option>
+                                                <option value="San Diego">San Diego</option>
+                                                <option value="San Francisco">San Francisco</option>
+                                                <option value="San Joaquin">San Joaquin</option>
+                                                <option value="San Mateo">San Mateo</option>
+                                                <option value="Santa Barbara">Santa Barbara</option>
+                                                <option value="Santa Clara">Santa Clara</option>
+                                                <option value="Santa Cruz">Santa Cruz</option>
+                                                <option value="Shasta">Shasta</option>                                                <option value="Shasta">Any other ethnic group</option>
+                                                <option value="Solano">Solano</option>
+                                                <option value="Sonoma">Sonoma</option>
+                                                <option value="Ventura">Ventura</option>
+
+                                        </select>
+                                    </fieldset>
+                                </FormGroup>
+                                <AvRadioGroup inline name="gender" label="Gender" required>
+                                    <AvRadio label="Male" value="male" name="male" id="male" onChange={this.changeRadioHandlerTransfer} />
+                                    <AvRadio label="Female" value="female" name="female" id="female" onChange={this.changeRadioHandlerTransfer} />
                                 </AvRadioGroup>
                                 <FormGroup>
                                     <fieldset>
@@ -306,10 +361,11 @@ class Details extends React.Component {
                                         <select class="form-control dropdown" id="ethnicity" onChange={this.changeHandler} name="ethnicity">
                                             <option value="" selected="selected" disabled="disabled">-- select one --</option>
                                                 <option value="Asian">Asian</option>
-                                                <option value="Hispanic">Hispanic</option>
-                                                <option value="Latino">Latino</option>
-                                                <option value="Native American">Native American</option>
-                                                <option value="Other">Any other ethnic group</option>
+                                                <option value="American American">American American</option>
+                                                <option value="Asian">Asian</option>
+                                                <option value="Hispanic/Latino">Hispanic/Latino</option>
+                                                <option value="African American">African American</option>
+                                                <option value="International">International</option>
                                         </select>
                                     </fieldset>
                                 </FormGroup>
